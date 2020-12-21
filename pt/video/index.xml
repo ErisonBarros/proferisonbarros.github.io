@@ -5,12 +5,103 @@
     <link>https://mauriciovancine.github.io/pt/video/</link>
       <atom:link href="https://mauriciovancine.github.io/pt/video/index.xml" rel="self" type="application/rss+xml" />
     <description>Vídeos</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>pt</language><copyright>© Maurício Vancine, 2020</copyright>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>pt</language><copyright>© Maurício Vancine, 2020</copyright><lastBuildDate>Tue, 05 May 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://mauriciovancine.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Vídeos</title>
       <link>https://mauriciovancine.github.io/pt/video/</link>
     </image>
+    
+    <item>
+      <title>We R Live</title>
+      <link>https://mauriciovancine.github.io/pt/video/2020-05-05-liver/</link>
+      <pubDate>Tue, 05 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://mauriciovancine.github.io/pt/video/2020-05-05-liver/</guid>
+      <description>&lt;h1 id=&#34;lives-de-r&#34;&gt;Lives de R&lt;/h1&gt;
+&lt;p&gt;Lives de R semanais para manejo, análise e visualização de dados geoespaciais, toda terça-feira às 22:00 h.&lt;/p&gt;
+&lt;h2 id=&#34;sobre&#34;&gt;Sobre&lt;/h2&gt;
+&lt;p&gt;A cada live, terá uma hora de duração, aproximadamente :), dividido em 15/20 min. de introdução, comentários sobre o que será apresentado; 30/40 min. de &amp;ldquo;mão na massa&amp;rdquo; e os minutos que sobrarem para considerações finais.&lt;/p&gt;
+&lt;h2 id=&#34;informações-técnicas&#34;&gt;Informações técnicas&lt;/h2&gt;
+&lt;p&gt;Iremos utilizar o &lt;a href=&#34;https://www.r-project.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;R&lt;/a&gt; versão 4.0 e o &lt;a href=&#34;https://rstudio.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;RStudio&lt;/a&gt;, no Sistema Operacional (SO) Linux, como o &lt;a href=&#34;https://ubuntu.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ubuntu&lt;/a&gt;, entretando, esses programas também funcionam em outros SOs como Windows ou MacOS.&lt;/p&gt;
+&lt;p&gt;Repositório do GitLab: &lt;a href=&#34;https://gitlab.com/geocastbrasil/liver&#34;&gt;https://gitlab.com/geocastbrasil/liver&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;lives&#34;&gt;Lives&lt;/h2&gt;
+&lt;p&gt;Lista de lives realizadas:&lt;/p&gt;
+&lt;h3 id=&#34;live-1-por-onde-começar&#34;&gt;Live 1: Por onde começaR?&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Slides: &lt;a href=&#34;https://mauriciovancine.github.io/werlive/werlive_01/werlive_01&#34;&gt;https://mauriciovancine.github.io/werlive/werlive_01/werlive_01&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Vídeo:  &lt;a href=&#34;https://youtu.be/ZORFVdwtJ1U&#34;&gt;https://youtu.be/ZORFVdwtJ1U&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;live-2-elaborando-mapas-no-r&#34;&gt;Live 2: Elaborando mapas no R&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Slides: &lt;a href=&#34;https://mauriciovancine.github.io/werlive/werlive_02/werlive_02&#34;&gt;https://mauriciovancine.github.io/werlive/werlive_02/werlive_02&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Script: &lt;a href=&#34;https://gitlab.com/geocastbrasil/liver/-/blob/master/werlive_02/werlive_02.R&#34;&gt;https://gitlab.com/geocastbrasil/liver/-/blob/master/werlive_02/werlive_02.R&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Vídeo:  &lt;a href=&#34;https://youtu.be/eHht0n3Ppcg&#34;&gt;https://youtu.be/eHht0n3Ppcg&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;mais-conteúdos&#34;&gt;Mais conteúdos&lt;/h2&gt;
+&lt;h3 id=&#34;sites&#34;&gt;Sites&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.curso-r.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Curso-R&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://education.rstudio.com/learn/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Finding Your Way To R&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;apostilas&#34;&gt;Apostilas&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://professor.ufrgs.br/sites/default/files/matiasritter/files/apostila_introducao_ao_r_-_ritter_they_and_konzen.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Introdução ao software estatístico R&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;livros&#34;&gt;Livros&lt;/h3&gt;
+&lt;h4 id=&#34;português&#34;&gt;Português&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://cdr.ibpad.com.br/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ciência de dados com R&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.editorafaith.com.br/ebooks/grat/software_r.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Software R: Análise estatísticade dados utilizando umprograma livre&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://curso-r.github.io/ragmatic-book&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;R pragmático&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.dropbox.com/s/blgtp2bmpdghol7/AnaliseEspacialComR.pdf?dl=0&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Análise espacial com R&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;inglês&#34;&gt;Inglês&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://r4ds.had.co.nz/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;R for Data Science&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://adv-r.hadley.nz/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Advanced R&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://rstudio-education.github.io/hopr/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hands-On Programming with R&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://bookdown.org/csgillespie/efficientR/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Efficient R programming&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://bookdown.org/rdpeng/rprogdatascience/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;R Programming for Data Science&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://moderndive.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Statistical Inference via Data Science&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://r-graphics.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;R Graphics Cookbook&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://serialmentor.com/dataviz/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Fundamentals of Data Visualization&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.tidytextmining.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Text Mining with R&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://bookdown.org/yihui/rmarkdown/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;R Markdown: The Definitive Guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://geocompr.robinlovelace.net/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Geocomputation with R&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.paulamoraga.com/book-geospatial/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Geospatial Health Data: Modeling and Visualization with R-INLA and Shiny&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.burns-stat.com/pages/Tutor/R_inferno.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The R inferno&lt;/a&gt; 😈&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;cheatsheets&#34;&gt;Cheatsheets&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://rstudio.com/resources/cheatsheets/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;RStudio Cheatsheets&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;venha-trocar-ideias-com-a-gente&#34;&gt;Venha trocar ideias com a gente&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/channel/UCLAeX4dyujMoy4xqHvxSDpQ&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;YouTube&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.instagram.com/geocastbrasil&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Instagram&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://twitter.com/GeoCastBrasil&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Twitter&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.facebook.com/GeoCastBrasil/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Facebook&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Métricas de paisagem no R</title>
+      <link>https://mauriciovancine.github.io/pt/video/2019-11-27-metricas-paisagem/</link>
+      <pubDate>Wed, 27 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>https://mauriciovancine.github.io/pt/video/2019-11-27-metricas-paisagem/</guid>
+      <description>&lt;p&gt;Neste vídeo, à convite do &lt;a href=&#34;https://twitter.com/FelipeSMBarros&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Felipe Sodré&lt;/a&gt;, do canal &lt;a href=&#34;https://www.youtube.com/channel/UCLAeX4dyujMoy4xqHvxSDpQ&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GeoCast Brasil&lt;/a&gt;, fiz uma live um tanto longa, onde falei sobre Ecologia da Paisagem e alguns dos principais conceitos atrelados à essa disciplina, e uma parte prática sobre o cálculo de métricas de paisagem utilizando a linguagem R, mais especificamente utilizando o pacote &lt;a href=&#34;https://r-spatialecology.github.io/landscapemetrics/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;landscapemetrics&lt;/em&gt;&lt;/a&gt;. A apresentação e códigos podem ser acessados nesse &lt;a href=&#34;https://gitlab.com/geocastbrasil/landscapemetrics&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;repositório do GitLab&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/RCTrLx_33D8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
     
   </channel>
 </rss>
