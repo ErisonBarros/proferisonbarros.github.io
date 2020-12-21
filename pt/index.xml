@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Maurício Vancine</title>
+    <link>https://mauriciovancine.github.io/pt/</link>
+      <atom:link href="https://mauriciovancine.github.io/pt/index.xml" rel="self" type="application/rss+xml" />
+    <description>Maurício Vancine</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>pt</language><copyright>© Maurício Vancine, 2020</copyright><lastBuildDate>Tue, 24 Nov 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://mauriciovancine.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Maurício Vancine</title>
+      <link>https://mauriciovancine.github.io/pt/</link>
+    </image>
+    
+    <item>
+      <title>Host diversity outperforms climate as a global driver of symbiont diversity in the bird‐feather mite system</title>
+      <link>https://mauriciovancine.github.io/pt/publication/2020-gusmao-etal/</link>
+      <pubDate>Tue, 24 Nov 2020 00:00:00 +0000</pubDate>
+      <guid>https://mauriciovancine.github.io/pt/publication/2020-gusmao-etal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Environmental niche and functional role similarity between invasive and native palms in the Atlantic Forest</title>
+      <link>https://mauriciovancine.github.io/pt/publication/2020-bello-etal/</link>
+      <pubDate>Fri, 13 Nov 2020 00:00:00 +0000</pubDate>
+      <guid>https://mauriciovancine.github.io/pt/publication/2020-bello-etal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Modelos de Distribuição de Espécies: uma visão geral</title>
+      <link>https://mauriciovancine.github.io/pt/talk/2020_talk_sdm_gggc/</link>
+      <pubDate>Thu, 05 Mar 2020 09:30:00 +0000</pubDate>
+      <guid>https://mauriciovancine.github.io/pt/talk/2020_talk_sdm_gggc/</guid>
+      <description>
+&lt;script src=&#34;index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Os Modelos de Distribuição de Espécies (SDM - Species Distribution Models) relacionam dados de ocorrências das espécies com suas condições ambientais para estimar o nicho das espécies e assim predizer novas áreas de possível distribuição. Nessa palestra, falei dos principais conceitos, dados de entrada e aplicações dessa abordagem na área de Ecologia&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Effects of landscape modification on species richness patterns of fruit-feeding butterflies in Brazilian Atlantic Forest</title>
+      <link>https://mauriciovancine.github.io/pt/publication/2020-santos-etal/</link>
+      <pubDate>Sat, 01 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>https://mauriciovancine.github.io/pt/publication/2020-santos-etal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fragmented tropical forests lose mutualistic plant-animal interactions</title>
+      <link>https://mauriciovancine.github.io/pt/publication/2020-marjakangas-etal/</link>
+      <pubDate>Sat, 01 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>https://mauriciovancine.github.io/pt/publication/2020-marjakangas-etal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Métricas de paisagem no R</title>
+      <link>https://mauriciovancine.github.io/pt/video/2019-11-27-metricas-paisagem/</link>
+      <pubDate>Wed, 27 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>https://mauriciovancine.github.io/pt/video/2019-11-27-metricas-paisagem/</guid>
+      <description>&lt;p&gt;Neste vídeo, à convite do &lt;a href=&#34;https://twitter.com/FelipeSMBarros&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Felipe Sodré&lt;/a&gt;, do canal &lt;a href=&#34;https://www.youtube.com/channel/UCLAeX4dyujMoy4xqHvxSDpQ&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GeoCast Brasil&lt;/a&gt;, fiz uma live um tanto longa, onde falei sobre Ecologia da Paisagem e alguns dos principais conceitos atrelados à essa disciplina, e uma parte prática sobre o cálculo de métricas de paisagem utilizando a linguagem R, mais especificamente utilizando o pacote &lt;a href=&#34;https://r-spatialecology.github.io/landscapemetrics/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;landscapemetrics&lt;/em&gt;&lt;/a&gt;. A apresentação e códigos podem ser acessados nesse &lt;a href=&#34;https://gitlab.com/geocastbrasil/landscapemetrics&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;repositório do GitLab&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/RCTrLx_33D8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Introdução à linguagem R: manipulação e visualização de dados</title>
+      <link>https://mauriciovancine.github.io/pt/workshop/2019_workshop_r_unesp_biology/</link>
+      <pubDate>Wed, 23 Oct 2019 14:00:00 +0000</pubDate>
+      <guid>https://mauriciovancine.github.io/pt/workshop/2019_workshop_r_unesp_biology/</guid>
+      <description>
+&lt;script src=&#34;index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;A linguagem R vem se destacando nos últimos anos (desde de 2000), como a principal ferramenta para manejo, visualização e análise de dados, principalmente na área de Ecologia, Psicologia, Economia, e mais recentemente, na Ciência de Dados. Neste curso serão abordados quatro temas introdutórios dessa linguagem: (i) introdução e funcionamento da linguagem R e do software RStudio, (ii) estrutura e manipulação de dados, (iii) introdução ao tidyverse, e (iv) visualização de dados. A carga horária será de aproximadamente 08 horas, onde será focada a parte teórico-prática, intercalada com a realização de exercícios para fixação do conteúdo. Ao final do curso, espera-se que os participantes tenham uma noção geral do funcionamento da linguagem e das potenciais aplicações dentro da área de análise de dados ecológicos&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Predicting the potential hybridization zones between native and invasive marmosets within Neotropical biodiversity hotspots</title>
+      <link>https://mauriciovancine.github.io/pt/publication/2019-moraes-etal/</link>
+      <pubDate>Sat, 06 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>https://mauriciovancine.github.io/pt/publication/2019-moraes-etal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Land-use changes and the expansion of biofuel crops threaten the giant anteater in southeastern Brazil</title>
+      <link>https://mauriciovancine.github.io/pt/publication/2019-bertassoni-etal/</link>
+      <pubDate>Fri, 29 Mar 2019 00:00:00 +0000</pubDate>
+      <guid>https://mauriciovancine.github.io/pt/publication/2019-bertassoni-etal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Spatial prediction of risk areas for vector transmission of Trypanosoma cruzi in the State of Paraná, southern Brazil</title>
+      <link>https://mauriciovancine.github.io/pt/publication/2018-ferro-e-silva-etal/</link>
+      <pubDate>Mon, 08 Oct 2018 00:00:00 +0000</pubDate>
+      <guid>https://mauriciovancine.github.io/pt/publication/2018-ferro-e-silva-etal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ATLANTIC AMPHIBIANS: a data set of amphibian communities from the Atlantic Forests of South America</title>
+      <link>https://mauriciovancine.github.io/pt/publication/2018-vancine-etal/</link>
+      <pubDate>Thu, 28 Jun 2018 00:00:00 +0000</pubDate>
+      <guid>https://mauriciovancine.github.io/pt/publication/2018-vancine-etal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Note on the Territorial Limits of the Atlantic Forest</title>
+      <link>https://mauriciovancine.github.io/pt/publication/2018-muylaert-etal/</link>
+      <pubDate>Tue, 29 May 2018 00:00:00 +0000</pubDate>
+      <guid>https://mauriciovancine.github.io/pt/publication/2018-muylaert-etal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Efeito das Modificações da Paisagem e das Mudanças Climáticas sobre a Persistência de Anfíbios na Mata Atlântica</title>
+      <link>https://mauriciovancine.github.io/pt/project/fapesp_2017/</link>
+      <pubDate>Wed, 28 Feb 2018 00:00:00 +0000</pubDate>
+      <guid>https://mauriciovancine.github.io/pt/project/fapesp_2017/</guid>
+      <description>&lt;p&gt;O desconhecimento acerca da diversidade e distribuição das espécies é um dos principais desafios para a conservação. Aliado a esse fato, os  processos resultantes das modificações da paisagem e das mudanças  climáticas estão entre as principais causas da perda de biodiversidade  mundial, agravando ainda mais o cenário de desconhecimento. Os anfíbios  estão entre os grupos de vertebrados mais sensíveis a essas mudanças,  principalmente devido às suas características morfológicas e ecológicas  particulares. O Bioma da Mata Atlântica detém ainda um elevado índice de diversidade de anfíbios e é considerado um dos hotspots mundiais de  biodiversidade mais ameaçados. Sendo assim, nesse projeto buscaremos:  (1) apresentar uma avaliação dos levantamentos das comunidades de  anfíbios para a Mata Atlântica, sua composição e distribuição; (2)  investigar como a perda e fragmentação de habitat, na escala regional,  podem afetar a persistência atual de anfíbios de diferentes guildas  reprodutivas; e (3) averiguar como as mudanças climáticas podem afetar a persistência futura de anfíbios do gênero Brachycephalus, considerado  altamente sensível a essas alterações climáticas. Para a realização  desse projeto serão utilizadas análises descritivas e espaciais dos  levantamentos das comunidades de anfíbios e Modelos de Nicho Ecológico  para encontrar áreas adequadas às espécies. Esperamos encontrar um  panorama geral da diversidade das comunidades de anfíbios e as lacunas  de amostragens ao longo da Mata Atlântica. Além disso, esperamos que  espécies com modos reprodutivos aquáticos sejam mais afetadas pelos  efeitos da fragmentação que espécies com desenvolvimento direto, que  serão mais afetadas pela perda de habitat. Por fim, esperamos que as  áreas atualmente adequadas para a ocorrência das espécies do gênero  Brachycephalus irão sofrer uma drástica diminuição no futuro e irão  estar localizadas em altitudes mais elevadas.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Efficiency of protected areas in Amazon and Atlantic Forest conservation: A spatio-temporal view</title>
+      <link>https://mauriciovancine.github.io/pt/publication/2018-sobral-souza-etal/</link>
+      <pubDate>Wed, 24 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>https://mauriciovancine.github.io/pt/publication/2018-sobral-souza-etal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Forest cover influences occurrence of mammalian carnivores within Brazilian Atlantic Forest</title>
+      <link>https://mauriciovancine.github.io/pt/publication/2017-regolin-etal/</link>
+      <pubDate>Mon, 09 Oct 2017 00:00:00 +0000</pubDate>
+      <guid>https://mauriciovancine.github.io/pt/publication/2017-regolin-etal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Impacts of mining activities on the potential geographic distribution of eastern Brazil mountaintop endemic species</title>
+      <link>https://mauriciovancine.github.io/pt/publication/2017-pena-etal/</link>
+      <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
+      <guid>https://mauriciovancine.github.io/pt/publication/2017-pena-etal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>High mammal species turnover in forest patches immersed in biofuel plantations</title>
+      <link>https://mauriciovancine.github.io/pt/publication/2017-beca-etal/</link>
+      <pubDate>Thu, 02 Mar 2017 00:00:00 +0000</pubDate>
+      <guid>https://mauriciovancine.github.io/pt/publication/2017-beca-etal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Efeito da fragmentação sobre a persistência de anfíbios anuros (Amphibia Anura) na Mata Atlântica</title>
+      <link>https://mauriciovancine.github.io/pt/project/fapesp_2013/</link>
+      <pubDate>Wed, 31 Dec 2014 00:00:00 +0000</pubDate>
+      <guid>https://mauriciovancine.github.io/pt/project/fapesp_2013/</guid>
+      <description>&lt;p&gt;Anfíbios são organismos sensíveis à perda da quantidade e  qualidade de habitat, dado sua limitada locomoção em relação a grandes  distâncias e alta dependência de microhabitats para a reprodução. A Mata Atlântica possui cerca de 400 espécies de anfíbios, sendo que 60 a 85%  delas são endêmicas. Atualmente, a Mata Atlântica apresenta entre 11,4% a 16,0% de sua extensão original, com 80% de fragmentos menores que 50  ha, isolados e com baixa conectividade. Sendo assim, entender como o  processo de fragmentação influencia a persistência de anfíbios na Mata  Atlântica é essencial para o desenvolvimento de estratégias adequadas  para a conservação das espécies. Este estudo testará o efeito da  estrutura da paisagem, do relevo e dos níveis de urbanização em escala  regional, sobre a persistência das espécies Vitreorana eurygnatha e  Vitreorana uranoscopa. As duas espécies possuem habitat florestal e  reprodução aquática, e por isso são potencialmente mais sensíveis ao  processo da fragmentação. Para o desenvolvimento do estudo, as seguintes etapas serão realizadas: (i) modelar a distribuição potencial com base  na adequabilidade ambiental das espécies de interesse para o Bioma da  Mata Atlântica; (ii) identificar as paisagens com alta adequabilidade  ambiental e com levantamentos com elevado esforço amostral, a fim de  caracterizar a anurofauna regional; (iii) avaliar a contribuição  relativa dos índices da paisagem (% de cobertura florestal,  conectividade, relevo e proximidade urbana) para a persistência das  espécies utilizando seleção de modelos por múltiplas hipóteses  concorrentes com base na teoria de informação de Akaike.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Como criar um site acadêmico no R</title>
+      <link>https://mauriciovancine.github.io/pt/post/2019-12-07-como-criar-um-site-academico-no-r/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mauriciovancine.github.io/pt/post/2019-12-07-como-criar-um-site-academico-no-r/</guid>
+      <description>
+&lt;script src=&#34;index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Escrevendo…&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Como e onde começar a estudar R</title>
+      <link>https://mauriciovancine.github.io/pt/post/2019-12-20-como-onde-comecar-a-aprender-r/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mauriciovancine.github.io/pt/post/2019-12-20-como-onde-comecar-a-aprender-r/</guid>
+      <description>
+&lt;script src=&#34;index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Escrevendo…&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Como rodar python no RStudio</title>
+      <link>https://mauriciovancine.github.io/pt/post/2020-01-30-como-rodar-python-no-rstudio/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mauriciovancine.github.io/pt/post/2020-01-30-como-rodar-python-no-rstudio/</guid>
+      <description>
+&lt;script src=&#34;index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Escrevendo…&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Cálculo de métricas de paisagem no R</title>
+      <link>https://mauriciovancine.github.io/pt/post/2020-02-30-metricas-de-paisagem-no-r/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mauriciovancine.github.io/pt/post/2020-02-30-metricas-de-paisagem-no-r/</guid>
+      <description>
+&lt;script src=&#34;index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Escrevendo…&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://nowosad.github.io/post/lsm-bp1/&#34; class=&#34;uri&#34;&gt;https://nowosad.github.io/post/lsm-bp1/&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Dados geoespaciais no R: uma breve introdução</title>
+      <link>https://mauriciovancine.github.io/pt/post/2019-12-15-dados-geoespaciais-no-r-uma-breve-introducao/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mauriciovancine.github.io/pt/post/2019-12-15-dados-geoespaciais-no-r-uma-breve-introducao/</guid>
+      <description>
+&lt;script src=&#34;index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Escrevendo…&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Geocomputação no Python</title>
+      <link>https://mauriciovancine.github.io/pt/post/2020-05-30-geocomputacao-python/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mauriciovancine.github.io/pt/post/2020-05-30-geocomputacao-python/</guid>
+      <description>
+&lt;script src=&#34;index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Escrevendo…&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Introdução ao GRASS GIS</title>
+      <link>https://mauriciovancine.github.io/pt/post/2020-03-30-introducao-ao-grass-gis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mauriciovancine.github.io/pt/post/2020-03-30-introducao-ao-grass-gis/</guid>
+      <description>
+&lt;script src=&#34;index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Escrevendo…&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Porque você deveria aprender a programar em python</title>
+      <link>https://mauriciovancine.github.io/pt/post/2019-12-30-porque-voce-deveria-aprender-python/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mauriciovancine.github.io/pt/post/2019-12-30-porque-voce-deveria-aprender-python/</guid>
+      <description>
+&lt;script src=&#34;index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Escrevendo…&lt;/p&gt;
+&lt;p&gt;Livros:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/maurobio/econum&#34; class=&#34;uri&#34;&gt;https://github.com/maurobio/econum&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Tente usar Linux</title>
+      <link>https://mauriciovancine.github.io/pt/post/2020-04-30-tente-usar-linux/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mauriciovancine.github.io/pt/post/2020-04-30-tente-usar-linux/</guid>
+      <description>
+&lt;script src=&#34;index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Escrevendo…&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>tidyverse: outra forma de usar o R</title>
+      <link>https://mauriciovancine.github.io/pt/post/2020-06-30-tidyverse/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mauriciovancine.github.io/pt/post/2020-06-30-tidyverse/</guid>
+      <description>
+&lt;script src=&#34;index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Escrevendo…&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
