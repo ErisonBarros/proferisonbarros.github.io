@@ -73,14 +73,27 @@
     
     <item>
       <title>Introdução à linguagem R: manipulação e visualização de dados</title>
-      <link>https://mauriciovancine.github.io/pt/workshop/2019_workshop_r_unesp_biology/</link>
-      <pubDate>Wed, 23 Oct 2019 14:00:00 +0000</pubDate>
-      <guid>https://mauriciovancine.github.io/pt/workshop/2019_workshop_r_unesp_biology/</guid>
+      <link>https://mauriciovancine.github.io/pt/workshop/2019_workshop_r_unesp_ecology/</link>
+      <pubDate>Wed, 06 Nov 2019 08:00:00 +0000</pubDate>
+      <guid>https://mauriciovancine.github.io/pt/workshop/2019_workshop_r_unesp_ecology/</guid>
       <description>
 &lt;script src=&#34;index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;A linguagem R vem se destacando nos últimos anos (desde de 2000), como a principal ferramenta para manejo, visualização e análise de dados, principalmente na área de Ecologia, Psicologia, Economia, e mais recentemente, na Ciência de Dados. Neste curso serão abordados quatro temas introdutórios dessa linguagem: (i) introdução e funcionamento da linguagem R e do software RStudio, (ii) estrutura e manipulação de dados, (iii) introdução ao tidyverse, e (iv) visualização de dados. A carga horária será de aproximadamente 08 horas, onde será focada a parte teórico-prática, intercalada com a realização de exercícios para fixação do conteúdo. Ao final do curso, espera-se que os participantes tenham uma noção geral do funcionamento da linguagem e das potenciais aplicações dentro da área de análise de dados ecológicos&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Introdução à modelagem de distribuição de espécies usando a linguagem R: teoria e prática</title>
+      <link>https://mauriciovancine.github.io/pt/workshop/2019_workshop_sdm_cbh/</link>
+      <pubDate>Mon, 22 Jul 2019 08:00:00 +0000</pubDate>
+      <guid>https://mauriciovancine.github.io/pt/workshop/2019_workshop_sdm_cbh/</guid>
+      <description>
+&lt;script src=&#34;index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;A ampla disponibilidade de dados sobre a biodiversidade e variáveis ambientais, tem permitido a utilização de diversas análises biogeográficas e macroecológicas, dentre elas, os modelos de distribuição de espécies (MDE). Esse minicurso tem como intuito oferecer uma introdução teórica e prática à técnica de MDE, utilizando a linguagem R. Primeiramente serão apresentados os principais conceitos da teoria de nicho ecológico (Grinnell, Elton e Hutchinson) e da teoria de modelos (espaço geográfico (G), espaço ambiental (E) e diagrama Biótico-Abiótico-Movimentação (BAM)). Seguida à parte teórica, serão apresentados as principais bases de dados (ocorrências e variáveis ambientais), tipos de algoritmos (presença e ausência – GLM, GAM e Random Forest, apenas presença – BIOCLIM, Mahalanobis e Gower, e presença e background – Maxent e SVM), avaliação dos modelos (ROC, AUC e TSS), limites de corte (thresholds) e algumas abordagens de consenso de modelos (ensembles). A parte prática será focada na construção dos modelos através da linguagem R. Inicialmente será feito uma introdução à programação e manejo de dados espaciais na linguagem R, utilizando os pacotes raster e rgdal. Em seguida, será apresentado como obter dados de ocorrências e variáveis ambientais, através dos pacotes spooc e dismo. Uma vez adquiridos os dados, serão feitas análises preliminares dos mesmos, como seleção de ocorrências (um ponto por célula) e de variáveis (correlação, PCA, análise fatorial e VIF). Por fim, serão construídos modelos utilizando os algoritmos mencionados acima, além do cálculo das métricas de avaliação dos mesmos, utilizando os pacotes dismo, randomForest e kernlab.&lt;/p&gt;
 </description>
     </item>
     
@@ -106,6 +119,19 @@
       <pubDate>Mon, 08 Oct 2018 00:00:00 +0000</pubDate>
       <guid>https://mauriciovancine.github.io/pt/publication/2018-ferro-e-silva-etal/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>ATLANTIC AMPHIBIANS: Conjunto de Dados de Comunidades de Anfíbios da Mata Atlântica</title>
+      <link>https://mauriciovancine.github.io/pt/talk/2018_talk_data_paper_anfibios_anfoco/</link>
+      <pubDate>Sat, 04 Aug 2018 16:30:00 +0000</pubDate>
+      <guid>https://mauriciovancine.github.io/pt/talk/2018_talk_data_paper_anfibios_anfoco/</guid>
+      <description>
+&lt;script src=&#34;index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;As incertezas acerca da diversidade e distribuição de espécies é um dos principais desafios para a biologia da conservação. O Bioma da Mata Atlântica é considerado um dos hotspots de biodiversidade mais ameaçados do mundo, detendo ainda um elevado número de espécies de anfíbios. Neste trabalho, apresentamos uma minuciosa compilação de comunidades de anfíbios para a Mata Atlântica. O conjunto de dados foi organizado com base numa ampla delimitação geográfica do bioma, englobando ecótonos e áreas do Paraguai e Argentina. Todos as informações das comunidades foram obtidas de artigos, livros e literatura não publicada (monografias de graduação, dissertações e teses). Organizamos informações sobre: 1) habitat amostrado, 2) métodos de amostragem, 3) horário de amostragem, 4) esforço amostral (mês e ano inicial e final), 5) composição ou abundância das espécies, 6) endemismo, e 7) localização geográfica (latitude, longitude, país, estado, município e localidade específica). Fizemos atualizações taxonômicas segundo os dados da base do Amphibian Species of the World: an Online Reference, para setembro de 2017. O banco de dados foi estruturado a partir de 389 referências, amostradas entre os anos de 1940 a 2017, que incluiu 1.163 locais de estudo, para os quais há 17.619 registros de 528 espécies com certeza taxonômica. Do total de registros, 14.450 (82%) foram classificados de acordo com o critério do endemismo ao Bioma da Mata Atlântica, dos quais 7.787 (44%) foram considerados endêmicos. Os métodos mais representativos foram: 1) busca visual ou auditiva (82,1%), 2) busca em sítio reprodutivo (20%), 3) armadilha de interceptação e queda (pitfall, 15,3%), e 4) encontro ocasional (14,5%). Dentre os habitats amostrados, nenhum foi predominante, apesar do habitat florestal ter sido relatado com maior frequência (40,7%). A maior parte dos locais de estudo tiveram amostragem realizada em corpos d’água: riacho no interior da floresta (33,5%), poça permanente (30,2%), lago (28,9%), brejo (28,6%), poça temporária (27,5%), poça semipermanente (5,8%) e riacho em área aberta (4,5%). A riqueza de espécies foi de 15,2 ± 11,3 DP, variando de 1 a 80 espécies por local. Houve um grande viés de amostragem, sendo que a maioria das amostragens foi realizada nos estados de São Paulo (38,4%), Paraná (14,2%) e Minas Gerais (10,1%), representando coletivamente quase 63% das pesquisas. Esse alto viés para esses três estados pode ter sido por diversos motivos: 1) descrição de dois ou mais locais de estudo para a mesma referência; 2) processo histórico de formação de pesquisadores, além do incentivo de pesquisas de amostragem de anfíbios pelo Programa BIOTA-FAPESP; e 3) numerosas coleções herpetológicas, que possivelmente atraiu pesquisadores para realizar trabalhos taxonômicos. O resultado dessa compilação de dados gerou um panorama geral da diversidade, composição, métodos e esforço amostral das comunidades de anfíbios para o Bioma da Mata Atlântica, representando um enorme esforço para preencher uma lacuna de conhecimento acerca da biodiversidade de anfíbios na Região Neotropical. Esperamos que estes dados possam ser utilizados como uma ferramenta para a conservação deste grupo, além de ser uma fonte de dados importante para estudos de padrões macroecológicos e biogeográficos&lt;/p&gt;
+</description>
     </item>
     
     <item>
