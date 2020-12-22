@@ -2159,7 +2159,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="pt"
-                href="https://mauriciovancine.github.io/pt/author/mauricio-vancine/"
+                href="https://mauriciovancine.github.io/pt/author/mauricio/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -2170,6 +2170,16 @@
   
   <url>
     <loc></loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="https://mauriciovancine.github.io/pt/author/mauricio-vancine/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href=""
+                />
   </url>
   
 </urlset>
