@@ -17,22 +17,81 @@
       <link>https://mauriciovancine.github.io/video/2020-05-05-werlive/</link>
       <pubDate>Tue, 05 May 2020 00:00:00 +0000</pubDate>
       <guid>https://mauriciovancine.github.io/video/2020-05-05-werlive/</guid>
-      <description>&lt;h3 id=&#34;live-1-por-onde-começar&#34;&gt;Live 1: Por onde começaR?&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&#34;https://werlive.netlify.app/werlive01/werlive01&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Slides&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://gitlab.com/geocastbrasil/liver/-/tree/master/static/werlive01&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Material&lt;/a&gt;&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/ZORFVdwtJ1U&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&#34;live-2-por-onde-começar&#34;&gt;Live 2: Por onde começaR?&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&#34;https://mauriciovancine.github.io/werlive/werlive_01/werlive_01&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Slides&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://gitlab.com/geocastbrasil/liver/-/tree/master/static/werlive01&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Material&lt;/a&gt;&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/eHht0n3Ppcg&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
+      <description>&lt;h1 id=&#34;we-r-live&#34;&gt;We R Live&lt;/h1&gt;
+&lt;p&gt;I and &lt;a href=&#34;https://twitter.com/FelipeSMBarros&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Felipe Sodré&lt;/a&gt;, through the [ &lt;a href=&#34;https://www.youtube.com/channel/UCLAeX4dyujMoy4xqHvxSDpQ&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GeoCast Brasil&lt;/a&gt;]() channel on YouTube, created this project to share a little bit of our knowledge about handling and visualizing geospatial data through the R language. Always starting from a problem situation, we present the main theoretical concepts and practical approaches for your resolution&lt;/p&gt;
+&lt;h3 id=&#34;uwe-r-live-01---por-onde-começaru&#34;&gt;&lt;u&gt;We R Live 01 - Por onde começaR?&lt;/u&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://werlive.netlify.app/werlive01/werlive01&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Slides&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://gitlab.com/geocastbrasil/liver/-/tree/master/static/werlive01&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Material&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://youtu.be/ZORFVdwtJ1U&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Video&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;uwe-r-live-02---elaborando-mapas-no-ru&#34;&gt;&lt;u&gt;We R Live 02 - Elaborando mapas no R&lt;/u&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://werlive.netlify.app/werlive02/werlive02&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Slides&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://gitlab.com/geocastbrasil/liver/-/tree/master/static/werlive02&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Material&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://youtu.be/eHht0n3Ppcg&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Video&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;uwe-r-live-03---elaborando-mapa-no-r-com-tmapu&#34;&gt;&lt;u&gt;We R Live 03 - Elaborando mapa no R com tmap&lt;/u&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://werlive.netlify.app/werlive03/werlive03&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Slides&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://gitlab.com/geocastbrasil/liver/-/tree/master/static/werlive03&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Material&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://youtu.be/BmlM25XQ3QA&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Video&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;uwe-r-live-04---manipulando-dados-raster-no-ru&#34;&gt;&lt;u&gt;We R Live 04 - Manipulando dados raster no R&lt;/u&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://werlive.netlify.app/werlive04/werlive04&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Slides&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://gitlab.com/geocastbrasil/liver/-/tree/master/static/werlive04&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Material&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://youtu.be/dFC9SuGLuX8&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Video&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;uwe-r-live-05---manipulando-dados-raster-no-r-iiu&#34;&gt;&lt;u&gt;We R Live 05 - Manipulando dados raster no R II&lt;/u&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://werlive.netlify.app/werlive05/werlive05&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Slides&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://gitlab.com/geocastbrasil/liver/-/tree/master/static/werlive05&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Material&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://youtu.be/AKJo_Q0dsMI&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Video&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;uwe-r-live-06---extraindo-dados-climáticos-para-pontosu&#34;&gt;&lt;u&gt;We R Live 06 - Extraindo dados climáticos para pontos&lt;/u&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://werlive.netlify.app/werlive06/werlive06&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Slides&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://gitlab.com/geocastbrasil/liver/-/tree/master/static/werlive06&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Material&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://youtu.be/-_ODMFDU6ck&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Video&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;uwe-r-live-07---introdução-à-estatística-espacial-iu&#34;&gt;&lt;u&gt;We R Live 07 - Introdução à Estatística Espacial I&lt;/u&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://werlive.netlify.app/werlive07/werlive07&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Slides&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://gitlab.com/geocastbrasil/liver/-/tree/master/static/werlive07&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Material&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://youtu.be/fHWD4qyKj84&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Video&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;uwe-r-live-08---introdução-à-estatística-espacial-iiu&#34;&gt;&lt;u&gt;We R Live 08 - Introdução à Estatística Espacial II&lt;/u&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://werlive.netlify.app/werlive08/werlive08&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Slides&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://gitlab.com/geocastbrasil/liver/-/tree/master/static/werlive08&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Material&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://youtu.be/BCl_V-SpQec&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Video&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;uwe-r-live-09---introdução-à-estatística-espacial-iiiu&#34;&gt;&lt;u&gt;We R Live 09 - Introdução à Estatística Espacial III&lt;/u&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://werlive.netlify.app/werlive09/werlive09&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Slides&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://gitlab.com/geocastbrasil/liver/-/tree/master/static/werlive09&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Material&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://youtu.be/eaR7pTsQFDQ&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Video&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;uwe-r-live-10---join-como-associar-dados-à-vetoresu&#34;&gt;&lt;u&gt;We R Live 10 - Join como associar dados à vetores&lt;/u&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://werlive.netlify.app/werlive10/werlive10&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Slides&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://gitlab.com/geocastbrasil/liver/-/tree/master/static/werlive10&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Material&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://youtu.be/BvURukaIDM0&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Video&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;uwe-r-live-11---florestal---pacote-para-inventário-florestal-no-r-com-igor-cobelou&#34;&gt;&lt;u&gt;We R Live 11 - florestal - Pacote para inventário florestal no R com Igor Cobelo&lt;/u&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/igorcobelo/florestal&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Material&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://youtu.be/xOgsVywKADI&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Video&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;uwe-r-live-12---geografia-das-eleições-com-lucas-gelapeu&#34;&gt;&lt;u&gt;We R Live 12 - Geografia das Eleições com Lucas Gelape&lt;/u&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://lgelape.github.io/blog/geografia_eleicoes/geografia_eleitoral_slides.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Slides&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://youtu.be/KN4kkvKkb_w&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Video&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;uwe-r-live-13---introdução-à-estatística-espacial-ivu&#34;&gt;&lt;u&gt;We R Live 13 - Introdução à estatística Espacial IV&lt;/u&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://werlive.netlify.app/werlive13/werlive13&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Slides&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://gitlab.com/geocastbrasil/liver/-/tree/master/static/werlive13&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Material&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://youtu.be/IsOJvaWdyXE&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Video&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;uwe-r-live-14---geoestatística-com-prof-jorge-kazuo-yamamotou&#34;&gt;&lt;u&gt;We R Live 14 - Geoestatística com Prof. Jorge Kazuo Yamamoto&lt;/u&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://werlive.netlify.app/werlive14/apresentacaoJKY_25082020.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Slides&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://youtu.be/aIdntosdKIo&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Video&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;uwe-r-live-15---introdução-à-estatística-espacial-vu&#34;&gt;&lt;u&gt;We R Live 15 - Introdução à estatística Espacial V&lt;/u&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://werlive.netlify.app/werlive15/werlive15&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Slides&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://gitlab.com/geocastbrasil/liver/-/tree/master/static/werlive15&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Material&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://youtu.be/IeGTr7mjZIc&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Video&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;uwe-r-live-16-r-markdown-usando-o-r-para-comunicar-seus-resultados-com-beatriz-milzu&#34;&gt;&lt;u&gt;We R Live 16: R Markdown: usando o R para comunicar seus resultados com Beatriz Milz&lt;/u&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://beatrizmilz.github.io/slidesR/rmarkdown/rmarkdown_packages.html#1&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Slides&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://beamilz.netlify.app/rmarkdown.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Material&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://youtu.be/6oPZ5sGt6LA&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Video&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h1 id=&#34;we-r-live-coding&#34;&gt;We R Live Coding&lt;/h1&gt;
+&lt;p&gt;We started another idea: doing live coding, where we developed code from scratch&lt;/p&gt;
+&lt;h3 id=&#34;uwe-r-live-coding-01---insomniau&#34;&gt;&lt;u&gt;We R Live Coding 01 - Insomnia&lt;/u&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://gitlab.com/geocastbrasil/we-r-live-coding/-/tree/master/livecoding01&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Material&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://youtu.be/I4ErDOwdXrk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Video&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;uwe-r-live-coding-02---on-fireu&#34;&gt;&lt;u&gt;We R Live Coding 02 - On fire!&lt;/u&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://gitlab.com/geocastbrasil/we-r-live-coding/-/tree/master/livecoding02&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Material&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://youtu.be/5BipR4L-n1Q&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Video&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;uwe-r-live-coding-03---on-fire-ii-com-prof-gustavo-baptistau&#34;&gt;&lt;u&gt;We R Live Coding 03 - On fire II com Prof. Gustavo Baptista&lt;/u&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://gitlab.com/geocastbrasil/we-r-live-coding/-/blob/master/livecoding03&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Material&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://youtu.be/CQw8n_WpTMI&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Video&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -51,7 +110,7 @@
     </item>
     
     <item>
-      <title>Introdução à linguagem R: manipulação e visualização de dados</title>
+      <title>Introduction to R Language</title>
       <link>https://mauriciovancine.github.io/workshop/2019_workshop_r_unesp_ecology/</link>
       <pubDate>Wed, 06 Nov 2019 08:00:00 +0000</pubDate>
       <guid>https://mauriciovancine.github.io/workshop/2019_workshop_r_unesp_ecology/</guid>
@@ -59,12 +118,12 @@
 &lt;script src=&#34;index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
-&lt;p&gt;A linguagem R vem se destacando nos últimos anos (desde de 2000), como a principal ferramenta para manejo, visualização e análise de dados, principalmente na área de Ecologia, Psicologia, Economia, e mais recentemente, na Ciência de Dados. Neste curso serão abordados quatro temas introdutórios dessa linguagem: (i) introdução e funcionamento da linguagem R e do software RStudio, (ii) estrutura e manipulação de dados, (iii) introdução ao tidyverse, e (iv) visualização de dados. A carga horária será de aproximadamente 08 horas, onde será focada a parte teórico-prática, intercalada com a realização de exercícios para fixação do conteúdo. Ao final do curso, espera-se que os participantes tenham uma noção geral do funcionamento da linguagem e das potenciais aplicações dentro da área de análise de dados ecológicos&lt;/p&gt;
+&lt;p&gt;The R language has stood out in recent years (since 2000), as the main tool for data management, visualization and analysis, mainly in the area of Ecology, Psychology, Economics, and more recently, in Data Science. In this course, four introductory themes of this language will be addressed: (i) introduction and operation of the R language and RStudio software, (ii) data structure and manipulation, (iii) introduction to tidyverse, and (iv) data visualization. The workload will be approximately 08 hours, where the theoretical-practical part will be focused, interspersed with exercises to fix the content. At the end of the course, participants are expected to have a general understanding of language functioning and potential applications within the area of ecological data analysis&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>Introdução à linguagem R: manipulação e visualização de dados</title>
+      <title>Introduction to R Language</title>
       <link>https://mauriciovancine.github.io/workshop/2019_workshop_r_unesp_biology/</link>
       <pubDate>Wed, 23 Oct 2019 14:00:00 +0000</pubDate>
       <guid>https://mauriciovancine.github.io/workshop/2019_workshop_r_unesp_biology/</guid>
@@ -72,12 +131,12 @@
 &lt;script src=&#34;index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
-&lt;p&gt;A linguagem R vem se destacando nos últimos anos (desde de 2000), como a principal ferramenta para manejo, visualização e análise de dados, principalmente na área de Ecologia, Psicologia, Economia, e mais recentemente, na Ciência de Dados. Neste curso serão abordados quatro temas introdutórios dessa linguagem: (i) introdução e funcionamento da linguagem R e do software RStudio, (ii) estrutura e manipulação de dados, (iii) introdução ao tidyverse, e (iv) visualização de dados. A carga horária será de aproximadamente 08 horas, onde será focada a parte teórico-prática, intercalada com a realização de exercícios para fixação do conteúdo. Ao final do curso, espera-se que os participantes tenham uma noção geral do funcionamento da linguagem e das potenciais aplicações dentro da área de análise de dados ecológicos&lt;/p&gt;
+&lt;p&gt;The R language has stood out in recent years (since 2000), as the main tool for data management, visualization and analysis, mainly in the area of Ecology, Psychology, Economics, and more recently, in Data Science. In this course, four introductory themes of this language will be addressed: (i) introduction and operation of the R language and RStudio software, (ii) data structure and manipulation, (iii) introduction to tidyverse, and (iv) data visualization. The workload will be approximately 08 hours, where the theoretical-practical part will be focused, interspersed with exercises to fix the content. At the end of the course, participants are expected to have a general understanding of language functioning and potential applications within the area of ecological data analysis&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>Introdução à modelagem de distribuição de espécies usando a linguagem R: teoria e prática</title>
+      <title>Introduction to Species Distribution Modeling using R Language: theory and practice</title>
       <link>https://mauriciovancine.github.io/workshop/2019_workshop_sdm_cbh/</link>
       <pubDate>Mon, 22 Jul 2019 08:00:00 +0000</pubDate>
       <guid>https://mauriciovancine.github.io/workshop/2019_workshop_sdm_cbh/</guid>
@@ -85,7 +144,7 @@
 &lt;script src=&#34;index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
-&lt;p&gt;A ampla disponibilidade de dados sobre a biodiversidade e variáveis ambientais, tem permitido a utilização de diversas análises biogeográficas e macroecológicas, dentre elas, os modelos de distribuição de espécies (MDE). Esse minicurso tem como intuito oferecer uma introdução teórica e prática à técnica de MDE, utilizando a linguagem R. Primeiramente serão apresentados os principais conceitos da teoria de nicho ecológico (Grinnell, Elton e Hutchinson) e da teoria de modelos (espaço geográfico (G), espaço ambiental (E) e diagrama Biótico-Abiótico-Movimentação (BAM)). Seguida à parte teórica, serão apresentados as principais bases de dados (ocorrências e variáveis ambientais), tipos de algoritmos (presença e ausência – GLM, GAM e Random Forest, apenas presença – BIOCLIM, Mahalanobis e Gower, e presença e background – Maxent e SVM), avaliação dos modelos (ROC, AUC e TSS), limites de corte (thresholds) e algumas abordagens de consenso de modelos (ensembles). A parte prática será focada na construção dos modelos através da linguagem R. Inicialmente será feito uma introdução à programação e manejo de dados espaciais na linguagem R, utilizando os pacotes raster e rgdal. Em seguida, será apresentado como obter dados de ocorrências e variáveis ambientais, através dos pacotes spooc e dismo. Uma vez adquiridos os dados, serão feitas análises preliminares dos mesmos, como seleção de ocorrências (um ponto por célula) e de variáveis (correlação, PCA, análise fatorial e VIF). Por fim, serão construídos modelos utilizando os algoritmos mencionados acima, além do cálculo das métricas de avaliação dos mesmos, utilizando os pacotes dismo, randomForest e kernlab.&lt;/p&gt;
+&lt;p&gt;The wide availability of data on biodiversity and environmental variables, has allowed the use of several biogeographic and macroecological analyzes, among them, the species distribution models (MDE). This short course aims to offer a theoretical and practical introduction to the EAW technique, using the R language. First, the main concepts of ecological niche theory (Grinnell, Elton and Hutchinson) and model theory (geographic space (G) , environmental space (E) and Biotic-Abiotic-Movement diagram (BAM)). Following the theoretical part, the main databases (occurrences and environmental variables), types of algorithms (presence and absence - GLM, GAM and Random Forest, only presence - BIOCLIM, Mahalanobis and Gower, and presence and background - Maxent and SVM), model evaluation (ROC, AUC and TSS), thresholds and some model consensus approaches (ensembles). The practical part will be focused on building models using the R language. Initially, an introduction to the programming and handling of spatial data in the R language will be made, using the raster and rgdal packages. Then, it will be presented how to obtain data of occurrences and environmental variables, through spooc and dismo packages. Once the data is acquired, preliminary analyzes will be made, such as selection of occurrences (one point per cell) and variables (correlation, PCA, factor analysis and VIF). Finally, models will be built using the algorithms mentioned above, in addition to calculating the evaluation metrics, using the dismo, randomForest and kernlab packages.&lt;/p&gt;
 </description>
     </item>
     

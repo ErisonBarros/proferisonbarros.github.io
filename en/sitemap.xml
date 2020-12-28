@@ -5,6 +5,16 @@
   <url>
     <loc>https://mauriciovancine.github.io/cv/</loc>
     <lastmod>2020-12-28T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="https://mauriciovancine.github.io/pt/cv/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://mauriciovancine.github.io/cv/"
+                />
   </url>
   
   <url>
@@ -375,6 +385,16 @@
   <url>
     <loc>https://mauriciovancine.github.io/video/2020-05-05-werlive/</loc>
     <lastmod>2020-05-05T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="https://mauriciovancine.github.io/pt/video/2020-05-05-werlive/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://mauriciovancine.github.io/video/2020-05-05-werlive/"
+                />
   </url>
   
   <url>
@@ -408,17 +428,17 @@
   </url>
   
   <url>
-    <loc>https://mauriciovancine.github.io/tag/species-distribution-modelling/</loc>
+    <loc>https://mauriciovancine.github.io/tag/species-distribution-modeling/</loc>
     <lastmod>2020-03-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pt"
-                href="https://mauriciovancine.github.io/pt/tag/species-distribution-modelling/"
+                href="https://mauriciovancine.github.io/pt/tag/species-distribution-modeling/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://mauriciovancine.github.io/tag/species-distribution-modelling/"
+                href="https://mauriciovancine.github.io/tag/species-distribution-modeling/"
                 />
   </url>
   
@@ -884,6 +904,21 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://mauriciovancine.github.io/workshop/2019_workshop_sdm_cbh/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://mauriciovancine.github.io/tag/species-distribution-modelling/</loc>
+    <lastmod>2018-07-30T02:20:01-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="https://mauriciovancine.github.io/pt/tag/species-distribution-modelling/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://mauriciovancine.github.io/tag/species-distribution-modelling/"
                 />
   </url>
   
@@ -1650,6 +1685,11 @@
                 hreflang="en"
                 href="https://mauriciovancine.github.io/project/fapesp_2017/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://mauriciovancine.github.io/tag/knowledge-gap/</loc>
+    <lastmod>2018-02-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
