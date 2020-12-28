@@ -1,0 +1,745 @@
+---
+title: "Maurício Vancine"
+author: Maurício Vancine
+date: "`r Sys.Date()`"
+output:
+  pagedown::html_resume:
+    # set it to true for a self-contained HTML page but it'll take longer to render
+    self_contained: true
+    css: resume.css
+---
+
+Aside
+================================================================================
+
+Contato {#contact}
+--------------------------------------------------------------------------------
+- `r icon::fontawesome("link")` [mauriciovancine.github.io](https://mauriciovancine.github.io/)
+- `r icon::fontawesome("envelope", style = "solid")` mauricio.vancine@gmail.com
+- `r icon::fontawesome("twitter")` [mauriciovancine](https://twitter.com/mauriciovancine)
+- `r icon::fontawesome("github")` [github/mauriciovancine](https://github.com/mauriciovancine)
+
+Temas {#contact}
+--------------------------------------------------------------------------------
+- `r icon::fontawesome("globe")` `Ecologia Espacial`  
+- `r icon::fontawesome("globe-americas")` `Ecologia da Paisagem`  
+- `r icon::fontawesome("chart-bar")` `Modelagem Ecológica`  
+- `r icon::fontawesome("layer-group")` `Modelagem de Distribuição de Espécies`  
+- `r icon::fontawesome("map-marked-alt")` `Geoprocessamento`  
+- `r icon::fontawesome("chalkboard-teacher")` `Ensino de Ecologia, Estatística e R`
+
+Programação {#contact}
+--------------------------------------------------------------------------------
+- `r icon::fontawesome("r-project")` [`R`](https://www.r-project.org/)  
+- `r icon::fontawesome("laptop-code")` [`tidyverse`](https://www.tidyverse.org/)  
+- `r icon::fontawesome("markdown")` [`markdown`](https://daringfireball.net/projects/markdown/)  
+- `r icon::fontawesome("code-branch")` [`Git`](https://git-scm.com/)  
+- `r icon::fontawesome("python")` [`Python`](https://www.python.org/)  
+- `r icon::fontawesome("terminal")` [`Bash`](https://www.gnu.org/software/bash/)
+
+Softwares {#contact}
+--------------------------------------------------------------------------------
+- `r icon::fontawesome("quora")` [`QGIS`](https://qgis.org/en/site/)  
+- `r icon::fontawesome("pagelines")` [`GRASS GIS`](https://grass.osgeo.org/)  
+- `r icon::fontawesome("linux")` [`GNU/Linux`](https://www.gnu.org/gnu/linux-and-gnu.html)
+
+Disclaimer
+------------------------------------
+CV pelo pacote [**pagedown**](https://github.com/rstudio/pagedown).  
+Código em `r icon::fontawesome("github")` [GitHub](https://github.com/mauriciovancine/cv).  
+Atualizado em `r Sys.Date()`.
+
+[Download a PDF of this CV](https://mauriciovancine.github.io/cv/cv_mauricio_vancine_pt_academic_complete.pdf)
+
+Main
+================================================================================
+
+Maurício Vancine {#title}
+--------------------------------------------------------------------------------
+
+Ecólogo e Doutorando em Ecologia, Evolução e Biodiversidade
+
+Formação {data-icon=graduation-cap}
+--------------------------------------------------------------------------------
+
+### Universidade Estadual Paulista (UNESP)
+
+[Doutorando em Ecologia, Evolução e Biodiversidade](https://ib.rc.unesp.br/#!/pos-graduacao/secao-tecnica-de-pos/programas/zoologia/)
+
+Rio Claro, SP, Brasil
+
+2020 - Presente
+
+**Tese**: Efeito das modificações da paisagem sobre comunidades de anfíbios na Mata Atlântica  
+**Orientador**: Prof. Milton Cezar Ribeiro
+
+### Universidade Estadual Paulista (UNESP)
+
+[Mestre em Zoologia](https://ib.rc.unesp.br/#!/pos-graduacao/secao-tecnica-de-pos/programas/zoologia/)
+
+Rio Claro, SP, Brasil
+
+2016 - 2018
+
+**Dissertação**:  Diversidade, Distribuição e Efeito das Mudanças Climáticas sobre Comunidades de Anfíbios da Mata Atlântica ([Biblioteca UNESP](https://repositorio.unesp.br/handle/11449/154993))  
+**Orientador**: Prof. Célio Fernando Baptista Haddad
+
+### Universidade Estadual Paulista (UNESP)
+
+[Bacharel em Ecologia](https://ib.rc.unesp.br/#!/graduacao/cursos-conselho-de-curso/ecologia/)
+
+Rio Claro, SP, Brasil
+
+2011 - 2015
+
+**Tese de conclusão**: Efeito da fragmentação sobre a persistência de anfíbios anuros (Amphibia: Anura) na Mata Atlântica ([Biblioteca UNESP](https://repositorio.unesp.br/handle/11449/138991))  
+**Orientador**: Prof. Milton Cezar Ribeiro
+
+Formação Complementar {data-icon=book}
+--------------------------------------------------------------------------------
+
+### Hierarchical Modelling of Species Communities with the R-package Hmsc
+
+Universidade de Helsinki
+
+Helsinki, Finlândia (Zoom)
+
+2020
+
+::: concise
+- 25 h 
+:::
+
+### School on Community Ecology: from patterns to principles
+
+Universidade Estadual Paulista (UNESP)
+
+São Paulo, SP, Brasil
+
+2020
+
+::: concise
+- 60 h 
+:::
+
+### Introdução à Modelagem Hierárquica
+
+Federal University of Rio Grande do Sul (UFRGS)
+
+Porto Alegre, RS, Brasil
+
+2019
+
+::: concise
+- 45 h 
+:::
+
+### Geoprocessamento com GRASS GIS
+
+Universidade Estadual Paulista (UNESP)
+
+Rio Claro, SP, Brasil
+
+2016
+
+::: concise
+- 24 h 
+:::
+
+### V Southern-Summer School on Mathematical Biology
+
+Universidade Estadual Paulista (UNESP)
+
+São Paulo, SP, Brasil
+
+2016
+
+::: concise
+- 53 h 
+:::
+
+### Biologia e Conservação de Anfíbios e Répteis
+
+Instituto Boitatá, IBEC
+
+Alfenas, MG, Brasil
+
+2015
+
+::: concise
+- 44 h 
+:::
+
+### Análises de Dados Ecológicos com R
+
+Universidade Estadual Paulista (UNESP)
+
+Rio Claro, SP, Brasil
+
+2011
+
+::: concise
+- 40 h 
+:::
+
+Bolsas e Prêmios {data-icon=award}
+--------------------------------------------------------------------------------
+
+### Bolsa de Doutorado
+
+Coordenação de Aperfeiçoamento de Pessoal de Nível Superior (Capes) (R$ 118.680,00)  
+Universidade Estadual Paulista (UNESP)  
+Bolsa [88887.513979/2020-00]()
+
+Rio Claro, SP, Brasil
+
+2020 - 2024
+
+**Título**: Efeito das modificações da paisagem sobre comunidades de anfíbios na Mata Atlântica  
+**Objetivos**: Em desenvolvimento
+
+### Bolsa de Mestrado
+
+Fundação de Amparo à Pesquisa do Estado de São Paulo (FAPESP) (R$ 16.248,54)  
+Universidade Estadual Paulista (UNESP)  
+Bolsa [#2017/09676-8](https://bv.fapesp.br/pt/bolsas/172826/efeito-das-modificacoes-da-paisagem-e-das-mudancas-climaticas-sobre-a-persistencia-de-anfibios-na-ma/)
+
+Rio Claro, SP, Brasil
+
+2017 - 2018
+
+**Título**: Efeito das Modificações da Paisagem e das Mudanças Climáticas sobre a Persistência de Anfíbios na Mata Atlântica  
+**Objetivos**: (1) apresentar uma avaliação dos levantamentos das comunidades de anfíbios para a Mata Atlântica, sua composição e distribuição; (2) investigar como a perda e fragmentação de habitat, na escala regional, podem afetar a persistência atual de anfíbios de diferentes guildas reprodutivas; e (3) averiguar como as mudanças climáticas podem afetar a persistência futura de anfíbios do gênero *Brachycephalus*, considerado altamente sensível a essas alterações climáticas
+
+### Bolsa de Iniciação Científica
+
+Fundação de Amparo à Pesquisa do Estado de São Paulo (FAPESP) (R$ 10.539,87)  
+Universidade Estadual Paulista (UNESP)  
+Bolsa [#2013/02883-7](https://bv.fapesp.br/pt/bolsas/142421/efeito-da-fragmentacao-sobre-a-persistencia-de-anfibios-anuros-amphibia-anura-na-mata-atlantica/)
+
+Rio Claro, SP, Brasil
+
+2013 - 2015
+
+**Título**: Efeito da fragmentação sobre a persistência de anfíbios anuros (Amphibia: Anura) na Mata Atlântica  
+**Objetivos**: (1) modelar a distribuição potencial com base na adequabilidade ambiental das espécies de interesse para o Bioma da Mata Atlântica; (2) identificar as paisagens com alta adequabilidade ambiental e com levantamentos com elevado esforço amostral, a fim de caracterizar a anurofauna regional; (3) avaliar a contribuição relativa dos índices da paisagem (% de cobertura florestal, conectividade, relevo e proximidade urbana) para a persistência das espécies utilizando seleção de modelos por múltiplas hipóteses concorrentes com base na teoria de informação de Akaike
+
+Experiência em Pesquisa {data-icon=laptop}
+--------------------------------------------------------------------------------
+
+### Assistente de Pesquisa
+
+Universidade Estadual Paulista (UNESP)  
+[Labotatório de Ecologia Espacial e Conservação (LEEC)](https://ib.rc.unesp.br/#!/departamentos/ecologia/leec/home/)
+
+Rio Claro, SP, Brasil
+
+2015 - 2016
+
+Análises estatísticas e espaciais da biodiversidade de mamíferos e formigas no Bioma da Mata Atlântica
+
+::: concise
+- 2000 h 
+:::
+
+::: aside
+De 2015 a 2016, fui assistente de pesquisa do Prof. Milton Cezar Ribeiro, onde desenvolvi análises estatísticas e espaciais da biodiversidade de mamíferos e formigas no Bioma Mata Atlântica
+:::
+
+Experiência Profissional {data-icon=suitcase}
+--------------------------------------------------------------------------------
+
+### Consultor ambiental
+
+[Seleção Natural](http://selecaonatural.net/)
+
+Piracicaba, SP, Brasil
+
+2020
+
+::: concise
+- Corredores ecológicos
+- Métricas da paisagem 
+:::
+
+::: aside
+Desde 2016, tenho trabalhado como consultor ambiental autônomo na área de geoprocessamento, análise de dados ecológicos, ecologia da paisagem e modelagem de distribuição de espécies
+:::
+
+### Consultor ambiental
+
+[PROECO Ambiental](http://www.proecoambiental.com.br/)
+
+Poços de Caldas, MG, Brasil
+
+2019 - 2021
+
+::: concise
+- Modelos de Distribuição de Espécies 
+:::
+
+### Consultor ambiental
+
+[Seleção Natural](http://selecaonatural.net/)
+
+Piracicaba, SP, Brasil
+
+2018 - 2019
+
+::: concise
+- Analista de dados ecológicos
+:::
+
+### Consultor ambiental
+
+[Aquaflora](https://joao006.wixsite.com/consaquaflora)
+
+Curitiba, PR, Brasil
+
+2018 - 2019
+
+::: concise
+- Modelos de Distribuição de Espécies
+:::
+
+::: aside
+Entre 2018 e 2019 compus um grupo de analistas para avaliar os impactos do rompimento da barragem em Marina/MG sobre a Bacia do Rio Doce, onde compilei informações de cobertura da terra e desenvolvi modelos de distribuição de espécies terrestres e aquáticos
+:::
+
+
+### Consultor ambiental
+
+Associação de Levantamento Florestal do Amazonas
+
+Manaus, AM, Brasil
+
+2018 - 2019
+
+::: concise
+- Shiny App
+:::
+
+### Consultor ambiental
+
+ECOnecta
+
+Rio Claro, SP, Brasil
+
+2018 - 2019
+
+::: concise
+- Especialista em SIG
+- GRASS GIS
+:::
+
+### Consultor ambiental
+
+[Geoinform](http://www.geoinform.com.br/)
+
+Rio Claro, SP, Brasil
+
+2015 - 2016
+
+::: concise
+- Assistente de campo
+:::
+
+Experiência de Ensino {data-icon=chalkboard-teacher}
+--------------------------------------------------------------------------------
+
+### <u>Disciplinas</u>
+
+Total de horas    
+Pós-Graduação: 240 h  
+Graduação: 102 h
+
+N/A
+
+N/A
+
+::: aside
+Desde 2015, desenvolvendo atividades docentes, inicialmente como monitor. Mais recentemente, desde 2016, ministro disciplinas de graduação e pós-graduação, principalmente disciplinas relacionadas à Ecologia Espacial, Modelos Estatísticos em Ecologia e Geoprocessamento
+:::
+
+### [Introdução à análise geoespacial com R](https://mauriciovancine.github.io/disciplina-analise-geoespacial-r/)
+
+Professor convidado no Programa de Pós-Graduação em Ecologia, Evolução e Biodiversidade  
+Universidade Estadual Paulista (UNESP)
+
+Rio Claro, SP, Brasil
+
+2020
+
+::: concise
+- 60 h 
+:::
+
+### Modelos Estatísticos em Ecologia
+
+Professor substitudo na Graduação em Ecologia  
+Universidade Estadual Paulista (UNESP)
+
+Rio Claro, SP, Brasil
+
+2020
+
+::: concise
+- 30 h 
+:::
+
+### [Introdução ao Geoprocessamento para Etnobiologia e Conservação da Biodiversidade](https://github.com/mauriciovancine/disciplina-geoprocessamento)
+
+Professor externo convidado no Programa de Pós-Graduação em Etnobiologia e Conservação da Natureza  
+Universidade Federal Rural de Pernambuco (UFRPE)
+
+Recife, PE, Brasil
+
+2019
+
+::: concise
+- 45 h 
+:::
+
+### Modelos Estatísticos em Ecologia
+
+Professor assistente na Graduação em Ecologia  
+Universidade Estadual Paulista (UNESP)
+
+Rio Claro, SP, Brasil
+
+2018
+
+::: concise
+- 12 h 
+:::
+
+### Modelagem de Nicho Ecológico: teoria e prática
+
+Professor assistente no Programa de Pós-Graduação em Ecologia e Biodiversidade  
+Universidade Estadual Paulista (UNESP)
+
+Rio Claro, SP, Brasil
+
+2017
+
+::: concise
+- 60 h 
+:::
+
+### Modelagem de Nicho Ecológico: teoria e prática
+
+Professor assistente no Programa de Pós-Graduação em Ecologia e Biodiversidade  
+Universidade Estadual de Campinas (UNICAMP)
+
+Campinas, SP, Brasil
+
+2016
+
+::: concise
+- 45 h 
+:::
+
+### Modelagem de Nicho Ecológico no R
+
+Professor assistente no Programa de Pós-Graduação em Ecologia e Biodiversidade  
+Universidade Estadual Paulista (UNESP)
+
+Rio Claro, SP, Brasil
+
+2016
+
+::: concise
+- 30 h 
+:::
+
+### Ecologia Quantitativa
+
+Monitor na Graduação em Ecologia  
+Universidade Estadual Paulista (UNESP)
+
+Rio Claro, SP, Brasil
+
+2015
+
+::: concise
+- 60 h 
+:::
+
+### <u>Minicursos</u>
+
+Total de horas: 78 h
+
+N/A
+
+N/A
+
+### [Introdução à linguagem R](https://github.com/mauriciovancine/r-minicurso-see-2019)
+
+Instrutor de minicurso  
+[XXX Semana de Estudos da Ecologia](http://www.rc.unesp.br/see/), Universidade Estadual Paulista (UNESP)
+
+Rio Claro, SP, Brasil
+
+2019
+
+::: concise
+- 08 h 
+:::
+
+### [Introdução à linguagem R](https://github.com/mauriciovancine/r-minicurso-sebio-2019)
+
+Instrutor de minicurso  
+[30ª Semana de Estudos da Biologia](https://www.facebook.com/SEBioRC/), Universidade Estadual Paulista (UNESP)
+
+Rio Claro, SP, Brasil
+
+2019
+
+::: concise
+- 08 h 
+:::
+
+### [Introdução à modelagem de distribuição de espécies usando a linguagem R: teoria e prática](https://github.com/mauriciovancine/r-minicurso-sdm-9-cbh)
+
+Instrutor de minicurso  
+[9º Congresso Brasileiro de Herpetology](https://9cbh.galoa.com.br/)
+
+Campinas, SP, Brasil
+
+2019
+
+::: concise
+- 07 h 
+:::
+
+### Trabalho de campo com anfíbios
+
+Instrutor de minicurso  
+[29ª Semana de Estudos da Biologia](https://www.facebook.com/SEBioRC/), Universidade Estadual Paulista (UNESP)
+
+Rio Claro, SP, Brasil
+
+2018
+
+::: concise
+- 08 h 
+:::
+
+### Herpetologia de campo
+
+Instrutor de minicurso  
+[XXVII Semana de Estudos da Ecologia](http://www.rc.unesp.br/see/), Universidade Estadual Paulista (UNESP)
+
+Rio Claro, SP, Brasil
+
+2016
+
+::: concise
+- 15 h 
+:::
+
+### Introdução ao software R: gerenciamento de dados, gráficos e análise estatística
+
+Instrutor de minicurso  
+[XXVII Semana de Estudos da Ecologia](http://www.rc.unesp.br/see/), Universidade Estadual Paulista (UNESP)
+
+Rio Claro, SP, Brasil
+
+2016
+
+::: concise
+- 16 h 
+:::
+
+### Introdução ao software R
+
+Instrutor de minicurso  
+[XXVI Semana de Estudos da Ecologia](http://www.rc.unesp.br/see/), Universidade Estadual Paulista (UNESP)
+
+Rio Claro, SP, Brasil
+
+2015
+
+::: concise
+- 08 h 
+:::
+
+### Organização de dados em folhas eletrônicas - Calc
+
+Instrutor de minicurso  
+[XXV Semana de Estudos da Ecologia](http://www.rc.unesp.br/see/), Universidade Estadual Paulista (UNESP)
+
+Rio Claro, SP, Brasil
+
+2014
+
+::: concise
+- 08 h 
+:::
+
+Publicações {data-icon=file}
+--------------------------------------------------------------------------------
+
+::: aside
+**Citações**  
+[Publons](https://publons.com/researcher/F-7305-2016/)  
+[Scopus](https://www.scopus.com/authid/detail.uri?authorId=57193451888)  
+[Google Scholar](https://scholar.google.com/citations?user=i-2xZBQAAAAJ)  
+:::
+
+### 13. Host diversity outperforms climate as a global driver of symbiont diversity in the bird‐feather mite system
+
+*Diversity and Distributions*
+
+N/A
+
+2020
+
+DOI: [10.1111/ddi.13201](https://doi.org/10.1111/ddi.13201)
+<br>
+Gusmão RAF, Hernandes FRA, <u>**Vancine MH**</u>, Naka LN, Doña J, Gonçalves-Souza T
+
+
+### 12. Environmental niche and functional role similarity between invasive and native palms in the Atlantic Forest
+
+*Biological Invasions*
+
+N/A
+
+2020
+
+DOI: [10.1007/s10530-020-02400-8](https://doi.org/10.1007/s10530-020-02400-8)
+<br>
+Bello C, Cintra ALP, Barreto E, <u>**Vancine MH**</u>, Sobral-Souza T, Graham CH, Galetti M
+
+### 11. Effects of landscape modification on species richness patterns of fruit-feeding butterflies in Brasilian Atlantic Forest
+
+*Diversity and Distributions* 26(2):196-208
+
+N/A
+
+2020
+
+DOI: [10.1111/ddi.13007](https://doi.org/10.1111/ddi.13007)
+<br>
+Santos JP, Sobral-Souza T, Brown Jr KS, <u>**Vancine MH**</u>, Ribeiro MC, Freitas AVL
+
+### 10. Fragmented tropical forests lose mutualistic plant-animal interactions
+
+*Diversity and Distributions* 26(2):154-168
+
+N/A
+
+2020
+
+DOI: [10.1111/ddi.13010](https://doi.org/10.1111/ddi.13010)
+<br>
+Marjakangas E, Abrego N, Grøtan V, Lima RAF, Bello C, Bovendorp RS, Culot L, Hasui E, Muylaert RL, Lima F, Niebuhr B, Oliveira AA, Pereira L, Prado I, Stevens RD, <u>**Vancine MH**</u>, Ribeiro MC, Galetti M, Ovaskainen O
+
+### 9. Predicting the potential hybridization zones between native and invasive marmosets within Neotropical biodiversity hotspots
+
+*Global Ecology and Conservation* 20:e00706
+
+N/A
+
+2019
+
+DOI: [10.1016/j.gecco.2019.e00706](https://doi.org/10.1016/j.gecco.2019.e00706)
+<br>
+Moraes AM, <u>**Vancine MH**</u>, Moraes AM, Cordeiro CLO, Pinto MP, Lima AA, Culot L, Silva TSF, Collevatti RG, Ribeiro MC, Sobral-Souza T
+
+### 8. Land-use changes and the expansion of biofuel crops threaten the giant anteater in southeastern Brasil
+
+*Journal of Mammalogy* 100(2):435–444
+
+N/A
+
+2019
+
+DOI: [10.1093/jmammal/gyz042](https://doi.org/10.1093/jmammal/gyz042)
+<br>
+Bertassoni A, Costa RT, Gouvea JA, Bianchi BC, Ribeiro JW, <u>**Vancine MH**</u>, Ribeiro MC
+
+### 7. Spatial prediction of risk areas for vector transmission of Trypanosoma cruzi in the State of Paraná, southern Brasil
+
+*PLOS Neglected Tropical Diseases* 12(10):e0006907
+
+N/A
+
+2018
+
+DOI: [10.1371/journal.pntd.0006907](https://doi.org/10.1371/journal.pntd.0006907)
+<br>
+Ferro e Silva AM, Sobral-Souza T, <u>**Vancine MH**</u>, Muylaert RL, Abreu AP, Pelloso SM, Carvalho MDB, Andrade L, Ribeiro MC, Toledo MJO 
+
+### 6. A note on the territorial limits of the Atlantic Forest
+
+*Oecologia Australis* 22(3):302–311
+
+N/A
+
+2018
+
+DOI: [10.4257/oeco.2018.2203.09](https://doi.org/10.4257/oeco.2018.2203.09)
+<br>
+Muylaert RL, <u>**Vancine MH**</u>, Bernardo R, Oshima JEF, Sobral-Souza T, Tonett VR, Niebuhr BBS, Ribeiro MC
+
+### 5. ATLANTIC AMPHIBIANS: a data set of amphibian communities from the Atlantic Forests of South America
+
+*Ecology* 99(7):1692–1692
+
+N/A
+
+2018
+
+DOI: [10.1002/ecy.2392](https://doi.org/10.1002/ecy.2392)
+<br>
+<u>**Vancine MH**</u>, Duarte KS, Souza YS, Giovanelli JGR, Sobrinho PMM, López A, Bovo RP, Maffei F, Lion MB, Ribeiro-Júnior JW, Brassaloti R, Ortiz C, Sawakuchi HO, Forti LR, Cacciali P, Bertoluci J, Haddad CFB, Ribeiro MC
+
+### 4. Efficiency of protected areas in Amazon and Atlantic Forest conservation: A spatio-temporal view
+
+*Acta Oecologica* 87:1–7
+
+N/A
+
+2018
+
+DOI: [10.1016/j.actao.2018.01.001](https://doi.org/10.1016/j.actao.2018.01.001)
+<br>
+Sobral-Souza T, <u>**Vancine MH**</u>, Ribeiro MC, Lima-Ribeiro MS
+
+### 3. Forest cover influences occurrence of mammalian carnivores within Brasilian Atlantic Forest
+
+*Journal of Mammalogy* 98:1721–1731
+
+N/A
+
+2017
+
+DOI: [10.1093/jmammal/gyx103](https://doi.org/10.1093/jmammal/gyx103)
+<br>
+Regolin AL, Cherem JJ, Graipel ME, Bogoni JA, Ribeiro JW, <u>**Vancine MH**</u>, Tortato MA, Oliveira-Santos LG, Fantacini FM, Luiz MR, Castilho PV, Ribeiro MC, Cáceres, NC
+
+### 2. Impacts of mining activities on the potential geographic distribution of eastern Brasil mountaintop endemic species. 
+
+*Perspectives in Ecology and Conservation* 15(3):172–178
+
+N/A
+
+2017
+
+DOI: [10.1016/j.pecon.2017.07.005](https://doi.org/10.1016/j.pecon.2017.07.005)
+<br>
+De Castro Pena J, Goulart F, Fernandes GW, Hoffmann D, Leite FSF, Santos NB, Soares-Filho B, Sobral-Souza T, <u>**Vancine MH**</u>, Rodrigues M
+
+### 1. High mammal species turnover in forest patches immersed in biofuel plantations
+
+*Biological Conservation* 210:352–359
+
+N/A
+
+2017
+
+DOI: [10.1016/j.biocon.2017.02.033](https://doi.org/10.1016/j.biocon.2017.02.033)
+<br>
+Beca G, <u>**Vancine MH**</u>, Carvalho CS, Pedrosa F, Alves RSC, Buscariol D, Peres CA, Ribeiro MC, Galetti M
