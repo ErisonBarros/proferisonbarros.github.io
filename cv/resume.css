@@ -20,11 +20,11 @@
   --sidebar-horizontal-padding: 0.1in;
 
   /* XXX: using px for very good precision control */
-  --decorator-outer-offset-top: 10px;
-  --decorator-outer-offset-left: -5.5px;
+  --decorator-outer-offset-top: 12px;
+  --decorator-outer-offset-left: -6px;
   --decorator-border-width: 1px;
-  --decorator-outer-dim: 9px;
-  --decorator-border: 1px solid #ccc;
+  --decorator-outer-dim: 10px;
+  --decorator-border: 2px solid #ccc; /* Change timeline color and width*/
 
   --row-blocks-padding-top: 0.5rem;
   --date-block-width: 0.7in;
@@ -194,7 +194,7 @@ h1, h2{
 .date{
   flex: 0 0 var(--date-block-width);
   padding-top: calc(var(--row-blocks-padding-top) + 0.25rem) !important;
-  padding-right: var(--decorator-horizontal-margin);
+  padding-right: calc(var(--decorator-horizontal-margin) - 15rem); /* dates */
   font-size: 0.7rem;
   text-align: right;
   line-height: 1;
@@ -387,7 +387,7 @@ h1, h2{
 
 #disclaimer code{
   color: #666;
-  font-family: "Source Code Pro";
+  font-family: "Ubuntu";
   font-weight: 400;
   font-style: normal;
 }
@@ -423,3 +423,31 @@ a:hover {
 	text-decoration: underline;
 }
 
+/* Book icon isn't centered by default which is lame */
+.fa-book {
+  margin-top: 2px;
+}
+
+/* Award icon isn't centered by default which is lame */
+.fa-award {
+  margin-top: 2px;
+  margin-left: 2px;
+}
+
+/* Laptop icon isn't centered by default which is lame */
+.fa-laptop {
+  margin-top: 2px;
+  margin-left: -3px;
+}
+
+/* Chalkboard-teacher icon isn't centered by default which is lame */
+.fa-chalkboard-teacher {
+  margin-top: 2px;
+  margin-left: -4px;
+}
+
+/* file icon isn't centered by default which is lame */
+.fa-file {
+  margin-top: 2px;
+  margin-left: 1px;
+}
