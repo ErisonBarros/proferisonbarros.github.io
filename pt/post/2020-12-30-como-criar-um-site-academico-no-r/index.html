@@ -794,7 +794,7 @@
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    2 minutos de leitura
+    3 minutos de leitura
   </span>
   
 
@@ -852,25 +852,36 @@
 <p>Que o <a href="https://www.r-project.org/">R</a> possui múltiplas utilidades para análise e visualização de dados de <a href="https://cran.r-project.org/web/views/">diversos formatos</a> e em <a href="https://data-flair.training/blogs/r-applications/">diversas áreas</a> é indiscutível. Entretanto, a união dessa linguagem com o <a href="https://pt.wikipedia.org/wiki/Markdown">Markdown</a>, dando origem ao <a href="https://rmarkdown.rstudio.com/index.html">RMarkdown</a>, aliada ao IDE <a href="https://rstudio.com/products/rstudio/">RStudio</a> ainda pode ser novidade para muitas pessoas. Essa junção permite diversas possibilidades de criação de <a href="https://bookdown.org/yihui/rmarkdown/">aplicações complementares ao R</a>. Pretendo escrever mais sobre essa união e utilidades num post futuro.</p>
 <p>Neste post, vou focar nos passos para a criação de um site acadêmico no R, uma forma bem interessante que achei de desafiar meu conhecimento até então, e principalmente minha paciência…</p>
 <p>Existem várias formas de criar um <a href="https://wowchemy.com/templates/">site acadêmico</a>, mas focarei aqui no formato que consegui fazer de forma mais rápida e tranquila, usando o pacote <a href="https://cran.r-project.org/web/packages/blogdown/index.html">blogdown</a>, hospedando no <a href="https://github.com/">github</a>, com esse formato: &lt;username.github.io&gt;, <a href="https://git-scm.com/">git</a>, e o <a href="https://rstudio.com/products/rstudio/">RStudio</a>.</p>
-<p>Mais informações podem ser consultadas no livro do pacote <a href="https://bookdown.org/yihui/blogdown/">blogdown: Creating Websites with R Markdown</a>, do <a href="https://yihui.org/">Yihui Xie</a>. Além disso, há dois posts específicos <a href="https://alison.rbind.io/post/2017-06-12-up-and-running-with-blogdown/">post 01</a>
-e <a href="https://alison.rbind.io/post/2019-03-04-hugo-troubleshooting/">post 02</a> da <a href="https://alison.rbind.io/">Profa. Alison Hill</a>. Também há o <a href="https://diegopftrindade.netlify.app/post/blogdown-tutorial-in-portuguese/">post</a>
-do <a href="https://diegopftrindade.netlify.app/">Diego Trindade</a>, que tem uma descrição mais detalhada e uma discussão
-do porquê ter um site acadêmico.</p>
+<p>Todas as informações referentes à criação e onfiguração do site podem ser consultadas no livro do pacote <a href="https://bookdown.org/yihui/blogdown/">blogdown: Creating Websites with R Markdown</a>, do <a href="https://yihui.org/">Yihui Xie</a>.</p>
+<p>Outra fonte de informação são os geniais posts da <a href="https://alison.rbind.io/">Profa. Alison Hill</a>. Deixo eles listados em destaque aqui:</p>
+<ol style="list-style-type: decimal">
+<li><a href="https://alison.rbind.io/post/2017-06-12-up-and-running-with-blogdown/">Up &amp; Running with blogdown</a></li>
+<li><a href="https://alison.rbind.io/post/2019-02-19-hugo-archetypes/">A Spoonful of Hugo: Archetypes</a></li>
+<li><a href="https://alison.rbind.io/post/2019-02-19-hugo-netlify-toml/">A Spoonful of Hugo: The netlify.toml File</a></li>
+<li><a href="https://alison.rbind.io/post/2019-02-21-hugo-page-bundles/">A Spoonful of Hugo: Page Bundles</a></li>
+<li><a href="https://alison.rbind.io/post/2019-03-04-hugo-troubleshooting/">A Spoonful of Hugo: Troubleshooting Your Build</a></li>
+<li><a href="https://alison.rbind.io/post/2020-12-12-how-much-hugo/">A Spoonful of Hugo: How much Hugo do I need to know?</a></li>
+<li><a href="https://alison.rbind.io/post/2020-12-27-blogdown-checks/">Unbreak your blogdown site</a></li>
+</ol>
+<p>Fundamental destacar que só encontrei um <a href="https://diegopftrindade.netlify.app/post/blogdown-tutorial-in-portuguese/">post</a> em português do <a href="https://diegopftrindade.netlify.app/">Diego Trindade</a>. Nele é possível ler mais informações e também uma discussão muito legal sobro o porquê criar e manter um site acadêmico.</p>
 <div id="passos-para-criação-do-site" class="section level2">
 <h2>Passos para criação do site</h2>
-<div id="criar-contas-on-line" class="section level3">
-<h3>1. Criar contas on-line</h3>
+<p>Os passos à seguir seguem essa listagem:</p>
+<ol style="list-style-type: decimal">
+<li>GitHub</li>
+<li>RStudio</li>
+<li>Git</li>
+<li>Pacote blogdown</li>
+<li>Edição do site</li>
+</ol>
+</div>
+<div id="github" class="section level2">
+<h2>1. GitHub</h2>
 <p>Primeiramente é necessário criar duas contas on-line:</p>
 <ol style="list-style-type: decimal">
 <li>GitHub: <a href="https://github.com/" class="uri">https://github.com/</a></li>
+<li>Criar um repositório no GitHub</li>
 </ol>
-</div>
-<div id="criar-um-repositório-no-github" class="section level3">
-<h3>2. Criar um repositório no GitHub</h3>
-<div class="figure">
-<img src="blogdown-signpost-1.png" alt="" />
-<p class="caption">Fonte: post 01</p>
-</div>
 <p>Com a conta do GitHub feita, será necessário <a href="https://help.github.com/pt/github/getting-started-with-github/create-a-repo">criar um
 repositório</a>.
 Eu criei com o nome de “mauriciovancine2”, só de exemplo, mas pode ser
@@ -902,6 +913,17 @@ theme_example = TRUE, empty_dirs = TRUE, to_yaml = TRUE)</p></li>
 <li>linkar o site com o GitHub no Netlify</li>
 </ol>
 </div>
+<div id="rstudio" class="section level2">
+<h2>2. RStudio</h2>
+</div>
+<div id="git" class="section level2">
+<h2>3. Git</h2>
+</div>
+<div id="pacote-blogdown" class="section level2">
+<h2>4. Pacote blogdown</h2>
+</div>
+<div id="edição-do-site" class="section level2">
+<h2>5. Edição do site</h2>
 </div>
 
     </div>
@@ -1229,7 +1251,7 @@ theme_example = TRUE, empty_dirs = TRUE, to_yaml = TRUE)</p></li>
       
       <li><a href="/pt/video/2020-05-05-werlive/">We R Live</a></li>
       
-      <li><a href="/pt/workshop/2019_workshop_r_unesp_biology/">Introdução à linguagem R: manipulação e visualização de dados</a></li>
+      <li><a href="/pt/workshop/2019_workshop_r_unesp_ecology/">Introdução à linguagem R: manipulação e visualização de dados</a></li>
       
     </ul>
   </div>
