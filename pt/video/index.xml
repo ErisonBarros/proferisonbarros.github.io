@@ -17,226 +17,79 @@
       <link>https://mauriciovancine.github.io/pt/video/2020-05-05-werlive/</link>
       <pubDate>Tue, 05 May 2020 00:00:00 +0000</pubDate>
       <guid>https://mauriciovancine.github.io/pt/video/2020-05-05-werlive/</guid>
-      <description>
-
-
-&lt;h1 id=&#34;we-r-live&#34;&gt;We R Live&lt;a href=&#34;#we-r-live&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
-&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
-&lt;/svg&gt;&lt;/a&gt;
-&lt;/h1&gt;
+      <description>&lt;h1 id=&#34;we-r-live&#34;&gt;We R Live&lt;/h1&gt;
 &lt;p&gt;Eu e &lt;a href=&#34;https://twitter.com/FelipeSMBarros&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Felipe Sodré&lt;/a&gt;, por meio do canal  &lt;a href=&#34;https://www.youtube.com/channel/UCLAeX4dyujMoy4xqHvxSDpQ&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GeoCast Brasil&lt;/a&gt; no YouTube, criamos este projeto para compartilhar um pouco do nosso conhecimento sobre o manejo e visualização de dados geoespaciais através da linguagem R. Sempre partindo de uma situação problema, apresentamos os principais conceitos teóricos e abordagens práticas para a sua resolução&lt;/p&gt;
-
-
-
-&lt;h3 id=&#34;uwe-r-live-01---por-onde-começaru&#34;&gt;&lt;u&gt;We R Live 01 - Por onde começaR?&lt;/u&gt;&lt;a href=&#34;#uwe-r-live-01---por-onde-come%c3%a7aru&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
-&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
-&lt;/svg&gt;&lt;/a&gt;
-&lt;/h3&gt;
+&lt;h3 id=&#34;uwe-r-live-01---por-onde-começaru&#34;&gt;&lt;u&gt;We R Live 01 - Por onde começaR?&lt;/u&gt;&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&#34;https://werlive.netlify.app/werlive01/werlive01&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Slides&lt;/a&gt;&lt;br&gt;
 &lt;a href=&#34;https://gitlab.com/geocastbrasil/liver/-/tree/master/static/werlive01&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Material&lt;/a&gt;&lt;br&gt;
 &lt;a href=&#34;https://youtu.be/ZORFVdwtJ1U&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Video&lt;/a&gt;&lt;/p&gt;
-
-
-
-&lt;h3 id=&#34;uwe-r-live-02---elaborando-mapas-no-ru&#34;&gt;&lt;u&gt;We R Live 02 - Elaborando mapas no R&lt;/u&gt;&lt;a href=&#34;#uwe-r-live-02---elaborando-mapas-no-ru&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
-&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
-&lt;/svg&gt;&lt;/a&gt;
-&lt;/h3&gt;
+&lt;h3 id=&#34;uwe-r-live-02---elaborando-mapas-no-ru&#34;&gt;&lt;u&gt;We R Live 02 - Elaborando mapas no R&lt;/u&gt;&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&#34;https://werlive.netlify.app/werlive02/werlive02&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Slides&lt;/a&gt;&lt;br&gt;
 &lt;a href=&#34;https://gitlab.com/geocastbrasil/liver/-/tree/master/static/werlive02&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Material&lt;/a&gt;&lt;br&gt;
 &lt;a href=&#34;https://youtu.be/eHht0n3Ppcg&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Video&lt;/a&gt;&lt;/p&gt;
-
-
-
-&lt;h3 id=&#34;uwe-r-live-03---elaborando-mapa-no-r-com-tmapu&#34;&gt;&lt;u&gt;We R Live 03 - Elaborando mapa no R com tmap&lt;/u&gt;&lt;a href=&#34;#uwe-r-live-03---elaborando-mapa-no-r-com-tmapu&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
-&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
-&lt;/svg&gt;&lt;/a&gt;
-&lt;/h3&gt;
+&lt;h3 id=&#34;uwe-r-live-03---elaborando-mapa-no-r-com-tmapu&#34;&gt;&lt;u&gt;We R Live 03 - Elaborando mapa no R com tmap&lt;/u&gt;&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&#34;https://werlive.netlify.app/werlive03/werlive03&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Slides&lt;/a&gt;&lt;br&gt;
 &lt;a href=&#34;https://gitlab.com/geocastbrasil/liver/-/tree/master/static/werlive03&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Material&lt;/a&gt;&lt;br&gt;
 &lt;a href=&#34;https://youtu.be/BmlM25XQ3QA&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Video&lt;/a&gt;&lt;/p&gt;
-
-
-
-&lt;h3 id=&#34;uwe-r-live-04---manipulando-dados-raster-no-ru&#34;&gt;&lt;u&gt;We R Live 04 - Manipulando dados raster no R&lt;/u&gt;&lt;a href=&#34;#uwe-r-live-04---manipulando-dados-raster-no-ru&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
-&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
-&lt;/svg&gt;&lt;/a&gt;
-&lt;/h3&gt;
+&lt;h3 id=&#34;uwe-r-live-04---manipulando-dados-raster-no-ru&#34;&gt;&lt;u&gt;We R Live 04 - Manipulando dados raster no R&lt;/u&gt;&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&#34;https://werlive.netlify.app/werlive04/werlive04&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Slides&lt;/a&gt;&lt;br&gt;
 &lt;a href=&#34;https://gitlab.com/geocastbrasil/liver/-/tree/master/static/werlive04&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Material&lt;/a&gt;&lt;br&gt;
 &lt;a href=&#34;https://youtu.be/dFC9SuGLuX8&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Video&lt;/a&gt;&lt;/p&gt;
-
-
-
-&lt;h3 id=&#34;uwe-r-live-05---manipulando-dados-raster-no-r-iiu&#34;&gt;&lt;u&gt;We R Live 05 - Manipulando dados raster no R II&lt;/u&gt;&lt;a href=&#34;#uwe-r-live-05---manipulando-dados-raster-no-r-iiu&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
-&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
-&lt;/svg&gt;&lt;/a&gt;
-&lt;/h3&gt;
+&lt;h3 id=&#34;uwe-r-live-05---manipulando-dados-raster-no-r-iiu&#34;&gt;&lt;u&gt;We R Live 05 - Manipulando dados raster no R II&lt;/u&gt;&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&#34;https://werlive.netlify.app/werlive05/werlive05&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Slides&lt;/a&gt;&lt;br&gt;
 &lt;a href=&#34;https://gitlab.com/geocastbrasil/liver/-/tree/master/static/werlive05&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Material&lt;/a&gt;&lt;br&gt;
 &lt;a href=&#34;https://youtu.be/AKJo_Q0dsMI&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Video&lt;/a&gt;&lt;/p&gt;
-
-
-
-&lt;h3 id=&#34;uwe-r-live-06---extraindo-dados-climáticos-para-pontosu&#34;&gt;&lt;u&gt;We R Live 06 - Extraindo dados climáticos para pontos&lt;/u&gt;&lt;a href=&#34;#uwe-r-live-06---extraindo-dados-clim%c3%a1ticos-para-pontosu&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
-&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
-&lt;/svg&gt;&lt;/a&gt;
-&lt;/h3&gt;
+&lt;h3 id=&#34;uwe-r-live-06---extraindo-dados-climáticos-para-pontosu&#34;&gt;&lt;u&gt;We R Live 06 - Extraindo dados climáticos para pontos&lt;/u&gt;&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&#34;https://werlive.netlify.app/werlive06/werlive06&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Slides&lt;/a&gt;&lt;br&gt;
 &lt;a href=&#34;https://gitlab.com/geocastbrasil/liver/-/tree/master/static/werlive06&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Material&lt;/a&gt;&lt;br&gt;
 &lt;a href=&#34;https://youtu.be/-_ODMFDU6ck&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Video&lt;/a&gt;&lt;/p&gt;
-
-
-
-&lt;h3 id=&#34;uwe-r-live-07---introdução-à-estatística-espacial-iu&#34;&gt;&lt;u&gt;We R Live 07 - Introdução à Estatística Espacial I&lt;/u&gt;&lt;a href=&#34;#uwe-r-live-07---introdu%c3%a7%c3%a3o-%c3%a0-estat%c3%adstica-espacial-iu&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
-&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
-&lt;/svg&gt;&lt;/a&gt;
-&lt;/h3&gt;
+&lt;h3 id=&#34;uwe-r-live-07---introdução-à-estatística-espacial-iu&#34;&gt;&lt;u&gt;We R Live 07 - Introdução à Estatística Espacial I&lt;/u&gt;&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&#34;https://werlive.netlify.app/werlive07/werlive07&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Slides&lt;/a&gt;&lt;br&gt;
 &lt;a href=&#34;https://gitlab.com/geocastbrasil/liver/-/tree/master/static/werlive07&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Material&lt;/a&gt;&lt;br&gt;
 &lt;a href=&#34;https://youtu.be/fHWD4qyKj84&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Video&lt;/a&gt;&lt;/p&gt;
-
-
-
-&lt;h3 id=&#34;uwe-r-live-08---introdução-à-estatística-espacial-iiu&#34;&gt;&lt;u&gt;We R Live 08 - Introdução à Estatística Espacial II&lt;/u&gt;&lt;a href=&#34;#uwe-r-live-08---introdu%c3%a7%c3%a3o-%c3%a0-estat%c3%adstica-espacial-iiu&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
-&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
-&lt;/svg&gt;&lt;/a&gt;
-&lt;/h3&gt;
+&lt;h3 id=&#34;uwe-r-live-08---introdução-à-estatística-espacial-iiu&#34;&gt;&lt;u&gt;We R Live 08 - Introdução à Estatística Espacial II&lt;/u&gt;&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&#34;https://werlive.netlify.app/werlive08/werlive08&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Slides&lt;/a&gt;&lt;br&gt;
 &lt;a href=&#34;https://gitlab.com/geocastbrasil/liver/-/tree/master/static/werlive08&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Material&lt;/a&gt;&lt;br&gt;
 &lt;a href=&#34;https://youtu.be/BCl_V-SpQec&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Video&lt;/a&gt;&lt;/p&gt;
-
-
-
-&lt;h3 id=&#34;uwe-r-live-09---introdução-à-estatística-espacial-iiiu&#34;&gt;&lt;u&gt;We R Live 09 - Introdução à Estatística Espacial III&lt;/u&gt;&lt;a href=&#34;#uwe-r-live-09---introdu%c3%a7%c3%a3o-%c3%a0-estat%c3%adstica-espacial-iiiu&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
-&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
-&lt;/svg&gt;&lt;/a&gt;
-&lt;/h3&gt;
+&lt;h3 id=&#34;uwe-r-live-09---introdução-à-estatística-espacial-iiiu&#34;&gt;&lt;u&gt;We R Live 09 - Introdução à Estatística Espacial III&lt;/u&gt;&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&#34;https://werlive.netlify.app/werlive09/werlive09&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Slides&lt;/a&gt;&lt;br&gt;
 &lt;a href=&#34;https://gitlab.com/geocastbrasil/liver/-/tree/master/static/werlive09&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Material&lt;/a&gt;&lt;br&gt;
 &lt;a href=&#34;https://youtu.be/eaR7pTsQFDQ&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Video&lt;/a&gt;&lt;/p&gt;
-
-
-
-&lt;h3 id=&#34;uwe-r-live-10---join-como-associar-dados-à-vetoresu&#34;&gt;&lt;u&gt;We R Live 10 - Join como associar dados à vetores&lt;/u&gt;&lt;a href=&#34;#uwe-r-live-10---join-como-associar-dados-%c3%a0-vetoresu&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
-&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
-&lt;/svg&gt;&lt;/a&gt;
-&lt;/h3&gt;
+&lt;h3 id=&#34;uwe-r-live-10---join-como-associar-dados-à-vetoresu&#34;&gt;&lt;u&gt;We R Live 10 - Join como associar dados à vetores&lt;/u&gt;&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&#34;https://werlive.netlify.app/werlive10/werlive10&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Slides&lt;/a&gt;&lt;br&gt;
 &lt;a href=&#34;https://gitlab.com/geocastbrasil/liver/-/tree/master/static/werlive10&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Material&lt;/a&gt;&lt;br&gt;
 &lt;a href=&#34;https://youtu.be/BvURukaIDM0&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Video&lt;/a&gt;&lt;/p&gt;
-
-
-
-&lt;h3 id=&#34;uwe-r-live-11---florestal---pacote-para-inventário-florestal-no-r-com-igor-cobelou&#34;&gt;&lt;u&gt;We R Live 11 - florestal - Pacote para inventário florestal no R com Igor Cobelo&lt;/u&gt;&lt;a href=&#34;#uwe-r-live-11---florestal---pacote-para-invent%c3%a1rio-florestal-no-r-com-igor-cobelou&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
-&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
-&lt;/svg&gt;&lt;/a&gt;
-&lt;/h3&gt;
+&lt;h3 id=&#34;uwe-r-live-11---florestal---pacote-para-inventário-florestal-no-r-com-igor-cobelou&#34;&gt;&lt;u&gt;We R Live 11 - florestal - Pacote para inventário florestal no R com Igor Cobelo&lt;/u&gt;&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/igorcobelo/florestal&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Material&lt;/a&gt;&lt;br&gt;
 &lt;a href=&#34;https://youtu.be/xOgsVywKADI&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Video&lt;/a&gt;&lt;/p&gt;
-
-
-
-&lt;h3 id=&#34;uwe-r-live-12---geografia-das-eleições-com-lucas-gelapeu&#34;&gt;&lt;u&gt;We R Live 12 - Geografia das Eleições com Lucas Gelape&lt;/u&gt;&lt;a href=&#34;#uwe-r-live-12---geografia-das-elei%c3%a7%c3%b5es-com-lucas-gelapeu&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
-&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
-&lt;/svg&gt;&lt;/a&gt;
-&lt;/h3&gt;
+&lt;h3 id=&#34;uwe-r-live-12---geografia-das-eleições-com-lucas-gelapeu&#34;&gt;&lt;u&gt;We R Live 12 - Geografia das Eleições com Lucas Gelape&lt;/u&gt;&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&#34;https://lgelape.github.io/blog/geografia_eleicoes/geografia_eleitoral_slides.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Slides&lt;/a&gt;&lt;br&gt;
 &lt;a href=&#34;https://youtu.be/KN4kkvKkb_w&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Video&lt;/a&gt;&lt;/p&gt;
-
-
-
-&lt;h3 id=&#34;uwe-r-live-13---introdução-à-estatística-espacial-ivu&#34;&gt;&lt;u&gt;We R Live 13 - Introdução à estatística Espacial IV&lt;/u&gt;&lt;a href=&#34;#uwe-r-live-13---introdu%c3%a7%c3%a3o-%c3%a0-estat%c3%adstica-espacial-ivu&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
-&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
-&lt;/svg&gt;&lt;/a&gt;
-&lt;/h3&gt;
+&lt;h3 id=&#34;uwe-r-live-13---introdução-à-estatística-espacial-ivu&#34;&gt;&lt;u&gt;We R Live 13 - Introdução à estatística Espacial IV&lt;/u&gt;&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&#34;https://werlive.netlify.app/werlive13/werlive13&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Slides&lt;/a&gt;&lt;br&gt;
 &lt;a href=&#34;https://gitlab.com/geocastbrasil/liver/-/tree/master/static/werlive13&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Material&lt;/a&gt;&lt;br&gt;
 &lt;a href=&#34;https://youtu.be/IsOJvaWdyXE&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Video&lt;/a&gt;&lt;/p&gt;
-
-
-
-&lt;h3 id=&#34;uwe-r-live-14---geoestatística-com-prof-jorge-kazuo-yamamotou&#34;&gt;&lt;u&gt;We R Live 14 - Geoestatística com Prof. Jorge Kazuo Yamamoto&lt;/u&gt;&lt;a href=&#34;#uwe-r-live-14---geoestat%c3%adstica-com-prof-jorge-kazuo-yamamotou&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
-&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
-&lt;/svg&gt;&lt;/a&gt;
-&lt;/h3&gt;
+&lt;h3 id=&#34;uwe-r-live-14---geoestatística-com-prof-jorge-kazuo-yamamotou&#34;&gt;&lt;u&gt;We R Live 14 - Geoestatística com Prof. Jorge Kazuo Yamamoto&lt;/u&gt;&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&#34;https://werlive.netlify.app/werlive14/apresentacaoJKY_25082020.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Slides&lt;/a&gt;&lt;br&gt;
 &lt;a href=&#34;https://youtu.be/aIdntosdKIo&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Video&lt;/a&gt;&lt;/p&gt;
-
-
-
-&lt;h3 id=&#34;uwe-r-live-15---introdução-à-estatística-espacial-vu&#34;&gt;&lt;u&gt;We R Live 15 - Introdução à estatística Espacial V&lt;/u&gt;&lt;a href=&#34;#uwe-r-live-15---introdu%c3%a7%c3%a3o-%c3%a0-estat%c3%adstica-espacial-vu&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
-&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
-&lt;/svg&gt;&lt;/a&gt;
-&lt;/h3&gt;
+&lt;h3 id=&#34;uwe-r-live-15---introdução-à-estatística-espacial-vu&#34;&gt;&lt;u&gt;We R Live 15 - Introdução à estatística Espacial V&lt;/u&gt;&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&#34;https://werlive.netlify.app/werlive15/werlive15&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Slides&lt;/a&gt;&lt;br&gt;
 &lt;a href=&#34;https://gitlab.com/geocastbrasil/liver/-/tree/master/static/werlive15&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Material&lt;/a&gt;&lt;br&gt;
 &lt;a href=&#34;https://youtu.be/IeGTr7mjZIc&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Video&lt;/a&gt;&lt;/p&gt;
-
-
-
-&lt;h3 id=&#34;uwe-r-live-16-r-markdown-usando-o-r-para-comunicar-seus-resultados-com-beatriz-milzu&#34;&gt;&lt;u&gt;We R Live 16: R Markdown: usando o R para comunicar seus resultados com Beatriz Milz&lt;/u&gt;&lt;a href=&#34;#uwe-r-live-16-r-markdown-usando-o-r-para-comunicar-seus-resultados-com-beatriz-milzu&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
-&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
-&lt;/svg&gt;&lt;/a&gt;
-&lt;/h3&gt;
+&lt;h3 id=&#34;uwe-r-live-16-r-markdown-usando-o-r-para-comunicar-seus-resultados-com-beatriz-milzu&#34;&gt;&lt;u&gt;We R Live 16: R Markdown: usando o R para comunicar seus resultados com Beatriz Milz&lt;/u&gt;&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&#34;https://beatrizmilz.github.io/slidesR/rmarkdown/rmarkdown_packages.html#1&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Slides&lt;/a&gt;&lt;br&gt;
 &lt;a href=&#34;https://beamilz.netlify.app/rmarkdown.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Material&lt;/a&gt;&lt;br&gt;
 &lt;a href=&#34;https://youtu.be/6oPZ5sGt6LA&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Video&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
-
-
-
-&lt;h1 id=&#34;we-r-live-coding&#34;&gt;We R Live Coding&lt;a href=&#34;#we-r-live-coding&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
-&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
-&lt;/svg&gt;&lt;/a&gt;
-&lt;/h1&gt;
+&lt;h1 id=&#34;we-r-live-coding&#34;&gt;We R Live Coding&lt;/h1&gt;
 &lt;p&gt;Começamos outra ideia: fazer codificação ao vivo, onde desenvolvemos código do zero&lt;/p&gt;
-
-
-
-&lt;h3 id=&#34;uwe-r-live-coding-01---insomniau&#34;&gt;&lt;u&gt;We R Live Coding 01 - Insomnia&lt;/u&gt;&lt;a href=&#34;#uwe-r-live-coding-01---insomniau&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
-&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
-&lt;/svg&gt;&lt;/a&gt;
-&lt;/h3&gt;
+&lt;h3 id=&#34;uwe-r-live-coding-01---insomniau&#34;&gt;&lt;u&gt;We R Live Coding 01 - Insomnia&lt;/u&gt;&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&#34;https://gitlab.com/geocastbrasil/we-r-live-coding/-/tree/master/livecoding01&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Material&lt;/a&gt;&lt;br&gt;
 &lt;a href=&#34;https://youtu.be/I4ErDOwdXrk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Video&lt;/a&gt;&lt;/p&gt;
-
-
-
-&lt;h3 id=&#34;uwe-r-live-coding-02---on-fireu&#34;&gt;&lt;u&gt;We R Live Coding 02 - On fire!&lt;/u&gt;&lt;a href=&#34;#uwe-r-live-coding-02---on-fireu&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
-&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
-&lt;/svg&gt;&lt;/a&gt;
-&lt;/h3&gt;
+&lt;h3 id=&#34;uwe-r-live-coding-02---on-fireu&#34;&gt;&lt;u&gt;We R Live Coding 02 - On fire!&lt;/u&gt;&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&#34;https://gitlab.com/geocastbrasil/we-r-live-coding/-/tree/master/livecoding02&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Material&lt;/a&gt;&lt;br&gt;
 &lt;a href=&#34;https://youtu.be/5BipR4L-n1Q&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Video&lt;/a&gt;&lt;/p&gt;
-
-
-
-&lt;h3 id=&#34;uwe-r-live-coding-03---on-fire-ii-com-prof-gustavo-baptistau&#34;&gt;&lt;u&gt;We R Live Coding 03 - On fire II com Prof. Gustavo Baptista&lt;/u&gt;&lt;a href=&#34;#uwe-r-live-coding-03---on-fire-ii-com-prof-gustavo-baptistau&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
-&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
-&lt;/svg&gt;&lt;/a&gt;
-&lt;/h3&gt;
+&lt;h3 id=&#34;uwe-r-live-coding-03---on-fire-ii-com-prof-gustavo-baptistau&#34;&gt;&lt;u&gt;We R Live Coding 03 - On fire II com Prof. Gustavo Baptista&lt;/u&gt;&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&#34;https://gitlab.com/geocastbrasil/we-r-live-coding/-/blob/master/livecoding03&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Material&lt;/a&gt;&lt;br&gt;
 &lt;a href=&#34;https://www.facebook.com/GeoCastBrasil/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Video&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;

@@ -67,6 +67,9 @@
 
   
   
+  
+  <script src="/js/mathjax-config.js"></script>
+  
 
   
   
@@ -202,9 +205,9 @@
 
       
       
-        
-      
 
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
       
     
       
@@ -710,7 +713,7 @@
 
   <div class="page-body">
     <article class="article">
-  
+
   
 
 
@@ -871,12 +874,10 @@
 </div>
 
 
-  
+
   <div class="article-container">
-    
-    <div class="row">
-    
-    <div class="col-12 col-lg-10ish article-style">
+
+    <div class="article-style">
       
 <script src="index_files/header-attrs/header-attrs.js"></script>
 
@@ -884,20 +885,9 @@
 <p>The wide availability of data on biodiversity and environmental variables, has allowed the use of several biogeographic and macroecological analyzes, among them, the species distribution models (MDE). This short course aims to offer a theoretical and practical introduction to the EAW technique, using the R language. First, the main concepts of ecological niche theory (Grinnell, Elton and Hutchinson) and model theory (geographic space (G) , environmental space (E) and Biotic-Abiotic-Movement diagram (BAM)). Following the theoretical part, the main databases (occurrences and environmental variables), types of algorithms (presence and absence - GLM, GAM and Random Forest, only presence - BIOCLIM, Mahalanobis and Gower, and presence and background - Maxent and SVM), model evaluation (ROC, AUC and TSS), thresholds and some model consensus approaches (ensembles). The practical part will be focused on building models using the R language. Initially, an introduction to the programming and handling of spatial data in the R language will be made, using the raster and rgdal packages. Then, it will be presented how to obtain data of occurrences and environmental variables, through spooc and dismo packages. Once the data is acquired, preliminary analyzes will be made, such as selection of occurrences (one point per cell) and variables (correlation, PCA, factor analysis and VIF). Finally, models will be built using the algorithms mentioned above, in addition to calculating the evaluation metrics, using the dismo, randomForest and kernlab packages.</p>
 
     </div>
-    
-    <div class="col-12 col-lg-2ish docs-toc">
-      <ul class="nav toc-top">
-        <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
-      </ul>
-
-      
-
-      
-    </div>
-  </div>
     <div class="col-12 col-lg-10ish article-style">
     <script src="https://utteranc.es/client.js"
-        repo="mauriciovancine/mauriciovancine.github.io"
+        repo="rbind/apreshill"
         issue-term="title"
         label="comments :crystal_ball:"
         theme="github-light"
@@ -905,7 +895,7 @@
         async>
     </script>
     </div>
-  
+    
 
 
 
@@ -1194,6 +1184,8 @@
 
 
 
+
+
   </div>
 </article>
   </div>
@@ -1202,20 +1194,12 @@
     
     
     <div class="container">
-          <span class="float-right" aria-hidden="true">
-      <a href="#" class="back-to-top">
-        <span class="button_icon">
-          <i class="fas fa-chevron-up fa-2x"></i>
-        </span>
-      </a>
-    </span>
+      <footer class="site-footer">
+  
 
-<footer class="site-footer">
-
-  <p>
+  <p class="powered-by">
     © Maurício Vancine 2020
   </p>
-
 
   
   
@@ -1261,18 +1245,16 @@
 
 
 
-  <p>
+  <p class="powered-by">
     
     
     
     Published with
     <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a>  —
     the free, <a href="https://github.com/wowchemy/wowchemy-hugo-modules" target="_blank" rel="noopener">
-    open source</a> website builder that empowers creators, and a little inspiration from <a href="https://alison.rbind.io/" target="_blank" rel="noopener">Alison Hill</a> 
-    <a href="https://github.com/rbind/apreshill" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+    open source</a> website builder that empowers creators.
     
   </p>
-
 </footer>
 
     </div>
@@ -1321,6 +1303,8 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
 
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.8.0/mermaid.min.js" integrity="sha512-ja+hSBi4JDtjSqc4LTBsSwuBT3tdZ3oKYKd07lTVYmCnTCor56AnRql00ssqnTOR9Ss4gOP/ROGB3SfcJnZkeg==" crossorigin="anonymous" title="mermaid"></script>
       
 
       
