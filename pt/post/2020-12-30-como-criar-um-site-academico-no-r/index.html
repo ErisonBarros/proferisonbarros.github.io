@@ -279,7 +279,7 @@
   
   <meta property="og:site_name" content="Maurício Vancine">
   <meta property="og:url" content="https://mauriciovancine.github.io/pt/post/2020-12-30-como-criar-um-site-academico-no-r/">
-  <meta property="og:title" content="Como criar um site acadêmico no R | Maurício Vancine">
+  <meta property="og:title" content="Como criar um site acadêmico com o R | Maurício Vancine">
   <meta property="og:description" content="Um guia para criar um site acadêmico no R utilizando o pacote blogdown, GitHub e Hugo"><meta property="og:image" content="https://mauriciovancine.github.io/pt/post/2020-12-30-como-criar-um-site-academico-no-r/featured.png">
   <meta property="twitter:image" content="https://mauriciovancine.github.io/pt/post/2020-12-30-como-criar-um-site-academico-no-r/featured.png"><meta property="og:locale" content="pt">
   
@@ -312,7 +312,7 @@
     "@type": "WebPage",
     "@id": "https://mauriciovancine.github.io/pt/post/2020-12-30-como-criar-um-site-academico-no-r/"
   },
-  "headline": "Como criar um site acadêmico no R",
+  "headline": "Como criar um site acadêmico com o R",
   
   "image": [
     "https://mauriciovancine.github.io/pt/post/2020-12-30-como-criar-um-site-academico-no-r/featured.png"
@@ -352,7 +352,7 @@
 
 
 
-  <title>Como criar um site acadêmico no R | Maurício Vancine</title>
+  <title>Como criar um site acadêmico com o R | Maurício Vancine</title>
 
 </head>
 
@@ -770,7 +770,7 @@
 
 
 <div class="article-container pt-3">
-  <h1>Como criar um site acadêmico no R</h1>
+  <h1>Como criar um site acadêmico com o R</h1>
 
   
 
@@ -846,11 +846,10 @@
   <div class="article-container">
 
     <div class="article-style">
-      <p>Que o <a href="https://www.r-project.org/" target="_blank" rel="noopener">R</a> possui múltiplas utilidades para análise e visualização de dados de <a href="https://cran.r-project.org/web/views/" target="_blank" rel="noopener">diversos formatos</a> e em <a href="https://data-flair.training/blogs/r-applications/" target="_blank" rel="noopener">diversas áreas</a> é indiscutível. Entretanto, a união dessa linguagem com o <a href="https://pt.wikipedia.org/wiki/Markdown" target="_blank" rel="noopener">Markdown</a>, dando origem ao <a href="https://rmarkdown.rstudio.com/index.html" target="_blank" rel="noopener">RMarkdown</a>, aliada ao IDE <a href="https://rstudio.com/products/rstudio/" target="_blank" rel="noopener">RStudio</a> ainda pode ser novidade para muitas pessoas. Essa junção permite diversas possibilidades de criação de <a href="https://bookdown.org/yihui/rmarkdown/" target="_blank" rel="noopener">aplicações complementares ao R</a>. Pretendo escrever mais sobre essa união e utilidades num post futuro.</p>
-<p>Neste post, vou focar nos passos para a criação de um site acadêmico no R, uma forma bem interessante que achei de desafiar meu conhecimento até então, e principalmente minha paciência&hellip;</p>
-<p>Existem várias formas de criar um <a href="https://wowchemy.com/templates/" target="_blank" rel="noopener">site acadêmico</a>, mas focarei aqui no formato que consegui fazer de forma mais rápida e tranquila, usando o pacote <a href="https://cran.r-project.org/web/packages/blogdown/index.html" target="_blank" rel="noopener">blogdown</a>, hospedando no <a href="https://github.com/" target="_blank" rel="noopener">github</a>, com esse formato: &lt;username.github.io&gt;, <a href="https://git-scm.com/" target="_blank" rel="noopener">git</a>, e o <a href="https://rstudio.com/products/rstudio/" target="_blank" rel="noopener">RStudio</a>.</p>
-<p>Todas as informações referentes à criação e onfiguração do site podem ser consultadas no livro do pacote <a href="https://bookdown.org/yihui/blogdown/" target="_blank" rel="noopener">blogdown: Creating Websites with R Markdown</a>, do <a href="https://yihui.org/" target="_blank" rel="noopener">Yihui Xie</a>.</p>
-<p>Outra fonte de informação são os geniais posts da <a href="https://alison.rbind.io/" target="_blank" rel="noopener">Profa. Alison Hill</a>. Deixo eles listados em destaque aqui:</p>
+      <p>Que o <a href="https://www.r-project.org/" target="_blank" rel="noopener">R</a> possui múltiplas utilidades para análise e visualização de dados de <a href="https://cran.r-project.org/web/views/" target="_blank" rel="noopener">diversos formatos</a> e em <a href="https://data-flair.training/blogs/r-applications/" target="_blank" rel="noopener">diversas áreas</a> é indiscutível. Entretanto, a união dessa linguagem com o <a href="https://pt.wikipedia.org/wiki/Markdown" target="_blank" rel="noopener">Markdown</a>, dando origem ao <a href="https://rmarkdown.rstudio.com/index.html" target="_blank" rel="noopener">RMarkdown</a>, e aliado ao IDE <a href="https://rstudio.com/products/rstudio/" target="_blank" rel="noopener">RStudio</a> o transforma numa interessante ferramenta bastante diversa para a criação de diversas possibilidades de criação de <a href="https://bookdown.org/yihui/rmarkdown/" target="_blank" rel="noopener">aplicações complementares ao R</a>, como a criação de documentos (.docx, .odt, .pdf), apresentações, livros, currículos, e ainda para a criação de sites. Pretendo escrever mais sobre essa união e utilidades num post futuro.</p>
+<p>Neste post, vou focar nos passos para a criação de um site acadêmico no R, como esse criei. Apesar de existir várias formas de criar um <a href="https://wowchemy.com/templates/" target="_blank" rel="noopener">site acadêmico</a>, focarei aqui no formato que consegui fazer de forma mais fácil, usando o pacote <a href="https://cran.r-project.org/web/packages/blogdown/index.html" target="_blank" rel="noopener">blogdown</a>, hospedando no <a href="https://github.com/" target="_blank" rel="noopener">github</a> com esse domínio: &lt;username.github.io&gt;, versionando com <a href="https://git-scm.com/" target="_blank" rel="noopener">git</a>, e utilizando o <a href="https://rstudio.com/products/rstudio/" target="_blank" rel="noopener">RStudio</a> para facilitar o manejo através de um Projeto R (.Rproj).</p>
+<p>Todas as informações referentes à criação e configuração do site podem ser consultadas no livro do pacote blogdown: <a href="https://bookdown.org/yihui/blogdown/" target="_blank" rel="noopener">blogdown: Creating Websites with R Markdown</a>, do <a href="https://yihui.org/" target="_blank" rel="noopener">Yihui Xie</a>.</p>
+<p>Outra fonte de informação são os geniais posts da <a href="https://alison.rbind.io/" target="_blank" rel="noopener">Profa. Alison Hill</a>. Listo eles aqui:</p>
 <ol>
 <li><a href="https://alison.rbind.io/post/2017-06-12-up-and-running-with-blogdown/" target="_blank" rel="noopener">Up &amp; Running with blogdown</a></li>
 <li><a href="https://alison.rbind.io/post/2019-02-19-hugo-archetypes/" target="_blank" rel="noopener">A Spoonful of Hugo: Archetypes</a></li>
@@ -860,26 +859,37 @@
 <li><a href="https://alison.rbind.io/post/2020-12-12-how-much-hugo/" target="_blank" rel="noopener">A Spoonful of Hugo: How much Hugo do I need to know?</a></li>
 <li><a href="https://alison.rbind.io/post/2020-12-27-blogdown-checks/" target="_blank" rel="noopener">Unbreak your blogdown site</a></li>
 </ol>
-<p>Fundamental destacar que só encontrei um <a href="https://diegopftrindade.netlify.app/post/blogdown-tutorial-in-portuguese/" target="_blank" rel="noopener">post</a> em português do <a href="https://diegopftrindade.netlify.app/" target="_blank" rel="noopener">Diego Trindade</a>. Nele é possível ler mais informações e também uma discussão muito legal sobro o porquê criar e manter um site acadêmico.</p>
+<p>Ainda é fundamental destacar o <a href="https://diegopftrindade.netlify.app/post/blogdown-tutorial-in-portuguese/" target="_blank" rel="noopener">post</a> em português do <a href="https://diegopftrindade.netlify.app/" target="_blank" rel="noopener">Diego Trindade</a>. Nele é possível ler mais sobre a discussão do porquê criar e manter um site acadêmico, tudo isso em relação à reprodutibilidade científica.</p>
 <h2 id="passos-para-criação-do-site">Passos para criação do site</h2>
-<p>Os passos à seguir seguem essa listagem:</p>
+<p>Os passos seguem essa listagem:</p>
 <ol>
 <li>GitHub</li>
-<li>RStudio</li>
-<li>Git</li>
+<li>RStudio, Git e GitHub</li>
 <li>blogdown</li>
 <li>Edição do site</li>
 </ol>
+<p>É fundamental destacar que será necessário ter algum conhecimento de git, controle de versão, markdown e talvez HTML e CSS ajudem, mas não são fundamentais.</p>
 <h2 id="1-github">1. GitHub</h2>
-<p>Primeiramente é necessário criar duas contas on-line:</p>
-<ol>
-<li>GitHub: <a href="https://github.com/">https://github.com/</a></li>
-<li>Criar um repositório no GitHub</li>
-</ol>
-<p>Com a conta do GitHub feita, será necessário <a href="https://help.github.com/pt/github/getting-started-with-github/create-a-repo" target="_blank" rel="noopener">criar um
-repositório</a>.
-Eu criei com o nome de &ldquo;mauriciovancine2&rdquo;, só de exemplo, mas pode ser
-qualquer outro.</p>
+<p>Primeiramente é necessário criar uma conta on-line no GitHub, se já não possui:</p>
+<blockquote>
+<p>1.1 GitHub: <a href="https://github.com/">https://github.com/</a></p>
+</blockquote>
+<p>Com a conta do GitHub criada, será necessário <a href="https://help.github.com/pt/github/getting-started-with-github/create-a-repo" target="_blank" rel="noopener">criar um
+repositório</a>. É fundamental, se quiser que o domínio do site seja nesse formato &lt;username.github.io&gt;, que o nome do repositório seja seu nome de usuário, no meu caso <strong>mauriciovancine</strong>, seguido de <strong>.github.io</strong>. Também <strong>não</strong> adicione o arquivo README.md.</p>
+<blockquote>
+<p>1.2 Repositório: mauriciovancine.github.io</p>
+</blockquote>
+<h2 id="2-rstudio-git-e-github">2. RStudio, Git e GitHub</h2>
+<p>O próximo passo é clonar o repositório criado do GitHub para uma pasta no seu computador. Essa tarefa é relativamente simples, e pode ser feito de diversas formas:</p>
+<blockquote>
+<p>2.1 Diretamente do repositório fazendo o donwload pelo brownse</p>
+</blockquote>
+<blockquote>
+<p>2.2 Pelo terminar com o comando <code>git clone</code></p>
+</blockquote>
+<blockquote>
+<p>2.3 Criando um Projeto R, utilizando o RStudio</p>
+</blockquote>
 <p><img src="criar_repositorio.png" alt=""></p>
 <ol>
 <li>
@@ -916,9 +926,7 @@ theme_example = TRUE, empty_dirs = TRUE, to_yaml = TRUE)</p>
 <ol start="6">
 <li>linkar o site com o GitHub no Netlify</li>
 </ol>
-<h2 id="2-rstudio">2. RStudio</h2>
-<h2 id="3-git">3. Git</h2>
-<h2 id="4-pacote-blogdown">4. Pacote blogdown</h2>
+<h2 id="3-pacote-blogdown">3. Pacote blogdown</h2>
 <h2 id="5-edição-do-site">5. Edição do site</h2>
 
     </div>
@@ -962,7 +970,7 @@ theme_example = TRUE, empty_dirs = TRUE, to_yaml = TRUE)</p>
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://mauriciovancine.github.io/pt/post/2020-12-30-como-criar-um-site-academico-no-r/&amp;text=Como%20criar%20um%20site%20acad%c3%aamico%20no%20R" target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://mauriciovancine.github.io/pt/post/2020-12-30-como-criar-um-site-academico-no-r/&amp;text=Como%20criar%20um%20site%20acad%c3%aamico%20com%20o%20R" target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -975,7 +983,7 @@ theme_example = TRUE, empty_dirs = TRUE, to_yaml = TRUE)</p>
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://mauriciovancine.github.io/pt/post/2020-12-30-como-criar-um-site-academico-no-r/&amp;t=Como%20criar%20um%20site%20acad%c3%aamico%20no%20R" target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://mauriciovancine.github.io/pt/post/2020-12-30-como-criar-um-site-academico-no-r/&amp;t=Como%20criar%20um%20site%20acad%c3%aamico%20com%20o%20R" target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -988,7 +996,7 @@ theme_example = TRUE, empty_dirs = TRUE, to_yaml = TRUE)</p>
       
       
       <li>
-        <a href="mailto:?subject=Como%20criar%20um%20site%20acad%c3%aamico%20no%20R&amp;body=https://mauriciovancine.github.io/pt/post/2020-12-30-como-criar-um-site-academico-no-r/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=Como%20criar%20um%20site%20acad%c3%aamico%20com%20o%20R&amp;body=https://mauriciovancine.github.io/pt/post/2020-12-30-como-criar-um-site-academico-no-r/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -1001,7 +1009,7 @@ theme_example = TRUE, empty_dirs = TRUE, to_yaml = TRUE)</p>
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://mauriciovancine.github.io/pt/post/2020-12-30-como-criar-um-site-academico-no-r/&amp;title=Como%20criar%20um%20site%20acad%c3%aamico%20no%20R" target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=https://mauriciovancine.github.io/pt/post/2020-12-30-como-criar-um-site-academico-no-r/&amp;title=Como%20criar%20um%20site%20acad%c3%aamico%20com%20o%20R" target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -1235,7 +1243,7 @@ theme_example = TRUE, empty_dirs = TRUE, to_yaml = TRUE)</p>
       
       <li><a href="/pt/video/2020-05-05-werlive/">We R Live</a></li>
       
-      <li><a href="/pt/workshop/2019_workshop_r_unesp_biology/">Introdução à linguagem R: manipulação e visualização de dados</a></li>
+      <li><a href="/pt/workshop/2019_workshop_r_unesp_ecology/">Introdução à linguagem R: manipulação e visualização de dados</a></li>
       
     </ul>
   </div>
@@ -1264,7 +1272,7 @@ theme_example = TRUE, empty_dirs = TRUE, to_yaml = TRUE)</p>
 <footer class="site-footer">
 
   <p class="powered-by">
-    © Maurício Vancine 2020
+    © Maurício Vancine 2021
   </p>
 
   
