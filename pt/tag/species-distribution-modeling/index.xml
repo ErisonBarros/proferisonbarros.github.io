@@ -5,12 +5,25 @@
     <link>https://mauriciovancine.github.io/pt/tag/species-distribution-modeling/</link>
       <atom:link href="https://mauriciovancine.github.io/pt/tag/species-distribution-modeling/index.xml" rel="self" type="application/rss+xml" />
     <description>species distribution modeling</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>pt</language><copyright>© Maurício Vancine 2021</copyright><lastBuildDate>Mon, 22 Jul 2019 08:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>pt</language><copyright>© Maurício Vancine 2021</copyright><lastBuildDate>Thu, 05 Mar 2020 09:30:00 +0000</lastBuildDate>
     <image>
       <url>https://mauriciovancine.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>species distribution modeling</title>
       <link>https://mauriciovancine.github.io/pt/tag/species-distribution-modeling/</link>
     </image>
+    
+    <item>
+      <title>Modelos de Distribuição de Espécies: uma visão geral</title>
+      <link>https://mauriciovancine.github.io/pt/talk/2020_talk_sdm_gggc/</link>
+      <pubDate>Thu, 05 Mar 2020 09:30:00 +0000</pubDate>
+      <guid>https://mauriciovancine.github.io/pt/talk/2020_talk_sdm_gggc/</guid>
+      <description>
+&lt;script src=&#34;index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Os Modelos de Distribuição de Espécies (SDM - Species Distribution Models) relacionam dados de ocorrências das espécies com suas condições ambientais para estimar o nicho das espécies e assim predizer novas áreas de possível distribuição. Nessa palestra, falei dos principais conceitos, dados de entrada e aplicações dessa abordagem na área de Ecologia.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Introdução à modelagem de distribuição de espécies usando a linguagem R: teoria e prática</title>

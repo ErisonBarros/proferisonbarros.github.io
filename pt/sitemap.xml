@@ -4,7 +4,7 @@
   
   <url>
     <loc>https://mauriciovancine.github.io/pt/post/</loc>
-    <lastmod>2020-12-30T00:00:00+00:00</lastmod>
+    <lastmod>2021-01-05T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -19,12 +19,12 @@
   
   <url>
     <loc>https://mauriciovancine.github.io/pt/tag/blogdown/</loc>
-    <lastmod>2020-12-30T00:00:00+00:00</lastmod>
+    <lastmod>2021-01-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://mauriciovancine.github.io/pt/categories/</loc>
-    <lastmod>2020-12-30T00:00:00+00:00</lastmod>
+    <lastmod>2021-01-05T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -39,17 +39,17 @@
   
   <url>
     <loc>https://mauriciovancine.github.io/pt/post/2020-12-30-como-criar-um-site-academico-no-r/</loc>
-    <lastmod>2020-12-30T00:00:00+00:00</lastmod>
+    <lastmod>2021-01-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://mauriciovancine.github.io/pt/tag/hugo/</loc>
-    <lastmod>2020-12-30T00:00:00+00:00</lastmod>
+    <lastmod>2021-01-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://mauriciovancine.github.io/pt/</loc>
-    <lastmod>2020-12-30T00:00:00+00:00</lastmod>
+    <lastmod>2021-01-05T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -64,7 +64,7 @@
   
   <url>
     <loc>https://mauriciovancine.github.io/pt/tag/r/</loc>
-    <lastmod>2020-12-30T00:00:00+00:00</lastmod>
+    <lastmod>2021-01-05T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -79,17 +79,17 @@
   
   <url>
     <loc>https://mauriciovancine.github.io/pt/category/r/</loc>
-    <lastmod>2020-12-30T00:00:00+00:00</lastmod>
+    <lastmod>2021-01-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://mauriciovancine.github.io/pt/tag/rmarkdown/</loc>
-    <lastmod>2020-12-30T00:00:00+00:00</lastmod>
+    <lastmod>2021-01-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://mauriciovancine.github.io/pt/tags/</loc>
-    <lastmod>2020-12-30T00:00:00+00:00</lastmod>
+    <lastmod>2021-01-05T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -104,7 +104,7 @@
   
   <url>
     <loc>https://mauriciovancine.github.io/pt/category/tutorial/</loc>
-    <lastmod>2020-12-30T00:00:00+00:00</lastmod>
+    <lastmod>2021-01-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -378,6 +378,36 @@
   </url>
   
   <url>
+    <loc>https://mauriciovancine.github.io/pt/courses/</loc>
+    <lastmod>2021-01-05T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://mauriciovancine.github.io/courses/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="https://mauriciovancine.github.io/pt/courses/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://mauriciovancine.github.io/pt/courses/course_geospatial_analisys_r/</loc>
+    <lastmod>2021-01-05T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://mauriciovancine.github.io/courses/course_geospatial_analisys_r/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="https://mauriciovancine.github.io/pt/courses/course_geospatial_analisys_r/"
+                />
+  </url>
+  
+  <url>
     <loc>https://mauriciovancine.github.io/pt/tag/rspatial/</loc>
     <lastmod>2020-05-05T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -468,17 +498,17 @@
   </url>
   
   <url>
-    <loc>https://mauriciovancine.github.io/pt/tag/species-distribution-modelling/</loc>
+    <loc>https://mauriciovancine.github.io/pt/tag/species-distribution-modeling/</loc>
     <lastmod>2020-03-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://mauriciovancine.github.io/tag/species-distribution-modelling/"
+                href="https://mauriciovancine.github.io/tag/species-distribution-modeling/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt"
-                href="https://mauriciovancine.github.io/pt/tag/species-distribution-modelling/"
+                href="https://mauriciovancine.github.io/pt/tag/species-distribution-modeling/"
                 />
   </url>
   
@@ -929,21 +959,6 @@
                 rel="alternate"
                 hreflang="pt"
                 href="https://mauriciovancine.github.io/pt/workshop/2019_workshop_sdm_cbh/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://mauriciovancine.github.io/pt/tag/species-distribution-modeling/</loc>
-    <lastmod>2018-07-30T02:20:01-07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://mauriciovancine.github.io/tag/species-distribution-modeling/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt"
-                href="https://mauriciovancine.github.io/pt/tag/species-distribution-modeling/"
                 />
   </url>
   
@@ -2243,20 +2258,6 @@
   </url>
   
   <url>
-    <loc>https://mauriciovancine.github.io/pt/courses/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://mauriciovancine.github.io/courses/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt"
-                href="https://mauriciovancine.github.io/pt/courses/"
-                />
-  </url>
-  
-  <url>
     <loc>https://mauriciovancine.github.io/pt/tag/geocomputation/</loc>
   </url>
   
@@ -2328,6 +2329,10 @@
   
   <url>
     <loc>https://mauriciovancine.github.io/pt/post/2020-07-30-rmarkdown/</loc>
+  </url>
+  
+  <url>
+    <loc>https://mauriciovancine.github.io/pt/post/2020-08-30-rproject/</loc>
   </url>
   
   <url>

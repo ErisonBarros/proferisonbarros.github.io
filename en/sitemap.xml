@@ -109,7 +109,7 @@
   
   <url>
     <loc>https://mauriciovancine.github.io/</loc>
-    <lastmod>2020-11-24T00:00:00+00:00</lastmod>
+    <lastmod>2021-01-05T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pt"
@@ -284,6 +284,36 @@
                 rel="alternate"
                 hreflang="en"
                 href=""
+                />
+  </url>
+  
+  <url>
+    <loc>https://mauriciovancine.github.io/courses/</loc>
+    <lastmod>2021-01-05T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="https://mauriciovancine.github.io/pt/courses/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://mauriciovancine.github.io/courses/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://mauriciovancine.github.io/courses/course_geospatial_analisys_r/</loc>
+    <lastmod>2021-01-05T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="https://mauriciovancine.github.io/pt/courses/course_geospatial_analisys_r/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://mauriciovancine.github.io/courses/course_geospatial_analisys_r/"
                 />
   </url>
   
@@ -890,16 +920,6 @@
   <url>
     <loc>https://mauriciovancine.github.io/tag/species-distribution-modelling/</loc>
     <lastmod>2018-07-30T02:20:01-07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt"
-                href="https://mauriciovancine.github.io/pt/tag/species-distribution-modelling/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://mauriciovancine.github.io/tag/species-distribution-modelling/"
-                />
   </url>
   
   <url>
@@ -2167,20 +2187,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://mauriciovancine.github.io/post/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://mauriciovancine.github.io/courses/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt"
-                href="https://mauriciovancine.github.io/pt/courses/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://mauriciovancine.github.io/courses/"
                 />
   </url>
   
