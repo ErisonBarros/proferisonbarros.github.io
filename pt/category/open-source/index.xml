@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>open source | Maurício Vancine</title>
+    <link>https://mauriciovancine.github.io/pt/category/open-source/</link>
+      <atom:link href="https://mauriciovancine.github.io/pt/category/open-source/index.xml" rel="self" type="application/rss+xml" />
+    <description>open source</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>pt</language><copyright>© Maurício Vancine 2021</copyright>
+    <image>
+      <url>https://mauriciovancine.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>open source</title>
+      <link>https://mauriciovancine.github.io/pt/category/open-source/</link>
+    </image>
+    
+    <item>
+      <title>Geocomputação no Python</title>
+      <link>https://mauriciovancine.github.io/pt/post/2020-05-30-geocomputacao-python/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mauriciovancine.github.io/pt/post/2020-05-30-geocomputacao-python/</guid>
+      <description>
+&lt;script src=&#34;https://mauriciovancine.github.io/pt/post/2020-05-30-geocomputacao-python/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Escrevendo…&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>R markdown: estendendo as funcionalidades do R</title>
+      <link>https://mauriciovancine.github.io/pt/post/2020-07-30-rmarkdown/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mauriciovancine.github.io/pt/post/2020-07-30-rmarkdown/</guid>
+      <description>
+&lt;script src=&#34;index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Escrevendo…&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Tente usar Linux</title>
+      <link>https://mauriciovancine.github.io/pt/post/2020-04-30-tente-usar-linux/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mauriciovancine.github.io/pt/post/2020-04-30-tente-usar-linux/</guid>
+      <description>
+&lt;script src=&#34;https://mauriciovancine.github.io/pt/post/2020-04-30-tente-usar-linux/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Escrevendo…&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>tidyverse: outra forma de usar o R</title>
+      <link>https://mauriciovancine.github.io/pt/post/2020-06-30-tidyverse/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mauriciovancine.github.io/pt/post/2020-06-30-tidyverse/</guid>
+      <description>
+&lt;script src=&#34;https://mauriciovancine.github.io/pt/post/2020-06-30-tidyverse/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Escrevendo…&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
