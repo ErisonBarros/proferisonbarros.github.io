@@ -754,7 +754,7 @@
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    6 minutos de leitura
+    5 minutos de leitura
   </span>
   
 
@@ -861,64 +861,6 @@
 <img src="img/geo_datum_sad_sirgas.jpg" alt="Discrepância entre um mesmo ponto em SAD69 e SIRGAS2000 em regiões urbanas. Fonte: 'SIRGAS 2000, quando iniciar a sua utilização?'" width="70%" />
 <p class="caption">Figura 10: Discrepância entre um mesmo ponto em SAD69 e SIRGAS2000 em regiões urbanas. Fonte: 'SIRGAS 2000, quando iniciar a sua utilização?'</p>
 </div>
-<h3 id="sistema-de-referência-de-coordenadas-crs-no-r">Sistema de Referência de Coordenadas (CRS) no R</h3>
-<p>No R, há duas formas principais de representar um <strong>Sistema de Referência de Coordenadas</strong>: código numérico <code>epsg</code> e 2. código caracter <code>proj4string</code>.</p>
-<p>O código numérico <strong>EPSG</strong> (<em>European Petroleum Survey Group</em>) é uma sequência de números curta, referindo-se apenas a um CRS. O site <a href="http://epsg.io/" target="_blank" rel="noopener">epsg.io</a> permite consultar diversas informações sobre um código, como procurar por um código, representação de mapas e fazer transformações de CRS.</p>
-<p>Já o código caracter <code>proj4string</code> permite mais flexibilidade para especificar diferentes parâmetros, como o tipo de projeção, datum e elipsóide. Dessa forma, é possível especificar muitas projeções, ou mesmo modificar as projeções existentes, tornando a representação <code>proj4string</code> mais complexa e flexível.</p>
-<p>Além disso, ainda é possível consultar uma <strong>extensa lista de CRSs</strong> no site <a href="https://spatialreference.org/" target="_blank" rel="noopener">spatialreference.org</a>, que fornece descrições em diversis formatos, baseados em GDAL e Proj.4. Essa abordagem permite consultar uma URL que pode produzir uma referência espacial em um formato que seu software SIG ou o R pode utilizar como referência.</p>
-<p>Os pacotes espaciais no R suportam uma ampla variedade de CRSs e usam a biblioteca <a href="https://proj.org/index.html#" target="_blank" rel="noopener">PROJ</a>. A função <code>rgdal::make_EPSG()</code> retorna um <strong>data frame</strong> das projeções disponíveis, com informações dos códigos <code>epsg</code> e <code>proj4string</code> numa mesma tabela, facilitando a busca e uso de CRSs (Tabela <a href="#tab:tab-crs">1</a>).</p>
-<pre><code class="language-r">crs_data &lt;- rgdal::make_EPSG()
-head(crs_data)
-</code></pre>
-<p>Table: Tabela 1: Listagem inicial das projeções disponíveis no R, com informações dos códigos <code>epsg</code> e <code>proj4string</code></p>
-<table>
-<thead>
-<tr>
-<th style="text-align:right">code</th>
-<th style="text-align:left">note</th>
-<th style="text-align:left">prj4</th>
-<th style="text-align:left">prj_method</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:right">3819</td>
-<td style="text-align:left">HD1909</td>
-<td style="text-align:left">+proj=longlat +ellps=bessel +no_defs +type=crs</td>
-<td style="text-align:left">(null)</td>
-</tr>
-<tr>
-<td style="text-align:right">3821</td>
-<td style="text-align:left">TWD67</td>
-<td style="text-align:left">+proj=longlat +ellps=aust_SA +no_defs +type=crs</td>
-<td style="text-align:left">(null)</td>
-</tr>
-<tr>
-<td style="text-align:right">3822</td>
-<td style="text-align:left">TWD97</td>
-<td style="text-align:left">+proj=geocent +ellps=GRS80 +units=m +no_defs +type=crs</td>
-<td style="text-align:left">(null)</td>
-</tr>
-<tr>
-<td style="text-align:right">3823</td>
-<td style="text-align:left">TWD97</td>
-<td style="text-align:left">+proj=longlat +ellps=GRS80 +no_defs +type=crs</td>
-<td style="text-align:left">(null)</td>
-</tr>
-<tr>
-<td style="text-align:right">3824</td>
-<td style="text-align:left">TWD97</td>
-<td style="text-align:left">+proj=longlat +ellps=GRS80 +no_defs +type=crs</td>
-<td style="text-align:left">(null)</td>
-</tr>
-<tr>
-<td style="text-align:right">3887</td>
-<td style="text-align:left">IGRS</td>
-<td style="text-align:left">+proj=geocent +ellps=GRS80 +units=m +no_defs +type=crs</td>
-<td style="text-align:left">(null)</td>
-</tr>
-</tbody>
-</table>
 
     </div>
 
