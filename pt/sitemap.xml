@@ -3,6 +3,41 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://mauriciovancine.github.io/pt/post/</loc>
+    <lastmod>2021-02-21T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://mauriciovancine.github.io/post/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="https://mauriciovancine.github.io/pt/post/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://mauriciovancine.github.io/pt/post/2021-02-23-desmistificando-sistemas-referencia-coordendas-datum/</loc>
+    <lastmod>2021-02-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mauriciovancine.github.io/pt/</loc>
+    <lastmod>2021-02-21T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://mauriciovancine.github.io/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="https://mauriciovancine.github.io/pt/"
+                />
+  </url>
+  
+  <url>
     <loc>https://mauriciovancine.github.io/pt/publication-type/2/</loc>
     <lastmod>2021-01-24T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -93,21 +128,6 @@
   </url>
   
   <url>
-    <loc>https://mauriciovancine.github.io/pt/</loc>
-    <lastmod>2021-01-24T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://mauriciovancine.github.io/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt"
-                href="https://mauriciovancine.github.io/pt/"
-                />
-  </url>
-  
-  <url>
     <loc>https://mauriciovancine.github.io/pt/author/natalia-stefanini-da-silveira/</loc>
     <lastmod>2021-01-24T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -168,208 +188,13 @@
   </url>
   
   <url>
-    <loc>https://mauriciovancine.github.io/pt/post/</loc>
-    <lastmod>2021-01-07T15:54:57-03:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://mauriciovancine.github.io/post/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt"
-                href="https://mauriciovancine.github.io/pt/post/"
-                />
-  </url>
-  
-  <url>
     <loc>https://mauriciovancine.github.io/pt/post/2021-01-07-como-criar-um-site-academico-com-o-r/</loc>
     <lastmod>2021-01-07T15:54:57-03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://mauriciovancine.github.io/pt/post/2021-02-07-fontes-de-dados-espaciais/</loc>
+    <loc>https://mauriciovancine.github.io/pt/post/2021-02-07-fontes-de-dados-geograficos/</loc>
     <lastmod>2021-01-07T15:54:57-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mauriciovancine.github.io/pt/author/fabio-a.-hernandes/</loc>
-    <lastmod>2020-11-24T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://mauriciovancine.github.io/author/fabio-a.-hernandes/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt"
-                href="https://mauriciovancine.github.io/pt/author/fabio-a.-hernandes/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://mauriciovancine.github.io/pt/publication/2020-gusmao-etal/</loc>
-    <lastmod>2020-11-24T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://mauriciovancine.github.io/publication/2020-gusmao-etal/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt"
-                href="https://mauriciovancine.github.io/pt/publication/2020-gusmao-etal/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://mauriciovancine.github.io/pt/author/jorge-dona/</loc>
-    <lastmod>2020-11-24T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://mauriciovancine.github.io/author/jorge-dona/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt"
-                href="https://mauriciovancine.github.io/pt/author/jorge-dona/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://mauriciovancine.github.io/pt/author/luciano-n.-naka/</loc>
-    <lastmod>2020-11-24T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://mauriciovancine.github.io/author/luciano-n.-naka/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt"
-                href="https://mauriciovancine.github.io/pt/author/luciano-n.-naka/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://mauriciovancine.github.io/pt/author/reginaldo-a.-f.-gusmao/</loc>
-    <lastmod>2020-11-24T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://mauriciovancine.github.io/author/reginaldo-a.-f.-gusmao/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt"
-                href="https://mauriciovancine.github.io/pt/author/reginaldo-a.-f.-gusmao/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://mauriciovancine.github.io/pt/author/thiago-goncalvessouza/</loc>
-    <lastmod>2020-11-24T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://mauriciovancine.github.io/author/thiago-goncalvessouza/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt"
-                href="https://mauriciovancine.github.io/pt/author/thiago-goncalvessouza/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://mauriciovancine.github.io/pt/author/ana-laura-p.-cintra/</loc>
-    <lastmod>2020-11-13T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://mauriciovancine.github.io/author/ana-laura-p.-cintra/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt"
-                href="https://mauriciovancine.github.io/pt/author/ana-laura-p.-cintra/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://mauriciovancine.github.io/pt/author/carolina-bello/</loc>
-    <lastmod>2020-11-13T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://mauriciovancine.github.io/author/carolina-bello/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt"
-                href="https://mauriciovancine.github.io/pt/author/carolina-bello/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://mauriciovancine.github.io/pt/author/catherine-h.-graham/</loc>
-    <lastmod>2020-11-13T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://mauriciovancine.github.io/author/catherine-h.-graham/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt"
-                href="https://mauriciovancine.github.io/pt/author/catherine-h.-graham/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://mauriciovancine.github.io/pt/author/elisa-barreto/</loc>
-    <lastmod>2020-11-13T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://mauriciovancine.github.io/author/elisa-barreto/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt"
-                href="https://mauriciovancine.github.io/pt/author/elisa-barreto/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://mauriciovancine.github.io/pt/publication/2020-bello-etal/</loc>
-    <lastmod>2020-11-13T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://mauriciovancine.github.io/publication/2020-bello-etal/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt"
-                href="https://mauriciovancine.github.io/pt/publication/2020-bello-etal/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://mauriciovancine.github.io/pt/author/mauro-galetti/</loc>
-    <lastmod>2020-11-13T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://mauriciovancine.github.io/author/mauro-galetti/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt"
-                href="https://mauriciovancine.github.io/pt/author/mauro-galetti/"
-                />
   </url>
   
   <url>
@@ -613,6 +438,21 @@
   </url>
   
   <url>
+    <loc>https://mauriciovancine.github.io/pt/author/carolina-bello/</loc>
+    <lastmod>2020-02-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://mauriciovancine.github.io/author/carolina-bello/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="https://mauriciovancine.github.io/pt/author/carolina-bello/"
+                />
+  </url>
+  
+  <url>
     <loc>https://mauriciovancine.github.io/pt/publication/2020-santos-etal/</loc>
     <lastmod>2020-02-01T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -714,6 +554,21 @@
                 rel="alternate"
                 hreflang="pt"
                 href="https://mauriciovancine.github.io/pt/author/lucas-augusto-pereira/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://mauriciovancine.github.io/pt/author/mauro-galetti/</loc>
+    <lastmod>2020-02-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://mauriciovancine.github.io/author/mauro-galetti/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="https://mauriciovancine.github.io/pt/author/mauro-galetti/"
                 />
   </url>
   
@@ -988,6 +843,126 @@
   </url>
   
   <url>
+    <loc>https://mauriciovancine.github.io/pt/author/adriana-almeida-lima/</loc>
+    <lastmod>2019-10-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://mauriciovancine.github.io/author/adriana-almeida-lima/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="https://mauriciovancine.github.io/pt/author/adriana-almeida-lima/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://mauriciovancine.github.io/pt/author/andreia-magro-moraes/</loc>
+    <lastmod>2019-10-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://mauriciovancine.github.io/author/andreia-magro-moraes/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="https://mauriciovancine.github.io/pt/author/andreia-magro-moraes/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://mauriciovancine.github.io/pt/author/andreza-magro-moraes/</loc>
+    <lastmod>2019-10-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://mauriciovancine.github.io/author/andreza-magro-moraes/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="https://mauriciovancine.github.io/pt/author/andreza-magro-moraes/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://mauriciovancine.github.io/pt/author/carlos-leandro-de-oliveira-cordeiro/</loc>
+    <lastmod>2019-10-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://mauriciovancine.github.io/author/carlos-leandro-de-oliveira-cordeiro/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="https://mauriciovancine.github.io/pt/author/carlos-leandro-de-oliveira-cordeiro/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://mauriciovancine.github.io/pt/author/miriam-plaza-pinto/</loc>
+    <lastmod>2019-10-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://mauriciovancine.github.io/author/miriam-plaza-pinto/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="https://mauriciovancine.github.io/pt/author/miriam-plaza-pinto/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://mauriciovancine.github.io/pt/publication/2019-moraes-etal/</loc>
+    <lastmod>2019-10-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://mauriciovancine.github.io/publication/2019-moraes-etal/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="https://mauriciovancine.github.io/pt/publication/2019-moraes-etal/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://mauriciovancine.github.io/pt/author/rosane-garcia-collevatti/</loc>
+    <lastmod>2019-10-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://mauriciovancine.github.io/author/rosane-garcia-collevatti/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="https://mauriciovancine.github.io/pt/author/rosane-garcia-collevatti/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://mauriciovancine.github.io/pt/author/thiago-sanna-freire-silva/</loc>
+    <lastmod>2019-10-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://mauriciovancine.github.io/author/thiago-sanna-freire-silva/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="https://mauriciovancine.github.io/pt/author/thiago-sanna-freire-silva/"
+                />
+  </url>
+  
+  <url>
     <loc>https://mauriciovancine.github.io/pt/workshop/2019-workshop-sdm-cbh/</loc>
     <lastmod>2018-07-30T02:20:01-07:00</lastmod>
     <xhtml:link
@@ -1003,128 +978,8 @@
   </url>
   
   <url>
-    <loc>https://mauriciovancine.github.io/pt/author/adriana-almeida-lima/</loc>
-    <lastmod>2019-07-06T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://mauriciovancine.github.io/author/adriana-almeida-lima/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt"
-                href="https://mauriciovancine.github.io/pt/author/adriana-almeida-lima/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://mauriciovancine.github.io/pt/author/andreia-magro-moraes/</loc>
-    <lastmod>2019-07-06T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://mauriciovancine.github.io/author/andreia-magro-moraes/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt"
-                href="https://mauriciovancine.github.io/pt/author/andreia-magro-moraes/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://mauriciovancine.github.io/pt/author/andreza-magro-moraes/</loc>
-    <lastmod>2019-07-06T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://mauriciovancine.github.io/author/andreza-magro-moraes/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt"
-                href="https://mauriciovancine.github.io/pt/author/andreza-magro-moraes/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://mauriciovancine.github.io/pt/author/carlos-leandro-de-oliveira-cordeiro/</loc>
-    <lastmod>2019-07-06T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://mauriciovancine.github.io/author/carlos-leandro-de-oliveira-cordeiro/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt"
-                href="https://mauriciovancine.github.io/pt/author/carlos-leandro-de-oliveira-cordeiro/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://mauriciovancine.github.io/pt/author/miriam-plaza-pinto/</loc>
-    <lastmod>2019-07-06T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://mauriciovancine.github.io/author/miriam-plaza-pinto/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt"
-                href="https://mauriciovancine.github.io/pt/author/miriam-plaza-pinto/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://mauriciovancine.github.io/pt/publication/2019-moraes-etal/</loc>
-    <lastmod>2019-07-06T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://mauriciovancine.github.io/publication/2019-moraes-etal/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt"
-                href="https://mauriciovancine.github.io/pt/publication/2019-moraes-etal/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://mauriciovancine.github.io/pt/author/rosane-garcia-collevatti/</loc>
-    <lastmod>2019-07-06T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://mauriciovancine.github.io/author/rosane-garcia-collevatti/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt"
-                href="https://mauriciovancine.github.io/pt/author/rosane-garcia-collevatti/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://mauriciovancine.github.io/pt/author/thiago-sanna-freire-silva/</loc>
-    <lastmod>2019-07-06T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://mauriciovancine.github.io/author/thiago-sanna-freire-silva/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt"
-                href="https://mauriciovancine.github.io/pt/author/thiago-sanna-freire-silva/"
-                />
-  </url>
-  
-  <url>
     <loc>https://mauriciovancine.github.io/pt/author/alessandra-bertassoni/</loc>
-    <lastmod>2019-03-29T00:00:00+00:00</lastmod>
+    <lastmod>2019-04-24T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -1139,7 +994,7 @@
   
   <url>
     <loc>https://mauriciovancine.github.io/pt/author/john-wesley-ribeiro/</loc>
-    <lastmod>2019-03-29T00:00:00+00:00</lastmod>
+    <lastmod>2019-04-24T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -1154,7 +1009,7 @@
   
   <url>
     <loc>https://mauriciovancine.github.io/pt/author/jessica-abonizio-gouvea/</loc>
-    <lastmod>2019-03-29T00:00:00+00:00</lastmod>
+    <lastmod>2019-04-24T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -1169,7 +1024,7 @@
   
   <url>
     <loc>https://mauriciovancine.github.io/pt/publication/2019-bertassoni-etal/</loc>
-    <lastmod>2019-03-29T00:00:00+00:00</lastmod>
+    <lastmod>2019-04-24T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -1184,7 +1039,7 @@
   
   <url>
     <loc>https://mauriciovancine.github.io/pt/author/rita-de-cassia-bianchi/</loc>
-    <lastmod>2019-03-29T00:00:00+00:00</lastmod>
+    <lastmod>2019-04-24T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -1199,7 +1054,7 @@
   
   <url>
     <loc>https://mauriciovancine.github.io/pt/author/romulo-theodoro-costa/</loc>
-    <lastmod>2019-03-29T00:00:00+00:00</lastmod>
+    <lastmod>2019-04-24T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -1214,7 +1069,7 @@
   
   <url>
     <loc>https://mauriciovancine.github.io/pt/author/ana-paula-de-abreu/</loc>
-    <lastmod>2018-10-08T00:00:00+00:00</lastmod>
+    <lastmod>2018-10-26T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -1229,7 +1084,7 @@
   
   <url>
     <loc>https://mauriciovancine.github.io/pt/author/andreia-mantovani-ferro-e-silva/</loc>
-    <lastmod>2018-10-08T00:00:00+00:00</lastmod>
+    <lastmod>2018-10-26T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -1244,7 +1099,7 @@
   
   <url>
     <loc>https://mauriciovancine.github.io/pt/author/luciano-de-andrade/</loc>
-    <lastmod>2018-10-08T00:00:00+00:00</lastmod>
+    <lastmod>2018-10-26T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -1259,7 +1114,7 @@
   
   <url>
     <loc>https://mauriciovancine.github.io/pt/author/maria-dalva-de-barros-carvalho/</loc>
-    <lastmod>2018-10-08T00:00:00+00:00</lastmod>
+    <lastmod>2018-10-26T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -1274,7 +1129,7 @@
   
   <url>
     <loc>https://mauriciovancine.github.io/pt/author/max-jean-de-ornelas-toledo/</loc>
-    <lastmod>2018-10-08T00:00:00+00:00</lastmod>
+    <lastmod>2018-10-26T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -1289,7 +1144,7 @@
   
   <url>
     <loc>https://mauriciovancine.github.io/pt/author/sandra-marisa-pelloso/</loc>
-    <lastmod>2018-10-08T00:00:00+00:00</lastmod>
+    <lastmod>2018-10-26T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -1304,7 +1159,7 @@
   
   <url>
     <loc>https://mauriciovancine.github.io/pt/publication/2018-ferro-e-silva-etal/</loc>
-    <lastmod>2018-10-08T00:00:00+00:00</lastmod>
+    <lastmod>2018-10-26T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -1379,7 +1234,7 @@
   
   <url>
     <loc>https://mauriciovancine.github.io/pt/publication-type/4/</loc>
-    <lastmod>2018-06-28T00:00:00+00:00</lastmod>
+    <lastmod>2018-07-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -1394,7 +1249,7 @@
   
   <url>
     <loc>https://mauriciovancine.github.io/pt/author/ariel-lopez/</loc>
-    <lastmod>2018-06-28T00:00:00+00:00</lastmod>
+    <lastmod>2018-07-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -1409,7 +1264,7 @@
   
   <url>
     <loc>https://mauriciovancine.github.io/pt/publication/2018-vancine-etal/</loc>
-    <lastmod>2018-06-28T00:00:00+00:00</lastmod>
+    <lastmod>2018-07-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -1424,7 +1279,7 @@
   
   <url>
     <loc>https://mauriciovancine.github.io/pt/author/carolina-ortiz-rocha-da-costa/</loc>
-    <lastmod>2018-06-28T00:00:00+00:00</lastmod>
+    <lastmod>2018-07-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -1439,7 +1294,7 @@
   
   <url>
     <loc>https://mauriciovancine.github.io/pt/author/celio-fernando-baptista-haddad/</loc>
-    <lastmod>2018-06-28T00:00:00+00:00</lastmod>
+    <lastmod>2018-07-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -1454,7 +1309,7 @@
   
   <url>
     <loc>https://mauriciovancine.github.io/pt/author/fabio-maffei/</loc>
-    <lastmod>2018-06-28T00:00:00+00:00</lastmod>
+    <lastmod>2018-07-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -1469,7 +1324,7 @@
   
   <url>
     <loc>https://mauriciovancine.github.io/pt/author/henrique-oliveira-sawakuchi/</loc>
-    <lastmod>2018-06-28T00:00:00+00:00</lastmod>
+    <lastmod>2018-07-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -1484,7 +1339,7 @@
   
   <url>
     <loc>https://mauriciovancine.github.io/pt/author/jaime-bertoluci/</loc>
-    <lastmod>2018-06-28T00:00:00+00:00</lastmod>
+    <lastmod>2018-07-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -1499,7 +1354,7 @@
   
   <url>
     <loc>https://mauriciovancine.github.io/pt/author/jose-wagner-ribeiro-junior/</loc>
-    <lastmod>2018-06-28T00:00:00+00:00</lastmod>
+    <lastmod>2018-07-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -1514,7 +1369,7 @@
   
   <url>
     <loc>https://mauriciovancine.github.io/pt/author/joao-gabriel-ribeiro-giovanelli/</loc>
-    <lastmod>2018-06-28T00:00:00+00:00</lastmod>
+    <lastmod>2018-07-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -1529,7 +1384,7 @@
   
   <url>
     <loc>https://mauriciovancine.github.io/pt/author/kaua-da-silva-duarte/</loc>
-    <lastmod>2018-06-28T00:00:00+00:00</lastmod>
+    <lastmod>2018-07-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -1544,7 +1399,7 @@
   
   <url>
     <loc>https://mauriciovancine.github.io/pt/author/lucas-rodriguez-forti/</loc>
-    <lastmod>2018-06-28T00:00:00+00:00</lastmod>
+    <lastmod>2018-07-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -1559,7 +1414,7 @@
   
   <url>
     <loc>https://mauriciovancine.github.io/pt/author/marilia-bruzzi-lion/</loc>
-    <lastmod>2018-06-28T00:00:00+00:00</lastmod>
+    <lastmod>2018-07-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -1574,7 +1429,7 @@
   
   <url>
     <loc>https://mauriciovancine.github.io/pt/author/paulo-mateus-martinssobrinho/</loc>
-    <lastmod>2018-06-28T00:00:00+00:00</lastmod>
+    <lastmod>2018-07-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -1589,7 +1444,7 @@
   
   <url>
     <loc>https://mauriciovancine.github.io/pt/author/pier-cacciali/</loc>
-    <lastmod>2018-06-28T00:00:00+00:00</lastmod>
+    <lastmod>2018-07-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -1604,7 +1459,7 @@
   
   <url>
     <loc>https://mauriciovancine.github.io/pt/author/rafael-parelli-bovo/</loc>
-    <lastmod>2018-06-28T00:00:00+00:00</lastmod>
+    <lastmod>2018-07-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -1619,7 +1474,7 @@
   
   <url>
     <loc>https://mauriciovancine.github.io/pt/author/ricardo-brassaloti/</loc>
-    <lastmod>2018-06-28T00:00:00+00:00</lastmod>
+    <lastmod>2018-07-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -1634,7 +1489,7 @@
   
   <url>
     <loc>https://mauriciovancine.github.io/pt/author/yuri-silva-de-souza/</loc>
-    <lastmod>2018-06-28T00:00:00+00:00</lastmod>
+    <lastmod>2018-07-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -1724,7 +1579,7 @@
   
   <url>
     <loc>https://mauriciovancine.github.io/pt/publication/2018-sobral-souza-etal/</loc>
-    <lastmod>2018-01-24T00:00:00+00:00</lastmod>
+    <lastmod>2018-02-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -1739,7 +1594,7 @@
   
   <url>
     <loc>https://mauriciovancine.github.io/pt/author/matheus-s.-lima-ribeiro/</loc>
-    <lastmod>2018-01-24T00:00:00+00:00</lastmod>
+    <lastmod>2018-02-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -1754,7 +1609,7 @@
   
   <url>
     <loc>https://mauriciovancine.github.io/pt/author/andre-luis-regolin/</loc>
-    <lastmod>2017-10-09T00:00:00+00:00</lastmod>
+    <lastmod>2017-12-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -1769,7 +1624,7 @@
   
   <url>
     <loc>https://mauriciovancine.github.io/pt/author/felipe-moreli-fantacini/</loc>
-    <lastmod>2017-10-09T00:00:00+00:00</lastmod>
+    <lastmod>2017-12-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -1784,7 +1639,7 @@
   
   <url>
     <loc>https://mauriciovancine.github.io/pt/publication/2017-regolin-etal/</loc>
-    <lastmod>2017-10-09T00:00:00+00:00</lastmod>
+    <lastmod>2017-12-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -1799,7 +1654,7 @@
   
   <url>
     <loc>https://mauriciovancine.github.io/pt/author/jorge-jose-cherem/</loc>
-    <lastmod>2017-10-09T00:00:00+00:00</lastmod>
+    <lastmod>2017-12-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -1814,7 +1669,7 @@
   
   <url>
     <loc>https://mauriciovancine.github.io/pt/author/juliano-andre-bogoni/</loc>
-    <lastmod>2017-10-09T00:00:00+00:00</lastmod>
+    <lastmod>2017-12-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -1829,7 +1684,7 @@
   
   <url>
     <loc>https://mauriciovancine.github.io/pt/author/luiz-gustavo-oliveira-santos/</loc>
-    <lastmod>2017-10-09T00:00:00+00:00</lastmod>
+    <lastmod>2017-12-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -1844,7 +1699,7 @@
   
   <url>
     <loc>https://mauriciovancine.github.io/pt/author/marcos-adriano-tortato/</loc>
-    <lastmod>2017-10-09T00:00:00+00:00</lastmod>
+    <lastmod>2017-12-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -1859,7 +1714,7 @@
   
   <url>
     <loc>https://mauriciovancine.github.io/pt/author/mauricio-eduardo-graipel/</loc>
-    <lastmod>2017-10-09T00:00:00+00:00</lastmod>
+    <lastmod>2017-12-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -1874,7 +1729,7 @@
   
   <url>
     <loc>https://mauriciovancine.github.io/pt/author/micheli-ribeiro-luiz/</loc>
-    <lastmod>2017-10-09T00:00:00+00:00</lastmod>
+    <lastmod>2017-12-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -1889,7 +1744,7 @@
   
   <url>
     <loc>https://mauriciovancine.github.io/pt/author/nilton-carlos-caceres/</loc>
-    <lastmod>2017-10-09T00:00:00+00:00</lastmod>
+    <lastmod>2017-12-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -1904,7 +1759,7 @@
   
   <url>
     <loc>https://mauriciovancine.github.io/pt/author/pedro-volkmer-de-castilho/</loc>
-    <lastmod>2017-10-09T00:00:00+00:00</lastmod>
+    <lastmod>2017-12-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -2054,7 +1909,7 @@
   
   <url>
     <loc>https://mauriciovancine.github.io/pt/author/carlos-a.-peres/</loc>
-    <lastmod>2017-03-02T00:00:00+00:00</lastmod>
+    <lastmod>2017-06-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -2069,7 +1924,7 @@
   
   <url>
     <loc>https://mauriciovancine.github.io/pt/author/carolina-s.-carvalho/</loc>
-    <lastmod>2017-03-02T00:00:00+00:00</lastmod>
+    <lastmod>2017-06-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -2084,7 +1939,7 @@
   
   <url>
     <loc>https://mauriciovancine.github.io/pt/author/daiane-buscariol/</loc>
-    <lastmod>2017-03-02T00:00:00+00:00</lastmod>
+    <lastmod>2017-06-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -2099,7 +1954,7 @@
   
   <url>
     <loc>https://mauriciovancine.github.io/pt/author/felipe-pedrosa/</loc>
-    <lastmod>2017-03-02T00:00:00+00:00</lastmod>
+    <lastmod>2017-06-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -2114,7 +1969,7 @@
   
   <url>
     <loc>https://mauriciovancine.github.io/pt/author/gabrielle-beca/</loc>
-    <lastmod>2017-03-02T00:00:00+00:00</lastmod>
+    <lastmod>2017-06-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -2129,7 +1984,7 @@
   
   <url>
     <loc>https://mauriciovancine.github.io/pt/publication/2017-beca-etal/</loc>
-    <lastmod>2017-03-02T00:00:00+00:00</lastmod>
+    <lastmod>2017-06-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -2144,7 +1999,7 @@
   
   <url>
     <loc>https://mauriciovancine.github.io/pt/author/rafael-souza-c.-alves/</loc>
-    <lastmod>2017-03-02T00:00:00+00:00</lastmod>
+    <lastmod>2017-06-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
