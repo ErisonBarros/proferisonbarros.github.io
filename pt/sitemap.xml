@@ -4,7 +4,7 @@
   
   <url>
     <loc>https://mauriciovancine.github.io/pt/post/</loc>
-    <lastmod>2021-02-21T00:00:00+00:00</lastmod>
+    <lastmod>2021-02-20T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -18,13 +18,28 @@
   </url>
   
   <url>
-    <loc>https://mauriciovancine.github.io/pt/post/2021-02-23-desmistificando-sistemas-referencia-coordendas-datum/</loc>
-    <lastmod>2021-02-21T00:00:00+00:00</lastmod>
+    <loc>https://mauriciovancine.github.io/pt/categories/</loc>
+    <lastmod>2021-02-20T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://mauriciovancine.github.io/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="https://mauriciovancine.github.io/pt/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://mauriciovancine.github.io/pt/post/2021-02-20-desmistificando-sistemas-referencia-coordendas-datum/</loc>
+    <lastmod>2021-02-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://mauriciovancine.github.io/pt/</loc>
-    <lastmod>2021-02-21T00:00:00+00:00</lastmod>
+    <lastmod>2021-02-20T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -34,6 +49,41 @@
                 rel="alternate"
                 hreflang="pt"
                 href="https://mauriciovancine.github.io/pt/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://mauriciovancine.github.io/pt/tag/rspatial/</loc>
+    <lastmod>2021-02-20T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://mauriciovancine.github.io/tag/rspatial/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="https://mauriciovancine.github.io/pt/tag/rspatial/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://mauriciovancine.github.io/pt/category/rspatial/</loc>
+    <lastmod>2021-02-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mauriciovancine.github.io/pt/tags/</loc>
+    <lastmod>2021-02-20T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://mauriciovancine.github.io/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="https://mauriciovancine.github.io/pt/tags/"
                 />
   </url>
   
@@ -373,7 +423,7 @@
   </url>
   
   <url>
-    <loc>https://mauriciovancine.github.io/pt/post/2021-02-07-fontes-de-dados-geograficos/</loc>
+    <loc>https://mauriciovancine.github.io/pt/post/2021-04-20-fontes-de-dados-geograficos/</loc>
     <lastmod>2021-01-07T15:54:57-03:00</lastmod>
   </url>
   
@@ -423,36 +473,6 @@
   </url>
   
   <url>
-    <loc>https://mauriciovancine.github.io/pt/tag/rspatial/</loc>
-    <lastmod>2020-05-05T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://mauriciovancine.github.io/tag/rspatial/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt"
-                href="https://mauriciovancine.github.io/pt/tag/rspatial/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://mauriciovancine.github.io/pt/tags/</loc>
-    <lastmod>2020-05-05T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://mauriciovancine.github.io/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt"
-                href="https://mauriciovancine.github.io/pt/tags/"
-                />
-  </url>
-  
-  <url>
     <loc>https://mauriciovancine.github.io/pt/tag/tutorial/</loc>
     <lastmod>2020-05-05T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -494,21 +514,6 @@
                 rel="alternate"
                 hreflang="pt"
                 href="https://mauriciovancine.github.io/pt/video/werlive/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://mauriciovancine.github.io/pt/categories/</loc>
-    <lastmod>2020-03-04T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://mauriciovancine.github.io/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt"
-                href="https://mauriciovancine.github.io/pt/categories/"
                 />
   </url>
   
@@ -2177,7 +2182,7 @@
   </url>
   
   <url>
-    <loc>https://mauriciovancine.github.io/pt/post/2019-12-20-como-onde-comecar-a-aprender-r/</loc>
+    <loc>https://mauriciovancine.github.io/pt/post/2021-01-20-como-onde-comecar-a-aprender-r/</loc>
   </url>
   
   <url>
@@ -2189,7 +2194,7 @@
   </url>
   
   <url>
-    <loc>https://mauriciovancine.github.io/pt/post/2019-12-15-dados-geoespaciais-no-r-uma-breve-introducao/</loc>
+    <loc>https://mauriciovancine.github.io/pt/post/2021-03-20-formatos-dados-geograficos/</loc>
   </url>
   
   <url>
