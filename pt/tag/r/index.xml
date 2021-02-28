@@ -18,7 +18,9 @@
       <pubDate>Tue, 05 May 2020 00:00:00 +0000</pubDate>
       <guid>https://mauriciovancine.github.io/pt/video/werlive/</guid>
       <description>&lt;h1 id=&#34;we-r-live&#34;&gt;We R Live&lt;/h1&gt;
+&lt;div style=&#34;text-align: justify&#34;&gt;
 &lt;p&gt;Eu e &lt;a href=&#34;https://twitter.com/FelipeSMBarros&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Felipe Sodré&lt;/a&gt;, por meio do canal  &lt;a href=&#34;https://www.youtube.com/channel/UCLAeX4dyujMoy4xqHvxSDpQ&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GeoCast Brasil&lt;/a&gt; no YouTube, criamos este projeto para compartilhar um pouco do nosso conhecimento sobre o manejo e visualização de dados geoespaciais através da linguagem R. Sempre partindo de uma situação problema, apresentamos os principais conceitos teóricos e abordagens práticas para a sua resolução&lt;/p&gt;
+&lt;/div&gt;    
 &lt;h3 id=&#34;uwe-r-live-01---por-onde-começaru&#34;&gt;&lt;u&gt;We R Live 01 - Por onde começaR?&lt;/u&gt;&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&#34;https://werlive.netlify.app/werlive01/werlive01&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Slides&lt;/a&gt;&lt;br&gt;
 &lt;a href=&#34;https://gitlab.com/geocastbrasil/liver/-/tree/master/static/werlive01&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Material&lt;/a&gt;&lt;br&gt;
@@ -119,8 +121,9 @@
   &lt;iframe src=&#34;https://www.youtube.com/embed/RCTrLx_33D8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
+&lt;div style=&#34;text-align: justify&#34;&gt;
 &lt;p&gt;Neste vídeo, à convite do &lt;a href=&#34;https://twitter.com/FelipeSMBarros&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Felipe Sodré&lt;/a&gt;, do canal &lt;a href=&#34;https://www.youtube.com/channel/UCLAeX4dyujMoy4xqHvxSDpQ&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GeoCast Brasil&lt;/a&gt;, fiz uma live um tanto longa, onde falei sobre Ecologia da Paisagem e alguns dos principais conceitos atrelados à essa disciplina, e uma parte prática sobre o cálculo de métricas de paisagem utilizando a linguagem R, mais especificamente utilizando o pacote &lt;a href=&#34;https://r-spatialecology.github.io/landscapemetrics/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;landscapemetrics&lt;/em&gt;&lt;/a&gt;. A apresentação e códigos podem ser acessados nesse &lt;a href=&#34;https://gitlab.com/geocastbrasil/landscapemetrics&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;repositório do GitLab&lt;/a&gt;.&lt;/p&gt;
-</description>
+&lt;/div&gt;</description>
     </item>
     
     <item>
@@ -132,7 +135,9 @@
 &lt;script src=&#34;https://mauriciovancine.github.io/pt/workshop/2019-workshop-r-unesp-ecology/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
-&lt;p&gt;A linguagem R vem se destacando nos últimos anos (desde de 2000), como a principal ferramenta para manejo, visualização e análise de dados, principalmente na área de Ecologia, Psicologia, Economia, e mais recentemente, na Ciência de Dados. Neste curso serão abordados quatro temas introdutórios dessa linguagem: (i) introdução e funcionamento da linguagem R e do software RStudio, (ii) estrutura e manipulação de dados, (iii) introdução ao tidyverse, e (iv) visualização de dados. A carga horária será de aproximadamente 08 horas, onde será focada a parte teórico-prática, intercalada com a realização de exercícios para fixação do conteúdo. Ao final do curso, espera-se que os participantes tenham uma noção geral do funcionamento da linguagem e das potenciais aplicações dentro da área de análise de dados ecológicos&lt;/p&gt;
+&lt;div style=&#34;text-align: justify&#34;&gt;
+&lt;p&gt;A linguagem R vem se destacando nos últimos anos (desde de 2000), como a principal ferramenta para manejo, visualização e análise de dados, principalmente na área de Ecologia, Psicologia, Economia, e mais recentemente, na Ciência de Dados. Neste curso serão abordados quatro temas introdutórios dessa linguagem: (i) introdução e funcionamento da linguagem R e do software RStudio, (ii) estrutura e manipulação de dados, (iii) introdução ao tidyverse, e (iv) visualização de dados. A carga horária será de aproximadamente 08 horas, onde será focada a parte teórico-prática, intercalada com a realização de exercícios para fixação do conteúdo. Ao final do curso, espera-se que os participantes tenham uma noção geral do funcionamento da linguagem e das potenciais aplicações dentro da área de análise de dados ecológicos.&lt;/p&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -145,7 +150,9 @@
 &lt;script src=&#34;https://mauriciovancine.github.io/pt/workshop/2019-workshop-r-unesp-biology/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
-&lt;p&gt;A linguagem R vem se destacando nos últimos anos (desde de 2000), como a principal ferramenta para manejo, visualização e análise de dados, principalmente na área de Ecologia, Psicologia, Economia, e mais recentemente, na Ciência de Dados. Neste curso serão abordados quatro temas introdutórios dessa linguagem: (i) introdução e funcionamento da linguagem R e do software RStudio, (ii) estrutura e manipulação de dados, (iii) introdução ao tidyverse, e (iv) visualização de dados. A carga horária será de aproximadamente 08 horas, onde será focada a parte teórico-prática, intercalada com a realização de exercícios para fixação do conteúdo. Ao final do curso, espera-se que os participantes tenham uma noção geral do funcionamento da linguagem e das potenciais aplicações dentro da área de análise de dados ecológicos&lt;/p&gt;
+&lt;div style=&#34;text-align: justify&#34;&gt;
+&lt;p&gt;A linguagem R vem se destacando nos últimos anos (desde de 2000), como a principal ferramenta para manejo, visualização e análise de dados, principalmente na área de Ecologia, Psicologia, Economia, e mais recentemente, na Ciência de Dados. Neste curso serão abordados quatro temas introdutórios dessa linguagem: (i) introdução e funcionamento da linguagem R e do software RStudio, (ii) estrutura e manipulação de dados, (iii) introdução ao tidyverse, e (iv) visualização de dados. A carga horária será de aproximadamente 08 horas, onde será focada a parte teórico-prática, intercalada com a realização de exercícios para fixação do conteúdo. Ao final do curso, espera-se que os participantes tenham uma noção geral do funcionamento da linguagem e das potenciais aplicações dentro da área de análise de dados ecológicos.&lt;/p&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -158,17 +165,19 @@
 &lt;script src=&#34;https://mauriciovancine.github.io/pt/workshop/2019-workshop-sdm-cbh/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
-&lt;p&gt;A ampla disponibilidade de dados sobre a biodiversidade e variáveis ambientais, tem permitido a utilização de diversas análises biogeográficas e macroecológicas, dentre elas, os modelos de distribuição de espécies ou Species Distribution Modeling (SDMs). Esse minicurso tem como intuito oferecer uma introdução teórica e prática à técnica de SDMs, utilizando a linguagem R. Primeiramente serão apresentados os principais conceitos da teoria de nicho ecológico (Grinnell, Elton e Hutchinson) e da teoria de modelos (espaço geográfico (G), espaço ambiental (E) e diagrama Biótico-Abiótico-Movimentação (BAM)). Seguida à parte teórica, serão apresentados as principais bases de dados (ocorrências e variáveis ambientais), tipos de algoritmos (presença e ausência – GLM, GAM e Random Forest, apenas presença – BIOCLIM, Mahalanobis e Gower, e presença e background – Maxent e SVM), avaliação dos modelos (ROC, AUC e TSS), limites de corte (thresholds) e algumas abordagens de consenso de modelos (ensembles). A parte prática será focada na construção dos modelos através da linguagem R. Inicialmente será feito uma introdução à programação e manejo de dados espaciais na linguagem R, utilizando os pacotes raster e rgdal. Em seguida, será apresentado como obter dados de ocorrências e variáveis ambientais, através dos pacotes spooc e dismo. Uma vez adquiridos os dados, serão feitas análises preliminares dos mesmos, como seleção de ocorrências (um ponto por célula) e de variáveis (correlação, PCA, análise fatorial e VIF). Por fim, serão construídos modelos utilizando os algoritmos mencionados acima, além do cálculo das métricas de avaliação dos mesmos, utilizando os pacotes dismo, randomForest e kernlab&lt;/p&gt;
+&lt;div style=&#34;text-align: justify&#34;&gt;
+&lt;p&gt;A ampla disponibilidade de dados sobre a biodiversidade e variáveis ambientais, tem permitido a utilização de diversas análises biogeográficas e macroecológicas, dentre elas, os modelos de distribuição de espécies ou Species Distribution Modeling (SDMs). Esse minicurso tem como intuito oferecer uma introdução teórica e prática à técnica de SDMs, utilizando a linguagem R. Primeiramente serão apresentados os principais conceitos da teoria de nicho ecológico (Grinnell, Elton e Hutchinson) e da teoria de modelos (espaço geográfico (G), espaço ambiental (E) e diagrama Biótico-Abiótico-Movimentação (BAM)). Seguida à parte teórica, serão apresentados as principais bases de dados (ocorrências e variáveis ambientais), tipos de algoritmos (presença e ausência – GLM, GAM e Random Forest, apenas presença – BIOCLIM, Mahalanobis e Gower, e presença e background – Maxent e SVM), avaliação dos modelos (ROC, AUC e TSS), limites de corte (thresholds) e algumas abordagens de consenso de modelos (ensembles). A parte prática será focada na construção dos modelos através da linguagem R. Inicialmente será feito uma introdução à programação e manejo de dados espaciais na linguagem R, utilizando os pacotes raster e rgdal. Em seguida, será apresentado como obter dados de ocorrências e variáveis ambientais, através dos pacotes spooc e dismo. Uma vez adquiridos os dados, serão feitas análises preliminares dos mesmos, como seleção de ocorrências (um ponto por célula) e de variáveis (correlação, PCA, análise fatorial e VIF). Por fim, serão construídos modelos utilizando os algoritmos mencionados acima, além do cálculo das métricas de avaliação dos mesmos, utilizando os pacotes dismo, randomForest e kernlab.&lt;/p&gt;
+&lt;/div&gt;
 </description>
     </item>
     
     <item>
       <title>Como e onde começar a estudar R</title>
-      <link>https://mauriciovancine.github.io/pt/post/2021-01-20-como-onde-comecar-a-aprender-r/</link>
+      <link>https://mauriciovancine.github.io/pt/post/2021-07-como-onde-comecar-a-aprender-r/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mauriciovancine.github.io/pt/post/2021-01-20-como-onde-comecar-a-aprender-r/</guid>
+      <guid>https://mauriciovancine.github.io/pt/post/2021-07-como-onde-comecar-a-aprender-r/</guid>
       <description>
-&lt;script src=&#34;https://mauriciovancine.github.io/pt/post/2021-01-20-como-onde-comecar-a-aprender-r/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://mauriciovancine.github.io/pt/post/2021-07-como-onde-comecar-a-aprender-r/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;Escrevendo…&lt;/p&gt;
@@ -177,28 +186,15 @@
     
     <item>
       <title>Cálculo de métricas de paisagem no R</title>
-      <link>https://mauriciovancine.github.io/pt/post/2020-02-30-metricas-de-paisagem-no-r/</link>
+      <link>https://mauriciovancine.github.io/pt/post/2022-06-metricas-de-paisagem-no-r/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mauriciovancine.github.io/pt/post/2020-02-30-metricas-de-paisagem-no-r/</guid>
+      <guid>https://mauriciovancine.github.io/pt/post/2022-06-metricas-de-paisagem-no-r/</guid>
       <description>
-&lt;script src=&#34;https://mauriciovancine.github.io/pt/post/2020-02-30-metricas-de-paisagem-no-r/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://mauriciovancine.github.io/pt/post/2022-06-metricas-de-paisagem-no-r/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;Escrevendo…&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://nowosad.github.io/post/lsm-bp1/&#34; class=&#34;uri&#34;&gt;https://nowosad.github.io/post/lsm-bp1/&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Dados geoespaciais no R: uma breve introdução</title>
-      <link>https://mauriciovancine.github.io/pt/post/2021-03-20-formatos-dados-geograficos/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mauriciovancine.github.io/pt/post/2021-03-20-formatos-dados-geograficos/</guid>
-      <description>
-&lt;script src=&#34;https://mauriciovancine.github.io/pt/post/2021-03-20-formatos-dados-geograficos/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
-
-
-&lt;p&gt;Escrevendo…&lt;/p&gt;
 </description>
     </item>
     

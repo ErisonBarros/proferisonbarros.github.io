@@ -14,11 +14,12 @@
     
     <item>
       <title>Desmistificando o Sistemas de Referência de Coordenadas e Datum</title>
-      <link>https://mauriciovancine.github.io/pt/post/2021-02-20-desmistificando-sistemas-referencia-coordendas-datum/</link>
+      <link>https://mauriciovancine.github.io/pt/post/2021-02-desmistificando-sistemas-referencia-coordendas-datum/</link>
       <pubDate>Sat, 20 Feb 2021 00:00:00 +0000</pubDate>
-      <guid>https://mauriciovancine.github.io/pt/post/2021-02-20-desmistificando-sistemas-referencia-coordendas-datum/</guid>
-      <description>&lt;link href=&#34;https://mauriciovancine.github.io/pt/post/2021-02-20-desmistificando-sistemas-referencia-coordendas-datum/index_files/vembedr/css/vembedr.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;link href=&#34;https://mauriciovancine.github.io/pt/post/2021-02-20-desmistificando-sistemas-referencia-coordendas-datum/index_files/vembedr/css/vembedr.css&#34; rel=&#34;stylesheet&#34; /&gt;
+      <guid>https://mauriciovancine.github.io/pt/post/2021-02-desmistificando-sistemas-referencia-coordendas-datum/</guid>
+      <description>&lt;link href=&#34;https://mauriciovancine.github.io/pt/post/2021-02-desmistificando-sistemas-referencia-coordendas-datum/index_files/vembedr/css/vembedr.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;link href=&#34;https://mauriciovancine.github.io/pt/post/2021-02-desmistificando-sistemas-referencia-coordendas-datum/index_files/vembedr/css/vembedr.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;div style=&#34;text-align: justify&#34;&gt;
 &lt;h2 id=&#34;contextualização&#34;&gt;Contextualização&lt;/h2&gt;
 &lt;p&gt;Um dos primeiros assuntos que devemos entender antes de iniciar no mundo do &lt;strong&gt;Geoprocessamento&lt;/strong&gt; são os conceitos de &lt;strong&gt;Sistemas de Referência de Coordenadas&lt;/strong&gt; e &lt;strong&gt;Datum&lt;/strong&gt;. Esses conceitos atrelados à Cartografia, apesar de &lt;strong&gt;parecerem simples&lt;/strong&gt; para quem possui certa experiência na área de Geoprocessamento, muitas vezes são &lt;strong&gt;confundidos ou mesmo ignorados&lt;/strong&gt; por aqueles que estão adentrando nessa área agora.&lt;/p&gt;
 &lt;p&gt;Dessa forma, minha intenção com esse post é &lt;strong&gt;transmitir esses conceitos de forma simples e objetiva&lt;/strong&gt;, usando uma linguagem prática, para facilitar seu uso no dia a dia. Não adentro aqui em como aplicar esses conceitos em softwares de SIG. Para se aprofundar, recomendo livros específicos no final do post ou mesmo procurar disciplinas de Engenharia Cartográfica e Geodéria.&lt;/p&gt;
@@ -132,9 +133,15 @@ Figura 9: Discrepância entre um mesmo ponto em SAD69 e SIRGAS2000 em regiões u
 &lt;/ul&gt;
 &lt;p&gt;Entretanto, se partimos para &lt;strong&gt;escala regionais&lt;/strong&gt; (continente) ou &lt;strong&gt;globais&lt;/strong&gt; (todo o mundo), devemos considerar projeções cônicas e/ou cilíndricas, repectivamente, além de observar as distorsões em área, distâncias ou formas, que ficam muito maiores a depender das que escolhemos (&lt;strong&gt;conforme&lt;/strong&gt; não deforma ângulos, &lt;strong&gt;equivalente&lt;/strong&gt; não altera as áreas, e &lt;strong&gt;equidistante&lt;/strong&gt; não deforma distâncias), e principalmente quando nos afastamos das &lt;strong&gt;linhas linhas de tangência&lt;/strong&gt; dessas projeções.&lt;/p&gt;
 &lt;h2 id=&#34;códigos-para-os-sistemas-de-referência-de-coordenadas&#34;&gt;Códigos para os Sistemas de Referência de Coordenadas&lt;/h2&gt;
-&lt;p&gt;Por fim, algo que ajuda a simplicar esses conceitos são o código numérico &lt;code&gt;epsg&lt;/code&gt; e código em texto &lt;code&gt;proj4string&lt;/code&gt;. O código EPSG (&lt;em&gt;European Petroleum Survey Group&lt;/em&gt;) é uma sequência de números curta, referindo-se apenas a um CRS. O site &lt;a href=&#34;http://epsg.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;epsg.io&lt;/a&gt; permite consultar diversas informações sobre um código, como procurar por um código, representação de mapas e fazer transformações de CRS.&lt;/p&gt;
+&lt;p&gt;Por fim, algo que ajuda a simplicar esses conceitos são o código numérico &lt;code&gt;epsg&lt;/code&gt; e código em texto &lt;code&gt;proj4string&lt;/code&gt;. O código EPSG (&lt;em&gt;European Petroleum Survey Group&lt;/em&gt;) é uma sequência de números curta, referindo-se apenas a um CRS. O site &lt;a href=&#34;http://epsg.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;epsg.io&lt;/a&gt; permite consultar diversas informações sobre um código, como procurar por um código, representação de mapas e fazer transformações de CRS (Figura &lt;a href=&#34;#fig:fig-epsg&#34;&gt;10&lt;/a&gt;).&lt;/p&gt;
 &lt;p&gt;Já o código em texto &lt;code&gt;proj4string&lt;/code&gt; permite mais flexibilidade para especificar diferentes parâmetros, como o tipo de projeção, datum e elipsóide. Dessa forma, é possível especificar muitas projeções, ou mesmo modificar as projeções existentes, tornando a representação &lt;code&gt;proj4string&lt;/code&gt; mais complexa e flexível.&lt;/p&gt;
 &lt;p&gt;Além disso, ainda é possível consultar uma extensa lista de CRSs no site &lt;a href=&#34;https://spatialreference.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;spatialreference.org&lt;/a&gt;, que fornece descrições em diversis formatos, baseados em GDAL e Proj.4. Essa abordagem permite consultar uma URL que pode produzir uma referência espacial em um formato que seu software SIG ou o R pode utilizar como referência.&lt;/p&gt;
+&lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;
+&lt;p&gt;&lt;img src=&#34;img/geo_epsg.png&#34; alt=&#34;Site epsg.io com códigos EPSG. Fonte: epsg.io.&#34; width=&#34;150%&#34; /&gt;&lt;/p&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figura 10: Site epsg.io com códigos EPSG. Fonte: epsg.io.
+&lt;/p&gt;
+&lt;/div&gt;
 &lt;h2 id=&#34;para-se-aprofundar&#34;&gt;Para se aprofundar&lt;/h2&gt;
 &lt;p&gt;Aqui ofereço apenas os conceitos básicos e bem superficiais. Para se aprofundar no tema, sugiro a leitura dos livros listados abaixo.&lt;/p&gt;
 &lt;ul&gt;
@@ -151,6 +158,7 @@ Figura 9: Discrepância entre um mesmo ponto em SAD69 e SIRGAS2000 em regiões u
 &lt;p&gt;Duarte, P. A. (2002). Fundamentos de cartografia. Ed. UFSC.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;/div&gt;
 </description>
     </item>
     
