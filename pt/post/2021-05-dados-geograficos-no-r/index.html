@@ -34,7 +34,7 @@
   
     
   
-  <meta name="description" content="Modesta explicação de Sistemas de Referência de Coordenadas e Datum">
+  <meta name="description" content="Um guia para começar a trabalhar com dados geográfios no R">
 
   
   <link rel="alternate" hreflang="pt" href="https://mauriciovancine.github.io/pt/post/2021-05-dados-geograficos-no-r/">
@@ -280,14 +280,14 @@
   
   <meta property="og:site_name" content="Maurício Vancine">
   <meta property="og:url" content="https://mauriciovancine.github.io/pt/post/2021-05-dados-geograficos-no-r/">
-  <meta property="og:title" content="Desmistificando o Sistemas de Referência de Coordenadas e Datum | Maurício Vancine">
-  <meta property="og:description" content="Modesta explicação de Sistemas de Referência de Coordenadas e Datum"><meta property="og:image" content="https://mauriciovancine.github.io/pt/post/2021-05-dados-geograficos-no-r/featured.jpeg">
+  <meta property="og:title" content="Dados geográficos no R | Maurício Vancine">
+  <meta property="og:description" content="Um guia para começar a trabalhar com dados geográfios no R"><meta property="og:image" content="https://mauriciovancine.github.io/pt/post/2021-05-dados-geograficos-no-r/featured.jpeg">
   <meta property="twitter:image" content="https://mauriciovancine.github.io/pt/post/2021-05-dados-geograficos-no-r/featured.jpeg"><meta property="og:locale" content="pt">
   
     
-      <meta property="article:published_time" content="2021-02-21T00:00:00&#43;00:00">
+      <meta property="article:published_time" content="2021-02-20T00:00:00&#43;00:00">
     
-    <meta property="article:modified_time" content="2021-02-21T00:00:00&#43;00:00">
+    <meta property="article:modified_time" content="2021-02-20T00:00:00&#43;00:00">
   
 
   
@@ -313,14 +313,14 @@
     "@type": "WebPage",
     "@id": "https://mauriciovancine.github.io/pt/post/2021-05-dados-geograficos-no-r/"
   },
-  "headline": "Desmistificando o Sistemas de Referência de Coordenadas e Datum",
+  "headline": "Dados geográficos no R",
   
   "image": [
     "https://mauriciovancine.github.io/pt/post/2021-05-dados-geograficos-no-r/featured.jpeg"
   ],
   
-  "datePublished": "2021-02-21T00:00:00Z",
-  "dateModified": "2021-02-21T00:00:00Z",
+  "datePublished": "2021-02-20T00:00:00Z",
+  "dateModified": "2021-02-20T00:00:00Z",
   
   "author": {
     "@type": "Person",
@@ -335,7 +335,7 @@
       "url": "https://mauriciovancine.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png"
     }
   },
-  "description": "Modesta explicação de Sistemas de Referência de Coordenadas e Datum"
+  "description": "Um guia para começar a trabalhar com dados geográfios no R"
 }
 </script>
 
@@ -353,7 +353,7 @@
 
 
 
-  <title>Desmistificando o Sistemas de Referência de Coordenadas e Datum | Maurício Vancine</title>
+  <title>Dados geográficos no R | Maurício Vancine</title>
 
 </head>
 
@@ -727,7 +727,7 @@
 
 
 <div class="article-container pt-3">
-  <h1>Desmistificando o Sistemas de Referência de Coordenadas e Datum</h1>
+  <h1>Dados geográficos no R</h1>
 
   
 
@@ -745,7 +745,7 @@
     
       
     
-    Feb 21, 2021
+    Feb 20, 2021
   </span>
   
 
@@ -754,7 +754,7 @@
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    5 minutos de leitura
+    7 minutos de leitura
   </span>
   
 
@@ -765,6 +765,10 @@
   
 
   
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="/pt/category/r/">r</a>, <a href="/pt/category/geospatial/">geospatial</a>, <a href="/pt/category/tutorial/">tutorial</a></span>
   
 
 </div>
@@ -790,7 +794,7 @@
 <div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px; max-height: 833px;">
   <div style="position: relative">
     <img src="/pt/post/2021-05-dados-geograficos-no-r/featured_hu6d31229eb5e3bf72ee389a2d2d50ccb8_332689_720x0_resize_q90_lanczos.jpeg" alt="" class="featured-image">
-    
+    <span class="article-header-caption"><a href="https://github.com/allisonhorst/stats-illustrations">Imagem do Stats Ilustrations da Allison Horst</a></span>
   </div>
 </div>
 
@@ -799,67 +803,248 @@
   <div class="article-container">
 
     <div class="article-style">
-      <h2 id="contextualização">Contextualização</h2>
-<p>Um dos primeiros assuntos que devemos entender antes de iniciar no mundo do <strong>Geoprocessamento</strong> são os conceitos de <strong>Sistemas de Referência de Coordenadas</strong> e <strong>Datum</strong>. Esses conceitos atrelados à Cartografia, apesar de <strong>parecerem simples</strong> para quem tem certa experiência na área de Geoprocessamentos, muitas vezes são <strong>confundidos ou mesmo ignorado</strong>s por aqueles que estão adentrando nessa área.</p>
-<p>Dessa forma, minha intenção com esse post é <strong>transmitir esses conceitos de forma simples e objetiva</strong>, usando uma linguagem prática, para facilitar seu uso no dia a dia. Não adentro aqui em como aplicar esses conceitos em softwares de SIG. Para se aprofundar, recomendo livros específicos ou mesmo procurar disciplinas de Engenharia Cartográfica e Geodéria.</p>
-<h2 id="sistema-de-referência-de-coordenadas-e-unidades">Sistema de Referência de Coordenadas e Unidades</h2>
-<p>Os dados geográficos (vetor e raster, explicados com detalhes nesse <a href="">post</a>), possuem um componente fundamental, que é o <strong>Sistema de Referência de Coordenadas</strong> ou do inglês <em>Coordinate Reference System (CRS)</em>. Esse componente define como os elementos espaciais (vetor e raster) representam uma feição na superfície da Terra.</p>
-<p>Esse componente é composto por dois principais conceitos: primeiro, que tipo de unidades estão sendo utilizadas para a representação geográfica, podendo assumir dois tipos: <strong>ângulos</strong> para <strong>Sistema de Coordenadas Geográficas</strong> e <strong>metros</strong> para <strong>Sistema de Coordenadas Projetadas</strong>.</p>
-<p>O segundo componente é o <strong>datum</strong>, que é a <strong>relação</strong> do sistema de coordenadas com a superfície da Terra. Esse último componente faz parte de uma área da <strong>Cartografia</strong> denominada <strong>Geodésia</strong> que estuda a forma e dimensões da Terra, campo gravitacional, e a localização de pontos fixos e sistemas de coordenadas.</p>
-<p>O livro &ldquo;Choosing a Map Projection&rdquo; de <a href="https://www.springer.com/gp/book/9783319518343" target="_blank" rel="noopener">Lapaine et al. (2017)</a> é um excelente material para se aprofundar nesses assuntos (Figura <a href="#fig:fig-book">1</a>).</p>
+      <div style="text-align: justify">
+<h2 id="contextualização">Contextualização</h2>
+<p>Os pacotes indispensáveis para <em>manipulação</em> de dados geoespaciais no R</p>
+<ol>
+<li>sp</li>
+<li>sf</li>
+<li>raster/terra</li>
+<li>rgdal</li>
+<li>stars</li>
+</ol>
+<p>Os pacotes indispensáveis para <em>download</em> de dados geoespaciais no R</p>
+<ol>
+<li>rnaturalearth</li>
+<li>geobr</li>
+<li></li>
+<li></li>
+<li></li>
+</ol>
+<p>Os pacotes indispensáveis para <em>visualização</em> de dados geoespaciais no R</p>
+<ol>
+<li>ggplot2</li>
+<li>tmap</li>
+<li>ggmap</li>
+<li>cartography</li>
+<li>leaflet</li>
+</ol>
+<p>Os pacotes indispensáveis para <em>análises</em> de dados geoespaciais no R</p>
+<ol>
+<li>spatstats</li>
+<li>gstat</li>
+<li>geoR</li>
+<li></li>
+<li></li>
+</ol>
+<p>Os pacotes indispensáveis para <em>integração</em> com outros softwares de geoprocessamento no R</p>
+<ol>
+<li>RQGIS</li>
+<li>rgrass7</li>
+<li>RSAGA</li>
+<li>rpostgis</li>
+<li>RPyGeo</li>
+</ol>
+<p>Os pacotes indispensáveis para <em>sensoriamento remoto</em> no R</p>
+<ol>
+<li>landsat</li>
+<li>terra</li>
+<li></li>
+<li></li>
+<li></li>
+</ol>
+<p>Os nomes indispensáveis para se conhecer sobre dados geoespaciais no R</p>
+<ol>
+<li>Roger Bivand</li>
+<li>Edzer Pebesma</li>
+<li>Robin Lovelace</li>
+<li>Jakub Nowosad</li>
+<li>Paulo Justiniano Ribeiro Junior</li>
+</ol>
+<p>Os livros indispensáveis para se estudar sobre dados geoespaciais no R</p>
+<ol>
+<li>Geocomputation with R</li>
+<li>Applied Spatial Data Analysis with R</li>
+<li>An Introduction to R for Spatial Analysis and Mapping</li>
+<li></li>
+<li></li>
+</ol>
+<p>Os blogs indispensáveis para se conhecer sobre dados geoespaciais no R</p>
+<ol>
+<li>r-spatial (<a href="https://www.r-spatial.org/">https://www.r-spatial.org/</a>)</li>
+<li>Spatial Data Science (<a href="https://www.rspatial.org/">https://www.rspatial.org/</a>)</li>
+<li></li>
+<li></li>
+<li></li>
+</ol>
+<h3 id="sf-principal-pacote-no-r-para-dados-vetoriais"><em>sf</em>: principal pacote no R para dados vetoriais</h3>
+<p>Atualmente o principal pacote para trabalhar com dados vetoriais no R é o <a href="https://r-spatial.github.io/sf/" target="_blank" rel="noopener"><em>sf</em></a>, que implementou o <em>Simple Feature</em> no R (Pebesma 2018). Entretanto, outro pacote pode ser tão versátil quanto o <em>sf</em>, no caso o <a href="https://rspatial.org/terra/index.html" target="_blank" rel="noopener"><em>terra</em></a>, ainda em desenvolvimento.</p>
+<p>O pacote <em>sf</em> facilitou muito a forma de trabalhar com vetores no R, sendo que as principais vantagens desse pacote são (Lovelace, Nowosad &amp; Muenchow 2019):</p>
+<ul>
+<li>rápida importação e exportação de dados</li>
+<li>aprimorado desempenho de plotagem</li>
+<li>objetos <em>sf</em> podem ser tratados como dataframes na maioria das operações</li>
+<li>funções <em>sf</em> podem ser combinadas usando o operador <code>%&gt;%</code> e funcionam no formato tidyverse</li>
+<li>funções <em>sf</em> são consistentes e intuitivas (quase sempre começam com prefixo <code>st_</code>)</li>
+</ul>
+<p>Os tipos de geometrias apresentadas são representadas por diferentes classes: <code>POINT</code>, <code>LINESTRING</code> e <code>POLYGON</code> para apenas uma feição de cada tipo de geometria; <code>MULTIPOINT</code>, <code>MULTILINESTRING</code> e <code>MULTIPOLYGON</code> para várias feições de cada tipo de geometria e; <code>GEOMETRYCOLLECTION</code> para várias feições e tipos de geometrias (Figura <a href="#fig:fig-vetor-sf-classes">1</a>).</p>
 <div class="figure" style="text-align: center">
-<img src="img/geo_book.jpg" alt="Livro 'Choosing a Map Projection' de Lapaine et al. (2017)." width="30%" />
-<p class="caption">Figura 1: Livro 'Choosing a Map Projection' de Lapaine et al. (2017).</p>
+<img src="img/sf-classes.png" alt="Tipos de classes suportadas pelo pacote *sf*. Fonte: Lovelace, Nowosad &amp; Muenchow (2019)." width="50%" />
+<p class="caption">Figura 1: Tipos de classes suportadas pelo pacote *sf*. Fonte: Lovelace, Nowosad & Muenchow (2019).</p>
 </div>
-<h3 id="sistema-de-referência-de-coordenadas-geográficas">Sistema de Referência de Coordenadas Geográficas</h3>
-<p>O <strong>Sistema de Referência de Coordenadas Geográficas</strong> utiliza <strong>ângulos</strong> para representar feições na superfície da Terra através de dois valores: longitude e latitude. A <strong>longitude</strong> localiza-se na direção Leste-Oeste e a <strong>latitude</strong> localiza-se na direção Norte-Sul. Nesse sistema, a <strong>superfície da Terra</strong> geralmente é representada por uma <strong>superfície elipsoidal</strong>, pois a Terra é ligeiramente achatada nos pólos (Figura <a href="#fig:fig-geo">2</a>).</p>
+<p>O pacote <em>sf</em> define um sistema de três classes hierárquicas (Tabela <a href="#tab:tab-vetor-sf-estruturas"><strong>??</strong></a>):</p>
+<ul>
+<li>Classe <em>sfg</em> - uma geometria única</li>
+<li>Classe <em>sfc</em> - uma coluna de geometria, que é um conjunto de geometrias <em>sfg</em> e informações Sistema de Referência de Coordenadas (do inglês <em>Coordinate Reference Systems- CRS</em>)</li>
+<li>Classe <em>sf</em> - uma camada, que é uma coluna de geometria <em>sfc</em> dentro de um dataframe com atributos não espaciais</li>
+</ul>
+<p>Table: Tabela 1: Estruturas de dados espaciais no pacote sf. Fonte: <a href="https://michaeldorman.github.io/R-Spatial-Workshop-at-CBS-2021/main.html" target="_blank" rel="noopener">Dorman (2021)</a>.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Classes</th>
+<th style="text-align:left">Hierarquia</th>
+<th style="text-align:left">Informação</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>sfg</code></td>
+<td style="text-align:left">Geometria</td>
+<td style="text-align:left">Tipo e coordenadas</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>sfc</code></td>
+<td style="text-align:left">Coluna de geometria</td>
+<td style="text-align:left">Conjundo de <code>sfg</code> + CRS</td>
+</tr>
+<tr>
+<td style="text-align:left"><em>sf</em></td>
+<td style="text-align:left">Camada</td>
+<td style="text-align:left"><code>sfc</code> + atributos</td>
+</tr>
+</tbody>
+</table>
+<p>Ao olharmos as informações de um objeto da classe <em>sf</em>, podemos notar diversas informações que descrevem o mesmo:</p>
+<ul>
+<li><em>resumo do vetor</em>: indica o número de feições (linhas) e campos (colunas)</li>
+<li><em>tipo da geometria</em>: umas das sete classes listadas anteriormente (Figura <a href="#fig:fig-vetor-sf-classes">1</a>)</li>
+<li><em>dimensão</em>: número de dimensões, geralmente duas (XY)</li>
+<li><em>bbox (bordas)</em>: coordenadas mínimas e máximas da longitude e latitude</li>
+<li><em>informação do CRS</em>: <code>epsg</code> ou <code>proj4string</code> indicando o CRS</li>
+<li><em>tibble</em>: tabela de atributos, com destaque para a coluna <code>geom</code> ou <code>geometry</code> que representa cada feição ou geometria</li>
+</ul>
+<pre><code class="language-r">countries110
+</code></pre>
+<pre><code>## class       : SpatialPolygonsDataFrame 
+## features    : 177 
+## extent      : -180, 180, -90, 83.64513  (xmin, xmax, ymin, ymax)
+## crs         : +proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0 
+## variables   : 63
+## names       : scalerank,      featurecla, labelrank,  sovereignt, sov_a3, adm0_dif, level,              type,       admin, adm0_a3, geou_dif,     geounit, gu_a3, su_dif,     subunit, ... 
+## min values  :         1, Admin-0 country,         2, Afghanistan,    AFG,        0,     2,           Country, Afghanistan,     AFG,        0, Afghanistan,   AFG,      0, Afghanistan, ... 
+## max values  :         3, Admin-0 country,         7,    Zimbabwe,    ZWE,        1,     2, Sovereign country,    Zimbabwe,     ZWE,        0,    Zimbabwe,   ZWE,      1,    Zimbabwe, ...
+</code></pre>
+<p>Podemos fazer um mapa simples utilizando a função <code>plot()</code> desse objeto. Para facilitar, escolheremos apenas a primeira coluna <code>[1]</code> (Figura <a href="#fig:fig-vetor-mundo">2</a>).</p>
+<blockquote>
+<p>IMPORTANTE: faremos mapas mais elaborados na seção xx desse capítulo.</p>
+</blockquote>
+<pre><code class="language-r">plot(countries110[1], col = viridis::viridis(100), main = &quot;Mapa do mundo&quot;)
+</code></pre>
+<pre><code>## Warning in wkt(obj): CRS object has no comment
+</code></pre>
 <div class="figure" style="text-align: center">
-<img src="img/geo_geographic.png" alt="Sistema de Referência de Coordenadas Geográficas. Fonte: Documentação do QGIS." width="70%" />
-<p class="caption">Figura 2: Sistema de Referência de Coordenadas Geográficas. Fonte: Documentação do QGIS.</p>
+<img src="https://mauriciovancine.github.io/pt/post/2021-05-dados-geograficos-no-r/index_files/figure-html/fig-vetor-mundo-1.png" alt="Mapa vetorial do mundo." width="100%" />
+<p class="caption">Figura 2: Mapa vetorial do mundo.</p>
 </div>
-<h3 id="sistema-de-referência-de-coordenadas-projetadas">Sistema de Referência de Coordenadas Projetadas</h3>
-<p>O <strong>Sistema de Referência de Coordenadas Projetadas</strong> utiliza um <strong>Sistema Cartesiano de Coordenadas</strong> em uma <strong>superfície plana</strong>. Dessa forma, à partir de uma origem, traçam-se eixos x e y, e uma unidade linear como o <strong>metro</strong> é utilizada.</p>
-<p>Todos as <strong>projeções</strong> feitas de sistemas geográficos convertem uma <strong>superfície tridimensional</strong> em uma <strong>superfície plana bidimensional</strong>. Sendo assim, essa conversão trás consigo algum tipo de <strong>distorção em relação à porção real</strong>, podendo ser distorções em: 1. formas locais, 2. áreas, 3. distâncias, 4. flexão ou curvatura, 5. assimetria e 6. lacunas de continuidade. Dessa forma, um sistema de coordenadas projetadas pode preservar somente uma ou duas dessas propriedades.</p>
-<p>Existem <strong>três grandes grupos</strong> de projeções: cilíndricos, cônicos e planares (Figura <a href="#fig:fig-proj">3</a>).</p>
+<h3 id="raster-principal-pacote-no-r-para-dados-raster"><em>raster</em>: principal pacote no R para dados raster</h3>
+<p>Atualmente, o principal pacote para trabalhar com dados raster é o <a href="https://rspatial.org/raster/index.html" target="_blank" rel="noopener"><em>raster</em></a> (Hijmans 2020), apesar de existir outros dois em desenvolvimento e já sendo aplicados, como o <a href="https://rspatial.org/terra/index.html" target="_blank" rel="noopener"><em>terra</em></a> e o <a href="https://r-spatial.github.io/stars/" target="_blank" rel="noopener"><em>stars</em></a>. O pacote <em>raster</em> fornece uma ampla gama de funções para criar, importar, exportar, manipular e processar dados raster no R. O objeto raster pode assumir três classes no R: <code>RasterLayer</code>, <code>RasterStack</code> e <code>RasterBrick</code>.</p>
+<p>A classe <code>RasterLayer</code> representa apenas uma camada raster. Para criar um raster no R podemos utilizar a função <code>raster::raster()</code>. Observando essa classe, podemos notar as seguintes informações:</p>
+<ul>
+<li><em>class</em>: classe raster do objeto raster</li>
+<li><em>dimensions</em>: número de linhas, colunas e células</li>
+<li><em>resolution</em>: largura e altura da célula</li>
+<li><em>extent</em>: coordenadas mínimas e máximas da longitude e latitude</li>
+<li><em>crs</em>: Sistema de Referência de Coordenadas (<em>CRS</em>)</li>
+<li><em>source</em>: fonte dos dados (memória ou disco)</li>
+<li><em>names</em>: nome das camadas</li>
+<li><em>values</em>: valores máximos e mínimos das células</li>
+</ul>
+<pre><code class="language-r">raster_layer &lt;- raster::raster(nrows = 5, ncols = 5, 
+                               res = .5,
+                               xmn = -61.5, xmx = -59, ymn = -14.5, ymx = -12,
+                               vals = sample(1:25, 25, rep = TRUE))
+raster_layer
+</code></pre>
+<pre><code>## class      : RasterLayer 
+## dimensions : 5, 5, 25  (nrow, ncol, ncell)
+## resolution : 0.5, 0.5  (x, y)
+## extent     : -61.5, -59, -14.5, -12  (xmin, xmax, ymin, ymax)
+## crs        : +proj=longlat +datum=WGS84 +no_defs 
+## source     : memory
+## names      : layer 
+## values     : 3, 25  (min, max)
+</code></pre>
+<p>Um mapa simples do objeto raster pode ser obtido utilizando a função <code>plot()</code>, do próprio pacote <em>raster</em> (Figura <a href="#fig:fig-raster-layer">3</a>).</p>
+<pre><code class="language-r">plot(raster_layer, col = viridis::viridis(n = 25))
+</code></pre>
 <div class="figure" style="text-align: center">
-<img src="img/geo_proj_families.jpg" alt="Sistema de Referência de Coordenadas Projetadas, dividido em três grupos: plana, cônica e cilíndrica. Fonte: Geographic Information System Basics." width="60%" />
-<p class="caption">Figura 3: Sistema de Referência de Coordenadas Projetadas, dividido em três grupos: plana, cônica e cilíndrica. Fonte: Geographic Information System Basics.</p>
+<img src="https://mauriciovancine.github.io/pt/post/2021-05-dados-geograficos-no-r/index_files/figure-html/fig-raster-layer-1.png" alt="Mapa simples de um `RasterLayer`." width="672" />
+<p class="caption">Figura 3: Mapa simples de um `RasterLayer`.</p>
 </div>
-<p>Na <strong>projeção plana</strong>, também denominada <strong>Projeção Azimutal</strong>, o mapeamento toca o globo em um ponto ou ao longo de uma linha de tangência, sendo normalmente usado no mapeamento de regiões polares, sendo a mais comum a <strong>Projeção Azimutal Equidistante</strong>, a mesma utilizada na bandeira da ONU (Figura <a href="#fig:fig-plana">4</a>).</p>
+<p>Além da classe <code>RasterLayer</code>, há mais duas classes que trabalham com múltiplas camadas: <code>RasterBrick</code> e <code>RasterStack</code>. Elas diferem em relação ao número de formatos de arquivo suportados, tipo de representação interna e velocidade de processamento.</p>
+<p>A classe <code>RasterBrick</code> geralmente corresponde a importação de um único arquivo de imagem de satélite multiespectral (multicamadas) ou a um único objeto com várias camadas na memória. A função <code>raster::brick()</code> cria um objeto <code>RasterBrick</code>.</p>
+<pre><code class="language-r">raster_layer1 &lt;- raster_layer
+raster_layer2 &lt;- raster_layer * raster_layer
+raster_layer3 &lt;- sqrt(raster_layer)
+raster_layer4 &lt;- log10(raster_layer)
+
+raster_brick &lt;- raster::brick(raster_layer1, raster_layer2, raster_layer3, raster_layer4)
+raster_brick
+</code></pre>
+<pre><code>## class      : RasterBrick 
+## dimensions : 5, 5, 25, 4  (nrow, ncol, ncell, nlayers)
+## resolution : 0.5, 0.5  (x, y)
+## extent     : -61.5, -59, -14.5, -12  (xmin, xmax, ymin, ymax)
+## crs        : +proj=longlat +datum=WGS84 +no_defs 
+## source     : memory
+## names      :   layer.1,   layer.2,   layer.3,   layer.4 
+## min values : 3.0000000, 9.0000000, 1.7320508, 0.4771213 
+## max values :  25.00000, 625.00000,   5.00000,   1.39794
+</code></pre>
+<p>Ao utilizarmos a função <code>plot()</code> do pacote <em>raster</em>, podemos visualizar todos os raster contidos no objeto <code>RasterBrick</code> (Figura <a href="#fig:fig-raster-brick">4</a>).</p>
+<pre><code class="language-r">plot(raster_brick, col = viridis::viridis(n = 25))
+</code></pre>
 <div class="figure" style="text-align: center">
-<img src="img/geo_proj_plana.jpg" alt="Projeção plana. Fonte: Atlas Escolar IBGE." width="70%" />
-<p class="caption">Figura 4: Projeção plana. Fonte: Atlas Escolar IBGE.</p>
+<img src="https://mauriciovancine.github.io/pt/post/2021-05-dados-geograficos-no-r/index_files/figure-html/fig-raster-brick-1.png" alt="Mapas simples de um raster RasterBrick." width="672" />
+<p class="caption">Figura 4: Mapas simples de um raster RasterBrick.</p>
 </div>
-<p>Na <strong>projeção cônica</strong>, a superfície da Terra é projetada em um <strong>cone</strong> ao longo de uma linha ou duas linhas de tangência, de modo que as distorções são minimizadas ao longo das linhas e aumentam com a distância das mesmas, sendo portanto, mais adequada para mapear áreas de latitudes médias, tendo como exemplo mais conhecido a <strong>Projeção Cônica Equivalente de Albers</strong> e a <strong>Projeção Cônica Conforme de Lambert</strong> (Figura <a href="#fig:fig-conica">5</a>).</p>
+<p>Já a classe <code>RasterStack</code> permite conectar vários objetos raster armazenados em arquivos diferentes ou vários objetos na memória. Um <code>RasterStack</code> é uma lista de objetos <code>RasterLayer</code> com a mesma extensão, resolução e CRS. Uma maneira de criá-lo é com a junção de vários objetos espaciais já existentes no ambiente do R ou listar vários arquivos raster em um diretório armazenado no disco. A função <code>raster::stack()</code> cria um objeto <code>RasterStack</code>.</p>
+<p>Outra diferença é que o tempo de processamento para objetos <code>RasterBrick</code> geralmente é menor do que para objetos <code>RasterStack</code>. A decisão sobre qual classe <code>Raster</code> deve ser usada depende principalmente do caráter dos dados de entrada.</p>
+<pre><code class="language-r">raster_layer1 &lt;- raster_layer
+raster_layer2 &lt;- raster_layer * raster_layer
+raster_layer3 &lt;- sqrt(raster_layer)
+raster_layer4 &lt;- log10(raster_layer)
+
+raster_stack &lt;- raster::stack(raster_layer1, raster_layer2, raster_layer3, raster_layer4)
+raster_stack
+</code></pre>
+<pre><code>## class      : RasterStack 
+## dimensions : 5, 5, 25, 4  (nrow, ncol, ncell, nlayers)
+## resolution : 0.5, 0.5  (x, y)
+## extent     : -61.5, -59, -14.5, -12  (xmin, xmax, ymin, ymax)
+## crs        : +proj=longlat +datum=WGS84 +no_defs 
+## names      :   layer.1,   layer.2,   layer.3,   layer.4 
+## min values : 3.0000000, 9.0000000, 1.7320508, 0.4771213 
+## max values :  25.00000, 625.00000,   5.00000,   1.39794
+</code></pre>
+<p>Da mesma forma, ao utilizar a função <code>plot()</code> do pacote <em>raster</em>, podemos visualizar todos os raster contidos no objeto <code>RasterStack</code> (Figura <a href="#fig:fig-raster-stack">5</a>).</p>
+<pre><code class="language-r">plot(raster_stack, col = viridis::viridis(n = 25))
+</code></pre>
 <div class="figure" style="text-align: center">
-<img src="img/geo_proj_conica.jpg" alt="Projeção cônica. Fonte: Atlas Escolar IBGE." width="100%" />
-<p class="caption">Figura 5: Projeção cônica. Fonte: Atlas Escolar IBGE.</p>
+<img src="https://mauriciovancine.github.io/pt/post/2021-05-dados-geograficos-no-r/index_files/figure-html/fig-raster-stack-1.png" alt="Mapas simples de um raster RasterStack." width="672" />
+<p class="caption">Figura 5: Mapas simples de um raster RasterStack.</p>
 </div>
-<p>Na <strong>projeção cilíndrica</strong>, a superfície da Terra é mapeada em um <strong>cilindro</strong>, sendo também criada tocando a superfície da Terra ao longo de uma ou duas linhas de tangência, sendo utilizada com mais frequência para mapear todo o globo, tendo como exemplo mais conhecido a <strong>Projeção Universal Transversa de Mercator (UTM)</strong> (Figura <a href="#fig:fig-cilindrica">6</a>).</p>
-<div class="figure" style="text-align: center">
-<img src="img/geo_proj_cilindrica.jpg" alt="Projeção cilíndrica. Fonte: Atlas Escolar IBGE." width="100%" />
-<p class="caption">Figura 6: Projeção cilíndrica. Fonte: Atlas Escolar IBGE.</p>
-</div>
-<h3 id="datum">Datum</h3>
-<p>Como dito anteriormente, o <strong>datum</strong> é a <strong>relação</strong> do sistema de coordenadas com a superfície da Terra. Ele representa o <strong>ponto de intersecção</strong> do elipsoide de referência com a supercie da Terra e o geoide (forma verdadeira da Terra), compensando as diferenças do campo gravitacional da Terra (Figura <a href="#fig:fig-datum">7</a>).</p>
-<div class="figure" style="text-align: center">
-<img src="img/geo_datum_eli_geo.png" alt="Datum, Geoide, Esferoide e Elipsoide. Fonte: Ciência Hoje e Lapig" width="100%" />
-<p class="caption">Figura 7: Datum, Geoide, Esferoide e Elipsoide. Fonte: Ciência Hoje e Lapig</p>
-</div>
-<p>Existem dois tipos de datum - geocêntrico e local (Figura <a href="#fig:fig-datum-geo-local">8</a>). Em um <strong>datum geocêntrico</strong>, como <strong>WGS84 - World Geodetic System 1984</strong>, o centro do elipsoide é o centro de gravidade da Terra e a precisão das projeções não é otimizada para um local específico do globo. Já em um <strong>datum local</strong>, como o <strong>SAD69 - South American Datum 1969</strong>, o elipsoide de referência é deslocado para se alinhar com a superfície em um determinado local na América do Sul.</p>
-<div class="figure" style="text-align: center">
-<img src="img/geo_datum_global_local.jpeg" alt="Datum global e datum local. Fonte: Aulas de Cartografia para Geoprocessamento do Programa de Pós-graduação em Computação, ênfase Geomática, UERJ." width="90%" />
-<p class="caption">Figura 8: Datum global e datum local. Fonte: Aulas de Cartografia para Geoprocessamento do Programa de Pós-graduação em Computação, ênfase Geomática, UERJ.</p>
-</div>
-<p>No Brasil, desde 2015, o <a href="https://www.ibge.gov.br/" target="_blank" rel="noopener">Instituto Brasileiro de Geografia e Estatística (IBGE)</a> adotou utilizar o datum <strong>SIRGAS2000 - Sistema de Referencia Geocéntrico para las Américas 2000</strong> para todos os mapeamentos realizados no Brasil, um esforço conjunto para adotar o mesmo datum em toda a América. Mais sobre esse datum pode ser lido aqui: <a href="http://www.sirgas.org/pt/sirgas-realizations/sirgas2000/" target="_blank" rel="noopener">SIRGAS2000</a> (Figura <a href="#fig:fig-sirgas">9</a>)</p>
-<div class="figure" style="text-align: center">
-<img src="img/geo_proj_sirgas2000.png" alt="Sistema de Referencia Geocéntrico para las Américas (SIRGAS). Fonte: SIRGAS" width="50%" />
-<p class="caption">Figura 9: Sistema de Referencia Geocéntrico para las Américas (SIRGAS). Fonte: SIRGAS</p>
-</div>
-<p>Comparando os <strong>datum SAD69 e SIRGAS200</strong>, podemos notar uma <strong>diferença de cerca de 65 metros</strong>, que à depender do mapeamento pode fazer uma <strong>grande diferença</strong>, a exemplo da planta de uma casa ou a construção de uma ponte (Figura <a href="#fig:fig-datum-comp">10</a>)</p>
-<div class="figure" style="text-align: center">
-<img src="img/geo_datum_sad_sirgas.jpg" alt="Discrepância entre um mesmo ponto em SAD69 e SIRGAS2000 em regiões urbanas. Fonte: 'SIRGAS 2000, quando iniciar a sua utilização?'" width="70%" />
-<p class="caption">Figura 10: Discrepância entre um mesmo ponto em SAD69 e SIRGAS2000 em regiões urbanas. Fonte: 'SIRGAS 2000, quando iniciar a sua utilização?'</p>
 </div>
 
     </div>
@@ -880,6 +1065,18 @@
 
 
 
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/pt/tag/r/">r</a>
+  
+  <a class="badge badge-light" href="/pt/tag/rstats/">rstats</a>
+  
+  <a class="badge badge-light" href="/pt/tag/rspatial/">rspatial</a>
+  
+  <a class="badge badge-light" href="/pt/tag/geocomputation/">geocomputation</a>
+  
+</div>
+
 
 
 <div class="share-box" aria-hidden="true">
@@ -893,7 +1090,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://mauriciovancine.github.io/pt/post/2021-05-dados-geograficos-no-r/&amp;text=Desmistificando%20o%20Sistemas%20de%20Refer%c3%aancia%20de%20Coordenadas%20e%20Datum" target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://mauriciovancine.github.io/pt/post/2021-05-dados-geograficos-no-r/&amp;text=Dados%20geogr%c3%a1ficos%20no%20R" target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -906,7 +1103,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://mauriciovancine.github.io/pt/post/2021-05-dados-geograficos-no-r/&amp;t=Desmistificando%20o%20Sistemas%20de%20Refer%c3%aancia%20de%20Coordenadas%20e%20Datum" target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://mauriciovancine.github.io/pt/post/2021-05-dados-geograficos-no-r/&amp;t=Dados%20geogr%c3%a1ficos%20no%20R" target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -919,7 +1116,7 @@
       
       
       <li>
-        <a href="mailto:?subject=Desmistificando%20o%20Sistemas%20de%20Refer%c3%aancia%20de%20Coordenadas%20e%20Datum&amp;body=https://mauriciovancine.github.io/pt/post/2021-05-dados-geograficos-no-r/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=Dados%20geogr%c3%a1ficos%20no%20R&amp;body=https://mauriciovancine.github.io/pt/post/2021-05-dados-geograficos-no-r/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -932,7 +1129,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://mauriciovancine.github.io/pt/post/2021-05-dados-geograficos-no-r/&amp;title=Desmistificando%20o%20Sistemas%20de%20Refer%c3%aancia%20de%20Coordenadas%20e%20Datum" target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=https://mauriciovancine.github.io/pt/post/2021-05-dados-geograficos-no-r/&amp;title=Dados%20geogr%c3%a1ficos%20no%20R" target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -1121,6 +1318,23 @@
 
 
   
+  
+  <div class="article-widget content-widget-hr">
+    <h3>Relacionados</h3>
+    <ul>
+      
+      <li><a href="/pt/post/2022-06-metricas-de-paisagem-no-r/">Cálculo de métricas de paisagem no R</a></li>
+      
+      <li><a href="/pt/post/2021-07-como-onde-comecar-a-aprender-r/">Como e onde começar a estudar R</a></li>
+      
+      <li><a href="/pt/video/werlive/">We R Live</a></li>
+      
+      <li><a href="/pt/video/landscape-metrics/">Métricas de paisagem no R</a></li>
+      
+      <li><a href="/pt/post/2021-02-desmistificando-sistemas-referencia-coordendas-datum/">Desmistificando o Sistemas de Referência de Coordenadas e Datum</a></li>
+      
+    </ul>
+  </div>
   
 
 
