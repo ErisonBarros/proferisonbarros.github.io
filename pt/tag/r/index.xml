@@ -14,9 +14,9 @@
     
     <item>
       <title>Dados geográficos no R</title>
-      <link>https://mauriciovancine.github.io/pt/post/2021-05-dados-geograficos-no-r/</link>
+      <link>https://mauriciovancine.github.io/pt/post/geo-geographic-data-r/</link>
       <pubDate>Sat, 20 Feb 2021 00:00:00 +0000</pubDate>
-      <guid>https://mauriciovancine.github.io/pt/post/2021-05-dados-geograficos-no-r/</guid>
+      <guid>https://mauriciovancine.github.io/pt/post/geo-geographic-data-r/</guid>
       <description>&lt;div style=&#34;text-align: justify&#34;&gt;
 &lt;h2 id=&#34;contextualização&#34;&gt;Contextualização&lt;/h2&gt;
 &lt;p&gt;Os pacotes indispensáveis para &lt;em&gt;manipulação&lt;/em&gt; de dados geoespaciais no R&lt;/p&gt;
@@ -168,7 +168,7 @@
 &lt;pre&gt;&lt;code&gt;## Warning in wkt(obj): CRS object has no comment
 &lt;/code&gt;&lt;/pre&gt;
 &lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;
-&lt;img src=&#34;https://mauriciovancine.github.io/pt/post/2021-05-dados-geograficos-no-r/index_files/figure-html/fig-vetor-mundo-1.png&#34; alt=&#34;Mapa vetorial do mundo.&#34; width=&#34;100%&#34; /&gt;
+&lt;img src=&#34;https://mauriciovancine.github.io/pt/post/geo-geographic-data-r/index_files/figure-html/fig-vetor-mundo-1.png&#34; alt=&#34;Mapa vetorial do mundo.&#34; width=&#34;100%&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;Figura 2: Mapa vetorial do mundo.&lt;/p&gt;
 &lt;/div&gt;
 &lt;h3 id=&#34;raster-principal-pacote-no-r-para-dados-raster&#34;&gt;&lt;em&gt;raster&lt;/em&gt;: principal pacote no R para dados raster&lt;/h3&gt;
@@ -203,7 +203,7 @@ raster_layer
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;plot(raster_layer, col = viridis::viridis(n = 25))
 &lt;/code&gt;&lt;/pre&gt;
 &lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;
-&lt;img src=&#34;https://mauriciovancine.github.io/pt/post/2021-05-dados-geograficos-no-r/index_files/figure-html/fig-raster-layer-1.png&#34; alt=&#34;Mapa simples de um `RasterLayer`.&#34; width=&#34;672&#34; /&gt;
+&lt;img src=&#34;https://mauriciovancine.github.io/pt/post/geo-geographic-data-r/index_files/figure-html/fig-raster-layer-1.png&#34; alt=&#34;Mapa simples de um `RasterLayer`.&#34; width=&#34;672&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;Figura 3: Mapa simples de um `RasterLayer`.&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;Além da classe &lt;code&gt;RasterLayer&lt;/code&gt;, há mais duas classes que trabalham com múltiplas camadas: &lt;code&gt;RasterBrick&lt;/code&gt; e &lt;code&gt;RasterStack&lt;/code&gt;. Elas diferem em relação ao número de formatos de arquivo suportados, tipo de representação interna e velocidade de processamento.&lt;/p&gt;
@@ -230,7 +230,7 @@ raster_brick
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;plot(raster_brick, col = viridis::viridis(n = 25))
 &lt;/code&gt;&lt;/pre&gt;
 &lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;
-&lt;img src=&#34;https://mauriciovancine.github.io/pt/post/2021-05-dados-geograficos-no-r/index_files/figure-html/fig-raster-brick-1.png&#34; alt=&#34;Mapas simples de um raster RasterBrick.&#34; width=&#34;672&#34; /&gt;
+&lt;img src=&#34;https://mauriciovancine.github.io/pt/post/geo-geographic-data-r/index_files/figure-html/fig-raster-brick-1.png&#34; alt=&#34;Mapas simples de um raster RasterBrick.&#34; width=&#34;672&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;Figura 4: Mapas simples de um raster RasterBrick.&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;Já a classe &lt;code&gt;RasterStack&lt;/code&gt; permite conectar vários objetos raster armazenados em arquivos diferentes ou vários objetos na memória. Um &lt;code&gt;RasterStack&lt;/code&gt; é uma lista de objetos &lt;code&gt;RasterLayer&lt;/code&gt; com a mesma extensão, resolução e CRS. Uma maneira de criá-lo é com a junção de vários objetos espaciais já existentes no ambiente do R ou listar vários arquivos raster em um diretório armazenado no disco. A função &lt;code&gt;raster::stack()&lt;/code&gt; cria um objeto &lt;code&gt;RasterStack&lt;/code&gt;.&lt;/p&gt;
@@ -256,7 +256,7 @@ raster_stack
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;plot(raster_stack, col = viridis::viridis(n = 25))
 &lt;/code&gt;&lt;/pre&gt;
 &lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;
-&lt;img src=&#34;https://mauriciovancine.github.io/pt/post/2021-05-dados-geograficos-no-r/index_files/figure-html/fig-raster-stack-1.png&#34; alt=&#34;Mapas simples de um raster RasterStack.&#34; width=&#34;672&#34; /&gt;
+&lt;img src=&#34;https://mauriciovancine.github.io/pt/post/geo-geographic-data-r/index_files/figure-html/fig-raster-stack-1.png&#34; alt=&#34;Mapas simples de um raster RasterStack.&#34; width=&#34;672&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;Figura 5: Mapas simples de um raster RasterStack.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -424,11 +424,11 @@ raster_stack
     
     <item>
       <title>Como e onde começar a estudar R</title>
-      <link>https://mauriciovancine.github.io/pt/post/2021-07-como-onde-comecar-a-aprender-r/</link>
+      <link>https://mauriciovancine.github.io/pt/post/r-try/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mauriciovancine.github.io/pt/post/2021-07-como-onde-comecar-a-aprender-r/</guid>
+      <guid>https://mauriciovancine.github.io/pt/post/r-try/</guid>
       <description>
-&lt;script src=&#34;https://mauriciovancine.github.io/pt/post/2021-07-como-onde-comecar-a-aprender-r/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://mauriciovancine.github.io/pt/post/r-try/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;Escrevendo…&lt;/p&gt;
@@ -437,11 +437,11 @@ raster_stack
     
     <item>
       <title>Cálculo de métricas de paisagem no R</title>
-      <link>https://mauriciovancine.github.io/pt/post/2022-06-metricas-de-paisagem-no-r/</link>
+      <link>https://mauriciovancine.github.io/pt/post/r-landscape-metrics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mauriciovancine.github.io/pt/post/2022-06-metricas-de-paisagem-no-r/</guid>
+      <guid>https://mauriciovancine.github.io/pt/post/r-landscape-metrics/</guid>
       <description>
-&lt;script src=&#34;https://mauriciovancine.github.io/pt/post/2022-06-metricas-de-paisagem-no-r/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://mauriciovancine.github.io/pt/post/r-landscape-metrics/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;Escrevendo…&lt;/p&gt;

@@ -14,11 +14,11 @@
     
     <item>
       <title>Desmistificando o Sistemas de Referência de Coordenadas e Datum</title>
-      <link>https://mauriciovancine.github.io/pt/post/2021-02-desmistificando-sistemas-referencia-coordendas-datum/</link>
+      <link>https://mauriciovancine.github.io/pt/post/geo-crs-datum/</link>
       <pubDate>Sat, 20 Feb 2021 00:00:00 +0000</pubDate>
-      <guid>https://mauriciovancine.github.io/pt/post/2021-02-desmistificando-sistemas-referencia-coordendas-datum/</guid>
-      <description>&lt;link href=&#34;https://mauriciovancine.github.io/pt/post/2021-02-desmistificando-sistemas-referencia-coordendas-datum/index_files/vembedr/css/vembedr.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;link href=&#34;https://mauriciovancine.github.io/pt/post/2021-02-desmistificando-sistemas-referencia-coordendas-datum/index_files/vembedr/css/vembedr.css&#34; rel=&#34;stylesheet&#34; /&gt;
+      <guid>https://mauriciovancine.github.io/pt/post/geo-crs-datum/</guid>
+      <description>&lt;link href=&#34;https://mauriciovancine.github.io/pt/post/geo-crs-datum/index_files/vembedr/css/vembedr.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;link href=&#34;https://mauriciovancine.github.io/pt/post/geo-crs-datum/index_files/vembedr/css/vembedr.css&#34; rel=&#34;stylesheet&#34; /&gt;
 &lt;div style=&#34;text-align: justify&#34;&gt;
 &lt;h2 id=&#34;contextualização&#34;&gt;Contextualização&lt;/h2&gt;
 &lt;p&gt;Um dos primeiros assuntos que devemos entender antes de iniciar no mundo do &lt;strong&gt;Geoprocessamento&lt;/strong&gt; são os conceitos de &lt;strong&gt;Sistemas de Referência de Coordenadas&lt;/strong&gt; e &lt;strong&gt;Datum&lt;/strong&gt;. Esses conceitos atrelados à Cartografia, apesar de &lt;strong&gt;parecerem simples&lt;/strong&gt; para quem possui certa experiência na área de Geoprocessamento, muitas vezes são &lt;strong&gt;confundidos ou mesmo ignorados&lt;/strong&gt; por aqueles que estão adentrando nessa área agora.&lt;/p&gt;

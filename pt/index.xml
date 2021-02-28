@@ -14,9 +14,9 @@
     
     <item>
       <title>Dados geográficos no R</title>
-      <link>https://mauriciovancine.github.io/pt/post/2021-05-dados-geograficos-no-r/</link>
+      <link>https://mauriciovancine.github.io/pt/post/geo-geographic-data-r/</link>
       <pubDate>Sat, 20 Feb 2021 00:00:00 +0000</pubDate>
-      <guid>https://mauriciovancine.github.io/pt/post/2021-05-dados-geograficos-no-r/</guid>
+      <guid>https://mauriciovancine.github.io/pt/post/geo-geographic-data-r/</guid>
       <description>&lt;div style=&#34;text-align: justify&#34;&gt;
 &lt;h2 id=&#34;contextualização&#34;&gt;Contextualização&lt;/h2&gt;
 &lt;p&gt;Os pacotes indispensáveis para &lt;em&gt;manipulação&lt;/em&gt; de dados geoespaciais no R&lt;/p&gt;
@@ -168,7 +168,7 @@
 &lt;pre&gt;&lt;code&gt;## Warning in wkt(obj): CRS object has no comment
 &lt;/code&gt;&lt;/pre&gt;
 &lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;
-&lt;img src=&#34;https://mauriciovancine.github.io/pt/post/2021-05-dados-geograficos-no-r/index_files/figure-html/fig-vetor-mundo-1.png&#34; alt=&#34;Mapa vetorial do mundo.&#34; width=&#34;100%&#34; /&gt;
+&lt;img src=&#34;https://mauriciovancine.github.io/pt/post/geo-geographic-data-r/index_files/figure-html/fig-vetor-mundo-1.png&#34; alt=&#34;Mapa vetorial do mundo.&#34; width=&#34;100%&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;Figura 2: Mapa vetorial do mundo.&lt;/p&gt;
 &lt;/div&gt;
 &lt;h3 id=&#34;raster-principal-pacote-no-r-para-dados-raster&#34;&gt;&lt;em&gt;raster&lt;/em&gt;: principal pacote no R para dados raster&lt;/h3&gt;
@@ -203,7 +203,7 @@ raster_layer
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;plot(raster_layer, col = viridis::viridis(n = 25))
 &lt;/code&gt;&lt;/pre&gt;
 &lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;
-&lt;img src=&#34;https://mauriciovancine.github.io/pt/post/2021-05-dados-geograficos-no-r/index_files/figure-html/fig-raster-layer-1.png&#34; alt=&#34;Mapa simples de um `RasterLayer`.&#34; width=&#34;672&#34; /&gt;
+&lt;img src=&#34;https://mauriciovancine.github.io/pt/post/geo-geographic-data-r/index_files/figure-html/fig-raster-layer-1.png&#34; alt=&#34;Mapa simples de um `RasterLayer`.&#34; width=&#34;672&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;Figura 3: Mapa simples de um `RasterLayer`.&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;Além da classe &lt;code&gt;RasterLayer&lt;/code&gt;, há mais duas classes que trabalham com múltiplas camadas: &lt;code&gt;RasterBrick&lt;/code&gt; e &lt;code&gt;RasterStack&lt;/code&gt;. Elas diferem em relação ao número de formatos de arquivo suportados, tipo de representação interna e velocidade de processamento.&lt;/p&gt;
@@ -230,7 +230,7 @@ raster_brick
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;plot(raster_brick, col = viridis::viridis(n = 25))
 &lt;/code&gt;&lt;/pre&gt;
 &lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;
-&lt;img src=&#34;https://mauriciovancine.github.io/pt/post/2021-05-dados-geograficos-no-r/index_files/figure-html/fig-raster-brick-1.png&#34; alt=&#34;Mapas simples de um raster RasterBrick.&#34; width=&#34;672&#34; /&gt;
+&lt;img src=&#34;https://mauriciovancine.github.io/pt/post/geo-geographic-data-r/index_files/figure-html/fig-raster-brick-1.png&#34; alt=&#34;Mapas simples de um raster RasterBrick.&#34; width=&#34;672&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;Figura 4: Mapas simples de um raster RasterBrick.&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;Já a classe &lt;code&gt;RasterStack&lt;/code&gt; permite conectar vários objetos raster armazenados em arquivos diferentes ou vários objetos na memória. Um &lt;code&gt;RasterStack&lt;/code&gt; é uma lista de objetos &lt;code&gt;RasterLayer&lt;/code&gt; com a mesma extensão, resolução e CRS. Uma maneira de criá-lo é com a junção de vários objetos espaciais já existentes no ambiente do R ou listar vários arquivos raster em um diretório armazenado no disco. A função &lt;code&gt;raster::stack()&lt;/code&gt; cria um objeto &lt;code&gt;RasterStack&lt;/code&gt;.&lt;/p&gt;
@@ -256,7 +256,7 @@ raster_stack
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;plot(raster_stack, col = viridis::viridis(n = 25))
 &lt;/code&gt;&lt;/pre&gt;
 &lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;
-&lt;img src=&#34;https://mauriciovancine.github.io/pt/post/2021-05-dados-geograficos-no-r/index_files/figure-html/fig-raster-stack-1.png&#34; alt=&#34;Mapas simples de um raster RasterStack.&#34; width=&#34;672&#34; /&gt;
+&lt;img src=&#34;https://mauriciovancine.github.io/pt/post/geo-geographic-data-r/index_files/figure-html/fig-raster-stack-1.png&#34; alt=&#34;Mapas simples de um raster RasterStack.&#34; width=&#34;672&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;Figura 5: Mapas simples de um raster RasterStack.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -265,11 +265,11 @@ raster_stack
     
     <item>
       <title>Desmistificando o Sistemas de Referência de Coordenadas e Datum</title>
-      <link>https://mauriciovancine.github.io/pt/post/2021-02-desmistificando-sistemas-referencia-coordendas-datum/</link>
+      <link>https://mauriciovancine.github.io/pt/post/geo-crs-datum/</link>
       <pubDate>Sat, 20 Feb 2021 00:00:00 +0000</pubDate>
-      <guid>https://mauriciovancine.github.io/pt/post/2021-02-desmistificando-sistemas-referencia-coordendas-datum/</guid>
-      <description>&lt;link href=&#34;https://mauriciovancine.github.io/pt/post/2021-02-desmistificando-sistemas-referencia-coordendas-datum/index_files/vembedr/css/vembedr.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;link href=&#34;https://mauriciovancine.github.io/pt/post/2021-02-desmistificando-sistemas-referencia-coordendas-datum/index_files/vembedr/css/vembedr.css&#34; rel=&#34;stylesheet&#34; /&gt;
+      <guid>https://mauriciovancine.github.io/pt/post/geo-crs-datum/</guid>
+      <description>&lt;link href=&#34;https://mauriciovancine.github.io/pt/post/geo-crs-datum/index_files/vembedr/css/vembedr.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;link href=&#34;https://mauriciovancine.github.io/pt/post/geo-crs-datum/index_files/vembedr/css/vembedr.css&#34; rel=&#34;stylesheet&#34; /&gt;
 &lt;div style=&#34;text-align: justify&#34;&gt;
 &lt;h2 id=&#34;contextualização&#34;&gt;Contextualização&lt;/h2&gt;
 &lt;p&gt;Um dos primeiros assuntos que devemos entender antes de iniciar no mundo do &lt;strong&gt;Geoprocessamento&lt;/strong&gt; são os conceitos de &lt;strong&gt;Sistemas de Referência de Coordenadas&lt;/strong&gt; e &lt;strong&gt;Datum&lt;/strong&gt;. Esses conceitos atrelados à Cartografia, apesar de &lt;strong&gt;parecerem simples&lt;/strong&gt; para quem possui certa experiência na área de Geoprocessamento, muitas vezes são &lt;strong&gt;confundidos ou mesmo ignorados&lt;/strong&gt; por aqueles que estão adentrando nessa área agora.&lt;/p&gt;
@@ -415,9 +415,9 @@ Figura 10: Site epsg.io com códigos EPSG. Fonte: epsg.io.
     
     <item>
       <title>Formatos de dados geográficos</title>
-      <link>https://mauriciovancine.github.io/pt/post/2021-04-formatos-dados-geograficos/</link>
+      <link>https://mauriciovancine.github.io/pt/post/geo-geographic-data/</link>
       <pubDate>Sat, 20 Feb 2021 00:00:00 +0000</pubDate>
-      <guid>https://mauriciovancine.github.io/pt/post/2021-04-formatos-dados-geograficos/</guid>
+      <guid>https://mauriciovancine.github.io/pt/post/geo-geographic-data/</guid>
       <description>&lt;h2 id=&#34;contextualização&#34;&gt;Contextualização&lt;/h2&gt;
 &lt;h2 id=&#34;vetor&#34;&gt;Vetor&lt;/h2&gt;
 &lt;p&gt;Dados &lt;strong&gt;vetoriais&lt;/strong&gt; representam informações geográficas acuradas através de &lt;strong&gt;pontos, linhas e polígonos&lt;/strong&gt; (Figura &lt;a href=&#34;#fig:fig-vetor-tipos&#34;&gt;&lt;strong&gt;??&lt;/strong&gt;&lt;/a&gt;). Cada uma dessas geometrias são indicadas para representar feições e/ou eventos específicos, como veremos adiante.&lt;/p&gt;
@@ -434,13 +434,13 @@ Figura 10: Site epsg.io com códigos EPSG. Fonte: epsg.io.
 &lt;h2 id=&#34;raster&#34;&gt;Raster&lt;/h2&gt;
 &lt;p&gt;Os dados no formato &lt;strong&gt;raster&lt;/strong&gt; consistem em uma &lt;strong&gt;matriz&lt;/strong&gt; (com linhas e colunas) representando &lt;strong&gt;células igualmente espaçadas&lt;/strong&gt; (pixels; Figura &lt;a href=&#34;#fig:fig-raster&#34;&gt;1&lt;/a&gt;). Esse formato de dado torna a álgebra e o processamento de mapas muito mais eficiente e rápido do que o processamento de dados vetoriais. As células dos dados raster possuem &lt;strong&gt;duas informações&lt;/strong&gt;: 1. identificação das células (IDs das células) para especificar sua posição na matriz (Figura &lt;a href=&#34;#fig:fig-raster&#34;&gt;1&lt;/a&gt; A) e; 2. valores das células (Figura &lt;a href=&#34;#fig:fig-raster&#34;&gt;1&lt;/a&gt; B), que geralmente são coloridos para facilitar a interpretação da variação dos valores no espaço (Figura &lt;a href=&#34;#fig:fig-raster&#34;&gt;1&lt;/a&gt; C). Além disso, valores ausentes ou não amostrados são representados por &lt;code&gt;NA&lt;/code&gt;, ou seja, &lt;em&gt;not available&lt;/em&gt; (Figura &lt;a href=&#34;#fig:fig-raster&#34;&gt;1&lt;/a&gt; B e C).&lt;/p&gt;
 &lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;
-&lt;img src=&#34;https://mauriciovancine.github.io/pt/post/2021-04-formatos-dados-geograficos/index_files/figure-html/fig-raster-1.png&#34; alt=&#34;Raster: (A) IDs das células, (B) valores das células, (C) células coloridas. Adaptado de: Lovelace, Nowosad &amp;amp; Muenchow (2019).&#34; width=&#34;672&#34; /&gt;
+&lt;img src=&#34;https://mauriciovancine.github.io/pt/post/geo-geographic-data/index_files/figure-html/fig-raster-1.png&#34; alt=&#34;Raster: (A) IDs das células, (B) valores das células, (C) células coloridas. Adaptado de: Lovelace, Nowosad &amp;amp; Muenchow (2019).&#34; width=&#34;672&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;Figura 1: Raster: (A) IDs das células, (B) valores das células, (C) células coloridas. Adaptado de: Lovelace, Nowosad &amp; Muenchow (2019).&lt;/p&gt;
 &lt;/div&gt;
 &lt;h3 id=&#34;tipos-de-raster&#34;&gt;Tipos de raster&lt;/h3&gt;
 &lt;p&gt;A &lt;strong&gt;célula ou pixel&lt;/strong&gt; de um raster pode conter apenas um &lt;strong&gt;único valor&lt;/strong&gt;, que pode ser &lt;strong&gt;contínuo&lt;/strong&gt; ou &lt;strong&gt;categórico&lt;/strong&gt; (Figura &lt;a href=&#34;#fig:fig-raster-cont-cat&#34;&gt;2&lt;/a&gt;). O formato raster geralmente representa &lt;strong&gt;fenômenos contínuos&lt;/strong&gt;, como elevação, precipitação, temperatura, ou dados espectrais de imagens de satélite, mas também pode representar &lt;strong&gt;categorias&lt;/strong&gt; como tipos de florestas ou cobertura da terra (Figura &lt;a href=&#34;#fig:fig-raster-cont-cat&#34;&gt;2&lt;/a&gt;).&lt;/p&gt;
 &lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;
-&lt;img src=&#34;https://mauriciovancine.github.io/pt/post/2021-04-formatos-dados-geograficos/index_files/figure-html/fig-raster-cont-cat-1.png&#34; alt=&#34;Raster: (A) mapa contínuo, (B) mapa categórico. Adaptado de: Lovelace, Nowosad &amp;amp; Muenchow (2019).&#34; width=&#34;672&#34; /&gt;
+&lt;img src=&#34;https://mauriciovancine.github.io/pt/post/geo-geographic-data/index_files/figure-html/fig-raster-cont-cat-1.png&#34; alt=&#34;Raster: (A) mapa contínuo, (B) mapa categórico. Adaptado de: Lovelace, Nowosad &amp;amp; Muenchow (2019).&#34; width=&#34;672&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;Figura 2: Raster: (A) mapa contínuo, (B) mapa categórico. Adaptado de: Lovelace, Nowosad &amp; Muenchow (2019).&lt;/p&gt;
 &lt;/div&gt;
 </description>
@@ -472,9 +472,9 @@ Figura 10: Site epsg.io com códigos EPSG. Fonte: epsg.io.
     
     <item>
       <title>Como criar um site acadêmico com o R</title>
-      <link>https://mauriciovancine.github.io/pt/post/2021-01-como-criar-um-site-academico-com-o-r/</link>
+      <link>https://mauriciovancine.github.io/pt/post/r-academic-site/</link>
       <pubDate>Thu, 07 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://mauriciovancine.github.io/pt/post/2021-01-como-criar-um-site-academico-com-o-r/</guid>
+      <guid>https://mauriciovancine.github.io/pt/post/r-academic-site/</guid>
       <description>&lt;div style=&#34;text-align: justify&#34;&gt;
 &lt;h2 id=&#34;contextualização&#34;&gt;Contextualização&lt;/h2&gt;
 &lt;p&gt;Que o &lt;a href=&#34;https://www.r-project.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;R&lt;/a&gt; possui múltiplas utilidades para análise e visualização de dados de &lt;a href=&#34;https://cran.r-project.org/web/views/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;diversos formatos&lt;/a&gt; e em &lt;a href=&#34;https://data-flair.training/blogs/r-applications/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;diversas áreas&lt;/a&gt; é indiscutível. Entretanto, a união dessa linguagem com o &lt;a href=&#34;https://pt.wikipedia.org/wiki/Markdown&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Markdown&lt;/a&gt;, dando origem ao &lt;a href=&#34;https://rmarkdown.rstudio.com/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;R Markdown&lt;/a&gt;, e aliado ao IDE &lt;a href=&#34;https://rstudio.com/products/rstudio/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;RStudio&lt;/a&gt; o transforma numa ferramenta bastante diversa para a criação de diversas &lt;a href=&#34;https://bookdown.org/yihui/rmarkdown/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;aplicações complementares ao R&lt;/a&gt;, como documentos (.docx, .odt, .pdf), apresentações, livros, currículos, e ainda para a criação de sites. Pretendo escrever mais sobre essa união e utilidades num &lt;a href=&#34;https://mauriciovancine.github.io/pt/post/2020-07-30-rmarkdown/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;post futuro&lt;/a&gt;.&lt;/p&gt;
@@ -573,9 +573,9 @@ theme_example = TRUE, empty_dirs = TRUE, to_yaml = TRUE)&lt;/p&gt;
     
     <item>
       <title>Fonte de dados geográficos</title>
-      <link>https://mauriciovancine.github.io/pt/post/2021-06-fontes-de-dados-geograficos/</link>
+      <link>https://mauriciovancine.github.io/pt/post/geo-geographic-data-sources/</link>
       <pubDate>Thu, 07 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://mauriciovancine.github.io/pt/post/2021-06-fontes-de-dados-geograficos/</guid>
+      <guid>https://mauriciovancine.github.io/pt/post/geo-geographic-data-sources/</guid>
       <description>&lt;div style=&#34;text-align: justify&#34;&gt;
 &lt;h2 id=&#34;contextualização&#34;&gt;Contextualização&lt;/h2&gt;
 &lt;h2 id=&#34;principais-fontes-de-dados-geográficos&#34;&gt;Principais fontes de dados geográficos&lt;/h2&gt;
@@ -1124,11 +1124,11 @@ theme_example = TRUE, empty_dirs = TRUE, to_yaml = TRUE)&lt;/p&gt;
     
     <item>
       <title>Como e onde começar a estudar R</title>
-      <link>https://mauriciovancine.github.io/pt/post/2021-07-como-onde-comecar-a-aprender-r/</link>
+      <link>https://mauriciovancine.github.io/pt/post/r-try/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mauriciovancine.github.io/pt/post/2021-07-como-onde-comecar-a-aprender-r/</guid>
+      <guid>https://mauriciovancine.github.io/pt/post/r-try/</guid>
       <description>
-&lt;script src=&#34;https://mauriciovancine.github.io/pt/post/2021-07-como-onde-comecar-a-aprender-r/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://mauriciovancine.github.io/pt/post/r-try/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;Escrevendo…&lt;/p&gt;
@@ -1137,11 +1137,11 @@ theme_example = TRUE, empty_dirs = TRUE, to_yaml = TRUE)&lt;/p&gt;
     
     <item>
       <title>Como rodar python no RStudio</title>
-      <link>https://mauriciovancine.github.io/pt/post/2021-12-como-rodar-python-no-rstudio/</link>
+      <link>https://mauriciovancine.github.io/pt/post/rstudio-python/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mauriciovancine.github.io/pt/post/2021-12-como-rodar-python-no-rstudio/</guid>
+      <guid>https://mauriciovancine.github.io/pt/post/rstudio-python/</guid>
       <description>
-&lt;script src=&#34;https://mauriciovancine.github.io/pt/post/2021-12-como-rodar-python-no-rstudio/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://mauriciovancine.github.io/pt/post/rstudio-python/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;Escrevendo…&lt;/p&gt;
@@ -1150,11 +1150,11 @@ theme_example = TRUE, empty_dirs = TRUE, to_yaml = TRUE)&lt;/p&gt;
     
     <item>
       <title>Cálculo de métricas de paisagem no R</title>
-      <link>https://mauriciovancine.github.io/pt/post/2022-06-metricas-de-paisagem-no-r/</link>
+      <link>https://mauriciovancine.github.io/pt/post/r-landscape-metrics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mauriciovancine.github.io/pt/post/2022-06-metricas-de-paisagem-no-r/</guid>
+      <guid>https://mauriciovancine.github.io/pt/post/r-landscape-metrics/</guid>
       <description>
-&lt;script src=&#34;https://mauriciovancine.github.io/pt/post/2022-06-metricas-de-paisagem-no-r/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://mauriciovancine.github.io/pt/post/r-landscape-metrics/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;Escrevendo…&lt;/p&gt;
@@ -1164,11 +1164,11 @@ theme_example = TRUE, empty_dirs = TRUE, to_yaml = TRUE)&lt;/p&gt;
     
     <item>
       <title>Geocomputação no Python</title>
-      <link>https://mauriciovancine.github.io/pt/post/2022-01-geocomputacao-python/</link>
+      <link>https://mauriciovancine.github.io/pt/post/python-geocomputation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mauriciovancine.github.io/pt/post/2022-01-geocomputacao-python/</guid>
+      <guid>https://mauriciovancine.github.io/pt/post/python-geocomputation/</guid>
       <description>
-&lt;script src=&#34;https://mauriciovancine.github.io/pt/post/2022-01-geocomputacao-python/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://mauriciovancine.github.io/pt/post/python-geocomputation/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;Escrevendo…&lt;/p&gt;
@@ -1177,11 +1177,11 @@ theme_example = TRUE, empty_dirs = TRUE, to_yaml = TRUE)&lt;/p&gt;
     
     <item>
       <title>Introdução ao GRASS GIS</title>
-      <link>https://mauriciovancine.github.io/pt/post/2022-03-introducao-ao-grass-gis/</link>
+      <link>https://mauriciovancine.github.io/pt/post/grass-gis-introduction/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mauriciovancine.github.io/pt/post/2022-03-introducao-ao-grass-gis/</guid>
+      <guid>https://mauriciovancine.github.io/pt/post/grass-gis-introduction/</guid>
       <description>
-&lt;script src=&#34;https://mauriciovancine.github.io/pt/post/2022-03-introducao-ao-grass-gis/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://mauriciovancine.github.io/pt/post/grass-gis-introduction/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;Escrevendo…&lt;/p&gt;
@@ -1190,11 +1190,11 @@ theme_example = TRUE, empty_dirs = TRUE, to_yaml = TRUE)&lt;/p&gt;
     
     <item>
       <title>Porque você deveria aprender a programar em python</title>
-      <link>https://mauriciovancine.github.io/pt/post/2021-11-porque-voce-deveria-aprender-python/</link>
+      <link>https://mauriciovancine.github.io/pt/post/python-try/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mauriciovancine.github.io/pt/post/2021-11-porque-voce-deveria-aprender-python/</guid>
+      <guid>https://mauriciovancine.github.io/pt/post/python-try/</guid>
       <description>
-&lt;script src=&#34;https://mauriciovancine.github.io/pt/post/2021-11-porque-voce-deveria-aprender-python/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://mauriciovancine.github.io/pt/post/python-try/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;Escrevendo…&lt;/p&gt;
@@ -1205,9 +1205,9 @@ theme_example = TRUE, empty_dirs = TRUE, to_yaml = TRUE)&lt;/p&gt;
     
     <item>
       <title>R markdown: estendendo as funcionalidades do R</title>
-      <link>https://mauriciovancine.github.io/pt/post/2022-05-rmarkdown/</link>
+      <link>https://mauriciovancine.github.io/pt/post/r-rmarkdown/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mauriciovancine.github.io/pt/post/2022-05-rmarkdown/</guid>
+      <guid>https://mauriciovancine.github.io/pt/post/r-rmarkdown/</guid>
       <description>
 &lt;script src=&#34;index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
@@ -1218,11 +1218,11 @@ theme_example = TRUE, empty_dirs = TRUE, to_yaml = TRUE)&lt;/p&gt;
     
     <item>
       <title>Tente usar Linux</title>
-      <link>https://mauriciovancine.github.io/pt/post/2022-02-tente-usar-linux/</link>
+      <link>https://mauriciovancine.github.io/pt/post/linux-try/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mauriciovancine.github.io/pt/post/2022-02-tente-usar-linux/</guid>
+      <guid>https://mauriciovancine.github.io/pt/post/linux-try/</guid>
       <description>
-&lt;script src=&#34;https://mauriciovancine.github.io/pt/post/2022-02-tente-usar-linux/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://mauriciovancine.github.io/pt/post/linux-try/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;Escrevendo…&lt;/p&gt;
@@ -1231,11 +1231,11 @@ theme_example = TRUE, empty_dirs = TRUE, to_yaml = TRUE)&lt;/p&gt;
     
     <item>
       <title>tidyverse: outra forma de usar o R</title>
-      <link>https://mauriciovancine.github.io/pt/post/2021-08-tidyverse/</link>
+      <link>https://mauriciovancine.github.io/pt/post/r-tidyverse/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mauriciovancine.github.io/pt/post/2021-08-tidyverse/</guid>
+      <guid>https://mauriciovancine.github.io/pt/post/r-tidyverse/</guid>
       <description>
-&lt;script src=&#34;https://mauriciovancine.github.io/pt/post/2021-08-tidyverse/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://mauriciovancine.github.io/pt/post/r-tidyverse/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;Escrevendo…&lt;/p&gt;

@@ -33,17 +33,17 @@
   </url>
   
   <url>
-    <loc>https://mauriciovancine.github.io/pt/post/2021-05-dados-geograficos-no-r/</loc>
+    <loc>https://mauriciovancine.github.io/pt/post/geo-geographic-data-r/</loc>
     <lastmod>2021-02-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://mauriciovancine.github.io/pt/post/2021-02-desmistificando-sistemas-referencia-coordendas-datum/</loc>
+    <loc>https://mauriciovancine.github.io/pt/post/geo-crs-datum/</loc>
     <lastmod>2021-02-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://mauriciovancine.github.io/pt/post/2021-04-formatos-dados-geograficos/</loc>
+    <loc>https://mauriciovancine.github.io/pt/post/geo-geographic-data/</loc>
     <lastmod>2021-02-20T00:00:00+00:00</lastmod>
   </url>
   
@@ -468,12 +468,12 @@
   </url>
   
   <url>
-    <loc>https://mauriciovancine.github.io/pt/post/2021-01-como-criar-um-site-academico-com-o-r/</loc>
+    <loc>https://mauriciovancine.github.io/pt/post/r-academic-site/</loc>
     <lastmod>2021-01-07T15:54:57-03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://mauriciovancine.github.io/pt/post/2021-06-fontes-de-dados-geograficos/</loc>
+    <loc>https://mauriciovancine.github.io/pt/post/geo-geographic-data-sources/</loc>
     <lastmod>2021-01-07T15:54:57-03:00</lastmod>
   </url>
   
@@ -2217,19 +2217,19 @@
   </url>
   
   <url>
-    <loc>https://mauriciovancine.github.io/pt/post/2021-07-como-onde-comecar-a-aprender-r/</loc>
+    <loc>https://mauriciovancine.github.io/pt/post/r-try/</loc>
   </url>
   
   <url>
-    <loc>https://mauriciovancine.github.io/pt/post/2021-12-como-rodar-python-no-rstudio/</loc>
+    <loc>https://mauriciovancine.github.io/pt/post/rstudio-python/</loc>
   </url>
   
   <url>
-    <loc>https://mauriciovancine.github.io/pt/post/2022-06-metricas-de-paisagem-no-r/</loc>
+    <loc>https://mauriciovancine.github.io/pt/post/r-landscape-metrics/</loc>
   </url>
   
   <url>
-    <loc>https://mauriciovancine.github.io/pt/post/2022-01-geocomputacao-python/</loc>
+    <loc>https://mauriciovancine.github.io/pt/post/python-geocomputation/</loc>
   </url>
   
   <url>
@@ -2241,7 +2241,7 @@
   </url>
   
   <url>
-    <loc>https://mauriciovancine.github.io/pt/post/2022-03-introducao-ao-grass-gis/</loc>
+    <loc>https://mauriciovancine.github.io/pt/post/grass-gis-introduction/</loc>
   </url>
   
   <url>
@@ -2275,7 +2275,7 @@
   </url>
   
   <url>
-    <loc>https://mauriciovancine.github.io/pt/post/2021-11-porque-voce-deveria-aprender-python/</loc>
+    <loc>https://mauriciovancine.github.io/pt/post/python-try/</loc>
   </url>
   
   <url>
@@ -2291,15 +2291,15 @@
   </url>
   
   <url>
-    <loc>https://mauriciovancine.github.io/pt/post/2022-05-rmarkdown/</loc>
+    <loc>https://mauriciovancine.github.io/pt/post/r-rmarkdown/</loc>
   </url>
   
   <url>
-    <loc>https://mauriciovancine.github.io/pt/post/2022-02-tente-usar-linux/</loc>
+    <loc>https://mauriciovancine.github.io/pt/post/linux-try/</loc>
   </url>
   
   <url>
-    <loc>https://mauriciovancine.github.io/pt/post/2021-08-tidyverse/</loc>
+    <loc>https://mauriciovancine.github.io/pt/post/r-tidyverse/</loc>
   </url>
   
 </urlset>
