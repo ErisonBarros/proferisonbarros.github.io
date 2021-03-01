@@ -280,7 +280,7 @@
   
   <meta property="og:site_name" content="Maurício Vancine">
   <meta property="og:url" content="https://mauriciovancine.github.io/pt/post/geo-crs-datum/">
-  <meta property="og:title" content="Desmistificando o Sistemas de Referência de Coordenadas e Datum | Maurício Vancine">
+  <meta property="og:title" content="Desmistificando o Sistema de Referência de Coordenadas e Datum | Maurício Vancine">
   <meta property="og:description" content="Uma modesta explicação de Sistemas de Referência de Coordenadas e Datum"><meta property="og:image" content="https://mauriciovancine.github.io/pt/post/geo-crs-datum/featured.jpg">
   <meta property="twitter:image" content="https://mauriciovancine.github.io/pt/post/geo-crs-datum/featured.jpg"><meta property="og:locale" content="pt">
   
@@ -313,7 +313,7 @@
     "@type": "WebPage",
     "@id": "https://mauriciovancine.github.io/pt/post/geo-crs-datum/"
   },
-  "headline": "Desmistificando o Sistemas de Referência de Coordenadas e Datum",
+  "headline": "Desmistificando o Sistema de Referência de Coordenadas e Datum",
   
   "image": [
     "https://mauriciovancine.github.io/pt/post/geo-crs-datum/featured.jpg"
@@ -353,7 +353,7 @@
 
 
 
-  <title>Desmistificando o Sistemas de Referência de Coordenadas e Datum | Maurício Vancine</title>
+  <title>Desmistificando o Sistema de Referência de Coordenadas e Datum | Maurício Vancine</title>
 
 </head>
 
@@ -727,7 +727,7 @@
 
 
 <div class="article-container pt-3">
-  <h1>Desmistificando o Sistemas de Referência de Coordenadas e Datum</h1>
+  <h1>Desmistificando o Sistema de Referência de Coordenadas e Datum</h1>
 
   
 
@@ -807,32 +807,32 @@
 <link href="https://mauriciovancine.github.io/pt/post/geo-crs-datum/index_files/vembedr/css/vembedr.css" rel="stylesheet" />
 <div style="text-align: justify">
 <h2 id="contextualização">Contextualização</h2>
-<p>Um dos primeiros assuntos que devemos entender antes de iniciar no mundo do <strong>Geoprocessamento</strong> são os conceitos de <strong>Sistemas de Referência de Coordenadas</strong> e <strong>Datum</strong>. Esses conceitos atrelados à Cartografia, apesar de <strong>parecerem simples</strong> para quem possui certa experiência na área de Geoprocessamento, muitas vezes são <strong>confundidos ou mesmo ignorados</strong> por aqueles que estão adentrando nessa área agora.</p>
-<p>Dessa forma, minha intenção com esse post é <strong>transmitir esses conceitos de forma simples e objetiva</strong>, usando uma linguagem prática, para facilitar seu uso no dia a dia. Não adentro aqui em como aplicar esses conceitos em softwares de SIG. Para se aprofundar, recomendo livros específicos no final do post ou mesmo procurar disciplinas de Engenharia Cartográfica e Geodéria.</p>
+<p>Um dos primeiros assuntos que devemos entender antes de iniciar no mundo do <strong>Geoprocessamento</strong> são os conceitos de <strong>Sistema de Referência de Coordenadas</strong> e <strong>Datum</strong>. Esses conceitos atrelados à Cartografia apesar de <strong>parecerem simples</strong> para quem possui certa experiência na área de Geoprocessamento, muitas vezes são <strong>confundidos ou mesmo ignorados</strong> por aqueles que estão adentrando nessa área.</p>
+<p>Dessa forma, minha intenção com esse post é <strong>transmitir esses conceitos de forma simples e objetiva</strong>, usando uma linguagem prática, para facilitar seu uso no dia a dia. Não adentro aqui em como aplicar esses conceitos em softwares de SIG ou toda a matemática envolvida. Para se aprofundar, recomendo livros específicos no final do post ou mesmo procurar disciplinas de Engenharia Cartográfica e/ou Geodéria.</p>
 <h2 id="sistema-de-referência-de-coordenadas">Sistema de Referência de Coordenadas</h2>
 <p>Os dados geográficos (vetor e raster, explicados com detalhes nesse <a href="https://mauriciovancine.github.io/pt/post/2021-03-20-formatos-dados-geograficos/" target="_blank" rel="noopener">post</a>), possuem um componente fundamental, que é o <strong>Sistema de Referência de Coordenadas</strong> ou do inglês <em>Coordinate Reference System (CRS)</em>. Esse componente define como os elementos espaciais (vetor e raster) representam uma feição na superfície da Terra.</p>
-<p>O Sistema de Referência de Coordenadas é composto de quatro componentes:</p>
+<p>O Sistema de Referência de Coordenadas é composto de <strong>quatro componentes</strong>:</p>
 <ol>
-<li><strong>Sistema de coordenadas</strong>: grade X e Y, na qual os dados são sobrepostos e como um ponto está localizado no espaço</li>
-<li><strong>Unidades horizontais e verticais</strong> unidades usadas para definir a grade ao longo dos eixos X, Y (e Z)</li>
-<li><strong>Datum</strong>: versão modelada da forma da Terra que define a origem usada para colocar o sistema de coordenadas no espaço</li>
+<li><strong>Sistema de coordenadas</strong>: grade X e Y na qual os dados são sobrepostos e localizados no espaço</li>
+<li><strong>Unidades horizontais e verticais</strong>: unidades usadas para definir a grade ao longo dos eixos X e Y</li>
+<li><strong>Datum</strong>: versão modelada da forma da Terra que define a origem usada para localizar o sistema de coordenadas no planeta</li>
 <li><strong>Informações de projeção</strong>: equação matemática usada para nivelar objetos que estão em uma superfície redonda para visualização em uma superfície plana</li>
 </ol>
 <p>O <strong>Sistema de coordenadas</strong> é defido com base nas <strong>Unidades horizontais e verticais</strong> que estão sendo utilizadas para a representação geográfica, podendo assumir dois tipos: <strong>ângulos</strong> para <strong>Sistema de Coordenadas Geográficas</strong> e <strong>metros</strong> para <strong>Sistema de Coordenadas Projetadas</strong>.</p>
-<p>Outro componente é o <strong>Datum</strong>, que é a <strong>relação</strong> desses sistemas de coordenadas com a superfície da Terra. Esse último componente faz parte de uma área da <strong>Cartografia</strong> denominada <strong>Geodésia</strong> que estuda a forma e dimensões da Terra, campo gravitacional, e a localização de pontos fixos e sistemas de coordenadas.</p>
-<p>Por fim, as <strong>Informações de projeção</strong> que são equações matemáticas constituídas com base nas informações anteriores permite a representação e cálculos de propriedades das feições representadas nos mapas. Esse tópico não abordaremos aqui por estarem fora da minha alçada… Muito senos, cossenos e integrais… Melhor deixar para os geofísicos e engenheiros cartográficos…</p>
-<p>Veremos mais informações para o uso prático, focado no Sistemas de Coordenadas e Datum.</p>
+<p>Outro componente é o <strong>datum</strong>, que é a <strong>relação</strong> desses sistemas de coordenadas com a superfície da Terra. O Datum faz parte de uma área da <strong>Cartografia</strong> denominada <strong>Geodésia</strong> que estuda a forma e dimensões da Terra, campo gravitacional e a localização de pontos fixos e sistemas de coordenadas.</p>
+<p>Por fim, as <strong>Informações de projeção</strong> que são equações matemáticas constituídas com base nas informações anteriores permite a representação e cálculos de propriedades das feições representadas nos mapas. Esse tópico não abordaremos aqui por estarem fora da minha alçada… Muito senos, cossenos, dericadas e integrais… Melhor deixar para os geofísicos e engenheiros cartográficos…</p>
+<p>Veremos mais informações para o uso prático, focado no <strong>Sistemas de Coordenadas</strong> e <strong>Datum</strong> e como combiná-los para formar o Sistema de Referência de Coordenadas.</p>
 <h2 id="sistema-de-coordenadas-geográficas">Sistema de Coordenadas Geográficas</h2>
-<p>O <strong>Sistema de Referência de Coordenadas Geográficas</strong> utiliza <strong>ângulos</strong> para representar feições na superfície da Terra através de dois valores: longitude e latitude. A <strong>longitude</strong> localiza-se na direção Leste-Oeste e a <strong>latitude</strong> localiza-se na direção Norte-Sul. Nesse sistema, a <strong>superfície da Terra</strong> geralmente é representada por uma <strong>superfície elipsoidal</strong>, pois a Terra é ligeiramente achatada nos pólos (Figura <a href="#fig:fig-geo">1</a>).</p>
+<p>O <strong>Sistema de Coordenadas Geográficas</strong> utiliza <strong>ângulos</strong> para representar feições na superfície da Terra através de dois valores: longitude e latitude. A <strong>longitude</strong> localiza-se na direção Leste-Oeste e a <strong>latitude</strong> localiza-se na direção Norte-Sul. Nesse sistema, a <strong>superfície da Terra</strong> geralmente é representada por uma <strong>superfície elipsoidal</strong>, pois a Terra é ligeiramente achatada nos pólos (Figura <a href="#fig:fig-geo">1</a>).</p>
 <div class="figure" style="text-align: center">
-<p><img src="img/geo_geographic.png" alt="Sistema de Referência de Coordenadas Geográficas. Fonte: Documentação do QGIS." width="70%" /></p>
+<p><img src="img/geo_geographic.png" alt="Sistema de Coordenadas Geográficas. Fonte: Documentação do QGIS." width="70%" /></p>
 <p class="caption">
-Figura 1: Sistema de Referência de Coordenadas Geográficas. Fonte: Documentação do QGIS.
+Figura 1: Sistema de Coordenadas Geográficas. Fonte: Documentação do QGIS.
 </p>
 </div>
 <h2 id="sistema-de-coordenadas-projetadas">Sistema de Coordenadas Projetadas</h2>
-<p>O <strong>Sistema de Referência de Coordenadas Projetadas</strong> utiliza um <strong>Sistema Cartesiano de Coordenadas</strong> em uma <strong>superfície plana</strong>. Dessa forma, à partir de uma origem, traçam-se eixos x e y, e uma unidade linear, como o <strong>metro</strong>, é utilizada para representar as feições.</p>
-<p>Todos as <strong>projeções</strong> feitas de sistemas geográficos convertem uma <strong>superfície tridimensional</strong> em uma <strong>superfície plana bidimensional</strong>. Sendo assim, essa conversão trás consigo algum tipo de <strong>distorção em relação à porção real</strong>, podendo ser distorções em: 1. formas locais, 2. áreas, 3. distâncias, 4. flexão ou curvatura, 5. assimetria e 6. lacunas de continuidade. Dessa forma, um sistema de coordenadas projetadas pode preservar somente uma ou duas dessas propriedades.</p>
+<p>O <strong>Sistema de Coordenadas Projetadas</strong> utiliza um <strong>Sistema Cartesiano de Coordenadas</strong> em uma <strong>superfície plana</strong>. Dessa forma, à partir de uma origem, traçam-se eixos X e Y, e uma unidade linear, como o <strong>metro</strong>, é utilizada para representar as feições.</p>
+<p>Todos as <strong>projeções</strong> são feitas a partir de sistemas geográficos, convertendo uma <strong>superfície tridimensional</strong> em uma <strong>superfície plana bidimensional</strong>. Sendo assim, essa conversão trás consigo algum tipo de <strong>distorção em relação à porção real</strong>, podendo ser distorções em: 1. formas locais, 2. áreas, 3. distâncias, 4. flexão ou curvatura, 5. assimetria e 6. lacunas de continuidade. Dessa forma, um sistema de coordenadas projetadas pode preservar somente uma ou duas dessas propriedades.</p>
 <p>Dois vídeos ajudam a entender melhor essas distorções:</p>
 <p><strong>Todos os mapas do mundo são imperfeitos. Entenda as razões e as soluções para amenizar distorções</strong></p>
 <div class="vembedr" align="center">
@@ -846,7 +846,7 @@ Figura 1: Sistema de Referência de Coordenadas Geográficas. Fonte: Documentaç
 <iframe src="https://www.youtube.com/embed/kIID5FDi2JQ" width="533" height="300" frameborder="0" allowfullscreen=""></iframe>
 </div>
 </div>
-<p>Existem <strong>três grandes grupos</strong> de projeções: cilíndricos, cônicos e planares (Figura <a href="#fig:fig-proj">2</a>).</p>
+<p>Existem <strong>três grandes grupos</strong> de projeções: planares, cônicos e cilíndricos (Figura <a href="#fig:fig-proj">2</a>).</p>
 <div class="figure" style="text-align: center">
 <p><img src="img/geo_proj_families.jpg" alt="Sistema de Referência de Coordenadas Projetadas, dividido em três grupos: plana, cônica e cilíndrica. Fonte: Geographic Information System Basics." width="60%" /></p>
 <p class="caption">
@@ -860,14 +860,14 @@ Figura 2: Sistema de Referência de Coordenadas Projetadas, dividido em três gr
 Figura 3: Projeção plana. Fonte: Atlas Escolar IBGE.
 </p>
 </div>
-<p>Na <strong>projeção cônica</strong>, a superfície da Terra é projetada em um <strong>cone</strong> ao longo de uma linha ou duas linhas de tangência, de modo que as distorções são minimizadas ao longo das linhas e aumentam com a distância das mesmas, sendo portanto, mais adequada para mapear áreas de latitudes médias, tendo como exemplo mais conhecido a <strong>Projeção Cônica Equivalente de Albers</strong> e a <strong>Projeção Cônica Conforme de Lambert</strong> (Figura <a href="#fig:fig-conica">4</a>).</p>
+<p>Na <strong>projeção cônica</strong>, a superfície da Terra é projetada em um <strong>cone</strong> ao longo de uma linha ou duas linhas de tangência, de modo que as distorções são minimizadas ao longo das linhas e aumentam com a distância das mesmas, sendo portanto, mais adequada para mapear áreas de latitudes médias, tendo como exemplo mais conhecidos a <strong>Projeção Cônica Equivalente de Albers</strong> e a <strong>Projeção Cônica Conforme de Lambert</strong> (Figura <a href="#fig:fig-conica">4</a>).</p>
 <div class="figure" style="text-align: center">
 <p><img src="img/geo_proj_conica.jpg" alt="Projeção cônica. Fonte: Atlas Escolar IBGE." width="100%" /></p>
 <p class="caption">
 Figura 4: Projeção cônica. Fonte: Atlas Escolar IBGE.
 </p>
 </div>
-<p>Na <strong>projeção cilíndrica</strong>, a superfície da Terra é mapeada em um <strong>cilindro</strong>, sendo também criada tocando a superfície da Terra ao longo de uma ou duas linhas de tangência, sendo utilizada com mais frequência para mapear todo o globo, tendo como exemplo mais conhecido a <strong>Projeção Universal Transversa de Mercator (UTM)</strong> (Figura <a href="#fig:fig-cilindrica">5</a>).</p>
+<p>Na <strong>projeção cilíndrica</strong>, a superfície da Terra é mapeada em um <strong>cilindro</strong>, sendo também criada tocando a superfície da Terra ao longo de uma ou duas linhas de tangência, sendo utilizada com mais frequência para mapear todo o globo, tendo como exemplo mais conhecido a <strong>Projeção Universal Transversa de Mercator (UTM)</strong>, <strong>Projeção de Winkel Tripel</strong> e <strong>Projeção de Mollweide</strong>(Figura <a href="#fig:fig-cilindrica">5</a>).</p>
 <div class="figure" style="text-align: center">
 <p><img src="img/geo_proj_cilindrica.jpg" alt="Projeção cilíndrica. Fonte: Atlas Escolar IBGE." width="100%" /></p>
 <p class="caption">
@@ -882,7 +882,7 @@ Figura 5: Projeção cilíndrica. Fonte: Atlas Escolar IBGE.
 Figura 6: Datum, Geoide, Esferoide e Elipsoide. Fonte: Ciência Hoje e Lapig.
 </p>
 </div>
-<p>Existem dois tipos de datum: geocêntrico e local (Figura <a href="#fig:fig-datum-geo-local">7</a>). Em um <strong>datum geocêntrico</strong>, como o <strong>WGS84 - World Geodetic System 1984</strong>, o centro do elipsoide é o centro de gravidade da Terra e a precisão das projeções não é otimizada para um local específico do globo. Já em um <strong>datum local</strong>, como o <strong>SAD69 - South American Datum 1969</strong>, o elipsoide de referência é deslocado para se alinhar com a superfície em um determinado local, como por exemplo, na América do Sul (Figura <a href="#fig:fig-datum-geo-local">7</a>).</p>
+<p>Existem dois tipos de datum: geocêntrico e local (Figura <a href="#fig:fig-datum-geo-local">7</a>). Para um <strong>datum geocêntrico</strong>, como o <strong>WGS84 - World Geodetic System 1984</strong>, o centro do elipsoide é o centro de gravidade da Terra e a precisão das projeções não é otimizada para um local específico do globo. Já em um <strong>datum local</strong>, como o <strong>SAD69 - South American Datum 1969</strong>, o elipsoide de referência é deslocado para se alinhar com a superfície em um determinado local, como por exemplo, na América do Sul para o SAD69 (Figura <a href="#fig:fig-datum-geo-local">7</a>).</p>
 <div class="figure" style="text-align: center">
 <p><img src="img/geo_datum_global_local.jpeg" alt="Datum global e datum local. Fonte: Aulas de Cartografia para Geoprocessamento do Programa de Pós-graduação em Computação, ênfase Geomática, UERJ." width="90%" /></p>
 <p class="caption">
@@ -896,7 +896,7 @@ Figura 7: Datum global e datum local. Fonte: Aulas de Cartografia para Geoproces
 Figura 8: Sistema de Referencia Geocéntrico para las Américas (SIRGAS). Fonte: SIRGAS
 </p>
 </div>
-<p>Comparando os <strong>datum SAD69 e SIRGAS200</strong>, podemos notar uma <strong>diferença de cerca de 65 metros</strong>, que à depender do mapeamento pode fazer uma <strong>grande diferença</strong>, a exemplo da planta de uma casa ou a construção de uma ponte (Figura <a href="#fig:fig-datum-comp">9</a>)</p>
+<p>Comparando os <strong>datum SAD69 e SIRGAS2000</strong>, podemos notar uma <strong>diferença de cerca de 65 metros</strong>, que à depender do mapeamento pode fazer uma <strong>grande diferença</strong>, a exemplo da planta de uma casa ou a construção de uma ponte (Figura <a href="#fig:fig-datum-comp">9</a>)</p>
 <div class="figure" style="text-align: center">
 <p><img src="img/geo_datum_sad_sirgas.jpg" alt="Discrepância entre um mesmo ponto em SAD69 e SIRGAS2000 em regiões urbanas. Fonte: 'SIRGAS 2000, quando iniciar a sua utilização?'" width="70%" /></p>
 <p class="caption">
@@ -904,24 +904,24 @@ Figura 9: Discrepância entre um mesmo ponto em SAD69 e SIRGAS2000 em regiões u
 </p>
 </div>
 <h2 id="uso-na-prática-dos-sistemas-de-referência-de-coordenadas">Uso na prática dos Sistemas de Referência de Coordenadas</h2>
-<p>Na prática, o <strong>uso</strong> dos Sistemas de Referência de Coordenadas e Datum é <strong>relativamente simples</strong>. Primeramente, devemos entender essa diferença entre os Sistemas de Coordenadas Geográficas, Projetadas e Datum.</p>
-<p>Uma vez entendido isso, podemos passar para o passo seguinte, que é definir qual o <strong>melhor Datum</strong> para nossa região de interesse. E nesse passo, o IBGE já nos ajudou: devemos adotar o Datum SIRGAS2000, salvo raras exceções mais específicas.</p>
-<p>Por fim, devemos <strong>escolher se usaremos Coordenadas Geográfica ou Projetadas</strong>. Isso vai depender muito dos <strong>objetivos do nosso mapeamento</strong>. Se não faremos cálculos de áreas, ângulos ou distâncias, e estamos em interessados em <strong>representar nossos dados</strong>, não há motivos para não escolher Coordenadas Geográficas, logo, nosso Sistemas de Referência de Coordenadas ficaria dessa forma: Coordenadas Geográficas com Datum SIRGAS2000 ou WGS84. Essas coordendas geográficas podem ainda ser representadas em graus, minutos e segundos, ou em graus decimais.</p>
+<p>Na prática, o <strong>uso dos Sistemas de Referência de Coordenadas</strong> é <strong>relativamente simples</strong>. Primeramente, devemos entender a diferença entre os Sistemas de Coordenadas Geográficas, Sistemas de Coordenadas Projetadas e Datum.</p>
+<p>Uma vez entendido isso, podemos passar para o passo seguinte: definir qual o <strong>melhor datum</strong> para nossa região de interesse. E nesse passo, o IBGE já nos ajudou, devemos adotar sempre que possível o Datum SIRGAS2000, salvo raras exceções mais específicas que não adentraremos aqui. Além disso, há uma aproximação com o datum WGS84, facilitando a conversão de datum.</p>
+<p>Por fim, devemos <strong>escolher se usaremos Coordenadas Geográfica ou Projetadas</strong>. Isso vai depender muito dos <strong>objetivos do nosso mapeamento</strong>. Se não faremos cálculos de áreas, ângulos ou distâncias, e estamos interessados em <strong>representar nossos dados</strong> da melhor forma possível, não há motivos para não escolher Coordenadas Geográficas. Logo, nosso Sistemas de Referência de Coordenadas ficaria dessa forma: <strong>Coordenadas Geográficas com Datum SIRGAS2000 ou WGS84</strong>. Essas coordendas geográficas podem ainda ser representadas em graus, minutos e segundos, ou em graus decimais.</p>
 <ul>
 <li>23°23’23”S 42°42’42”O; WGS 84</li>
 <li>23°23’23”S 42°42’42”O; SIRGAS 2000</li>
 <li>-23.38972, -42.71167; WGS 84</li>
 </ul>
-<p>Agora, se o <strong>objetivo do mapeamento</strong> é o <strong>cálculo de áreas, distâncias ou formas</strong>, devemos usar <strong>Coordenadas Projetadas</strong>, pois as unidades são em metros. Mas aqui começa a complicação. Pela minha experiência prática, a primeira coisa a se perguntar é a escala: se for uma escala local, podemos começar pelo uso do UTM, principalmente se todos os dados caem na mesma zona. Logo, nosso Sistemas de Referência de Coordenadas ficaria dessa forma: Coordenadas Projetadas UTM (zona) com Datum SIRGAS2000 ou WGS84, com coordenadas sempre representadas em metros.</p>
+<p>Agora, se o <strong>objetivo do mapeamento</strong> é o <strong>cálculo de áreas, distâncias ou formas</strong>, devemos usar <strong>Coordenadas Projetadas</strong>, pois as unidades são em metros. Mas aqui começa a complicação. Pela minha experiência prática, a primeira coisa a se considerar é a escala: se for uma escala local, podemos começar pelo uso do UTM, principalmente se todos os dados caem na mesma zona. Logo, nosso Sistemas de Referência de Coordenadas ficaria dessa forma: <strong>Coordenadas Projetadas UTM (zona) com Datum SIRGAS2000 ou WGS84</strong>, com coordenadas sempre representadas em metros.</p>
 <ul>
 <li>23K 733876E, 7411482S; WGS 84</li>
 <li>23K 733876E, 7411482S; SIRGAS 2000</li>
 </ul>
-<p>Entretanto, se partimos para <strong>escala regionais</strong> (continente) ou <strong>globais</strong> (todo o mundo), devemos considerar projeções cônicas e/ou cilíndricas, repectivamente, além de observar as distorsões em área, distâncias ou formas, que ficam muito maiores a depender das que escolhemos (<strong>conforme</strong> não deforma ângulos, <strong>equivalente</strong> não altera as áreas, e <strong>equidistante</strong> não deforma distâncias), e principalmente quando nos afastamos das <strong>linhas linhas de tangência</strong> dessas projeções.</p>
+<p>Entretanto, se partimos para <strong>escala regionais</strong> (continente) ou <strong>globais</strong> (todo o mundo), devemos considerar projeções cônicas e/ou cilíndricas, repectivamente, além de observar as distorsões em área, distâncias ou formas, que ficam muito maiores a depender das que escolhemos. Basicamente existem três tipos de projeções: <strong>1) conforme</strong> (não deforma ângulo)s, <strong>2) equivalente</strong> (não altera áresas, e <strong>3) equidistante</strong> (não deforma distâncias), e principalmente, quando nos afastamos das <strong>linhas linhas de tangência</strong> dessas projeções.</p>
 <h2 id="códigos-para-os-sistemas-de-referência-de-coordenadas">Códigos para os Sistemas de Referência de Coordenadas</h2>
-<p>Por fim, algo que ajuda a simplicar esses conceitos são o código numérico <code>epsg</code> e código em texto <code>proj4string</code>. O código EPSG (<em>European Petroleum Survey Group</em>) é uma sequência de números curta, referindo-se apenas a um CRS. O site <a href="http://epsg.io/" target="_blank" rel="noopener">epsg.io</a> permite consultar diversas informações sobre um código, como procurar por um código, representação de mapas e fazer transformações de CRS (Figura <a href="#fig:fig-epsg">10</a>).</p>
+<p>Por fim, algo que ajuda a simplicar esses conceitos são o código numérico <code>epsg</code> e código em texto <code>proj4string</code>. O código EPSG (<em>European Petroleum Survey Group</em>) é uma sequência de numérica curta, referindo-se apenas a um CRS. O site <a href="http://epsg.io/" target="_blank" rel="noopener">epsg.io</a> permite consultar diversas informações sobre um código, como procurar por um número do código, representação de mapas e fazer transformações de CRSs (Figura <a href="#fig:fig-epsg">10</a>).</p>
 <p>Já o código em texto <code>proj4string</code> permite mais flexibilidade para especificar diferentes parâmetros, como o tipo de projeção, datum e elipsóide. Dessa forma, é possível especificar muitas projeções, ou mesmo modificar as projeções existentes, tornando a representação <code>proj4string</code> mais complexa e flexível.</p>
-<p>Além disso, ainda é possível consultar uma extensa lista de CRSs no site <a href="https://spatialreference.org/" target="_blank" rel="noopener">spatialreference.org</a>, que fornece descrições em diversis formatos, baseados em GDAL e Proj.4. Essa abordagem permite consultar uma URL que pode produzir uma referência espacial em um formato que seu software SIG ou o R pode utilizar como referência.</p>
+<p>Além disso, ainda é possível consultar uma extensa lista de CRSs no site <a href="https://spatialreference.org/" target="_blank" rel="noopener">spatialreference.org</a>, que fornece descrições em diversis formatos, baseados em <strong>GDAL</strong> e <strong>Proj.4</strong>. Essa abordagem permite consultar uma URL que pode produzir uma referência espacial em um formato que um software SIG pode utilizar como referência.</p>
 <div class="figure" style="text-align: center">
 <p><img src="img/geo_epsg.png" alt="Site epsg.io com códigos EPSG. Fonte: epsg.io." width="150%" /></p>
 <p class="caption">
@@ -929,7 +929,7 @@ Figura 10: Site epsg.io com códigos EPSG. Fonte: epsg.io.
 </p>
 </div>
 <h2 id="para-se-aprofundar">Para se aprofundar</h2>
-<p>Aqui ofereço apenas os conceitos básicos e bem superficiais. Para se aprofundar no tema, sugiro a leitura dos livros listados abaixo.</p>
+<p>Aqui ofereço apenas os conceitos básicos e bem superficiais, de forma prática. Para se aprofundar no tema, sugiro a leitura dos livros listados abaixo.</p>
 <ul>
 <li>
 <p>Lapaine, M., &amp; Usery, E. L. (Eds.). (2017). <a href="https://www.springer.com/gp/book/9783319518343" target="_blank" rel="noopener">Choosing a map projection</a>. Springer International Publishing.</p>
@@ -983,7 +983,7 @@ Figura 10: Site epsg.io com códigos EPSG. Fonte: epsg.io.
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://mauriciovancine.github.io/pt/post/geo-crs-datum/&amp;text=Desmistificando%20o%20Sistemas%20de%20Refer%c3%aancia%20de%20Coordenadas%20e%20Datum" target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://mauriciovancine.github.io/pt/post/geo-crs-datum/&amp;text=Desmistificando%20o%20Sistema%20de%20Refer%c3%aancia%20de%20Coordenadas%20e%20Datum" target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -996,7 +996,7 @@ Figura 10: Site epsg.io com códigos EPSG. Fonte: epsg.io.
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://mauriciovancine.github.io/pt/post/geo-crs-datum/&amp;t=Desmistificando%20o%20Sistemas%20de%20Refer%c3%aancia%20de%20Coordenadas%20e%20Datum" target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://mauriciovancine.github.io/pt/post/geo-crs-datum/&amp;t=Desmistificando%20o%20Sistema%20de%20Refer%c3%aancia%20de%20Coordenadas%20e%20Datum" target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -1009,7 +1009,7 @@ Figura 10: Site epsg.io com códigos EPSG. Fonte: epsg.io.
       
       
       <li>
-        <a href="mailto:?subject=Desmistificando%20o%20Sistemas%20de%20Refer%c3%aancia%20de%20Coordenadas%20e%20Datum&amp;body=https://mauriciovancine.github.io/pt/post/geo-crs-datum/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=Desmistificando%20o%20Sistema%20de%20Refer%c3%aancia%20de%20Coordenadas%20e%20Datum&amp;body=https://mauriciovancine.github.io/pt/post/geo-crs-datum/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -1022,7 +1022,7 @@ Figura 10: Site epsg.io com códigos EPSG. Fonte: epsg.io.
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://mauriciovancine.github.io/pt/post/geo-crs-datum/&amp;title=Desmistificando%20o%20Sistemas%20de%20Refer%c3%aancia%20de%20Coordenadas%20e%20Datum" target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=https://mauriciovancine.github.io/pt/post/geo-crs-datum/&amp;title=Desmistificando%20o%20Sistema%20de%20Refer%c3%aancia%20de%20Coordenadas%20e%20Datum" target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
