@@ -2242,26 +2242,6 @@
   </url>
   
   <url>
-    <loc>https://mauriciovancine.github.io/pt/post/r-introdution/</loc>
-  </url>
-  
-  <url>
-    <loc>https://mauriciovancine.github.io/pt/post/rstudio-python/</loc>
-  </url>
-  
-  <url>
-    <loc>https://mauriciovancine.github.io/pt/post/r-landscape-metrics/</loc>
-  </url>
-  
-  <url>
-    <loc>https://mauriciovancine.github.io/pt/tag/linux/</loc>
-  </url>
-  
-  <url>
-    <loc>https://mauriciovancine.github.io/pt/category/linux/</loc>
-  </url>
-  
-  <url>
     <loc>https://mauriciovancine.github.io/pt/author/mauricio-vancine/</loc>
     <xhtml:link
                 rel="alternate"
@@ -2273,38 +2253,6 @@
                 hreflang="pt"
                 href="https://mauriciovancine.github.io/pt/author/mauricio-vancine/"
                 />
-  </url>
-  
-  <url>
-    <loc>https://mauriciovancine.github.io/pt/category/open-source/</loc>
-  </url>
-  
-  <url>
-    <loc>https://mauriciovancine.github.io/pt/category/programming/</loc>
-  </url>
-  
-  <url>
-    <loc>https://mauriciovancine.github.io/pt/tag/python/</loc>
-  </url>
-  
-  <url>
-    <loc>https://mauriciovancine.github.io/pt/category/python/</loc>
-  </url>
-  
-  <url>
-    <loc>https://mauriciovancine.github.io/pt/category/r/</loc>
-  </url>
-  
-  <url>
-    <loc>https://mauriciovancine.github.io/pt/post/r-rmarkdown/</loc>
-  </url>
-  
-  <url>
-    <loc>https://mauriciovancine.github.io/pt/tag/rstats/</loc>
-  </url>
-  
-  <url>
-    <loc>https://mauriciovancine.github.io/pt/post/r-tidyverse/</loc>
   </url>
   
 </urlset>

@@ -258,19 +258,5 @@ Figura 10: Site epsg.io com códigos EPSG. Fonte: epsg.io.
 </description>
     </item>
     
-    <item>
-      <title>Cálculo de métricas de paisagem no R</title>
-      <link>https://mauriciovancine.github.io/pt/post/r-landscape-metrics/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mauriciovancine.github.io/pt/post/r-landscape-metrics/</guid>
-      <description>
-&lt;script src=&#34;https://mauriciovancine.github.io/pt/post/r-landscape-metrics/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
-
-
-&lt;p&gt;Escrevendo…&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://nowosad.github.io/post/lsm-bp1/&#34; class=&#34;uri&#34;&gt;https://nowosad.github.io/post/lsm-bp1/&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
   </channel>
 </rss>
