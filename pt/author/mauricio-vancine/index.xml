@@ -14,11 +14,11 @@
     
     <item>
       <title>Como e onde começar a estudar R</title>
-      <link>https://mauriciovancine.github.io/pt/post/r-try/</link>
+      <link>https://mauriciovancine.github.io/pt/post/r-introdution/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mauriciovancine.github.io/pt/post/r-try/</guid>
+      <guid>https://mauriciovancine.github.io/pt/post/r-introdution/</guid>
       <description>
-&lt;script src=&#34;https://mauriciovancine.github.io/pt/post/r-try/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://mauriciovancine.github.io/pt/post/r-introdution/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;Escrevendo…&lt;/p&gt;
@@ -53,66 +53,12 @@
     </item>
     
     <item>
-      <title>Geocomputação no Python</title>
-      <link>https://mauriciovancine.github.io/pt/post/python-geocomputation/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mauriciovancine.github.io/pt/post/python-geocomputation/</guid>
-      <description>
-&lt;script src=&#34;https://mauriciovancine.github.io/pt/post/python-geocomputation/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
-
-
-&lt;p&gt;Escrevendo…&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Introdução ao GRASS GIS</title>
-      <link>https://mauriciovancine.github.io/pt/post/grass-gis-introduction/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mauriciovancine.github.io/pt/post/grass-gis-introduction/</guid>
-      <description>
-&lt;script src=&#34;https://mauriciovancine.github.io/pt/post/grass-gis-introduction/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
-
-
-&lt;p&gt;Escrevendo…&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Porque você deveria aprender a programar em python</title>
-      <link>https://mauriciovancine.github.io/pt/post/python-try/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mauriciovancine.github.io/pt/post/python-try/</guid>
-      <description>
-&lt;script src=&#34;https://mauriciovancine.github.io/pt/post/python-try/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
-
-
-&lt;p&gt;Escrevendo…&lt;/p&gt;
-&lt;p&gt;Livros:&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/maurobio/econum&#34; class=&#34;uri&#34;&gt;https://github.com/maurobio/econum&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>R markdown: estendendo as funcionalidades do R</title>
       <link>https://mauriciovancine.github.io/pt/post/r-rmarkdown/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://mauriciovancine.github.io/pt/post/r-rmarkdown/</guid>
       <description>
 &lt;script src=&#34;index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
-
-
-&lt;p&gt;Escrevendo…&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Tente usar Linux</title>
-      <link>https://mauriciovancine.github.io/pt/post/linux-try/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mauriciovancine.github.io/pt/post/linux-try/</guid>
-      <description>
-&lt;script src=&#34;https://mauriciovancine.github.io/pt/post/linux-try/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;Escrevendo…&lt;/p&gt;

@@ -34,7 +34,7 @@
   
     
   
-  <meta name="description" content="Uma modesta explicação de Sistemas de Referência de Coordenadas e Datum">
+  <meta name="description" content="Uma modesta explicação sobre Sistemas de Referência de Coordenadas e Datum">
 
   
   <link rel="alternate" hreflang="pt" href="https://mauriciovancine.github.io/pt/post/geo-crs-datum/">
@@ -280,8 +280,8 @@
   
   <meta property="og:site_name" content="Maurício Vancine">
   <meta property="og:url" content="https://mauriciovancine.github.io/pt/post/geo-crs-datum/">
-  <meta property="og:title" content="Desmistificando o Sistema de Referência de Coordenadas e Datum | Maurício Vancine">
-  <meta property="og:description" content="Uma modesta explicação de Sistemas de Referência de Coordenadas e Datum"><meta property="og:image" content="https://mauriciovancine.github.io/pt/post/geo-crs-datum/featured.jpg">
+  <meta property="og:title" content="Sistemas de Referência de Coordenadas e Datum | Maurício Vancine">
+  <meta property="og:description" content="Uma modesta explicação sobre Sistemas de Referência de Coordenadas e Datum"><meta property="og:image" content="https://mauriciovancine.github.io/pt/post/geo-crs-datum/featured.jpg">
   <meta property="twitter:image" content="https://mauriciovancine.github.io/pt/post/geo-crs-datum/featured.jpg"><meta property="og:locale" content="pt">
   
     
@@ -313,7 +313,7 @@
     "@type": "WebPage",
     "@id": "https://mauriciovancine.github.io/pt/post/geo-crs-datum/"
   },
-  "headline": "Desmistificando o Sistema de Referência de Coordenadas e Datum",
+  "headline": "Sistemas de Referência de Coordenadas e Datum",
   
   "image": [
     "https://mauriciovancine.github.io/pt/post/geo-crs-datum/featured.jpg"
@@ -335,7 +335,7 @@
       "url": "https://mauriciovancine.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png"
     }
   },
-  "description": "Uma modesta explicação de Sistemas de Referência de Coordenadas e Datum"
+  "description": "Uma modesta explicação sobre Sistemas de Referência de Coordenadas e Datum"
 }
 </script>
 
@@ -353,7 +353,7 @@
 
 
 
-  <title>Desmistificando o Sistema de Referência de Coordenadas e Datum | Maurício Vancine</title>
+  <title>Sistemas de Referência de Coordenadas e Datum | Maurício Vancine</title>
 
 </head>
 
@@ -475,7 +475,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link  active" href="/pt/post"><span>Posts</span></a>
+          <a class="nav-link  active" href="/pt/post"><span>Blog</span></a>
         </li>
 
         
@@ -727,7 +727,7 @@
 
 
 <div class="article-container pt-3">
-  <h1>Desmistificando o Sistema de Referência de Coordenadas e Datum</h1>
+  <h1>Sistemas de Referência de Coordenadas e Datum</h1>
 
   
 
@@ -768,7 +768,7 @@
   
   <span class="middot-divider"></span>
   <span class="article-categories">
-    <i class="fas fa-folder mr-1"></i><a href="/pt/category/rspatial/">rspatial</a></span>
+    <i class="fas fa-folder mr-1"></i><a href="/pt/category/spatial/">spatial</a>, <a href="/pt/category/rspatial/">rspatial</a></span>
   
 
 </div>
@@ -794,7 +794,7 @@
 <div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px; max-height: 540px;">
   <div style="position: relative">
     <img src="/pt/post/geo-crs-datum/featured_huc6f722dc146c2dc51fa011d061ae6e83_249845_720x0_resize_q90_lanczos.jpg" alt="" class="featured-image">
-    
+    <span class="article-header-caption"><a href="https://unsplash.com/photos/qoKTJo2zpRs">Imagem de Sara Riaño</a></span>
   </div>
 </div>
 
@@ -805,12 +805,11 @@
     <div class="article-style">
       <link href="https://mauriciovancine.github.io/pt/post/geo-crs-datum/index_files/vembedr/css/vembedr.css" rel="stylesheet" />
 <link href="https://mauriciovancine.github.io/pt/post/geo-crs-datum/index_files/vembedr/css/vembedr.css" rel="stylesheet" />
-<div style="text-align: justify">
 <h2 id="contextualização">Contextualização</h2>
 <p>Um dos primeiros assuntos que devemos entender antes de iniciar no mundo do <strong>Geoprocessamento</strong> são os conceitos de <strong>Sistema de Referência de Coordenadas</strong> e <strong>Datum</strong>. Esses conceitos atrelados à Cartografia apesar de <strong>parecerem simples</strong> para quem possui certa experiência na área de Geoprocessamento, muitas vezes são <strong>confundidos ou mesmo ignorados</strong> por aqueles que estão adentrando nessa área.</p>
 <p>Dessa forma, minha intenção com esse post é <strong>transmitir esses conceitos de forma simples e objetiva</strong>, usando uma linguagem prática, para facilitar seu uso no dia a dia. Não adentro aqui em como aplicar esses conceitos em softwares de SIG ou toda a matemática envolvida. Para se aprofundar, recomendo livros específicos no final do post ou mesmo procurar disciplinas de Engenharia Cartográfica e/ou Geodéria.</p>
 <h2 id="sistema-de-referência-de-coordenadas">Sistema de Referência de Coordenadas</h2>
-<p>Os dados geográficos (vetor e raster, explicados com detalhes nesse <a href="https://mauriciovancine.github.io/pt/post/2021-03-20-formatos-dados-geograficos/" target="_blank" rel="noopener">post</a>), possuem um componente fundamental, que é o <strong>Sistema de Referência de Coordenadas</strong> ou do inglês <em>Coordinate Reference System (CRS)</em>. Esse componente define como os elementos espaciais (vetor e raster) representam uma feição na superfície da Terra.</p>
+<p>Os dados geoespaciais (vetor e raster, explicados com detalhes neste <a href="https://mauriciovancine.github.io/pt/post/geo-geospatial-data" target="_blank" rel="noopener">post</a>), possuem um componente fundamental, que é o <strong>Sistema de Referência de Coordenadas</strong> ou do inglês <em>Coordinate Reference System (CRS)</em>. Esse componente define como os elementos espaciais (vetor e raster) representam uma feição na superfície da Terra.</p>
 <p>O Sistema de Referência de Coordenadas é composto de <strong>quatro componentes</strong>:</p>
 <ol>
 <li><strong>Sistema de coordenadas</strong>: grade X e Y na qual os dados são sobrepostos e localizados no espaço</li>
@@ -944,7 +943,6 @@ Figura 10: Site epsg.io com códigos EPSG. Fonte: epsg.io.
 <p>Duarte, P. A. (2002). Fundamentos de cartografia. Ed. UFSC.</p>
 </li>
 </ul>
-</div>
 
     </div>
 
@@ -966,6 +964,8 @@ Figura 10: Site epsg.io com códigos EPSG. Fonte: epsg.io.
 
 <div class="article-tags">
   
+  <a class="badge badge-light" href="/pt/tag/spatial/">spatial</a>
+  
   <a class="badge badge-light" href="/pt/tag/rspatial/">rspatial</a>
   
 </div>
@@ -983,7 +983,7 @@ Figura 10: Site epsg.io com códigos EPSG. Fonte: epsg.io.
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://mauriciovancine.github.io/pt/post/geo-crs-datum/&amp;text=Desmistificando%20o%20Sistema%20de%20Refer%c3%aancia%20de%20Coordenadas%20e%20Datum" target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://mauriciovancine.github.io/pt/post/geo-crs-datum/&amp;text=Sistemas%20de%20Refer%c3%aancia%20de%20Coordenadas%20e%20Datum" target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -996,7 +996,7 @@ Figura 10: Site epsg.io com códigos EPSG. Fonte: epsg.io.
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://mauriciovancine.github.io/pt/post/geo-crs-datum/&amp;t=Desmistificando%20o%20Sistema%20de%20Refer%c3%aancia%20de%20Coordenadas%20e%20Datum" target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://mauriciovancine.github.io/pt/post/geo-crs-datum/&amp;t=Sistemas%20de%20Refer%c3%aancia%20de%20Coordenadas%20e%20Datum" target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -1009,7 +1009,7 @@ Figura 10: Site epsg.io com códigos EPSG. Fonte: epsg.io.
       
       
       <li>
-        <a href="mailto:?subject=Desmistificando%20o%20Sistema%20de%20Refer%c3%aancia%20de%20Coordenadas%20e%20Datum&amp;body=https://mauriciovancine.github.io/pt/post/geo-crs-datum/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=Sistemas%20de%20Refer%c3%aancia%20de%20Coordenadas%20e%20Datum&amp;body=https://mauriciovancine.github.io/pt/post/geo-crs-datum/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -1022,7 +1022,7 @@ Figura 10: Site epsg.io com códigos EPSG. Fonte: epsg.io.
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://mauriciovancine.github.io/pt/post/geo-crs-datum/&amp;title=Desmistificando%20o%20Sistema%20de%20Refer%c3%aancia%20de%20Coordenadas%20e%20Datum" target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=https://mauriciovancine.github.io/pt/post/geo-crs-datum/&amp;title=Sistemas%20de%20Refer%c3%aancia%20de%20Coordenadas%20e%20Datum" target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -1199,14 +1199,14 @@ Figura 10: Site epsg.io com códigos EPSG. Fonte: epsg.io.
   
   <div class="post-nav-item">
     <div class="meta-nav">Próximo</div>
-    <a href="/pt/post/geo-geographic-data-r/" rel="next">Dados geográficos no R</a>
+    <a href="/pt/post/general-courses-online/" rel="next">Disciplinas de graduação e pós-graduação on-line</a>
   </div>
   
   
   
   <div class="post-nav-item">
     <div class="meta-nav">Anterior</div>
-    <a href="/pt/post/geo-geographic-data/" rel="prev">Formatos de dados geográficos</a>
+    <a href="/pt/post/r-academic-site/" rel="prev">Como criar um site acadêmico no R</a>
   </div>
   
 </div>
@@ -1223,9 +1223,9 @@ Figura 10: Site epsg.io com códigos EPSG. Fonte: epsg.io.
     <h3>Relacionados</h3>
     <ul>
       
-      <li><a href="/pt/post/geo-geographic-data-r/">Dados geográficos no R</a></li>
-      
       <li><a href="/pt/video/werlive/">We R Live</a></li>
+      
+      <li><a href="/pt/talk/talk-sdm-uff/">Aplicações da Cartografia para a Ecologia Espacial</a></li>
       
       <li><a href="/pt/video/landscape-metrics/">Métricas de paisagem no R</a></li>
       

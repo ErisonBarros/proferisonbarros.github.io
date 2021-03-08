@@ -5,7 +5,7 @@
     <link>https://mauriciovancine.github.io/pt/</link>
       <atom:link href="https://mauriciovancine.github.io/pt/index.xml" rel="self" type="application/rss+xml" />
     <description>Maurício Vancine</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>pt</language><copyright>© Maurício Vancine 2021</copyright><lastBuildDate>Sat, 20 Feb 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>pt</language><copyright>© Maurício Vancine 2021</copyright><lastBuildDate>Fri, 02 Apr 2021 14:00:00 +0000</lastBuildDate>
     <image>
       <url>https://mauriciovancine.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Maurício Vancine</title>
@@ -13,269 +13,89 @@
     </image>
     
     <item>
-      <title>Dados geográficos no R</title>
-      <link>https://mauriciovancine.github.io/pt/post/geo-geographic-data-r/</link>
-      <pubDate>Sat, 20 Feb 2021 00:00:00 +0000</pubDate>
-      <guid>https://mauriciovancine.github.io/pt/post/geo-geographic-data-r/</guid>
-      <description>&lt;div style=&#34;text-align: justify&#34;&gt;
-&lt;h2 id=&#34;contextualização&#34;&gt;Contextualização&lt;/h2&gt;
-&lt;p&gt;Os pacotes indispensáveis para &lt;em&gt;manipulação&lt;/em&gt; de dados geoespaciais no R&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;sp&lt;/li&gt;
-&lt;li&gt;sf&lt;/li&gt;
-&lt;li&gt;raster/terra&lt;/li&gt;
-&lt;li&gt;rgdal&lt;/li&gt;
-&lt;li&gt;stars&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Os pacotes indispensáveis para &lt;em&gt;download&lt;/em&gt; de dados geoespaciais no R&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;rnaturalearth&lt;/li&gt;
-&lt;li&gt;geobr&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Os pacotes indispensáveis para &lt;em&gt;visualização&lt;/em&gt; de dados geoespaciais no R&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;ggplot2&lt;/li&gt;
-&lt;li&gt;tmap&lt;/li&gt;
-&lt;li&gt;ggmap&lt;/li&gt;
-&lt;li&gt;cartography&lt;/li&gt;
-&lt;li&gt;leaflet&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Os pacotes indispensáveis para &lt;em&gt;análises&lt;/em&gt; de dados geoespaciais no R&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;spatstats&lt;/li&gt;
-&lt;li&gt;gstat&lt;/li&gt;
-&lt;li&gt;geoR&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Os pacotes indispensáveis para &lt;em&gt;integração&lt;/em&gt; com outros softwares de geoprocessamento no R&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;RQGIS&lt;/li&gt;
-&lt;li&gt;rgrass7&lt;/li&gt;
-&lt;li&gt;RSAGA&lt;/li&gt;
-&lt;li&gt;rpostgis&lt;/li&gt;
-&lt;li&gt;RPyGeo&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Os pacotes indispensáveis para &lt;em&gt;sensoriamento remoto&lt;/em&gt; no R&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;landsat&lt;/li&gt;
-&lt;li&gt;terra&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Os nomes indispensáveis para se conhecer sobre dados geoespaciais no R&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Roger Bivand&lt;/li&gt;
-&lt;li&gt;Edzer Pebesma&lt;/li&gt;
-&lt;li&gt;Robin Lovelace&lt;/li&gt;
-&lt;li&gt;Jakub Nowosad&lt;/li&gt;
-&lt;li&gt;Paulo Justiniano Ribeiro Junior&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Os livros indispensáveis para se estudar sobre dados geoespaciais no R&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Geocomputation with R&lt;/li&gt;
-&lt;li&gt;Applied Spatial Data Analysis with R&lt;/li&gt;
-&lt;li&gt;An Introduction to R for Spatial Analysis and Mapping&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Os blogs indispensáveis para se conhecer sobre dados geoespaciais no R&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;r-spatial (&lt;a href=&#34;https://www.r-spatial.org/&#34;&gt;https://www.r-spatial.org/&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Spatial Data Science (&lt;a href=&#34;https://www.rspatial.org/&#34;&gt;https://www.rspatial.org/&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id=&#34;sf-principal-pacote-no-r-para-dados-vetoriais&#34;&gt;&lt;em&gt;sf&lt;/em&gt;: principal pacote no R para dados vetoriais&lt;/h3&gt;
-&lt;p&gt;Atualmente o principal pacote para trabalhar com dados vetoriais no R é o &lt;a href=&#34;https://r-spatial.github.io/sf/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;sf&lt;/em&gt;&lt;/a&gt;, que implementou o &lt;em&gt;Simple Feature&lt;/em&gt; no R (Pebesma 2018). Entretanto, outro pacote pode ser tão versátil quanto o &lt;em&gt;sf&lt;/em&gt;, no caso o &lt;a href=&#34;https://rspatial.org/terra/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;terra&lt;/em&gt;&lt;/a&gt;, ainda em desenvolvimento.&lt;/p&gt;
-&lt;p&gt;O pacote &lt;em&gt;sf&lt;/em&gt; facilitou muito a forma de trabalhar com vetores no R, sendo que as principais vantagens desse pacote são (Lovelace, Nowosad &amp;amp; Muenchow 2019):&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;rápida importação e exportação de dados&lt;/li&gt;
-&lt;li&gt;aprimorado desempenho de plotagem&lt;/li&gt;
-&lt;li&gt;objetos &lt;em&gt;sf&lt;/em&gt; podem ser tratados como dataframes na maioria das operações&lt;/li&gt;
-&lt;li&gt;funções &lt;em&gt;sf&lt;/em&gt; podem ser combinadas usando o operador &lt;code&gt;%&amp;gt;%&lt;/code&gt; e funcionam no formato tidyverse&lt;/li&gt;
-&lt;li&gt;funções &lt;em&gt;sf&lt;/em&gt; são consistentes e intuitivas (quase sempre começam com prefixo &lt;code&gt;st_&lt;/code&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Os tipos de geometrias apresentadas são representadas por diferentes classes: &lt;code&gt;POINT&lt;/code&gt;, &lt;code&gt;LINESTRING&lt;/code&gt; e &lt;code&gt;POLYGON&lt;/code&gt; para apenas uma feição de cada tipo de geometria; &lt;code&gt;MULTIPOINT&lt;/code&gt;, &lt;code&gt;MULTILINESTRING&lt;/code&gt; e &lt;code&gt;MULTIPOLYGON&lt;/code&gt; para várias feições de cada tipo de geometria e; &lt;code&gt;GEOMETRYCOLLECTION&lt;/code&gt; para várias feições e tipos de geometrias (Figura &lt;a href=&#34;#fig:fig-vetor-sf-classes&#34;&gt;1&lt;/a&gt;).&lt;/p&gt;
-&lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;
-&lt;img src=&#34;img/sf-classes.png&#34; alt=&#34;Tipos de classes suportadas pelo pacote *sf*. Fonte: Lovelace, Nowosad &amp;amp; Muenchow (2019).&#34; width=&#34;50%&#34; /&gt;
-&lt;p class=&#34;caption&#34;&gt;Figura 1: Tipos de classes suportadas pelo pacote *sf*. Fonte: Lovelace, Nowosad &amp; Muenchow (2019).&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;O pacote &lt;em&gt;sf&lt;/em&gt; define um sistema de três classes hierárquicas (Tabela &lt;a href=&#34;#tab:tab-vetor-sf-estruturas&#34;&gt;&lt;strong&gt;??&lt;/strong&gt;&lt;/a&gt;):&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Classe &lt;em&gt;sfg&lt;/em&gt; - uma geometria única&lt;/li&gt;
-&lt;li&gt;Classe &lt;em&gt;sfc&lt;/em&gt; - uma coluna de geometria, que é um conjunto de geometrias &lt;em&gt;sfg&lt;/em&gt; e informações Sistema de Referência de Coordenadas (do inglês &lt;em&gt;Coordinate Reference Systems- CRS&lt;/em&gt;)&lt;/li&gt;
-&lt;li&gt;Classe &lt;em&gt;sf&lt;/em&gt; - uma camada, que é uma coluna de geometria &lt;em&gt;sfc&lt;/em&gt; dentro de um dataframe com atributos não espaciais&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Table: Tabela 1: Estruturas de dados espaciais no pacote sf. Fonte: &lt;a href=&#34;https://michaeldorman.github.io/R-Spatial-Workshop-at-CBS-2021/main.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Dorman (2021)&lt;/a&gt;.&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th style=&#34;text-align:left&#34;&gt;Classes&lt;/th&gt;
-&lt;th style=&#34;text-align:left&#34;&gt;Hierarquia&lt;/th&gt;
-&lt;th style=&#34;text-align:left&#34;&gt;Informação&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;code&gt;sfg&lt;/code&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;Geometria&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;Tipo e coordenadas&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;code&gt;sfc&lt;/code&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;Coluna de geometria&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;Conjundo de &lt;code&gt;sfg&lt;/code&gt; + CRS&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;em&gt;sf&lt;/em&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;Camada&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;code&gt;sfc&lt;/code&gt; + atributos&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;Ao olharmos as informações de um objeto da classe &lt;em&gt;sf&lt;/em&gt;, podemos notar diversas informações que descrevem o mesmo:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;em&gt;resumo do vetor&lt;/em&gt;: indica o número de feições (linhas) e campos (colunas)&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;tipo da geometria&lt;/em&gt;: umas das sete classes listadas anteriormente (Figura &lt;a href=&#34;#fig:fig-vetor-sf-classes&#34;&gt;1&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;dimensão&lt;/em&gt;: número de dimensões, geralmente duas (XY)&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;bbox (bordas)&lt;/em&gt;: coordenadas mínimas e máximas da longitude e latitude&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;informação do CRS&lt;/em&gt;: &lt;code&gt;epsg&lt;/code&gt; ou &lt;code&gt;proj4string&lt;/code&gt; indicando o CRS&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;tibble&lt;/em&gt;: tabela de atributos, com destaque para a coluna &lt;code&gt;geom&lt;/code&gt; ou &lt;code&gt;geometry&lt;/code&gt; que representa cada feição ou geometria&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;countries110
-&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## class       : SpatialPolygonsDataFrame 
-## features    : 177 
-## extent      : -180, 180, -90, 83.64513  (xmin, xmax, ymin, ymax)
-## crs         : +proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0 
-## variables   : 63
-## names       : scalerank,      featurecla, labelrank,  sovereignt, sov_a3, adm0_dif, level,              type,       admin, adm0_a3, geou_dif,     geounit, gu_a3, su_dif,     subunit, ... 
-## min values  :         1, Admin-0 country,         2, Afghanistan,    AFG,        0,     2,           Country, Afghanistan,     AFG,        0, Afghanistan,   AFG,      0, Afghanistan, ... 
-## max values  :         3, Admin-0 country,         7,    Zimbabwe,    ZWE,        1,     2, Sovereign country,    Zimbabwe,     ZWE,        0,    Zimbabwe,   ZWE,      1,    Zimbabwe, ...
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Podemos fazer um mapa simples utilizando a função &lt;code&gt;plot()&lt;/code&gt; desse objeto. Para facilitar, escolheremos apenas a primeira coluna &lt;code&gt;[1]&lt;/code&gt; (Figura &lt;a href=&#34;#fig:fig-vetor-mundo&#34;&gt;2&lt;/a&gt;).&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;IMPORTANTE: faremos mapas mais elaborados na seção xx desse capítulo.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;plot(countries110[1], col = viridis::viridis(100), main = &amp;quot;Mapa do mundo&amp;quot;)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## Warning in wkt(obj): CRS object has no comment
-&lt;/code&gt;&lt;/pre&gt;
-&lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;
-&lt;img src=&#34;https://mauriciovancine.github.io/pt/post/geo-geographic-data-r/index_files/figure-html/fig-vetor-mundo-1.png&#34; alt=&#34;Mapa vetorial do mundo.&#34; width=&#34;100%&#34; /&gt;
-&lt;p class=&#34;caption&#34;&gt;Figura 2: Mapa vetorial do mundo.&lt;/p&gt;
-&lt;/div&gt;
-&lt;h3 id=&#34;raster-principal-pacote-no-r-para-dados-raster&#34;&gt;&lt;em&gt;raster&lt;/em&gt;: principal pacote no R para dados raster&lt;/h3&gt;
-&lt;p&gt;Atualmente, o principal pacote para trabalhar com dados raster é o &lt;a href=&#34;https://rspatial.org/raster/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;raster&lt;/em&gt;&lt;/a&gt; (Hijmans 2020), apesar de existir outros dois em desenvolvimento e já sendo aplicados, como o &lt;a href=&#34;https://rspatial.org/terra/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;terra&lt;/em&gt;&lt;/a&gt; e o &lt;a href=&#34;https://r-spatial.github.io/stars/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;stars&lt;/em&gt;&lt;/a&gt;. O pacote &lt;em&gt;raster&lt;/em&gt; fornece uma ampla gama de funções para criar, importar, exportar, manipular e processar dados raster no R. O objeto raster pode assumir três classes no R: &lt;code&gt;RasterLayer&lt;/code&gt;, &lt;code&gt;RasterStack&lt;/code&gt; e &lt;code&gt;RasterBrick&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;A classe &lt;code&gt;RasterLayer&lt;/code&gt; representa apenas uma camada raster. Para criar um raster no R podemos utilizar a função &lt;code&gt;raster::raster()&lt;/code&gt;. Observando essa classe, podemos notar as seguintes informações:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;em&gt;class&lt;/em&gt;: classe raster do objeto raster&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;dimensions&lt;/em&gt;: número de linhas, colunas e células&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;resolution&lt;/em&gt;: largura e altura da célula&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;extent&lt;/em&gt;: coordenadas mínimas e máximas da longitude e latitude&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;crs&lt;/em&gt;: Sistema de Referência de Coordenadas (&lt;em&gt;CRS&lt;/em&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;source&lt;/em&gt;: fonte dos dados (memória ou disco)&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;names&lt;/em&gt;: nome das camadas&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;values&lt;/em&gt;: valores máximos e mínimos das células&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;raster_layer &amp;lt;- raster::raster(nrows = 5, ncols = 5, 
-                               res = .5,
-                               xmn = -61.5, xmx = -59, ymn = -14.5, ymx = -12,
-                               vals = sample(1:25, 25, rep = TRUE))
-raster_layer
-&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## class      : RasterLayer 
-## dimensions : 5, 5, 25  (nrow, ncol, ncell)
-## resolution : 0.5, 0.5  (x, y)
-## extent     : -61.5, -59, -14.5, -12  (xmin, xmax, ymin, ymax)
-## crs        : +proj=longlat +datum=WGS84 +no_defs 
-## source     : memory
-## names      : layer 
-## values     : 3, 25  (min, max)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Um mapa simples do objeto raster pode ser obtido utilizando a função &lt;code&gt;plot()&lt;/code&gt;, do próprio pacote &lt;em&gt;raster&lt;/em&gt; (Figura &lt;a href=&#34;#fig:fig-raster-layer&#34;&gt;3&lt;/a&gt;).&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;plot(raster_layer, col = viridis::viridis(n = 25))
-&lt;/code&gt;&lt;/pre&gt;
-&lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;
-&lt;img src=&#34;https://mauriciovancine.github.io/pt/post/geo-geographic-data-r/index_files/figure-html/fig-raster-layer-1.png&#34; alt=&#34;Mapa simples de um `RasterLayer`.&#34; width=&#34;672&#34; /&gt;
-&lt;p class=&#34;caption&#34;&gt;Figura 3: Mapa simples de um `RasterLayer`.&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;Além da classe &lt;code&gt;RasterLayer&lt;/code&gt;, há mais duas classes que trabalham com múltiplas camadas: &lt;code&gt;RasterBrick&lt;/code&gt; e &lt;code&gt;RasterStack&lt;/code&gt;. Elas diferem em relação ao número de formatos de arquivo suportados, tipo de representação interna e velocidade de processamento.&lt;/p&gt;
-&lt;p&gt;A classe &lt;code&gt;RasterBrick&lt;/code&gt; geralmente corresponde a importação de um único arquivo de imagem de satélite multiespectral (multicamadas) ou a um único objeto com várias camadas na memória. A função &lt;code&gt;raster::brick()&lt;/code&gt; cria um objeto &lt;code&gt;RasterBrick&lt;/code&gt;.&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;raster_layer1 &amp;lt;- raster_layer
-raster_layer2 &amp;lt;- raster_layer * raster_layer
-raster_layer3 &amp;lt;- sqrt(raster_layer)
-raster_layer4 &amp;lt;- log10(raster_layer)
+      <title>Aplicações da Cartografia para a Ecologia Espacial</title>
+      <link>https://mauriciovancine.github.io/pt/talk/talk-sdm-uff/</link>
+      <pubDate>Fri, 02 Apr 2021 14:00:00 +0000</pubDate>
+      <guid>https://mauriciovancine.github.io/pt/talk/talk-sdm-uff/</guid>
+      <description>
+&lt;script src=&#34;https://mauriciovancine.github.io/pt/talk/talk-sdm-uff/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
-raster_brick &amp;lt;- raster::brick(raster_layer1, raster_layer2, raster_layer3, raster_layer4)
-raster_brick
-&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## class      : RasterBrick 
-## dimensions : 5, 5, 25, 4  (nrow, ncol, ncell, nlayers)
-## resolution : 0.5, 0.5  (x, y)
-## extent     : -61.5, -59, -14.5, -12  (xmin, xmax, ymin, ymax)
-## crs        : +proj=longlat +datum=WGS84 +no_defs 
-## source     : memory
-## names      :   layer.1,   layer.2,   layer.3,   layer.4 
-## min values : 3.0000000, 9.0000000, 1.7320508, 0.4771213 
-## max values :  25.00000, 625.00000,   5.00000,   1.39794
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Ao utilizarmos a função &lt;code&gt;plot()&lt;/code&gt; do pacote &lt;em&gt;raster&lt;/em&gt;, podemos visualizar todos os raster contidos no objeto &lt;code&gt;RasterBrick&lt;/code&gt; (Figura &lt;a href=&#34;#fig:fig-raster-brick&#34;&gt;4&lt;/a&gt;).&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;plot(raster_brick, col = viridis::viridis(n = 25))
-&lt;/code&gt;&lt;/pre&gt;
-&lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;
-&lt;img src=&#34;https://mauriciovancine.github.io/pt/post/geo-geographic-data-r/index_files/figure-html/fig-raster-brick-1.png&#34; alt=&#34;Mapas simples de um raster RasterBrick.&#34; width=&#34;672&#34; /&gt;
-&lt;p class=&#34;caption&#34;&gt;Figura 4: Mapas simples de um raster RasterBrick.&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;Já a classe &lt;code&gt;RasterStack&lt;/code&gt; permite conectar vários objetos raster armazenados em arquivos diferentes ou vários objetos na memória. Um &lt;code&gt;RasterStack&lt;/code&gt; é uma lista de objetos &lt;code&gt;RasterLayer&lt;/code&gt; com a mesma extensão, resolução e CRS. Uma maneira de criá-lo é com a junção de vários objetos espaciais já existentes no ambiente do R ou listar vários arquivos raster em um diretório armazenado no disco. A função &lt;code&gt;raster::stack()&lt;/code&gt; cria um objeto &lt;code&gt;RasterStack&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Outra diferença é que o tempo de processamento para objetos &lt;code&gt;RasterBrick&lt;/code&gt; geralmente é menor do que para objetos &lt;code&gt;RasterStack&lt;/code&gt;. A decisão sobre qual classe &lt;code&gt;Raster&lt;/code&gt; deve ser usada depende principalmente do caráter dos dados de entrada.&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;raster_layer1 &amp;lt;- raster_layer
-raster_layer2 &amp;lt;- raster_layer * raster_layer
-raster_layer3 &amp;lt;- sqrt(raster_layer)
-raster_layer4 &amp;lt;- log10(raster_layer)
 
-raster_stack &amp;lt;- raster::stack(raster_layer1, raster_layer2, raster_layer3, raster_layer4)
-raster_stack
-&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## class      : RasterStack 
-## dimensions : 5, 5, 25, 4  (nrow, ncol, ncell, nlayers)
-## resolution : 0.5, 0.5  (x, y)
-## extent     : -61.5, -59, -14.5, -12  (xmin, xmax, ymin, ymax)
-## crs        : +proj=longlat +datum=WGS84 +no_defs 
-## names      :   layer.1,   layer.2,   layer.3,   layer.4 
-## min values : 3.0000000, 9.0000000, 1.7320508, 0.4771213 
-## max values :  25.00000, 625.00000,   5.00000,   1.39794
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Da mesma forma, ao utilizar a função &lt;code&gt;plot()&lt;/code&gt; do pacote &lt;em&gt;raster&lt;/em&gt;, podemos visualizar todos os raster contidos no objeto &lt;code&gt;RasterStack&lt;/code&gt; (Figura &lt;a href=&#34;#fig:fig-raster-stack&#34;&gt;5&lt;/a&gt;).&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;plot(raster_stack, col = viridis::viridis(n = 25))
-&lt;/code&gt;&lt;/pre&gt;
-&lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;
-&lt;img src=&#34;https://mauriciovancine.github.io/pt/post/geo-geographic-data-r/index_files/figure-html/fig-raster-stack-1.png&#34; alt=&#34;Mapas simples de um raster RasterStack.&#34; width=&#34;672&#34; /&gt;
-&lt;p class=&#34;caption&#34;&gt;Figura 5: Mapas simples de um raster RasterStack.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
+&lt;p&gt;A cartografia possui diversas aplicações em outras áreas de conhecimento que necessitam realizar a visualização de dados geoespaciais. Nessa palestra demonstro algumas aplicações da cartografia para a Ecologia Espacial, principalmente em relação aos Modelos de Distribuição de Espécies.&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>Desmistificando o Sistema de Referência de Coordenadas e Datum</title>
+      <title>Disciplinas de graduação e pós-graduação on-line</title>
+      <link>https://mauriciovancine.github.io/pt/post/general-courses-online/</link>
+      <pubDate>Sun, 07 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>https://mauriciovancine.github.io/pt/post/general-courses-online/</guid>
+      <description>&lt;h2 id=&#34;contextualização&#34;&gt;Contextualização&lt;/h2&gt;
+&lt;p&gt;A pandemia de COVID-19 iniciou-se com o primeiro caso no Brasil no dia &lt;strong&gt;26 de fevereiro de 2020&lt;/strong&gt;. Desde de então, acredito que todo professor(a), seja ele(a) de qualquer nível, do maternal a pós-graduação, se viu em meio à necessidade de &lt;strong&gt;ministrar aulas remotamente&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Ano passado tive o prazer de oferecer duas disciplinas remotamente: uma na graduação em Ecologia (&amp;ldquo;Modelos Estatísticos em Ecologia&amp;rdquo;) e outra na Pós-Graduação em Ecologia, Evolução e Biodiversidade (&lt;a href=&#34;https://mauriciovancine.github.io/pt/courses/course-geospatial-analisys-r/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&amp;ldquo;Introdução ao uso de dados geoespaciais no R&amp;rdquo;&lt;/a&gt;), ambas na UNESP-Rio Claro. A UNESP fez um plano emergencial de adotar todas as ferramentas do &lt;a href=&#34;https://classroom.google.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Google Classroom&lt;/a&gt;, como acredito que grande parte das universidades e escolas adotaram.&lt;/p&gt;
+&lt;p&gt;Infelizmente, apesar de eu ter gravado ambas para repassar aos alunos, não pensei como seria uma oportunidade fantástica para manter esse material permanente e disponível à qualquer pessoa no YouTube, pode exemplo. Para isso, eu teria de editar horas e mais horas de vídeos, e não disponho desse tempo para isso, não pelo menos agora&amp;hellip;&lt;/p&gt;
+&lt;p&gt;Entretanto, desde o início do ano passado, comecei a fazer parte do canal no YouTube &lt;a href=&#34;https://www.youtube.com/channel/UCLAeX4dyujMoy4xqHvxSDpQ&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GeoCast Brasil&lt;/a&gt;. Eu e o &lt;a href=&#34;https://felipesbarros.github.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Felipe Sodré Mendes Barros&lt;/a&gt; fizemos diversas lives de R focando na parte espacial, &lt;a href=&#34;https://mauriciovancine.github.io/pt/video/werlive/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;We R Live&lt;/a&gt;, com vários convidados e convidadas muito legais. Esse ano está complicado de retomarmos por conta de vários projetos, doutorado e trabalho&amp;hellip;&lt;/p&gt;
+&lt;p&gt;Desse projeto nasceu um resumo muito legal que publicamos no &lt;a href=&#34;https://inde.gov.br/simposio-12-anos/sbide-home.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;II Simpósio Brasileiro de Infraestrutura de Dados Espaciais - SBIDE&lt;/a&gt;, entitulado &lt;strong&gt;Ensino e gestão do conhecimento em geotecnologias para um “Novo Normal”: reflexões a partir das iniciativas do GeoCast Brasil&lt;/strong&gt;, onde comentamos os desafios de ensino remoto e como as liver de R foram desafiadoras e nos fizeram pensar em formas alternativas de ensino. Deixo a &lt;a href=&#34;https://mauriciovancine.github.io/slides/talk-sbide.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;apresentação&lt;/a&gt; e &lt;a href=&#34;https://mauriciovancine.github.io/pdf/2021-anais-sbide.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;resumo&lt;/a&gt; disponíveis para quem quiser passar os olhos.&lt;/p&gt;
+&lt;p&gt;Já que não pensei em como deixar minhas aulas disponíveis, mas sei de professores(as) mais organizados(as) que eu, o intuito desse post é justamente listar disciplinas de graduação e pós-graduação, disponibilizadas de forma remota e aberta no YouTube.&lt;/p&gt;
+&lt;p&gt;Este é um post colaborativo, ficarei feliz demais em receber ajuda para aumentar essa listagem.&lt;/p&gt;
+&lt;h2 id=&#34;prof-alexandre-adalardo-de-oliveira-usp&#34;&gt;Prof. Alexandre Adalardo de Oliveira (USP)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://youtube.com/playlist?list=PLg7_KQP14uSF8SRTbha-ezqu4lH-ATxb3&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;EcoR: Introdução à Linguagem R&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://youtube.com/playlist?list=PLg7_KQP14uSGMKE9bmnVINkB4TXMdv0XO&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PlAnEco: Planejamento e Análise de dados em Ecologia&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;prof-bruno-vilela-ufba&#34;&gt;Prof. Bruno Vilela (UFBA)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://youtube.com/playlist?list=PL3U7PUKvYnzAZAEoFcjGLVkIML2ZGGl6t&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Curso de Programação em R&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;prof-pavel-dodonov-ufba&#34;&gt;Prof. Pavel Dodonov (UFBA)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/playlist?list=PL3U7PUKvYnzCiT8rb3Tv25R-dZo6YYzut&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Estatística aplicada à ecologia&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/playlist?list=PL3U7PUKvYnzAtEU1znfx2MQTjirVVCs0Z&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Estatística aplicada à biologia&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://youtube.com/playlist?list=PL3U7PUKvYnzDPjJYBEzwVBqiQHcKYAiOd&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ecologia Espacial&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;prof-diogo-borges-provete-ufms&#34;&gt;Prof. Diogo Borges Provete (UFMS)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://youtube.com/playlist?list=PLy2rjqiD2VP6p7RNCZ7lGU4j3CqjJDuWX&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Linguagem de Programação Estatística para Biologia&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/playlist?list=PLy2rjqiD2VP5G6pqMo_QlWo7I3yu-uFTk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Análises Multidimensionais&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;prof-kleber-del-claro-ufu&#34;&gt;Prof. Kleber Del Claro (UFU)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/playlist?list=PL2T3g_8Bm49S-ATCZQ118JnjXjoIG_r1Z&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ecologia Geral&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/playlist?list=PL2T3g_8Bm49TbMxbXnC2u0qmO5CHPahH&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ecologia Comportamental&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Sistemas de Referência de Coordenadas e Datum</title>
       <link>https://mauriciovancine.github.io/pt/post/geo-crs-datum/</link>
       <pubDate>Sat, 20 Feb 2021 00:00:00 +0000</pubDate>
       <guid>https://mauriciovancine.github.io/pt/post/geo-crs-datum/</guid>
       <description>&lt;link href=&#34;https://mauriciovancine.github.io/pt/post/geo-crs-datum/index_files/vembedr/css/vembedr.css&#34; rel=&#34;stylesheet&#34; /&gt;
 &lt;link href=&#34;https://mauriciovancine.github.io/pt/post/geo-crs-datum/index_files/vembedr/css/vembedr.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;div style=&#34;text-align: justify&#34;&gt;
 &lt;h2 id=&#34;contextualização&#34;&gt;Contextualização&lt;/h2&gt;
 &lt;p&gt;Um dos primeiros assuntos que devemos entender antes de iniciar no mundo do &lt;strong&gt;Geoprocessamento&lt;/strong&gt; são os conceitos de &lt;strong&gt;Sistema de Referência de Coordenadas&lt;/strong&gt; e &lt;strong&gt;Datum&lt;/strong&gt;. Esses conceitos atrelados à Cartografia apesar de &lt;strong&gt;parecerem simples&lt;/strong&gt; para quem possui certa experiência na área de Geoprocessamento, muitas vezes são &lt;strong&gt;confundidos ou mesmo ignorados&lt;/strong&gt; por aqueles que estão adentrando nessa área.&lt;/p&gt;
 &lt;p&gt;Dessa forma, minha intenção com esse post é &lt;strong&gt;transmitir esses conceitos de forma simples e objetiva&lt;/strong&gt;, usando uma linguagem prática, para facilitar seu uso no dia a dia. Não adentro aqui em como aplicar esses conceitos em softwares de SIG ou toda a matemática envolvida. Para se aprofundar, recomendo livros específicos no final do post ou mesmo procurar disciplinas de Engenharia Cartográfica e/ou Geodéria.&lt;/p&gt;
 &lt;h2 id=&#34;sistema-de-referência-de-coordenadas&#34;&gt;Sistema de Referência de Coordenadas&lt;/h2&gt;
-&lt;p&gt;Os dados geográficos (vetor e raster, explicados com detalhes nesse &lt;a href=&#34;https://mauriciovancine.github.io/pt/post/2021-03-20-formatos-dados-geograficos/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;post&lt;/a&gt;), possuem um componente fundamental, que é o &lt;strong&gt;Sistema de Referência de Coordenadas&lt;/strong&gt; ou do inglês &lt;em&gt;Coordinate Reference System (CRS)&lt;/em&gt;. Esse componente define como os elementos espaciais (vetor e raster) representam uma feição na superfície da Terra.&lt;/p&gt;
+&lt;p&gt;Os dados geoespaciais (vetor e raster, explicados com detalhes neste &lt;a href=&#34;https://mauriciovancine.github.io/pt/post/geo-geospatial-data&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;post&lt;/a&gt;), possuem um componente fundamental, que é o &lt;strong&gt;Sistema de Referência de Coordenadas&lt;/strong&gt; ou do inglês &lt;em&gt;Coordinate Reference System (CRS)&lt;/em&gt;. Esse componente define como os elementos espaciais (vetor e raster) representam uma feição na superfície da Terra.&lt;/p&gt;
 &lt;p&gt;O Sistema de Referência de Coordenadas é composto de &lt;strong&gt;quatro componentes&lt;/strong&gt;:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;strong&gt;Sistema de coordenadas&lt;/strong&gt;: grade X e Y na qual os dados são sobrepostos e localizados no espaço&lt;/li&gt;
@@ -409,40 +229,6 @@ Figura 10: Site epsg.io com códigos EPSG. Fonte: epsg.io.
 &lt;p&gt;Duarte, P. A. (2002). Fundamentos de cartografia. Ed. UFSC.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Formatos de dados geográficos</title>
-      <link>https://mauriciovancine.github.io/pt/post/geo-geographic-data/</link>
-      <pubDate>Sat, 20 Feb 2021 00:00:00 +0000</pubDate>
-      <guid>https://mauriciovancine.github.io/pt/post/geo-geographic-data/</guid>
-      <description>&lt;h2 id=&#34;contextualização&#34;&gt;Contextualização&lt;/h2&gt;
-&lt;h2 id=&#34;vetor&#34;&gt;Vetor&lt;/h2&gt;
-&lt;p&gt;Dados &lt;strong&gt;vetoriais&lt;/strong&gt; representam informações geográficas acuradas através de &lt;strong&gt;pontos, linhas e polígonos&lt;/strong&gt; (Figura &lt;a href=&#34;#fig:fig-vetor-tipos&#34;&gt;&lt;strong&gt;??&lt;/strong&gt;&lt;/a&gt;). Cada uma dessas geometrias são indicadas para representar feições e/ou eventos específicos, como veremos adiante.&lt;/p&gt;
-&lt;h3 id=&#34;pontos&#34;&gt;Pontos&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;Pontos&lt;/strong&gt; são geometrias geralmente utilizadas para representar &lt;strong&gt;eventos pontuais unitários&lt;/strong&gt;, como ocorrência de espécies, locais de coleta, pontos de GPS ou nascentes de rios. Esses dados são representados por um único vértice, ou seja, um par de coordenadas (longitude - X e latitude - Y), que são plotados na forma de cículos ou outro elemento que represente o evento em questão. Dessa forma, geralmente utilizamos dados tabulares com pelo menos duas colunas contendo essas coordenadas. Além disso, esses dados tabulares podem conter outras colunas com informações quantitativas ou qualitativas como número de espécies, temperatura, precipitação ou ainda categorias como tipo de habitat, que podemos representar nos pontos através de diferentes formatos, tamanhos ou cores desses pontos (Tabela &lt;a href=&#34;#tab:tab-vetor-pontos&#34;&gt;&lt;strong&gt;??&lt;/strong&gt;&lt;/a&gt; e Figura &lt;a href=&#34;#fig:fig-vetor-pontos&#34;&gt;&lt;strong&gt;??&lt;/strong&gt;&lt;/a&gt;).&lt;/p&gt;
-&lt;h3 id=&#34;linhas&#34;&gt;Linhas&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;Linhas&lt;/strong&gt; representam &lt;strong&gt;geometrias lineares&lt;/strong&gt; como estradas, rios, trajetos, divisões ou distâncias. Geralmente as linhas são criadas em softwares de Sistema de Informações Geográficas (SIG) como o &lt;a href=&#34;https://qgis.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;QGIS&lt;/a&gt;, e depois importadas para o R. As linhas são representadas por no mínimo dois vértices conectados, i.e., dois pares de coordenadas, gerando uma geometria aberta, possuindo como característica o &lt;strong&gt;comprimento&lt;/strong&gt;. Da mesma forma que os pontos, as linhas podem possuir informações tabulares, sendo quantitativas como comprimento dessa feição, ou ainda informações qualitativas como o nome de estradas ou vazão de rios, que podem ser utilizadas para alterar o formato, tamanho ou cor dessas linhas (Tabela &lt;a href=&#34;#tab:tab-vetor-linhas&#34;&gt;&lt;strong&gt;??&lt;/strong&gt;&lt;/a&gt; e Figura &lt;a href=&#34;#fig:fig-vetor-linhas&#34;&gt;&lt;strong&gt;??&lt;/strong&gt;&lt;/a&gt;).&lt;/p&gt;
-&lt;h3 id=&#34;polígonos&#34;&gt;Polígonos&lt;/h3&gt;
-&lt;p&gt;Por fim, &lt;strong&gt;polígonos&lt;/strong&gt; representam &lt;strong&gt;geometrias fechadas&lt;/strong&gt;, como fragmentos de vegetação, lagos ou limites geográficos, sendo mais voltado para representar feições de um mapa de uso e cobertura da terra ou limites geográficos naturais, políticos, administrativos ou regulares. Os polígonos também são criados geralmente em softwares específicos de SIG e depois importados para o R, ou podemos usar funções para criar &lt;em&gt;buffers&lt;/em&gt; ou malhas de quadrículas ou hexágonos. Os polígonos são representados por no mínimo três vértices conectados, sendo que o primeiro vértice possui coordenadas idênticas ao último, de modo que essa ligação gere uma feição fechada, com características como &lt;strong&gt;perímetro&lt;/strong&gt; e/ou &lt;strong&gt;área&lt;/strong&gt;. Da mesma forma que os pontos e linhas, colunas podem ser associadas aos polígonos para representar informações quantitativas como perímetro e área dessa polígono, ou ainda informações qualitativas como a classe de cobertura da terra ou o nome do limite geográfico, que podem ser utilizados para alterar formatos, tamanho ou cores desses polígonos (Tabela &lt;a href=&#34;#tab:tab-vetor-poligonos&#34;&gt;&lt;strong&gt;??&lt;/strong&gt;&lt;/a&gt; e Figura &lt;a href=&#34;#fig:fig-vetor-poligonos&#34;&gt;&lt;strong&gt;??&lt;/strong&gt;&lt;/a&gt;).&lt;/p&gt;
-&lt;p&gt;Além disso, geralmente utilizamos &lt;strong&gt;polígono regulares&lt;/strong&gt; (buffers, quadrículas ou hexágonos) para &lt;strong&gt;resumir informações&lt;/strong&gt; de biodiversidade ou de variáveis preditoras, que podem ser utilizadas como unidades amostrais em análises espaciais ou estatísticas, principalmente nas áreas de Ecologia Espacial, Ecologia da Paisagem, Biogeografia e Macroecologia (Tabela &lt;a href=&#34;#tab:tab-vetor-poligonos-regulares&#34;&gt;&lt;strong&gt;??&lt;/strong&gt;&lt;/a&gt; e Figura &lt;a href=&#34;#fig:fig-vetor-poligonos-regulares&#34;&gt;&lt;strong&gt;??&lt;/strong&gt;&lt;/a&gt;).&lt;/p&gt;
-&lt;h3 id=&#34;tabela-de-atributos&#34;&gt;Tabela de atributos&lt;/h3&gt;
-&lt;p&gt;Para os dados vetoriais é necessário ainda destacar um elemento fundamental: a &lt;strong&gt;tabela de atributos&lt;/strong&gt;. A tabela de atributos é uma tabela que inclui dados &lt;strong&gt;geográficos&lt;/strong&gt; e &lt;strong&gt;dados alfanuméricos&lt;/strong&gt;. Os &lt;strong&gt;dados geográficos&lt;/strong&gt; são representados por cada feição geolocalizada espacialmente (ponto, linha ou polígono), e os &lt;strong&gt;dados alfanuméricos&lt;/strong&gt; são todos os demais dados associados a cada uma dessas feições, representado na forma de colunas (Figuras &lt;a href=&#34;#fig:fig-vetor-pontos&#34;&gt;&lt;strong&gt;??&lt;/strong&gt;&lt;/a&gt;, &lt;a href=&#34;#fig:fig-vetor-linhas&#34;&gt;&lt;strong&gt;??&lt;/strong&gt;&lt;/a&gt;, &lt;a href=&#34;#fig:fig-vetor-poligonos&#34;&gt;&lt;strong&gt;??&lt;/strong&gt;&lt;/a&gt; e &lt;a href=&#34;#fig:fig-vetor-poligonos-regulares&#34;&gt;&lt;strong&gt;??&lt;/strong&gt;&lt;/a&gt;).&lt;/p&gt;
-&lt;p&gt;Dessa forma, a &lt;strong&gt;tabela de atributos&lt;/strong&gt; reúne informações sobre cada feição e pode ser utilizada para realizar de filtros ou agregações dos dados de cada feição. É nessa tabela que podemos ainda concatenar novas informações (colunas) de operações com as feições (linhas da tabela de atributos) como cálculo de comprimento, perímetro, área ou ainda outras operações com as colunas. Também podemos associar outros dados não espaciais aos dados da tabela de atributos com a junção por uma coluna identificadora.&lt;/p&gt;
-&lt;h2 id=&#34;raster&#34;&gt;Raster&lt;/h2&gt;
-&lt;p&gt;Os dados no formato &lt;strong&gt;raster&lt;/strong&gt; consistem em uma &lt;strong&gt;matriz&lt;/strong&gt; (com linhas e colunas) representando &lt;strong&gt;células igualmente espaçadas&lt;/strong&gt; (pixels; Figura &lt;a href=&#34;#fig:fig-raster&#34;&gt;1&lt;/a&gt;). Esse formato de dado torna a álgebra e o processamento de mapas muito mais eficiente e rápido do que o processamento de dados vetoriais. As células dos dados raster possuem &lt;strong&gt;duas informações&lt;/strong&gt;: 1. identificação das células (IDs das células) para especificar sua posição na matriz (Figura &lt;a href=&#34;#fig:fig-raster&#34;&gt;1&lt;/a&gt; A) e; 2. valores das células (Figura &lt;a href=&#34;#fig:fig-raster&#34;&gt;1&lt;/a&gt; B), que geralmente são coloridos para facilitar a interpretação da variação dos valores no espaço (Figura &lt;a href=&#34;#fig:fig-raster&#34;&gt;1&lt;/a&gt; C). Além disso, valores ausentes ou não amostrados são representados por &lt;code&gt;NA&lt;/code&gt;, ou seja, &lt;em&gt;not available&lt;/em&gt; (Figura &lt;a href=&#34;#fig:fig-raster&#34;&gt;1&lt;/a&gt; B e C).&lt;/p&gt;
-&lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;
-&lt;img src=&#34;https://mauriciovancine.github.io/pt/post/geo-geographic-data/index_files/figure-html/fig-raster-1.png&#34; alt=&#34;Raster: (A) IDs das células, (B) valores das células, (C) células coloridas. Adaptado de: Lovelace, Nowosad &amp;amp; Muenchow (2019).&#34; width=&#34;672&#34; /&gt;
-&lt;p class=&#34;caption&#34;&gt;Figura 1: Raster: (A) IDs das células, (B) valores das células, (C) células coloridas. Adaptado de: Lovelace, Nowosad &amp; Muenchow (2019).&lt;/p&gt;
-&lt;/div&gt;
-&lt;h3 id=&#34;tipos-de-raster&#34;&gt;Tipos de raster&lt;/h3&gt;
-&lt;p&gt;A &lt;strong&gt;célula ou pixel&lt;/strong&gt; de um raster pode conter apenas um &lt;strong&gt;único valor&lt;/strong&gt;, que pode ser &lt;strong&gt;contínuo&lt;/strong&gt; ou &lt;strong&gt;categórico&lt;/strong&gt; (Figura &lt;a href=&#34;#fig:fig-raster-cont-cat&#34;&gt;2&lt;/a&gt;). O formato raster geralmente representa &lt;strong&gt;fenômenos contínuos&lt;/strong&gt;, como elevação, precipitação, temperatura, ou dados espectrais de imagens de satélite, mas também pode representar &lt;strong&gt;categorias&lt;/strong&gt; como tipos de florestas ou cobertura da terra (Figura &lt;a href=&#34;#fig:fig-raster-cont-cat&#34;&gt;2&lt;/a&gt;).&lt;/p&gt;
-&lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;
-&lt;img src=&#34;https://mauriciovancine.github.io/pt/post/geo-geographic-data/index_files/figure-html/fig-raster-cont-cat-1.png&#34; alt=&#34;Raster: (A) mapa contínuo, (B) mapa categórico. Adaptado de: Lovelace, Nowosad &amp;amp; Muenchow (2019).&#34; width=&#34;672&#34; /&gt;
-&lt;p class=&#34;caption&#34;&gt;Figura 2: Raster: (A) mapa contínuo, (B) mapa categórico. Adaptado de: Lovelace, Nowosad &amp; Muenchow (2019).&lt;/p&gt;
-&lt;/div&gt;
 </description>
     </item>
     
@@ -471,12 +257,11 @@ Figura 10: Site epsg.io com códigos EPSG. Fonte: epsg.io.
     </item>
     
     <item>
-      <title>Como criar um site acadêmico com o R</title>
+      <title>Como criar um site acadêmico no R</title>
       <link>https://mauriciovancine.github.io/pt/post/r-academic-site/</link>
       <pubDate>Thu, 07 Jan 2021 00:00:00 +0000</pubDate>
       <guid>https://mauriciovancine.github.io/pt/post/r-academic-site/</guid>
-      <description>&lt;div style=&#34;text-align: justify&#34;&gt;
-&lt;h2 id=&#34;contextualização&#34;&gt;Contextualização&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;contextualização&#34;&gt;Contextualização&lt;/h2&gt;
 &lt;p&gt;Que o &lt;a href=&#34;https://www.r-project.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;R&lt;/a&gt; possui múltiplas utilidades para análise e visualização de dados de &lt;a href=&#34;https://cran.r-project.org/web/views/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;diversos formatos&lt;/a&gt; e em &lt;a href=&#34;https://data-flair.training/blogs/r-applications/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;diversas áreas&lt;/a&gt; é indiscutível. Entretanto, a união dessa linguagem com o &lt;a href=&#34;https://pt.wikipedia.org/wiki/Markdown&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Markdown&lt;/a&gt;, dando origem ao &lt;a href=&#34;https://rmarkdown.rstudio.com/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;R Markdown&lt;/a&gt;, e aliado ao IDE &lt;a href=&#34;https://rstudio.com/products/rstudio/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;RStudio&lt;/a&gt; o transforma numa ferramenta bastante diversa para a criação de diversas &lt;a href=&#34;https://bookdown.org/yihui/rmarkdown/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;aplicações complementares ao R&lt;/a&gt;, como documentos (.docx, .odt, .pdf), apresentações, livros, currículos, e ainda para a criação de sites. Pretendo escrever mais sobre essa união e utilidades num &lt;a href=&#34;https://mauriciovancine.github.io/pt/post/2020-07-30-rmarkdown/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;post futuro&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Neste post, vou focar nos passos para a criação de um site acadêmico no R, como esse aqui. Apesar de existir várias formas de criar um &lt;a href=&#34;https://wowchemy.com/templates/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;site acadêmico&lt;/a&gt;, focarei nesse formato:&lt;/p&gt;
 &lt;ol&gt;
@@ -567,298 +352,6 @@ theme_example = TRUE, empty_dirs = TRUE, to_yaml = TRUE)&lt;/p&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;3-pacote-blogdown&#34;&gt;3. Pacote blogdown&lt;/h2&gt;
 &lt;h2 id=&#34;5-edição-do-site&#34;&gt;5. Edição do site&lt;/h2&gt;
-&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Fonte de dados geográficos</title>
-      <link>https://mauriciovancine.github.io/pt/post/geo-geographic-data-sources/</link>
-      <pubDate>Thu, 07 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://mauriciovancine.github.io/pt/post/geo-geographic-data-sources/</guid>
-      <description>&lt;div style=&#34;text-align: justify&#34;&gt;
-&lt;h2 id=&#34;contextualização&#34;&gt;Contextualização&lt;/h2&gt;
-&lt;h2 id=&#34;principais-fontes-de-dados-geográficos&#34;&gt;Principais fontes de dados geográficos&lt;/h2&gt;
-&lt;p&gt;Existe diversas fontes de dados geográficos em diferentes bases de dados disponíveis gratuitamente. Geralmente essas bases de dados são disponibilizadas separadamente em apenas dados vetoriais e dados raster. Para &lt;strong&gt;dados vetoriais&lt;/strong&gt;, grande parte dos dados disponibilizados são utilizados em mapas como limites políticos, limites de biomas ou distribuição de espécies para &lt;strong&gt;polígonos&lt;/strong&gt;; estradas e rios para &lt;strong&gt;dados lineares&lt;/strong&gt;, ou ainda pontos de ocorrência de espécies ou comunidades, ou medidas tomadas em campo sobre condições naturais como clima ou relevo, como &lt;strong&gt;pontos&lt;/strong&gt;. Entretanto, é sempre recomendado o uso de &lt;strong&gt;bases oficiais&lt;/strong&gt;, principalmente em relação a dados vetoriais de &lt;strong&gt;limites políticos&lt;/strong&gt;. Para tanto, é fundamental buscar as &lt;strong&gt;bases oficiais de cada país&lt;/strong&gt;, entrentanto, há bases que podem ser utilizadas globalmente, como veremos.&lt;/p&gt;
-&lt;p&gt;Sobre as &lt;strong&gt;bases de dados raster&lt;/strong&gt;, há uma infinidade de dados para diferentes objetivos, mas grande parte deles são relativos à condições ambientais, representando uma variável de interesse de forma contínua no espaço, como temperatura, precipitação, elevação, etc.&lt;/p&gt;
-&lt;p&gt;Há uma compilação de dados geográficos vetoriais e raster feita por Marcus Vinícius Alves de Carvalho e Angelica Carvalho Di Maio, chamada &lt;a href=&#34;http://www.clickgeo.com.br/wp-content/uploads/2018/05/GeoLISTA.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GeoLISTA&lt;/a&gt;. Entretanto, como as bases de dados tendem à ser muito dinâmicas, é possível que muitas bases tenham surgido e desaparecido desde a listagem realizada.&lt;/p&gt;
-&lt;p&gt;Além das bases de dados, há pacotes específicos no R que fazem o download de dados vetoriais e rasters, facilitando a aquisição e reprodutibilidade. Para conferir uma listagem completa de pacotes para diversas análises espaciais, veja &lt;a href=&#34;https://cran.r-project.org/web/views/Spatial.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CRAN Task View: Analysis of Spatial Data&lt;/a&gt;.&lt;/p&gt;
-&lt;h3 id=&#34;vetor&#34;&gt;Vetor&lt;/h3&gt;
-&lt;p&gt;Dentre as bases vetoriais, destacamos as seguintes na Tabela &lt;a href=&#34;#tab:tab-vetor-bases&#34;&gt;1&lt;/a&gt;:&lt;/p&gt;
-&lt;p&gt;Table: Table 1: Principais bases de dados vetoriais para o Brasil e o Mundo.&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th style=&#34;text-align:left&#34;&gt;Bases de dados&lt;/th&gt;
-&lt;th style=&#34;text-align:left&#34;&gt;Descrição&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://www.ibge.gov.br/geociencias/downloads-geociencias.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;IBGE&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;Limites territoriais e censitários do Brasil&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;http://geo.fbds.org.br/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;FBDS&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;Uso da terra, APP e hidrografia - Mata Atlântica e Cerrado&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;http://geosgb.cprm.gov.br/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GeoBank&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;Dados geológicos do Brasil&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;http://maps.lapig.iesa.ufg.br&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Pastagem.org&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;Dados de pastagens e gado para o Brasil&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;http://www.dsr.inpe.br/laf/canasat/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CanaSat&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;Dados de cana-de-açúcar para o Brasil&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;http://maps.csr.ufmg.br&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CSR Maps&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;Diversos dados vetoriais e raster para o Brasil&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://ecoregions2017.appspot.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ecoregions&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;Dados de biorregiões e biomas do mundo&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://www.unbiodiversitylab.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;UN Biodiversity Lab&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;Diversas bases de dados para o mundo&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://zenodo.org/record/3261807#.YA8lpPv0nOY&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Biodiversity Hotspots&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;Dados dos limites dos Hotspots de Biodiversidade&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://www.iucnredlist.org/resources/spatial-data-download&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;IUCN Red List of Threatened Species&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;Dados dos limites das distribuições das espécies para o mundo&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://mol.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Map of Life (MOL)&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;Dados da distribuição de espécies e outros dados para o mundo&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;http://www.keybiodiversityareas.org/kba-data/request&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Key Biodiversity Areas&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;Dados dos limites das Key Biodiversity Areas&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://www.hydrosheds.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;HydroSHEDS&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;Informações hidrológicas do mundo&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://www.globio.info/download-grip-dataset&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Global Roads Inventory Project (GRIP)&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;Dados de estradas do mundo todo&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://gadm.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Database of Global Administrative Areas (GADM)&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;Limites de áreas administrativas do mundo&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://www.naturaleatoriorthdata.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Natural Earth&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;Diversos limites para o mundo&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://www.protectedplanet.net&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Protected Planet&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;Limites de áreas protegidas para o mundo&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;http://www.gbif.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Global Biological Information Facility (GBIF)&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;Dados de ocorrências de espécies para o mundo&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;http://www.splink.cria.org.br&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Species Link&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;Dados de ocorrências de espécies para o Brasil&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;http://www.gisin.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Global Invasive Species Information Network (GISIN)&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;Dados de ocorrências de espécies invasoras para o Mundo&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h3 id=&#34;raster&#34;&gt;Raster&lt;/h3&gt;
-&lt;p&gt;Dentre as bases raster, destacamos as seguintes na Tabela &lt;a href=&#34;#tab:tab-raster-bases&#34;&gt;2&lt;/a&gt;:&lt;/p&gt;
-&lt;p&gt;Table: Table 2: Principais bases de dados raster para o Brasil e o Mundo.&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th style=&#34;text-align:left&#34;&gt;Bases de dados&lt;/th&gt;
-&lt;th style=&#34;text-align:left&#34;&gt;Descrição&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://mapbiomas.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MapBiomas&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;Uso e cobertura da terra para o Brasil, Panamazonia Legal e Chaco, de 1985 a 2019&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;ftp://madeira.dea.ufv.br/bdados/bhalu/&#34;&gt;Bahlu&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;Distribuições históricas de terras agrícolas e pastagens para todo o Brasil de 1940 a 2012&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://www.usgs.gov/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;USGS&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;Dados de diversos satélites livres para o mundo&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;http://srtm.csi.cgiar.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;SRTM&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;Dados de elevação para o mundo&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://geoservice.dlr.de/web/maps&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Geoservice Maps&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;Dados de elevação e florestas para o mundo&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://www.globalforestwatch.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Global Forest Watch&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;Dados de florestas para o mundo&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;http://due.esrin.esa.int/page_globcover.php&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GlobCover&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;Dados de uso e cobertura da terra para todo o planeta&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://www.earthenv.org/landcover&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Landcover&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;Dados de uso e cobertura da terra para todo o planeta&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://wcshumanfootprint.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Global Human Footprint&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;Dados de pegada ecológica para o mundo&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://ghsl.jrc.ec.europa.eu/download.php&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GHSL - Global Human Settlement Layer&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;Dados e ferramentas abertos e gratuitos para avaliar a presença humana no planeta&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://luh.umd.edu/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Land-Use Harmonization (LUH2)&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;Dados atuais e previsões de uso da terra&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://climate.esa.int/en/odp/#/dashboard&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ESA Climate Change Initiative&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;Arquivos globais de observação da Terra nos últimos 30 anos da Agência Espacial Europeia (ESA)&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://www.worldclim.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;WorldClim&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;Dados climáticos para o mundo&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://chelsa-climate.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CHELSA&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;Dados climáticos para o mundo&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://www.earthenv.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;EarthEnv&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;Dados de cobertura da terra, nuvens, relevo e hidrografia&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://soilgrids.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;SoilGrids&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;Dados de solo para o mundo&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://www2.cifor.org/global-wetlands/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Global Wetlands&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;Dados de áreas úmidas para o mundo&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://global-surface-water.appspot.com/#&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Global Surface Water Explorer&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;Dados de águas superficiais para o mundo&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;http://www.marspec.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MARSPEC&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;Dados de condições do oceano para o mundo&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;http://www.oracle.ugent.be/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Bio-ORACLE&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;Dados de condições do oceano para o mundo&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h3 id=&#34;pacotes-do-r&#34;&gt;Pacotes do R&lt;/h3&gt;
-&lt;p&gt;Dentre os pacotes no R para download de dados geográficos, destacamos os seguintes na Tabela &lt;a href=&#34;#tab:tab-packages-bases&#34;&gt;3&lt;/a&gt;:&lt;/p&gt;
-&lt;p&gt;Table: Table 3: Principais pacotes no R para download de dados vetoriais e raster.&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th style=&#34;text-align:left&#34;&gt;Pacotes&lt;/th&gt;
-&lt;th style=&#34;text-align:left&#34;&gt;Descrição&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://cran.r-project.org/web/packages/geobr/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;geobr&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;Carrega Shapefiles de Conjuntos de Dados Espaciais Oficiais do Brasil&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://cran.r-project.org/web/packages/rnaturalearth/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;rnaturalearth&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;Dados do mapa mundial da Natural Earth&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://cran.r-project.org/web/packages/rworldmap/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;rworldmap&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;Mapeando Dados Globais&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://cran.r-project.org/web/packages/spData/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;spData&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;Conjuntos de dados para análise espacial&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://cran.r-project.org/web/packages/OpenStreetMap/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;OpenStreetMap&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;Acesso para abrir imagens raster de mapas de ruas&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://cran.r-project.org/web/packages/osmdata/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;osmdata&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;Baixe e importe dados do OpenStreetMap&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://cran.r-project.org/web/packages/geonames/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;geonames&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;Interface para o serviço da Web de consulta espacial &amp;lsquo;Geonames&amp;rsquo;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://cran.r-project.org/web/packages/rgbif/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;rgbif&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;Interface para o Global &amp;lsquo;Biodiversity&amp;rsquo; Information Facility API&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://cran.r-project.org/web/packages/maptools/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;maptools&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;Ferramentas para lidar com objetos espaciais&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://cran.r-project.org/web/packages/marmap/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;marmap&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;Importar, traçar e analisar dados batimétricos e topográficos&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://cran.r-project.org/web/packages/oce/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;oce&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;Fonte e processamento de dados oceanográficos&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://cran.r-project.org/web/packages/envirem/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;envirem&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;Geração de Variáveis ENVIREM&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://cran.r-project.org/web/packages/sdmpredictors/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;sdmpredictors&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;Conjuntos de dados preditor de modelagem de distribuição de espécies&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://cran.r-project.org/web/packages/metScanR/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;metScanR&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;Encontre, Mapeie e Colete Dados e Metadados Ambientais&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://cran.r-project.org/web/packages/ClimDown/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ClimDown&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;Biblioteca de redução de escala do clima para a produção diária do modelo climático&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://cran.r-project.org/web/packages/rWBclimate/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;rWBclimate&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;Acessa dados climáticos do Banco Mundial&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://cran.r-project.org/web/packages/rnoaa/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;rnoaa&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;Dados meteorológicos &amp;lsquo;NOAA&amp;rsquo; de R&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://cran.r-project.org/web/packages/RNCEP/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;RNCEP&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;Obtenha, organize e visualize dados meteorológicos NCEP&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://cran.r-project.org/web/packages/smapr/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;smapr&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;Aquisição e processamento de dados ativos-passivos (SMAP) de umidade do solo da NASA&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;/div&gt;
 </description>
     </item>
     
@@ -868,9 +361,7 @@ theme_example = TRUE, empty_dirs = TRUE, to_yaml = TRUE)&lt;/p&gt;
       <pubDate>Tue, 05 May 2020 00:00:00 +0000</pubDate>
       <guid>https://mauriciovancine.github.io/pt/video/werlive/</guid>
       <description>&lt;h1 id=&#34;we-r-live&#34;&gt;We R Live&lt;/h1&gt;
-&lt;div style=&#34;text-align: justify&#34;&gt;
 &lt;p&gt;Eu e &lt;a href=&#34;https://twitter.com/FelipeSMBarros&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Felipe Sodré&lt;/a&gt;, por meio do canal  &lt;a href=&#34;https://www.youtube.com/channel/UCLAeX4dyujMoy4xqHvxSDpQ&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GeoCast Brasil&lt;/a&gt; no YouTube, criamos este projeto para compartilhar um pouco do nosso conhecimento sobre o manejo e visualização de dados geoespaciais através da linguagem R. Sempre partindo de uma situação problema, apresentamos os principais conceitos teóricos e abordagens práticas para a sua resolução&lt;/p&gt;
-&lt;/div&gt;    
 &lt;h3 id=&#34;uwe-r-live-01---por-onde-começaru&#34;&gt;&lt;u&gt;We R Live 01 - Por onde começaR?&lt;/u&gt;&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&#34;https://werlive.netlify.app/werlive01/werlive01&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Slides&lt;/a&gt;&lt;br&gt;
 &lt;a href=&#34;https://gitlab.com/geocastbrasil/liver/-/tree/master/static/werlive01&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Material&lt;/a&gt;&lt;br&gt;
@@ -950,11 +441,11 @@ theme_example = TRUE, empty_dirs = TRUE, to_yaml = TRUE)&lt;/p&gt;
     
     <item>
       <title>Modelos de Distribuição de Espécies: uma visão geral</title>
-      <link>https://mauriciovancine.github.io/pt/talk/2020-talk-sdm-gggc/</link>
+      <link>https://mauriciovancine.github.io/pt/talk/talk-sdm-gggc/</link>
       <pubDate>Thu, 05 Mar 2020 09:30:00 +0000</pubDate>
-      <guid>https://mauriciovancine.github.io/pt/talk/2020-talk-sdm-gggc/</guid>
+      <guid>https://mauriciovancine.github.io/pt/talk/talk-sdm-gggc/</guid>
       <description>
-&lt;script src=&#34;index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://mauriciovancine.github.io/pt/talk/talk-sdm-gggc/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;Os Modelos de Distribuição de Espécies (SDM - Species Distribution Models) relacionam dados de ocorrências das espécies com suas condições ambientais para estimar o nicho das espécies e assim predizer novas áreas de possível distribuição. Nessa palestra, falei dos principais conceitos, dados de entrada e aplicações dessa abordagem na área de Ecologia.&lt;/p&gt;
@@ -987,38 +478,33 @@ theme_example = TRUE, empty_dirs = TRUE, to_yaml = TRUE)&lt;/p&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/RCTrLx_33D8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
-&lt;div style=&#34;text-align: justify&#34;&gt;
 &lt;p&gt;Neste vídeo, à convite do &lt;a href=&#34;https://twitter.com/FelipeSMBarros&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Felipe Sodré&lt;/a&gt;, do canal &lt;a href=&#34;https://www.youtube.com/channel/UCLAeX4dyujMoy4xqHvxSDpQ&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GeoCast Brasil&lt;/a&gt;, fiz uma live um tanto longa, onde falei sobre Ecologia da Paisagem e alguns dos principais conceitos atrelados à essa disciplina, e uma parte prática sobre o cálculo de métricas de paisagem utilizando a linguagem R, mais especificamente utilizando o pacote &lt;a href=&#34;https://r-spatialecology.github.io/landscapemetrics/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;landscapemetrics&lt;/em&gt;&lt;/a&gt;. A apresentação e códigos podem ser acessados nesse &lt;a href=&#34;https://gitlab.com/geocastbrasil/landscapemetrics&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;repositório do GitLab&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;</description>
-    </item>
-    
-    <item>
-      <title>Introdução à linguagem R: manipulação e visualização de dados</title>
-      <link>https://mauriciovancine.github.io/pt/workshop/2019-workshop-r-unesp-ecology/</link>
-      <pubDate>Wed, 06 Nov 2019 08:00:00 +0000</pubDate>
-      <guid>https://mauriciovancine.github.io/pt/workshop/2019-workshop-r-unesp-ecology/</guid>
-      <description>
-&lt;script src=&#34;https://mauriciovancine.github.io/pt/workshop/2019-workshop-r-unesp-ecology/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
-
-
-&lt;div style=&#34;text-align: justify&#34;&gt;
-&lt;p&gt;A linguagem R vem se destacando nos últimos anos (desde de 2000), como a principal ferramenta para manejo, visualização e análise de dados, principalmente na área de Ecologia, Psicologia, Economia, e mais recentemente, na Ciência de Dados. Neste curso serão abordados quatro temas introdutórios dessa linguagem: (i) introdução e funcionamento da linguagem R e do software RStudio, (ii) estrutura e manipulação de dados, (iii) introdução ao tidyverse, e (iv) visualização de dados. A carga horária será de aproximadamente 08 horas, onde será focada a parte teórico-prática, intercalada com a realização de exercícios para fixação do conteúdo. Ao final do curso, espera-se que os participantes tenham uma noção geral do funcionamento da linguagem e das potenciais aplicações dentro da área de análise de dados ecológicos.&lt;/p&gt;
-&lt;/div&gt;
 </description>
     </item>
     
     <item>
       <title>Introdução à linguagem R: manipulação e visualização de dados</title>
-      <link>https://mauriciovancine.github.io/pt/workshop/2019-workshop-r-unesp-biology/</link>
-      <pubDate>Wed, 23 Oct 2019 14:00:00 +0000</pubDate>
-      <guid>https://mauriciovancine.github.io/pt/workshop/2019-workshop-r-unesp-biology/</guid>
+      <link>https://mauriciovancine.github.io/pt/workshop/workshop-r-unesp-ecology/</link>
+      <pubDate>Wed, 06 Nov 2019 08:00:00 +0000</pubDate>
+      <guid>https://mauriciovancine.github.io/pt/workshop/workshop-r-unesp-ecology/</guid>
       <description>
-&lt;script src=&#34;https://mauriciovancine.github.io/pt/workshop/2019-workshop-r-unesp-biology/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://mauriciovancine.github.io/pt/workshop/workshop-r-unesp-ecology/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
-&lt;div style=&#34;text-align: justify&#34;&gt;
 &lt;p&gt;A linguagem R vem se destacando nos últimos anos (desde de 2000), como a principal ferramenta para manejo, visualização e análise de dados, principalmente na área de Ecologia, Psicologia, Economia, e mais recentemente, na Ciência de Dados. Neste curso serão abordados quatro temas introdutórios dessa linguagem: (i) introdução e funcionamento da linguagem R e do software RStudio, (ii) estrutura e manipulação de dados, (iii) introdução ao tidyverse, e (iv) visualização de dados. A carga horária será de aproximadamente 08 horas, onde será focada a parte teórico-prática, intercalada com a realização de exercícios para fixação do conteúdo. Ao final do curso, espera-se que os participantes tenham uma noção geral do funcionamento da linguagem e das potenciais aplicações dentro da área de análise de dados ecológicos.&lt;/p&gt;
-&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Introdução à linguagem R: manipulação e visualização de dados</title>
+      <link>https://mauriciovancine.github.io/pt/workshop/workshop-r-unesp-biology/</link>
+      <pubDate>Wed, 23 Oct 2019 14:00:00 +0000</pubDate>
+      <guid>https://mauriciovancine.github.io/pt/workshop/workshop-r-unesp-biology/</guid>
+      <description>
+&lt;script src=&#34;https://mauriciovancine.github.io/pt/workshop/workshop-r-unesp-biology/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;A linguagem R vem se destacando nos últimos anos (desde de 2000), como a principal ferramenta para manejo, visualização e análise de dados, principalmente na área de Ecologia, Psicologia, Economia, e mais recentemente, na Ciência de Dados. Neste curso serão abordados quatro temas introdutórios dessa linguagem: (i) introdução e funcionamento da linguagem R e do software RStudio, (ii) estrutura e manipulação de dados, (iii) introdução ao tidyverse, e (iv) visualização de dados. A carga horária será de aproximadamente 08 horas, onde será focada a parte teórico-prática, intercalada com a realização de exercícios para fixação do conteúdo. Ao final do curso, espera-se que os participantes tenham uma noção geral do funcionamento da linguagem e das potenciais aplicações dentro da área de análise de dados ecológicos.&lt;/p&gt;
 </description>
     </item>
     
@@ -1032,16 +518,14 @@ theme_example = TRUE, empty_dirs = TRUE, to_yaml = TRUE)&lt;/p&gt;
     
     <item>
       <title>Introdução à modelagem de distribuição de espécies usando a linguagem R: teoria e prática</title>
-      <link>https://mauriciovancine.github.io/pt/workshop/2019-workshop-sdm-cbh/</link>
+      <link>https://mauriciovancine.github.io/pt/workshop/workshop-sdm-cbh/</link>
       <pubDate>Mon, 22 Jul 2019 08:00:00 +0000</pubDate>
-      <guid>https://mauriciovancine.github.io/pt/workshop/2019-workshop-sdm-cbh/</guid>
+      <guid>https://mauriciovancine.github.io/pt/workshop/workshop-sdm-cbh/</guid>
       <description>
-&lt;script src=&#34;https://mauriciovancine.github.io/pt/workshop/2019-workshop-sdm-cbh/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://mauriciovancine.github.io/pt/workshop/workshop-sdm-cbh/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
-&lt;div style=&#34;text-align: justify&#34;&gt;
-&lt;p&gt;A ampla disponibilidade de dados sobre a biodiversidade e variáveis ambientais, tem permitido a utilização de diversas análises biogeográficas e macroecológicas, dentre elas, os modelos de distribuição de espécies ou Species Distribution Modeling (SDMs). Esse minicurso tem como intuito oferecer uma introdução teórica e prática à técnica de SDMs, utilizando a linguagem R. Primeiramente serão apresentados os principais conceitos da teoria de nicho ecológico (Grinnell, Elton e Hutchinson) e da teoria de modelos (espaço geográfico (G), espaço ambiental (E) e diagrama Biótico-Abiótico-Movimentação (BAM)). Seguida à parte teórica, serão apresentados as principais bases de dados (ocorrências e variáveis ambientais), tipos de algoritmos (presença e ausência – GLM, GAM e Random Forest, apenas presença – BIOCLIM, Mahalanobis e Gower, e presença e background – Maxent e SVM), avaliação dos modelos (ROC, AUC e TSS), limites de corte (thresholds) e algumas abordagens de consenso de modelos (ensembles). A parte prática será focada na construção dos modelos através da linguagem R. Inicialmente será feito uma introdução à programação e manejo de dados espaciais na linguagem R, utilizando os pacotes raster e rgdal. Em seguida, será apresentado como obter dados de ocorrências e variáveis ambientais, através dos pacotes spooc e dismo. Uma vez adquiridos os dados, serão feitas análises preliminares dos mesmos, como seleção de ocorrências (um ponto por célula) e de variáveis (correlação, PCA, análise fatorial e VIF). Por fim, serão construídos modelos utilizando os algoritmos mencionados acima, além do cálculo das métricas de avaliação dos mesmos, utilizando os pacotes dismo, randomForest e kernlab.&lt;/p&gt;
-&lt;/div&gt;
+&lt;p&gt;A ampla disponibilidade de dados sobre a biodiversidade e variáveis ambientais, tem permitido a utilização de diversas análises biogeográficas e macroecológicas, dentre elas, os modelos de distribuição de espécies ou Species Distribution Modeling (SDMs). Esse minicurso tem como intuito oferecer uma introdução teórica e prática à técnica de SDMs, utilizando a linguagem R. Primeiramente serão apresentados os principais conceitos da teoria de nicho ecológico (Grinnell, Elton e Hutchinson) e da teoria de modelos (espaço geográfico (G), espaço ambiental (E) e diagrama Biótico-Abiótico-Movimentação (BAM)). Seguida à parte teórica, serão apresentados as principais bases de dados (ocorrências e variáveis ambientais), tipos de algoritmos (presença e ausência – GLM, GAM e Random Forest, apenas presença – BIOCLIM, Mahalanobis e Gower, e presença e background – Maxent e SVM), avaliação dos modelos (ROC, AUC e TSS), limites de corte (thresholds) e algumas abordagens de consenso de modelos (ensembles). A parte prática será focada na construção dos modelos através da linguagem R. Inicialmente será feito uma introdução à programação e manejo de dados espaciais na linguagem R, utilizando os pacotes &lt;em&gt;raster&lt;/em&gt; e &lt;em&gt;rgdal&lt;/em&gt;. Em seguida, será apresentado como obter dados de ocorrências e variáveis ambientais, através dos pacotes &lt;em&gt;spocc&lt;/em&gt; e &lt;em&gt;dismo&lt;/em&gt;. Uma vez adquiridos os dados, serão feitas análises preliminares dos mesmos, como seleção de ocorrências (um ponto por célula) e de variáveis (correlação, PCA, análise fatorial e VIF). Por fim, serão construídos modelos utilizando os algoritmos mencionados acima, além do cálculo das métricas de avaliação dos mesmos, utilizando os pacotes &lt;em&gt;dismo&lt;/em&gt;, &lt;em&gt;randomForest&lt;/em&gt; e &lt;em&gt;kernlab&lt;/em&gt;.&lt;/p&gt;
 </description>
     </item>
     
@@ -1063,11 +547,11 @@ theme_example = TRUE, empty_dirs = TRUE, to_yaml = TRUE)&lt;/p&gt;
     
     <item>
       <title>ATLANTIC AMPHIBIANS: Conjunto de Dados de Comunidades de Anfíbios da Mata Atlântica</title>
-      <link>https://mauriciovancine.github.io/pt/talk/2018-talk-data-paper-amphibians-anfoco/</link>
+      <link>https://mauriciovancine.github.io/pt/talk/talk-data-paper-amphibians-anfoco/</link>
       <pubDate>Sat, 04 Aug 2018 16:30:00 +0000</pubDate>
-      <guid>https://mauriciovancine.github.io/pt/talk/2018-talk-data-paper-amphibians-anfoco/</guid>
+      <guid>https://mauriciovancine.github.io/pt/talk/talk-data-paper-amphibians-anfoco/</guid>
       <description>
-&lt;script src=&#34;index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://mauriciovancine.github.io/pt/talk/talk-data-paper-amphibians-anfoco/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;As incertezas acerca da diversidade e distribuição de espécies é um dos principais desafios para a biologia da conservação. O Bioma da Mata Atlântica é considerado um dos hotspots de biodiversidade mais ameaçados do mundo, detendo ainda um elevado número de espécies de anfíbios. Neste trabalho, apresentamos uma minuciosa compilação de comunidades de anfíbios para a Mata Atlântica. O conjunto de dados foi organizado com base numa ampla delimitação geográfica do bioma, englobando ecótonos e áreas do Paraguai e Argentina. Todos as informações das comunidades foram obtidas de artigos, livros e literatura não publicada (monografias de graduação, dissertações e teses). Organizamos informações sobre: 1) habitat amostrado, 2) métodos de amostragem, 3) horário de amostragem, 4) esforço amostral (mês e ano inicial e final), 5) composição ou abundância das espécies, 6) endemismo, e 7) localização geográfica (latitude, longitude, país, estado, município e localidade específica). Fizemos atualizações taxonômicas segundo os dados da base do Amphibian Species of the World: an Online Reference, para setembro de 2017. O banco de dados foi estruturado a partir de 389 referências, amostradas entre os anos de 1940 a 2017, que incluiu 1.163 locais de estudo, para os quais há 17.619 registros de 528 espécies com certeza taxonômica. Do total de registros, 14.450 (82%) foram classificados de acordo com o critério do endemismo ao Bioma da Mata Atlântica, dos quais 7.787 (44%) foram considerados endêmicos. Os métodos mais representativos foram: 1) busca visual ou auditiva (82,1%), 2) busca em sítio reprodutivo (20%), 3) armadilha de interceptação e queda (pitfall, 15,3%), e 4) encontro ocasional (14,5%). Dentre os habitats amostrados, nenhum foi predominante, apesar do habitat florestal ter sido relatado com maior frequência (40,7%). A maior parte dos locais de estudo tiveram amostragem realizada em corpos d’água: riacho no interior da floresta (33,5%), poça permanente (30,2%), lago (28,9%), brejo (28,6%), poça temporária (27,5%), poça semipermanente (5,8%) e riacho em área aberta (4,5%). A riqueza de espécies foi de 15,2 ± 11,3 DP, variando de 1 a 80 espécies por local. Houve um grande viés de amostragem, sendo que a maioria das amostragens foi realizada nos estados de São Paulo (38,4%), Paraná (14,2%) e Minas Gerais (10,1%), representando coletivamente quase 63% das pesquisas. Esse alto viés para esses três estados pode ter sido por diversos motivos: 1) descrição de dois ou mais locais de estudo para a mesma referência; 2) processo histórico de formação de pesquisadores, além do incentivo de pesquisas de amostragem de anfíbios pelo Programa BIOTA-FAPESP; e 3) numerosas coleções herpetológicas, que possivelmente atraiu pesquisadores para realizar trabalhos taxonômicos. O resultado dessa compilação de dados gerou um panorama geral da diversidade, composição, métodos e esforço amostral das comunidades de anfíbios para o Bioma da Mata Atlântica, representando um enorme esforço para preencher uma lacuna de conhecimento acerca da biodiversidade de anfíbios na Região Neotropical. Esperamos que estes dados possam ser utilizados como uma ferramenta para a conservação deste grupo, além de ser uma fonte de dados importante para estudos de padrões macroecológicos e biogeográficos.&lt;/p&gt;
@@ -1124,11 +608,11 @@ theme_example = TRUE, empty_dirs = TRUE, to_yaml = TRUE)&lt;/p&gt;
     
     <item>
       <title>Como e onde começar a estudar R</title>
-      <link>https://mauriciovancine.github.io/pt/post/r-try/</link>
+      <link>https://mauriciovancine.github.io/pt/post/r-introdution/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mauriciovancine.github.io/pt/post/r-try/</guid>
+      <guid>https://mauriciovancine.github.io/pt/post/r-introdution/</guid>
       <description>
-&lt;script src=&#34;https://mauriciovancine.github.io/pt/post/r-try/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://mauriciovancine.github.io/pt/post/r-introdution/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;Escrevendo…&lt;/p&gt;
@@ -1163,66 +647,12 @@ theme_example = TRUE, empty_dirs = TRUE, to_yaml = TRUE)&lt;/p&gt;
     </item>
     
     <item>
-      <title>Geocomputação no Python</title>
-      <link>https://mauriciovancine.github.io/pt/post/python-geocomputation/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mauriciovancine.github.io/pt/post/python-geocomputation/</guid>
-      <description>
-&lt;script src=&#34;https://mauriciovancine.github.io/pt/post/python-geocomputation/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
-
-
-&lt;p&gt;Escrevendo…&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Introdução ao GRASS GIS</title>
-      <link>https://mauriciovancine.github.io/pt/post/grass-gis-introduction/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mauriciovancine.github.io/pt/post/grass-gis-introduction/</guid>
-      <description>
-&lt;script src=&#34;https://mauriciovancine.github.io/pt/post/grass-gis-introduction/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
-
-
-&lt;p&gt;Escrevendo…&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Porque você deveria aprender a programar em python</title>
-      <link>https://mauriciovancine.github.io/pt/post/python-try/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mauriciovancine.github.io/pt/post/python-try/</guid>
-      <description>
-&lt;script src=&#34;https://mauriciovancine.github.io/pt/post/python-try/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
-
-
-&lt;p&gt;Escrevendo…&lt;/p&gt;
-&lt;p&gt;Livros:&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/maurobio/econum&#34; class=&#34;uri&#34;&gt;https://github.com/maurobio/econum&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>R markdown: estendendo as funcionalidades do R</title>
       <link>https://mauriciovancine.github.io/pt/post/r-rmarkdown/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://mauriciovancine.github.io/pt/post/r-rmarkdown/</guid>
       <description>
 &lt;script src=&#34;index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
-
-
-&lt;p&gt;Escrevendo…&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Tente usar Linux</title>
-      <link>https://mauriciovancine.github.io/pt/post/linux-try/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mauriciovancine.github.io/pt/post/linux-try/</guid>
-      <description>
-&lt;script src=&#34;https://mauriciovancine.github.io/pt/post/linux-try/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;Escrevendo…&lt;/p&gt;
