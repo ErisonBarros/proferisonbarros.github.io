@@ -229,7 +229,7 @@
   
   <url>
     <loc>https://mauriciovancine.github.io/pt/post/</loc>
-    <lastmod>2021-03-07T00:00:00+00:00</lastmod>
+    <lastmod>2021-03-17T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -240,6 +240,36 @@
                 hreflang="pt"
                 href="https://mauriciovancine.github.io/pt/post/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://mauriciovancine.github.io/pt/post/geo-geospatial-data-sources/</loc>
+    <lastmod>2021-03-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mauriciovancine.github.io/pt/tag/rspatial/</loc>
+    <lastmod>2021-03-17T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://mauriciovancine.github.io/tag/rspatial/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="https://mauriciovancine.github.io/pt/tag/rspatial/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://mauriciovancine.github.io/pt/category/rspatial/</loc>
+    <lastmod>2021-03-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mauriciovancine.github.io/pt/category/spatial/</loc>
+    <lastmod>2021-03-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -278,32 +308,7 @@
   </url>
   
   <url>
-    <loc>https://mauriciovancine.github.io/pt/tag/rspatial/</loc>
-    <lastmod>2021-02-20T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://mauriciovancine.github.io/tag/rspatial/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt"
-                href="https://mauriciovancine.github.io/pt/tag/rspatial/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://mauriciovancine.github.io/pt/category/rspatial/</loc>
-    <lastmod>2021-02-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://mauriciovancine.github.io/pt/post/geo-crs-datum/</loc>
-    <lastmod>2021-02-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mauriciovancine.github.io/pt/category/spatial/</loc>
     <lastmod>2021-02-20T00:00:00+00:00</lastmod>
   </url>
   
