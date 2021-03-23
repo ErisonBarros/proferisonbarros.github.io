@@ -754,7 +754,7 @@
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    5 minutos de leitura
+    6 minutos de leitura
   </span>
   
 
@@ -804,13 +804,13 @@
 
     <div class="article-style">
       <h2 id="contextualização">Contextualização</h2>
-<p>Existe diversas fontes de dados geográficos em diferentes bases de dados disponíveis gratuitamente. Geralmente essas bases de dados são disponibilizadas separadamente em apenas dados vetoriais e dados raster. Para <strong>dados vetoriais</strong>, grande parte dos dados disponibilizados são utilizados em mapas como limites políticos, limites de biomas ou distribuição de espécies para <strong>polígonos</strong>; estradas e rios para <strong>dados lineares</strong>, ou ainda pontos de ocorrência de espécies ou comunidades, ou medidas tomadas em campo sobre condições naturais como clima ou relevo, como <strong>pontos</strong>. Entretanto, é sempre recomendado o uso de <strong>bases oficiais</strong>, principalmente em relação a dados vetoriais de <strong>limites políticos</strong>. Para tanto, é fundamental buscar as <strong>bases oficiais de cada país</strong>, entrentanto, há bases que podem ser utilizadas globalmente, como veremos.</p>
-<p>Sobre as <strong>bases de dados raster</strong>, há uma infinidade de dados para diferentes objetivos, mas grande parte deles são relativos à condições ambientais, representando uma variável de interesse de forma contínua no espaço, como temperatura, precipitação, elevação, etc.</p>
-<p>Há uma compilação de dados geográficos vetoriais e raster feita por Marcus Vinícius Alves de Carvalho e Angelica Carvalho Di Maio, chamada <a href="http://www.clickgeo.com.br/wp-content/uploads/2018/05/GeoLISTA.pdf" target="_blank" rel="noopener">GeoLISTA</a>. Entretanto, como as bases de dados tendem à ser muito dinâmicas, é possível que muitas bases tenham surgido e desaparecido desde a listagem realizada.</p>
-<p>Além das bases de dados, há pacotes específicos no R que fazem o download de dados vetoriais e rasters, facilitando a aquisição e reprodutibilidade. Para conferir uma listagem completa de pacotes para diversas análises espaciais, veja <a href="https://cran.r-project.org/web/views/Spatial.html" target="_blank" rel="noopener">CRAN Task View: Analysis of Spatial Data</a>.</p>
+<p>Existe diversas fontes de dados geográficos em diferentes bases de dados disponíveis gratuitamente. Geralmente essas bases de dados são disponibilizadas separadamente em apenas dados vetoriais e dados raster. Para <strong>dados vetoriais</strong>, grande parte dos dados disponibilizados são utilizados em mapas como limites políticos, limites de biomas ou distribuição de espécies para <strong>polígonos</strong>; estradas e rios para <strong>dados lineares</strong>, ou ainda pontos de ocorrência de espécies ou comunidades, ou medidas tomadas em campo sobre condições naturais como clima ou relevo, como <strong>pontos</strong>.</p>
+<p>Entretanto, é sempre recomendado o uso de <strong>bases oficiais</strong>, principalmente em relação a dados vetoriais de <strong>limites políticos</strong>. Para tanto, é fundamental buscar as <strong>bases oficiais de cada país</strong>, entrentanto, há bases que podem ser utilizadas globalmente. Sobre as <strong>bases de dados raster</strong>, há uma infinidade de dados para diferentes objetivos, mas grande parte deles são relativos a condições ambientais, representando uma variável de interesse de forma contínua no espaço, como temperatura, precipitação, elevação, etc.</p>
+<p>Há uma compilação de dados geográficos vetoriais e raster feita por Marcus Vinícius Alves de Carvalho e Angelica Carvalho Di Maio, chamada <a href="http://www.clickgeo.com.br/wp-content/uploads/2018/05/GeoLISTA.pdf" target="_blank" rel="noopener">GeoLISTA</a>. Entretanto, como as bases de dados tendem a ser muito dinâmicas, é possível que muitas bases tenham surgido e desaparecido desde a listagem realizada.</p>
+<p>Além das bases de dados, há pacotes específicos no R que fazem o download de dados vetoriais e rasters facilitando a aquisição e reprodutibilidade. Para conferir uma listagem completa de pacotes para diversas análises espaciais, veja <a href="https://cran.r-project.org/web/views/Spatial.html" target="_blank" rel="noopener">CRAN Task View: Analysis of Spatial Data</a>.</p>
 <h3 id="vetor">Vetor</h3>
-<p>Dentre as bases vetoriais, destacamos as seguintes na Tabela <a href="#tab:tab-vetor-bases">1</a>:</p>
-<p>Table: Table 1: Principais bases de dados vetoriais para o Brasil e o Mundo.</p>
+<p>Dentre as bases vetoriais, destaco as seguintes na Tabela <a href="#tab:tab-vetor-bases">1</a>:</p>
+<p>Table: Table 1: Principais bases de dados vetoriais para o Brasil e o mundo.</p>
 <table>
 <thead>
 <tr>
@@ -826,6 +826,10 @@
 <tr>
 <td style="text-align:left"><a href="https://cidades.ibge.gov.br/" target="_blank" rel="noopener">IBGE Cidades</a></td>
 <td style="text-align:left">Informações do IBGE sobre os municípios e estados do Brasil</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.snirh.gov.br/" target="_blank" rel="noopener">Sistema Nacional de Informações sobre Recursos Hídricos (SNIRH)</a></td>
+<td style="text-align:left">Base para disponibilização das informações sobre águas no Brasil</td>
 </tr>
 <tr>
 <td style="text-align:left"><a href="http://geo.fbds.org.br/" target="_blank" rel="noopener">FBDS</a></td>
@@ -922,8 +926,8 @@
 </tbody>
 </table>
 <h3 id="raster">Raster</h3>
-<p>Dentre as bases raster, destacamos as seguintes na Tabela <a href="#tab:tab-raster-bases">2</a>:</p>
-<p>Table: Table 2: Principais bases de dados raster para o Brasil e o Mundo.</p>
+<p>Dentre as bases raster, destaco as seguintes na Tabela <a href="#tab:tab-raster-bases">2</a>:</p>
+<p>Table: Table 2: Principais bases de dados raster para o Brasil e o mundo.</p>
 <table>
 <thead>
 <tr>
@@ -1039,7 +1043,7 @@
 </tbody>
 </table>
 <h3 id="pacotes-do-r">Pacotes do R</h3>
-<p>Dentre os pacotes no R para download de dados geográficos, destacamos os seguintes na Tabela <a href="#tab:tab-packages-bases">3</a>:</p>
+<p>Dentre os pacotes no R para download de dados geográficos, destaco os seguintes na Tabela <a href="#tab:tab-packages-bases">3</a>:</p>
 <p>Table: Table 3: Principais pacotes no R para download de dados vetoriais e raster.</p>
 <table>
 <thead>
