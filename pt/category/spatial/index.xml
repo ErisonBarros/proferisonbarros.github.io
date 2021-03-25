@@ -5,12 +5,294 @@
     <link>https://mauriciovancine.github.io/pt/category/spatial/</link>
       <atom:link href="https://mauriciovancine.github.io/pt/category/spatial/index.xml" rel="self" type="application/rss+xml" />
     <description>spatial</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>pt</language><copyright>© Maurício Vancine 2021</copyright><lastBuildDate>Wed, 17 Mar 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>pt</language><copyright>© Maurício Vancine 2021</copyright><lastBuildDate>Tue, 23 Mar 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://mauriciovancine.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>spatial</title>
       <link>https://mauriciovancine.github.io/pt/category/spatial/</link>
     </image>
+    
+    <item>
+      <title>Gerando rasters de dados socio-econômicos</title>
+      <link>https://mauriciovancine.github.io/pt/post/geo-join-data-rasterize/</link>
+      <pubDate>Tue, 23 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>https://mauriciovancine.github.io/pt/post/geo-join-data-rasterize/</guid>
+      <description>&lt;h2 id=&#34;contextualização&#34;&gt;Contextualização&lt;/h2&gt;
+&lt;p&gt;Faz um tempo que interajo com o povo da Universidade Federal Rural de Pernambubo (UFRPE) de Recife, mas especificamente do Lab. do Prof. Thiago Gonçalves-Souza, também conhecido como Toyoyo. Mais recentemente um dos seus alunos, o Arthur, comentou que precisava de variáveis socio-econômicas para usar em Modelos de Distribuição de Espécies para modelar doenças no Brasil, um projeto super interessante. Bem, como preparei um script para isso, resolvi escrever um post do passo a passo.&lt;/p&gt;
+&lt;p&gt;A ideia aqui será baixar dados sócio-econômicos do &lt;a href=&#34;https://sidra.ibge.gov.br/home/ipca15/brasil&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Sistema IBGE de Recuperação Automática - SIDRA&lt;/strong&gt;&lt;/a&gt;, fazer a associação para os limites dos municípios e depois rasterizar com base em variáveis do WorldClim.&lt;/p&gt;
+&lt;p&gt;Vamos precisar desses pacotes.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# packages
+library(tidyverse)
+library(sidrar)
+library(geobr)
+library(sf)
+library(raster)
+library(fasterize)
+library(tmap)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;dados-tabulares&#34;&gt;Dados tabulares&lt;/h2&gt;
+&lt;p&gt;Primeiramente, vamos usar o pacote &lt;a href=&#34;https://cran.r-project.org/web/packages/sidrar/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;sidrar&lt;/em&gt;&lt;/a&gt;, que é uma interface para o API do SIDRA. Esse pacote possui três funções:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;sidrar::search_sidra()&lt;/code&gt;: pesquisa tabelas do SIDRA com determinado(s) termo(s)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sidrar::info_sidra()&lt;/code&gt;: lista todos os parâmetros de uma tabela do SIDRA&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sidrar::get_sidra()&lt;/code&gt;: faz o download de uma tabela do SIDRA&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;O banco de dados do SIDRA é absurdamente enorme. Aqui vou explorar apenas uma tabela, mas existem muitas possibilidades para explorar.&lt;/p&gt;
+&lt;p&gt;Vamos começar explorando tabelas com o termo &amp;ldquo;abastecimento&amp;rdquo;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# search
+sidrar::search_sidra(&amp;quot;abastecimento&amp;quot;)[1:5]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;Tabela 160 - Domicílios por condição de ocupação, abastecimento de água, tipo de domicílio, instalação sanitária e número de famílias&amp;quot;                      
+## [2] &amp;quot;Tabela 175 - Pessoas moradoras em domicílios particulares permanentes por situação e abastecimento de água&amp;quot;                                                 
+## [3] &amp;quot;Tabela 177 - Domicílios por classes de recebimento mensal domiciliar, abastecimento de água, tipo de domicílio, instalação sanitária e número de famílias&amp;quot;  
+## [4] &amp;quot;Tabela 179 - Domicílios particulares permanentes por situação e abastecimento de água&amp;quot;                                                                      
+## [5] &amp;quot;Tabela 256 - Domicílios particulares permanentes por instalação sanitária, abastecimento de água, localização, tipo de cobertura, tipo de parede e situação&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Vou selecionar a tabela &amp;ldquo;Tabela 3218: Domicílios particulares permanentes, por forma de abastecimento de água, segundo a existência de banheiro ou sanitário e esgotamento sanitário, o destino do lixo e a existência de energia elétrica&amp;rdquo;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# information
+sidrar::info_sidra(x = 3218)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## $table
+## [1] &amp;quot;Tabela 3218: Domicílios particulares permanentes, por forma de abastecimento de água, segundo a existência de banheiro ou sanitário e esgotamento sanitário, o destino do lixo e a existência de energia elétrica&amp;quot;
+## 
+## $period
+## [1] &amp;quot;2010&amp;quot;
+## 
+## $variable
+##       cod                                                                desc
+## 1      96                      Domicílios particulares permanentes (Unidades)
+## 2 1000096 Domicílios particulares permanentes - percentual do total geral (%)
+## 
+## $classific_category
+## $classific_category$`c61 = Forma de abastecimento de água (8):`
+##      cod                                 desc
+## 1      0                                Total
+## 2  92853                           Rede geral
+## 3  10971      Poço ou nascente na propriedade
+## 4 121290 Poço ou nascente fora da propriedade
+## 5 121294          Rio, açude, lago ou igarapé
+## 6 121296           Poço ou nascente na aldeia
+## 7 121297      Poço ou nascente fora da aldeia
+## 8 121295                                Outra
+## 
+## $classific_category$`c299 = Existência de banheiro ou sanitário e esgotamento sanitário (8):`
+##     cod
+## 1     0
+## 2  2944
+## 3  9678
+## 4  2950
+## 5  2958
+## 6  9679
+## 7  2964
+## 8 10006
+##                                                                                                 desc
+## 1                                                                                              Total
+## 2                                                    Tinham banheiro - de uso exclusivo do domicílio
+## 3 Tinham banheiro - de uso exclusivo do domicílio - rede geral de esgoto ou pluvial ou fossa séptica
+## 4                                            Tinham banheiro - de uso exclusivo do domicílio - outro
+## 5                                                                                   Tinham sanitário
+## 6                                Tinham sanitário - rede geral de esgoto ou pluvial ou fossa séptica
+## 7                                                                Tinham sanitário - outro escoadouro
+## 8                                                                  Não tinham banheiro nem sanitário
+## 
+## $classific_category$`c67 = Destino do lixo (5):`
+##     cod                                      desc
+## 1     0                                     Total
+## 2  2520                                  Coletado
+## 3 92863           Coletado por serviço de limpeza
+## 4 92864 Coletado em caçamba de serviço de limpeza
+## 5  1091                             Outro destino
+## 
+## $classific_category$`c309 = Existência de energia elétrica (3):`
+##    cod       desc
+## 1    0      Total
+## 2 3011     Tinham
+## 3 3018 Não tinham
+## 
+## 
+## $geo
+##               cod                                    desc
+## 1          Brazil                              Brasil (1)
+## 2        District                       Distrito (10.277)
+## 3    Neighborhood                         Bairro (14.211)
+## 4     subdistrict                       Subdistrito (658)
+## 5  MetroRegionDiv  Região Metropolitana e Subdivisão (46)
+## 6             IRD Região Integrada de Desenvolvimento (3)
+## 7         UrbAglo                  Aglomeração Urbana (2)
+## 8          Region                       Grande Região (5)
+## 9       PopArrang              Arranjo Populacional (294)
+## 10          State               Unidade da Federação (27)
+## 11           City                       Município (5.565)
+## 12    MetroRegion               Região Metropolitana (36)
+## 13     MesoRegion            Mesorregião Geográfica (137)
+## 14    MicroRegion           Microrregião Geográfica (558)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Agora começam as complicações, pois o API só permite o download de 50000 linhas de dados (foi o que entendi até o momento). Então, tive que ir fazendo download específicos para diferentes dados.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# get data
+da_agua &amp;lt;- sidrar::get_sidra(x = 3218,
+                        variable = 1000096,
+                        period = &amp;quot;last&amp;quot;,
+                        classific = c(&amp;quot;c61&amp;quot;),
+                        geo = &amp;quot;City&amp;quot;)
+
+da_banheiro &amp;lt;- sidrar::get_sidra(x = 3218,
+                             variable = 1000096,
+                             period = &amp;quot;last&amp;quot;,
+                             classific = c(&amp;quot;c299&amp;quot;),
+                             geo = &amp;quot;City&amp;quot;)
+
+da_lixo &amp;lt;- sidrar::get_sidra(x = 3218,
+                            variable = 1000096,
+                            period = &amp;quot;last&amp;quot;,
+                            classific = c(&amp;quot;c67&amp;quot;),
+                            geo = &amp;quot;City&amp;quot;)
+
+da_luz &amp;lt;- sidrar::get_sidra(x = 3218,
+                             variable = 1000096,
+                             period = &amp;quot;last&amp;quot;,
+                             classific = c(&amp;quot;c309&amp;quot;),
+                             geo = &amp;quot;City&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Podemos olhar esses dados usando a função &lt;code&gt;dplyr::glimpse()&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# glimpse
+dplyr::glimpse(da_agua)
+dplyr::glimpse(da_banheiro)
+dplyr::glimpse(da_lixo)
+dplyr::glimpse(da_luz)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Para facilitar nossa vida com as colunas e variáveis, fiz alguns filtros, transformei os dados, selecionei colunas e renomei outras para que a associação com os municípios fosse mais simples. No final, combinei as colunas para simplificar os dados.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# filter and selection
+da_agua_sel &amp;lt;- da_agua %&amp;gt;% 
+  dplyr::filter(`Forma de abastecimento de água` == &amp;quot;Rede geral&amp;quot;) %&amp;gt;% 
+  dplyr::mutate(code_muni = as.numeric(`Município (Código)`)) %&amp;gt;%
+  dplyr::select(code_muni, Valor) %&amp;gt;% 
+  dplyr::rename(agua_rede = Valor)
+
+da_banheiro_sel &amp;lt;- da_banheiro %&amp;gt;% 
+  dplyr::filter(`Existência de banheiro ou sanitário e esgotamento sanitário` == &amp;quot;Não tinham banheiro nem sanitário&amp;quot;) %&amp;gt;% 
+  dplyr::mutate(code_muni = as.numeric(`Município (Código)`)) %&amp;gt;%
+  dplyr::select(code_muni, Valor) %&amp;gt;%
+  dplyr::rename(sem_banheiro = Valor)
+
+da_lixo_sel &amp;lt;- da_lixo %&amp;gt;% 
+  dplyr::filter(`Destino do lixo` == &amp;quot;Coletado&amp;quot;) %&amp;gt;% 
+  dplyr::mutate(code_muni = as.numeric(`Município (Código)`)) %&amp;gt;%
+  dplyr::select(code_muni, Valor) %&amp;gt;%
+  dplyr::rename(lixo_coletado = Valor)
+  
+da_luz_sel &amp;lt;- da_luz %&amp;gt;% 
+  dplyr::filter(`Existência de energia elétrica` == &amp;quot;Tinham&amp;quot;) %&amp;gt;% 
+  dplyr::mutate(code_muni = as.numeric(`Município (Código)`)) %&amp;gt;%
+  dplyr::select(code_muni, Valor) %&amp;gt;%
+  dplyr::rename(luz = Valor)
+
+da_data &amp;lt;- dplyr::bind_cols(da_agua_sel, 
+                            sem_banheiro = da_banheiro_sel$sem_banheiro, 
+                            lixo_coletado = da_lixo_sel$lixo_coletado, 
+                            luz = da_luz_sel$luz)
+dplyr::glimpse(da_data)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Rows: 5,565
+## Columns: 5
+## $ code_muni     &amp;lt;dbl&amp;gt; 1100015, 1100023, 1100031, 1100049, 1100056, 1100064, 11…
+## $ agua_rede     &amp;lt;dbl&amp;gt; 24.40, 35.25, 24.00, 76.10, 33.96, 60.70, 12.99, 16.48, …
+## $ sem_banheiro  &amp;lt;dbl&amp;gt; 3.51, 0.64, 0.76, 0.89, 0.50, 0.82, 2.72, 2.27, 1.12, 2.…
+## $ lixo_coletado &amp;lt;dbl&amp;gt; 56.86, 85.14, 49.77, 78.94, 78.35, 69.11, 37.83, 55.74, …
+## $ luz           &amp;lt;dbl&amp;gt; 94.75, 98.31, 97.52, 99.10, 98.62, 98.10, 96.15, 88.56, …
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;dados-vetoriais&#34;&gt;Dados vetoriais&lt;/h2&gt;
+&lt;p&gt;Agora precisamos dos municípios. Vamos usar os dados oficiais do IBGE, baixando para o mesmo ano dos dados, i.e., 2010, usando o pacote &lt;a href=&#34;https://cran.r-project.org/web/packages/geobr/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;geobr&lt;/em&gt;&lt;/a&gt;, atrvés da função &lt;code&gt;geobr::read_municipality()&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# vetor
+mun &amp;lt;- geobr::read_municipality(code_muni = &amp;quot;all&amp;quot;, year = 2010, showProgress = FALSE)
+
+tm_shape(mun) +
+  tm_polygons()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://mauriciovancine.github.io/pt/post/geo-join-data-rasterize/index_files/figure-html/unnamed-chunk-7-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;join&#34;&gt;Join&lt;/h2&gt;
+&lt;p&gt;Agora que temos os dois dados (tabular e vetorial), vamos fazer a associação deles usando a função &lt;code&gt;dplyr::left_join()&lt;/code&gt; do pacote &lt;a href=&#34;https://dplyr.tidyverse.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;dplyr&lt;/em&gt;&lt;/a&gt;, usando a coluna &amp;ldquo;code_muni&amp;rdquo;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# join
+mun_da &amp;lt;- dplyr::left_join(x = mun, y = da_data, by = &amp;quot;code_muni&amp;quot;)
+dplyr::glimpse(mun_da)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Rows: 5,567
+## Columns: 9
+## $ code_muni     &amp;lt;dbl&amp;gt; 1100015, 1100023, 1100031, 1100049, 1100056, 1100064, 11…
+## $ name_muni     &amp;lt;chr&amp;gt; &amp;quot;Alta Floresta D&#39;oeste&amp;quot;, &amp;quot;Ariquemes&amp;quot;, &amp;quot;Cabixi&amp;quot;, &amp;quot;Cacoal&amp;quot;…
+## $ code_state    &amp;lt;chr&amp;gt; &amp;quot;11&amp;quot;, &amp;quot;11&amp;quot;, &amp;quot;11&amp;quot;, &amp;quot;11&amp;quot;, &amp;quot;11&amp;quot;, &amp;quot;11&amp;quot;, &amp;quot;11&amp;quot;, &amp;quot;11&amp;quot;, &amp;quot;11&amp;quot;, &amp;quot;1…
+## $ abbrev_state  &amp;lt;chr&amp;gt; &amp;quot;RO&amp;quot;, &amp;quot;RO&amp;quot;, &amp;quot;RO&amp;quot;, &amp;quot;RO&amp;quot;, &amp;quot;RO&amp;quot;, &amp;quot;RO&amp;quot;, &amp;quot;RO&amp;quot;, &amp;quot;RO&amp;quot;, &amp;quot;RO&amp;quot;, &amp;quot;R…
+## $ agua_rede     &amp;lt;dbl&amp;gt; 24.40, 35.25, 24.00, 76.10, 33.96, 60.70, 12.99, 16.48, …
+## $ sem_banheiro  &amp;lt;dbl&amp;gt; 3.51, 0.64, 0.76, 0.89, 0.50, 0.82, 2.72, 2.27, 1.12, 2.…
+## $ lixo_coletado &amp;lt;dbl&amp;gt; 56.86, 85.14, 49.77, 78.94, 78.35, 69.11, 37.83, 55.74, …
+## $ luz           &amp;lt;dbl&amp;gt; 94.75, 98.31, 97.52, 99.10, 98.62, 98.10, 96.15, 88.56, …
+## $ geom          &amp;lt;MULTIPOLYGON [°]&amp;gt; MULTIPOLYGON (((-62.2462 -1..., MULTIPOLYGO…
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;raster&#34;&gt;Raster&lt;/h2&gt;
+&lt;p&gt;Agora que temos os limites dos municípios com os dados associados, vamos usar um raster de modelo para rasterizar os polígos dos municípios. Para isso, vamos baixar os dados do &lt;a href=&#34;https://www.worldclim.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;WorldClim&lt;/strong&gt;&lt;/a&gt;, usando a função &lt;code&gt;raster::getData()&lt;/code&gt; do pacote &lt;a href=&#34;https://rspatial.org/raster/pkg/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;raster&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Também vamos adequar o raster do WorlClim para a extensão e limite do Brasil com as funções &lt;code&gt;raster::crop()&lt;/code&gt; e &lt;code&gt;raster::mask()&lt;/code&gt;, respectivamente.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# raster
+bio &amp;lt;- raster::getData(name = &amp;quot;worldclim&amp;quot;, var = &amp;quot;bio&amp;quot;, res = 10)
+
+bio_br &amp;lt;- bio$bio1 %&amp;gt;% 
+  raster::crop(mun_da) %&amp;gt;% 
+  raster::mask(mun_da)
+
+tm_shape(bio_br) +
+  tm_raster(pal = &amp;quot;Spectral&amp;quot;, title = &amp;quot;BIO01&amp;quot;) +
+  tm_shape(mun) +
+  tm_borders(lwd = .3) +
+  tm_layout(legend.position = c(&amp;quot;left&amp;quot;, &amp;quot;bottom&amp;quot;))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://mauriciovancine.github.io/pt/post/geo-join-data-rasterize/index_files/figure-html/unnamed-chunk-9-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;rasterização&#34;&gt;Rasterização&lt;/h2&gt;
+&lt;p&gt;Agora sim, podemos fazer a rasterização dos polígonos dos municípios usando o raster que criamos como modelo, usando a função &lt;code&gt;fasterize::fasterize()&lt;/code&gt; do pacote &lt;a href=&#34;https://cran.r-project.org/web/packages/fasterize/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;fasterize&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# rasterize
+mun_agua_raster &amp;lt;- fasterize::fasterize(sf = mun_da, raster = bio_br, field = &amp;quot;agua_rede&amp;quot;)
+
+mun_sem_banheiro_raster &amp;lt;- fasterize::fasterize(sf = mun_da, raster = bio_br, field = &amp;quot;sem_banheiro&amp;quot;)
+
+mun_lixo_raster &amp;lt;- fasterize::fasterize(sf = mun_da, raster = bio_br, field = &amp;quot;lixo_coletado&amp;quot;)
+
+mun_luz_raster &amp;lt;- fasterize::fasterize(sf = mun_da, raster = bio_br, field = &amp;quot;luz&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Vamos fazer os mapas para ver os resultados.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# maps
+map_agua &amp;lt;- tm_shape(mun_agua_raster) +
+  tm_raster(pal = &amp;quot;Blues&amp;quot;, title = &amp;quot;Água de rede geral (%)&amp;quot;) +
+  tm_layout(legend.position = c(&amp;quot;left&amp;quot;, &amp;quot;bottom&amp;quot;))
+
+map_banheiro &amp;lt;- tm_shape(mun_sem_banheiro_raster) +
+  tm_raster(pal = &amp;quot;RdYlGn&amp;quot;, title = &amp;quot;Sem banheiro (%)&amp;quot;) +
+  tm_layout(legend.position = c(&amp;quot;left&amp;quot;, &amp;quot;bottom&amp;quot;))
+
+map_lixo &amp;lt;- tm_shape(mun_lixo_raster) +
+  tm_raster(pal = &amp;quot;Greys&amp;quot;, title = &amp;quot;Lixo coletado (%)&amp;quot;) +
+  tm_layout(legend.position = c(&amp;quot;left&amp;quot;, &amp;quot;bottom&amp;quot;))
+
+map_luz &amp;lt;- tm_shape(mun_luz_raster) +
+  tm_raster(pal = &amp;quot;Oranges&amp;quot;, title = &amp;quot;Luz (%)&amp;quot;) +
+  tm_layout(legend.position = c(&amp;quot;left&amp;quot;, &amp;quot;bottom&amp;quot;))
+
+tmap_arrange(map_agua, map_banheiro, map_lixo, map_luz)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://mauriciovancine.github.io/pt/post/geo-join-data-rasterize/index_files/figure-html/unnamed-chunk-11-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;exportar&#34;&gt;Exportar&lt;/h2&gt;
+&lt;p&gt;Por fim, vamos exportar nossos rasters com a função &lt;code&gt;raster::writeRaster()&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# stack
+mun_raster &amp;lt;- raster::stack(mun_agua_raster, mun_sem_banheiro_raster, mun_lixo_raster, mun_luz_raster)
+
+# export
+raster::writeRaster(x = mun_raster, 
+                    filename = &amp;quot;var&amp;quot;,
+                    suffix = c(&amp;quot;agua&amp;quot;, &amp;quot;banheiro&amp;quot;, &amp;quot;lixo&amp;quot;, &amp;quot;luz&amp;quot;),
+                    bylayer = TRUE, 
+                    options = c(&amp;quot;COMPRESS=DEFLATE&amp;quot;), 
+                    format = &amp;quot;GTiff&amp;quot;, 
+                    progress = &amp;quot;text&amp;quot;,
+                    overwrite = TRUE)
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
     
     <item>
       <title>Fonte de dados geoespaciais</title>
