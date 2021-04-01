@@ -34,12 +34,10 @@
   
     
   
-  <meta name="description" content="Site in Portuguese">
+  <meta name="description" content="Um guia para entender erros e pedir ajuda no R">
 
   
-  <link rel="alternate" hreflang="en" href="https://mauriciovancine.github.io/categories/">
-  
-  <link rel="alternate" hreflang="pt" href="https://mauriciovancine.github.io/pt/categories/">
+  <link rel="alternate" hreflang="pt" href="https://mauriciovancine.github.io/pt/post/r-errors/">
 
   
 
@@ -258,14 +256,12 @@
   
 
   
-  <link rel="alternate" href="/pt/categories/index.xml" type="application/rss+xml" title="Maurício Vancine">
-  
 
   <link rel="manifest" href="/pt/index.webmanifest">
   <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
   <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="https://mauriciovancine.github.io/pt/categories/">
+  <link rel="canonical" href="https://mauriciovancine.github.io/pt/post/r-errors/">
 
   
   
@@ -275,38 +271,89 @@
   
   
     
-    
   
   
-  <meta property="twitter:card" content="summary">
+  <meta property="twitter:card" content="summary_large_image">
   
   <meta property="twitter:site" content="@mauriciovancine">
   <meta property="twitter:creator" content="@mauriciovancine">
   
   <meta property="og:site_name" content="Maurício Vancine">
-  <meta property="og:url" content="https://mauriciovancine.github.io/pt/categories/">
-  <meta property="og:title" content="Categories | Maurício Vancine">
-  <meta property="og:description" content="Site in Portuguese"><meta property="og:image" content="https://mauriciovancine.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
-  <meta property="twitter:image" content="https://mauriciovancine.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="pt">
+  <meta property="og:url" content="https://mauriciovancine.github.io/pt/post/r-errors/">
+  <meta property="og:title" content="Help me help you: um bestiário para entender erros e pedir ajuda no R | Maurício Vancine">
+  <meta property="og:description" content="Um guia para entender erros e pedir ajuda no R"><meta property="og:image" content="https://mauriciovancine.github.io/pt/post/r-errors/featured.png">
+  <meta property="twitter:image" content="https://mauriciovancine.github.io/pt/post/r-errors/featured.png"><meta property="og:locale" content="pt">
   
-    <meta property="og:updated_time" content="2021-04-02T14:00:00&#43;00:00">
+    
+      <meta property="article:published_time" content="2020-08-26T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2020-08-26T00:00:00&#43;00:00">
   
-
-  
-
-
-
 
   
 
 
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://mauriciovancine.github.io/pt/post/r-errors/"
+  },
+  "headline": "Help me help you: um bestiário para entender erros e pedir ajuda no R",
+  
+  "image": [
+    "https://mauriciovancine.github.io/pt/post/r-errors/featured.png"
+  ],
+  
+  "datePublished": "2020-08-26T00:00:00Z",
+  "dateModified": "2020-08-26T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Maurício Vancine"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Maurício Vancine",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://mauriciovancine.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png"
+    }
+  },
+  "description": "Um guia para entender erros e pedir ajuda no R"
+}
+</script>
+
+  
+
+  
+
+
+  
+
+
   
 
 
 
 
 
-  <title>Categories | Maurício Vancine</title>
+  <title>Help me help you: um bestiário para entender erros e pedir ajuda no R | Maurício Vancine</title>
 
 </head>
 
@@ -428,7 +475,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/pt/post"><span>Blog</span></a>
+          <a class="nav-link  active" href="/pt/post"><span>Blog</span></a>
         </li>
 
         
@@ -640,21 +687,6 @@
       
 
       
-      <li class="nav-item dropdown i18n-dropdown">
-        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true">
-          <i class="fas fa-globe mr-1" aria-hidden="true"></i><span class="d-none d-lg-inline">Português</span></a>
-        <div class="dropdown-menu">
-          <div class="dropdown-item dropdown-item-active">
-            <span>Português</span>
-          </div>
-          
-          <a class="dropdown-item" href="https://mauriciovancine.github.io/categories/">
-            <span>English</span>
-          </a>
-          
-        </div>
-      </li>
-      
 
     </ul>
 
@@ -665,115 +697,408 @@
   </div>
 
   <div class="page-body">
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+
+<div class="article-container pt-3">
+  <h1>Help me help you: um bestiário para entender erros e pedir ajuda no R</h1>
+
+  
+
+  
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Aug 26, 2020
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    1 minutos de leitura
+  </span>
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="/pt/category/r-tutorial/">r tutorial</a></span>
+  
+
+</div>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px; max-height: 847px;">
+  <div style="position: relative">
+    <img src="/pt/post/r-errors/featured_hu601a8b9c85d544a8305c07155eeb51dd_305482_720x0_resize_lanczos_2.png" alt="" class="featured-image">
+    <span class="article-header-caption"><a href="https://www.monkeyuser.com/2018/debugging/">Monkeyuser</a></span>
+  </div>
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <p>Neste post convidado pelo Prof. Pavel Dodonov para seu blog <a href="https://anotherecoblog.wordpress.com/" target="_blank" rel="noopener">Mais Um Blog de Ecologia e Estatística</a>, falo um pouco sobre os principais tipos de erros a serem verificados antes de pedir ajuda, tentando resolver os erros e idealmente, como pedir ajuda.</p>
+<p>Link: <a href="https://anotherecoblog.wordpress.com/2020/08/26/help-me-help-you-um-bestiario-para-entender-erros-e-pedir-ajuda-no-r/">https://anotherecoblog.wordpress.com/2020/08/26/help-me-help-you-um-bestiario-para-entender-erros-e-pedir-ajuda-no-r/</a></p>
+
+    </div>
+
+    <div class="col-12 col-lg-10ish article-style">
+    <script src="https://utteranc.es/client.js"
+        repo="mauriciovancine/mauriciovancine.github.io"
+        issue-term="title"
+        label="comments :crystal_ball:"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+    </script>
+    </div>
+
     
 
 
 
 
-
-
-
-
-
-
-
-
+<div class="article-tags">
   
-
+  <a class="badge badge-light" href="/pt/tag/r/">r</a>
   
-  
-  
-    
-  
-<div class="universal-wrapper pt-3">
-  <h1>Categories</h1>
-
-  
-
+  <a class="badge badge-light" href="/pt/tag/rstats/">rstats</a>
   
 </div>
 
 
 
-<div class="universal-wrapper">
-  
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://mauriciovancine.github.io/pt/post/r-errors/&amp;text=Help%20me%20help%20you:%20um%20besti%c3%a1rio%20para%20entender%20erros%20e%20pedir%20ajuda%20no%20R" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://mauriciovancine.github.io/pt/post/r-errors/&amp;t=Help%20me%20help%20you:%20um%20besti%c3%a1rio%20para%20entender%20erros%20e%20pedir%20ajuda%20no%20R" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Help%20me%20help%20you:%20um%20besti%c3%a1rio%20para%20entender%20erros%20e%20pedir%20ajuda%20no%20R&amp;body=https://mauriciovancine.github.io/pt/post/r-errors/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://mauriciovancine.github.io/pt/post/r-errors/&amp;title=Help%20me%20help%20you:%20um%20besti%c3%a1rio%20para%20entender%20erros%20e%20pedir%20ajuda%20no%20R" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
 
   
   
-    
-    
-    
-    <div>
-      <h2><a href="/pt/category/talk/" >talk</a></h2>
-      <div class="article-style">
-        
-      </div>
-    </div>
-  
-    
-    
-    
-    <div>
-      <h2><a href="/pt/category/rspatial/" >rspatial</a></h2>
-      <div class="article-style">
-        
-      </div>
-    </div>
-  
-    
-    
-    
-    <div>
-      <h2><a href="/pt/category/spatial/" >spatial</a></h2>
-      <div class="article-style">
-        
-      </div>
-    </div>
-  
-    
-    
-    
-    <div>
-      <h2><a href="/pt/category/short-course/" >short course</a></h2>
-      <div class="article-style">
-        
-      </div>
-    </div>
-  
-    
-    
-    
-    <div>
-      <h2><a href="/pt/category/courses/" >courses</a></h2>
-      <div class="article-style">
-        
-      </div>
-    </div>
-  
-    
-    
-    
-    <div>
-      <h2><a href="/pt/category/tutorial/" >tutorial</a></h2>
-      <div class="article-style">
-        
-      </div>
-    </div>
-  
-    
-    
-    
-    <div>
-      <h2><a href="/pt/category/r-tutorial/" >r tutorial</a></h2>
-      <div class="article-style">
-        
-      </div>
-    </div>
-  
+
+
 
   
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="https://mauriciovancine.github.io/"><img class="avatar mr-3 avatar-circle" src="/pt/author/mauricio-vancine/avatar_hu7f9a9a15da9bbb536464a5e3d0e0bbb8_19786_270x270_fill_q90_lanczos_center.jpg" alt="Maurício Vancine"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://mauriciovancine.github.io/">Maurício Vancine</a></h5>
+      <h6 class="card-subtitle">Ecólogo Espacial e Doutorando</h6>
+      
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/pt/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/mauriciovancine" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/mauriciovancine" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://orcid.org/0000-0001-9650-7575" target="_blank" rel="noopener">
+        <i class="ai ai-orcid"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://publons.com/researcher/1391845/mauricio-vancine" target="_blank" rel="noopener">
+        <i class="ai ai-publons"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.com/citations?user=i-2xZBQAAAAJ" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="http://lattes.cnpq.br/9761288418931193" target="_blank" rel="noopener">
+        <i class="ai ai-lattes"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="article-widget">
+  
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Próximo</div>
+    <a href="/pt/post/geo-crs-datum/" rel="next">Sistemas de Referência de Coordenadas e Datum</a>
+  </div>
+  
+  
+</div>
 
 </div>
+
+
+
+
+
+  
+  
+  <div class="article-widget content-widget-hr">
+    <h3>Relacionados</h3>
+    <ul>
+      
+      <li><a href="/pt/video/werlive/">We R Live</a></li>
+      
+      <li><a href="/pt/short-course/short-course-r-unesp-biology/">Introdução à linguagem R: manipulação e visualização de dados</a></li>
+      
+      <li><a href="/pt/short-course/short-course-r-unesp-ecology/">Introdução à linguagem R: manipulação e visualização de dados</a></li>
+      
+      <li><a href="/pt/short-course/short-course-sdm-cbh/">Introdução à modelagem de distribuição de espécies usando a linguagem R: teoria e prática</a></li>
+      
+      <li><a href="/pt/talk/talk-sdm-gggc/">Modelos de Distribuição de Espécies: uma visão geral</a></li>
+      
+    </ul>
+  </div>
+  
+
+
+
+
+
+  </div>
+</article>
   </div>
 
   <div class="page-footer">
